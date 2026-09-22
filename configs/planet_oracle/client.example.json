@@ -2,8 +2,5 @@
   "url": "http://127.0.0.1:8765",
   "target_id": "example_target",
   "oracle_id": "REPLACE_WITH_ORACLE_ID_FROM_HEALTH",
-  "timeout": 120,
-  "low": 4.0,
-  "high": 10.0,
-  "k": 0.5
+  "timeout": 120
 }

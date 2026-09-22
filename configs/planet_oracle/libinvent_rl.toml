@@ -41,5 +41,8 @@ name = "PLANET reward"
 weight = 1.0
 params.executable = "/srv/envs/reinvent4/bin/python"
 params.args = "-m planet_oracle.client --config /srv/runs/planet-demo/client.json"
-params.property = "planet_reward"
-# No transform: reward normalization happens in the client.
+params.property = "planet_affinity_for_scoring"
+transform.type = "sigmoid"
+transform.low = 4.0
+transform.high = 10.0
+transform.k = 0.5

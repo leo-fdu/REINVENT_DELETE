@@ -30,7 +30,7 @@ def running_oracle():
         thread = threading.Thread(target=server.serve_forever, kwargs={"poll_interval": 0.01}, daemon=True)
         thread.start()
         cfg = {"url": f"http://127.0.0.1:{server.server_port}", "target_id": "test-target",
-               "oracle_id": predictor.oracle_id, "timeout": 2, "low": 4, "high": 10, "k": 0.5}
+               "oracle_id": predictor.oracle_id, "timeout": 2}
         try:
             yield oracle, cfg
         finally:

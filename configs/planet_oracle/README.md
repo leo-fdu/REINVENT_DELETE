@@ -2,7 +2,8 @@
 
 本接口只接入 LibINVENT / LinkINVENT，不修改 REINVENT4、DELETE、PLANET。
 生成器先拼接完整分子，内置 `ExternalProcess` 把 SMILES 经 stdin 交给轻量客户端，
-客户端请求同机常驻服务，服务返回原始亲和力，客户端转换奖励。模型、口袋和蛋白特征只初始化一次。
+客户端请求同机常驻服务并返回原始亲和力，REINVENT 内置 sigmoid 将其转换为奖励。
+模型、口袋和蛋白特征只初始化一次。
 
 本机交付不建立 PLANET 环境，不运行真实 PLANET 或 RL；下面的真实验收在 Linux 执行。
 示例片段和奖励参数只用于验证接线，未针对 16 个靶点校准，不是正式靶点任务设计。
@@ -43,7 +44,7 @@ cp "$PROJECT/configs/planet_oracle/linkinvent_rl.toml" "$RUN/linkinvent.toml"
 | --- | --- |
 | server.json | target_id、planet_root、checkpoint、protein_pdb、ligand_sdf 或 center、device、port |
 | client.json | URL/端口、相同 target_id；启动后填写 oracle_id |
-| 两份 TOML | device、prior_file、agent_file、smiles_file、params.executable、params.args |
+| 两份 TOML | device、prior_file、agent_file、smiles_file、params.executable、params.args、transform.low/high/k |
 | 两份 TOML | tb_logdir、json_out_config、summary_csv_prefix、chkpt_file 均指向各自的新运行目录 |
 
 `params.executable` 必须是 **REINVENT 环境 Python 的绝对路径**；
@@ -104,7 +105,7 @@ REINVENT 的行协议本身不能区分空列表与单个空字符串，也不�
 
 两份模板都是单阶段、seed 42、batch size 16、最多 5 步、DAP sigma=128/rate=0.0001，
 启用 SMILES 随机化和 isomeric SMILES。只有 PLANET 评分、权重 1，无额外性质奖励或多样性过滤。
-单评分采用 arithmetic_mean，保留严格零分；不配置 transform，避免重复归一化。
+单评分采用 arithmetic_mean；原始亲和力由 REINVENT 内置 sigmoid 转换，不在客户端重复归一化。
 输入分别为 `c1ccccc1*` 和 `c1ccccc1*|*c1ccccc1`。
 
 ```bash
@@ -115,8 +116,9 @@ kill -TERM "$(cat "$RUN/server.pid")"
 
 前台启动服务时也可 Ctrl-C 停止。停止后重复独立评分命令必须非零退出，不应产生伪造零奖励。
 日志、CSV、checkpoint、TensorBoard 和解析后配置写入两种模式各自的目录。
-CSV 的 `PLANET reward` 为奖励；`PLANET reward (raw)` 仍是客户端奖励；
-真正的原始预测在 `planet_affinity (PLANET reward)`，另有 status、error、target_id、oracle_id metadata 列。
+CSV 的 `PLANET reward` 为 REINVENT sigmoid 转换后的奖励；`PLANET reward (raw)` 为送入 sigmoid 的亲和力，
+因此有效输入是 PLANET 原始预测，无效输入是有限 sentinel `-1000000.0`。
+真实 nullable 预测在 `planet_affinity (PLANET reward)`，另有 status、error、target_id、oracle_id metadata 列。
 JSON 无效预测为 null；当前 REINVENT CSV writer 会将它写为字符串 `None`。
 被 REINVENT 自己屏蔽、未送到 oracle 的输入，其 metadata 由上游填充，不能当作 PLANET 已评分。
 
@@ -143,9 +145,14 @@ SMILES 经 RDKit sanitize 和 `Chem.AddHs`，保留输入电荷与立体信息�
 请求格式错误 HTTP 400，错误靶点 409，模型/批图构建异常及非有限输出 500，失败影响整个请求。
 客户端核对版本、靶点、指纹、长度、顺序、索引、状态与数值；连接/超时/HTTP/校验错误都使 REINVENT 评分失败。
 
-有效亲和力 p 的奖励为 `1 / (1 + 10 ** (-10*k*(p-(low+high)/2)/(high-low)))`。
-要求 low/high/k 有限，high > low、k > 0，采用稳定计算。
-默认 low=4、high=10、k=0.5，p=7 对应 0.5；无效输入的奖励严格为 0，原始预测保持 null。
+客户端 payload 的 `planet_affinity_for_scoring` 为 REINVENT endpoint 数值输入：有效分子使用原始 affinity，
+无效分子使用固定有限 sentinel `-1000000.0`。`planet_affinity` 始终记录真实预测，无效时保持 null；
+status 和 error 明确区分模型低预测与不可评分输入。模型/通信/协议故障不会转换为 sentinel，而是使评分失败。
+
+REINVENT 对有效亲和力 p 计算
+`1 / (1 + 10 ** (-10*k*(p-(low+high)/2)/(high-low)))`。模板要求 high > low、k > 0，
+默认 low=4、high=10、k=0.5，p=7 对应 0.5；sentinel 在该 float32 sigmoid 下得到严格 0。
+更换变换类型或使用极端奖励参数时必须重新验证无效输入仍为 0。
 
 ## 验证
 
@@ -157,7 +164,7 @@ PYTHONPATH="$PROJECT/src:$PROJECT/REINVENT4" "$REINVENT_PY" -m pytest tests/plan
 ```
 
 测试使用可注入假预测器，只在测试代码中定义；生产命令没有假模型模式。
-覆盖真实 HTTP/客户端 subprocess/ExternalProcess、错误语义、奖励、RDKit、口袋审计、
+覆盖真实 HTTP/客户端 subprocess/ExternalProcess、错误语义、REINVENT sigmoid 与 sentinel 零分、RDKit、口袋审计、
 两份配置解析、真实片段拼接到评分器、CSV metadata 与 prior 词表兼容性；这些不代表真实 PLANET/CUDA 验收。
 
 Linux CPU 真实验收必须先通过；CUDA 可用时再重复（输出目录须不存在）：

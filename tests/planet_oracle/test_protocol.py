@@ -1,6 +1,5 @@
 import io
 import json
-import math
 import subprocess
 import sys
 import time
@@ -9,7 +8,13 @@ from urllib.request import Request, urlopen
 
 import pytest
 
-from planet_oracle.client import client_config, score, sigmoid, stdin_smiles, validate_response
+from planet_oracle.client import (
+    INVALID_AFFINITY_SENTINEL,
+    client_config,
+    score,
+    stdin_smiles,
+    validate_response,
+)
 from planet_oracle.config import loads, server_config
 
 
@@ -25,8 +30,9 @@ def test_batches_order_duplicates_and_empty(running_oracle):
     result = score(["CCO", "invalid", "", "C*", "C.C", "C", "CCO", "CC"], cfg)["payload"]
     assert result["planet_affinity"] == [7., None, None, None, None, 5., 7., 6.]
     assert result["planet_status"] == ["ok"] + ["invalid_input"] * 4 + ["ok"] * 3
-    assert result["planet_reward"][1:5] == [0.] * 4
-    assert result["planet_reward"][0] == 0.5
+    assert result["planet_affinity_for_scoring"] == [
+        7., *([INVALID_AFFINITY_SENTINEL] * 4), 5., 7., 6.
+    ]
     assert all(len(values) == 8 for values in result.values())
     assert oracle.predictor.batches == [["CCO", "C"], ["CCO", "CC"]]
     assert all(values == [] for values in score([], cfg)["payload"].values())
@@ -50,7 +56,7 @@ def test_client_subprocess_standard_library_only(running_oracle, tmp_path):
     assert json.loads(result.stdout)["payload"]["planet_affinity"] == [7., None, 7.]
     result = run_client(tmp_path, cfg, "")
     assert result.returncode == 0
-    assert json.loads(result.stdout)["payload"]["planet_reward"] == []
+    assert json.loads(result.stdout)["payload"]["planet_affinity_for_scoring"] == []
 
 
 @pytest.mark.parametrize("change", [{"target_id": "wrong"}, {"oracle_id": "wrong"},
@@ -198,23 +204,6 @@ def test_bad_json(text):
         loads(text)
 
 
-def test_sigmoid():
-    values = [sigmoid(p) for p in (-1e308, -100, 4, 7, 10, 100, 1e308)]
-    assert values == sorted(values)
-    assert all(math.isfinite(v) and 0 <= v <= 1 for v in values)
-    assert values[3] == 0.5
-    assert sigmoid(4) == pytest.approx(1 / (1 + 10**2.5))
-    assert sigmoid(0, -1e308, 1e308, 1e308) == 0.5
-    assert sigmoid(0, 0, 5e-324, 0.5) > 0
-
-
-@pytest.mark.parametrize("low,high,k", [(4, 4, 1), (10, 4, 1), (4, 10, 0), (4, 10, -1),
-                                       (float("nan"), 10, 1), (4, float("inf"), 1), (4, 10, True)])
-def test_bad_sigmoid_parameters(low, high, k):
-    with pytest.raises(ValueError):
-        sigmoid(7, low, high, k)
-
-
 def test_server_config_resolution(tmp_path):
     for name in ("PLANET.param", "protein.pdb", "ligand.sdf"):
         (tmp_path / name).touch()
@@ -245,7 +234,7 @@ def test_client_config_defaults_and_validation(tmp_path):
     path.write_text(json.dumps(cfg))
     assert client_config(path)["timeout"] == 120
     for update in ({"url": "file:///tmp/file"}, {"oracle_id": ""}, {"target_id": None},
-                   {"timeout": 0}, {"k": -1}, {"unknown": 2}):
+                   {"timeout": 0}, {"low": 4}, {"unknown": 2}):
         path.write_text(json.dumps({**cfg, **update}))
         with pytest.raises(ValueError):
             client_config(path)

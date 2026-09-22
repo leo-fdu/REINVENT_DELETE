@@ -1,9 +1,7 @@
 """Standard-library stdin/HTTP/stdout bridge for REINVENT ExternalProcess."""
 
 import argparse
-from decimal import Decimal, localcontext
 import json
-import math
 import sys
 from urllib.parse import urlsplit
 from urllib.request import ProxyHandler, Request, build_opener
@@ -11,32 +9,14 @@ from urllib.request import ProxyHandler, Request, build_opener
 from . import PROTOCOL_VERSION
 from .config import finite_number, loads, nonempty_string, read_config
 
-
-def validate_reward(low, high, k):
-    for name, value in (("low", low), ("high", high), ("k", k)):
-        finite_number(value, name)
-    if high <= low or k <= 0:
-        raise ValueError("Reward requires high > low and k > 0")
-
-
-def sigmoid(affinity, low=4.0, high=10.0, k=0.5):
-    validate_reward(low, high, k)
-    finite_number(affinity, "affinity")
-    # Decimal also avoids overflow/underflow of high-low for finite float extremes.
-    with localcontext() as context:
-        context.prec = 50
-        p, lo, hi, slope = (Decimal(str(v)) for v in (affinity, low, high, k))
-        logit = 10 * slope * ((p - lo) / (hi - lo) - Decimal("0.5")) * Decimal(str(math.log(10)))
-        x = float(max(Decimal(-745), min(Decimal(745), logit)))
-    if x >= 0:
-        return 1.0 / (1.0 + math.exp(-x))
-    exp_x = math.exp(x)
-    return exp_x / (1.0 + exp_x)
+# Finite placeholder for REINVENT's numeric endpoint; the configured increasing
+# sigmoid maps it to exactly 0.0 while planet_affinity remains null.
+INVALID_AFFINITY_SENTINEL = -1_000_000.0
 
 
 def client_config(path):
     cfg = read_config(path)
-    allowed = {"url", "target_id", "oracle_id", "timeout", "low", "high", "k"}
+    allowed = {"url", "target_id", "oracle_id", "timeout"}
     if cfg.keys() - allowed:
         raise ValueError(f"Unknown client configuration: {sorted(cfg.keys() - allowed)}")
     for key in ("url", "target_id", "oracle_id"):
@@ -48,9 +28,6 @@ def client_config(path):
     cfg["timeout"] = finite_number(cfg.get("timeout", 120), "timeout")
     if cfg["timeout"] <= 0:
         raise ValueError("timeout must be positive")
-    for name, default in (("low", 4.0), ("high", 10.0), ("k", 0.5)):
-        cfg.setdefault(name, default)
-    validate_reward(cfg["low"], cfg["high"], cfg["k"])
     return cfg
 
 
@@ -91,10 +68,13 @@ def score(smiles, cfg):
     # Loopback traffic must not be redirected through environment-configured proxies.
     with build_opener(ProxyHandler({})).open(request, timeout=cfg["timeout"]) as response:
         rows = validate_response(loads(response.read()), len(smiles), cfg)
-    reward = [sigmoid(row["affinity"], cfg["low"], cfg["high"], cfg["k"])
-              if row["status"] == "ok" else 0.0 for row in rows]
     return {"version": PROTOCOL_VERSION, "payload": {
-        "planet_reward": reward,
+        # REINVENT requires one finite numeric value per row before applying its transform.
+        # Preserve the true nullable affinity separately for reporting and provenance.
+        "planet_affinity_for_scoring": [
+            row["affinity"] if row["status"] == "ok" else INVALID_AFFINITY_SENTINEL
+            for row in rows
+        ],
         "planet_affinity": [row["affinity"] for row in rows],
         "planet_status": [row["status"] for row in rows],
         "planet_error": [row["error"] or "" for row in rows],

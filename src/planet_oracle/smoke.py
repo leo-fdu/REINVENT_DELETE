@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import threading
 
-from .client import score
+from .client import INVALID_AFFINITY_SENTINEL, score
 from .config import server_config
 from .server import Oracle, make_server
 
@@ -69,15 +69,15 @@ def main():
         worker = threading.Thread(target=server.serve_forever, daemon=True)
         worker.start()
         client = {"url": f"http://127.0.0.1:{server.server_port}", "target_id": cfg["target_id"],
-                  "oracle_id": predictor.oracle_id, "timeout": 120, "low": 4, "high": 10, "k": 0.5}
+                  "oracle_id": predictor.oracle_id, "timeout": 120}
         try:
             first = score(smiles, client)["payload"]
             second = score(smiles, client)["payload"]
             singleton = [score([smi], client)["payload"]["planet_affinity"][0] for smi in smiles]
             mixed = score([smiles[0], "invalid", "", "C.C", "C*", smiles[0]], client)["payload"]
-            assert score([], client)["payload"]["planet_reward"] == []
+            assert score([], client)["payload"]["planet_affinity_for_scoring"] == []
             assert mixed["planet_status"] == ["ok"] + ["invalid_input"] * 4 + ["ok"]
-            assert mixed["planet_reward"][1:5] == [0.0] * 4
+            assert mixed["planet_affinity_for_scoring"][1:5] == [INVALID_AFFINITY_SENTINEL] * 4
             assert mixed["planet_affinity"][1:5] == [None] * 4
         finally:
             server.shutdown()
@@ -85,7 +85,7 @@ def main():
     for values in (first["planet_affinity"], second["planet_affinity"], singleton):
         np.testing.assert_allclose(values, reference, atol=1e-4, rtol=1e-4)
     assert identities == (id(predictor.model), id(predictor.pocket), id(predictor.res_features))
-    # Closed listener must fail, never synthesize a reward.
+    # Closed listener must fail, never synthesize a scoring affinity.
     try:
         score(smiles, client)
     except OSError:

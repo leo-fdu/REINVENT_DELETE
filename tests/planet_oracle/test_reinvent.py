@@ -19,6 +19,7 @@ from reinvent.utils import config_parse
 from reinvent.utils.helpers import get_tokens_from_vocabulary
 from reinvent.validation import ReinventConfig
 from reinvent_plugins.components.comp_external_process import ExternalProcess, Parameters
+from planet_oracle.client import INVALID_AFFINITY_SENTINEL
 
 PROJECT = Path(__file__).resolve().parents[2]
 CONFIGS = PROJECT / "configs/planet_oracle"
@@ -39,7 +40,8 @@ def scoring_config(mode, tmp_path, cfg):
     scoring = config["stage"][0]["scoring"]
     endpoint = scoring["component"][0]["ExternalProcess"]["endpoint"][0]
     assert len(scoring["component"]) == 1 and endpoint["weight"] == 1
-    assert "transform" not in endpoint
+    assert endpoint["params"]["property"] == "planet_affinity_for_scoring"
+    assert endpoint["transform"] == {"type": "sigmoid", "low": 4.0, "high": 10.0, "k": 0.5}
     endpoint["params"].update(executable=sys.executable, args=f"-m planet_oracle.client --config {shlex.quote(str(client))}")
     return scoring, endpoint["params"]
 
@@ -49,7 +51,7 @@ def test_real_external_process(running_oracle, tmp_path):
     _, params = scoring_config("libinvent", tmp_path, cfg)
     component = ExternalProcess(Parameters(**{key: [value] for key, value in params.items()}))
     results = component(["CCO", "invalid", "CCO"])
-    assert results.scores[0].tolist() == [0.5, 0.0, 0.5]
+    assert results.scores[0].tolist() == [7.0, INVALID_AFFINITY_SENTINEL, 7.0]
     assert results.metadata["planet_affinity"] == [7., None, 7.]
     assert results.metadata["planet_status"] == ["ok", "invalid_input", "ok"]
     cfg["oracle_id"] = "wrong"
@@ -138,7 +140,12 @@ def test_scoring_invalid_zero_and_metadata(running_oracle, tmp_path):
     smiles = ["CCO", "C.C"]  # syntactically valid RDKit input rejected by oracle chemistry policy
     results = scorer(smiles, np.ones(2, dtype=bool), np.ones(2, dtype=bool))
     assert results.total_scores.tolist() == [0.5, 0.0]
-    metadata = results.completed_components[0].component_result.fetch_metadata(smiles)
+    component = results.completed_components[0]
+    assert component.transformed_scores[0].tolist() == [0.5, 0.0]
+    assert list(component.component_result.fetch_scores(smiles, transpose=True)[0]) == [
+        7.0, INVALID_AFFINITY_SENTINEL
+    ]
+    metadata = component.component_result.fetch_metadata(smiles)
     # REINVENT stringifies metadata before CSV serialization (the client retains JSON null).
     assert list(metadata["planet_affinity"]) == ["7.0", "None"]
     assert list(metadata["planet_status"]) == ["ok", "invalid_input"]
