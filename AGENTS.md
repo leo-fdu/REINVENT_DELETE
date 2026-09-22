@@ -37,7 +37,19 @@ Experiments should use the same target structures and, as far as possible, equiv
 After completing a coherent unit of work:
 
 1. Check the changes with `git status` / `git diff`.
-2. Commit the changes.
-3. Use a short, descriptive commit message.
+2. Before committing, audit for files that may be generated, local-only, sensitive, or otherwise inappropriate for version control but are not covered by `.gitignore`.
+3. For every possible candidate, report its path, why it may need to be ignored, and the proposed ignore pattern to the user. Ask the user whether the pattern should be added; do not silently add an ignore rule, stage the candidate, or delete it.
+4. After the user decides how to handle any candidates, commit the changes.
+5. Use a short, descriptive commit message.
+
+The pre-commit audit should include:
+
+```bash
+git status --short --untracked-files=all
+git status --short --ignored --untracked-files=all
+git ls-files --others --exclude-standard
+```
+
+Use `git check-ignore -v --no-index -- <path>` to verify whether a specific path is covered by an ignore rule. Review both the root `.gitignore` and the `.gitignore` files belonging to the `Delete` and `REINVENT4` submodules. Do not use broad rules that could hide raw inputs, configurations, reproducible scripts, or intentionally versioned results without the user's decision.
 
 Do not leave completed work uncommitted.

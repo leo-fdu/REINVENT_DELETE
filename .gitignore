@@ -1,0 +1,38 @@
+# Operating-system metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor and temporary files
+.vscode/
+.idea/
+*~
+*.swp
+*.swo
+
+# Python caches and test/coverage output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Python build and packaging output
+build/
+dist/
+*.egg-info/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
