@@ -128,7 +128,7 @@ CHEMBL1087194,CHEMBL1087194,CCOC(=O)c1cc2c(N)c3c(nc2nc1C)CCCC3,,6.865,2,6.11,7.6
 CHEMBL1098308,CHEMBL1098308,O=C(CN1CCCCC1)Nc1ccc2nc3c4[nH]c5ccccc5c4ccn3c(=O)c2c1,,8.0,1,8.0,8.0,IC50,B,single protein format,single_protein,9,D,2021,
 CHEMBL109869,CHEMBL109869,CC1=CC2Cc3nc4cccc(F)c4c(N)c3C(C1)C2,,7.45,1,7.45,7.45,IC50,B,assay format,other,8,H,2000,
 CHEMBL60745,CHEMBL1104,CC[N+](C)(C)c1cccc(O)c1,EDROPHONIUM BROMIDE,6.4,7,6.1,8.79,IC50;Ki,B,assay format;single protein format;tissue-based format,mixed,8;9,D;H,1996;1997;1998;2011,4
-CHEMBL812,CHEMBL1115,CN(C)C(=O)Oc1ccc[n+](C)c1,PYRIDOSTIGMINE BROMIDE,6.44,1,6.44,6.44,IC50,B,single protein format,single_protein,9,D,2010,4
+CHEMBL812,CHEMBL1115,CN(C)C(=O)Oc1ccc[n+](C)c1,PYRIDOSTIGMINE BROMIDE,6.4350000000000005,2,6.43,6.44,AC50;IC50,B;F,assay format;single protein format,mixed,8;9,D;H,2010;2023,4
 CHEMBL1127,CHEMBL1127,Nc1c2c(nc3ccccc13)CC(O)CC2,7-HYDROXYTACRINE,6.165,2,6.12,6.21,IC50,B,single protein format,single_protein,8,H,1996,
 CHEMBL114059,CHEMBL114059,Cc1cccc([N+](=O)[O-])c1,,8.4,1,8.4,8.4,IC50,B,single protein format,single_protein,8,H,1992,
 CHEMBL115835,CHEMBL115835,CCCCC1=NC2(CCCC2)C(=O)N1Cc1ccc(-c2ccccc2C(=O)OC(C)(C)C)cc1,,6.57,1,6.57,6.57,IC50,B,single protein format,single_protein,9,D,2007,
@@ -246,6 +246,7 @@ CHEMBL1173624,CHEMBL1200291,CC(C)c1ccc(NC(=O)Oc2ccc3c(c2)[C@]2(C)CC[N+](C)(C)C2N
 CHEMBL3215602,CHEMBL1200296,Oc1c(CNCCCCCCCCCNc2c3c(nc4ccccc24)CCCC3)ccc2cccnc12,,8.26,1,8.26,8.26,IC50,B,single protein format,single_protein,9,D,2010,
 CHEMBL1201196,CHEMBL1201196,Clc1ccc(C(Cn2ccnc2)OCc2csc3c(Cl)cccc23)c(Cl)c1,SERTACONAZOLE,7.0,1,7.0,7.0,IC50,B,single protein format,single_protein,9,D,2024,4
 CHEMBL1201217,CHEMBL1201217,CCCCOc1ccc(C(=O)CCN2CCCCC2)cc1,DYCLONINE,6.74,1,6.74,6.74,IC50,B,single protein format,single_protein,9,D,2018,4
+CHEMBL1201349,CHEMBL1201349,C[N+](C)(CCCCCC[N+](C)(C)C1c2ccccc2-c2ccccc21)C1c2ccccc2-c2ccccc21,HEXAFLUORENIUM,6.77,1,6.77,6.77,AC50,F,assay format,other,8,H,2023,4
 CHEMBL1206,CHEMBL1206,CCN(CC)C(C)CN1c2ccccc2Sc2ccccc21,ETHOPROPAZINE,6.52,3,6.52,6.58,IC50,B,assay format;single protein format,mixed,9,D,2011,4
 CHEMBL596457,CHEMBL1208428,C/C=C1\[C@H]2C=C(C)C[C@]1(/N=C/c1ccccc1OS(=O)(=O)O)c1ccc(=O)[nH]c1C2,,7.39,1,7.39,7.39,IC50,B,single protein format,single_protein,9,D,2009,
 CHEMBL1213295,CHEMBL1213295,O=C(CCCN1C(=O)c2ccccc2C1=O)N1CCCCCC1,,6.3,1,6.3,6.3,IC50,B,single protein format,single_protein,8,H,2010,
@@ -341,6 +342,7 @@ CHEMBL134342,CHEMBL134342,O=C(O)CCCC[C@@H]1CCSS1,THIOCTIC ACID,9.0,1,9.0,9.0,IC5
 CHEMBL1348834,CHEMBL1348834,Clc1ccc(CNC2CCN(Cc3ccccc3)CC2)cc1,,6.07,1,6.07,6.07,IC50,B,single protein format,single_protein,9,D,2019,
 CHEMBL539109,CHEMBL136526,CNC(=O)Oc1ccc2c(c1)[C@]1(C)CC[N+](C)(C)C1N2C,,7.47,3,7.47,7.58,IC50,B,single protein format,single_protein,8;9,D;H,1996;1997;2010,
 CHEMBL137059,CHEMBL137059,CC[N+](C)(CCCCCC(=O)N(C)CCCCCCCCN(C)C(=O)CCCCC[N+](C)(CC)Cc1ccccc1)Cc1ccccc1,,7.43,1,7.43,7.43,IC50,B,assay format,other,8,H,2003,
+CHEMBL1372950,CHEMBL1372950,CO[C@]12C[C@@H](COC(=O)c3cncc(Br)c3)CN(C)[C@@H]1Cc1cn(C)c3cccc2c13,NICERGOLINE,6.16,1,6.16,6.16,AC50,F,assay format,other,8,H,2023,3
 CHEMBL138107,CHEMBL138107,O=C(Nc1ccc2c(c1)C(=O)N(CCC1CCN(Cc3ccccc3)CC1)C2=O)c1ccccc1,,8.92,1,8.92,8.92,IC50,B,single protein format,single_protein,8,H,2010,
 CHEMBL138442,CHEMBL138442,Nc1cccc2c1C(=O)N(CCC1CCN(Cc3ccccc3)CC1)C2=O,,7.96,1,7.96,7.96,IC50,B,single protein format,single_protein,8,H,2010,
 CHEMBL138552,CHEMBL138552,O=c1[nH]c2cc(Cl)ccc2c(=O)n1CCC1CCN(Cc2ccccc2)CC1,,8.35,1,8.35,8.35,IC50,B,single protein format,single_protein,8,H,2010,
@@ -539,7 +541,7 @@ CHEMBL1784956,CHEMBL1789667,C[C@H](Cc1ccccc1)NC(=O)Oc1cccc([C@H](C)N(C)C)c1,,6.3
 CHEMBL1784958,CHEMBL1789668,C[C@H](Cc1ccccc1)N(C)C(=O)Oc1cccc([C@H](C)N(C)C)c1,,6.52,1,6.52,6.52,IC50,B,single protein format,single_protein,9,D,2009,
 CHEMBL1784955,CHEMBL1789691,C[C@@H](c1cccc(OC(=O)N(C)[C@@H](C)Cc2ccccc2)c1)N(C)C,,6.88,1,6.88,6.88,IC50,B,single protein format,single_protein,9,D,2009,
 CHEMBL1784957,CHEMBL1789758,C[C@@H](Cc1ccccc1)NC(=O)Oc1cccc([C@H](C)N(C)C)c1,,6.29,1,6.29,6.29,IC50,B,single protein format,single_protein,9,D,2009,
-CHEMBL1790041,CHEMBL1790041,CNC(=C[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1,RANITIDINE,6.19,1,6.19,6.19,IC50,B,single protein format,single_protein,8,H,1993,4
+CHEMBL1790041,CHEMBL1790041,CNC(=C[N+](=O)[O-])NCCSCc1ccc(CN(C)C)o1,RANITIDINE,6.105,2,6.02,6.19,AC50;IC50,B;F,assay format;single protein format,mixed,8,H,1993;2023,4
 CHEMBL179192,CHEMBL179192,CC(=O)N(CCCNc1c2c(nc3ccccc13)CCCC2)CCCSc1c2c(nc3ccccc13)CCCC2,,7.87,1,7.87,7.87,Ki,B,single protein format,single_protein,9,D,2008,
 CHEMBL179455,CHEMBL179455,Nc1ccc2c(c1)c(-c1ccccc1)[n+](CCCNCCCNCCCNc1c3c(nc4ccccc14)CCCC3)c1cc(N)ccc21,,8.83,3,8.81,8.83,IC50;Ki,B,single protein format,single_protein,8,H,2005;2010,
 CHEMBL179824,CHEMBL179824,COc1cc2c(cc1OC)C(=O)C(Oc1ccc(CN3CCOCC3)cc1)C2,,6.29,1,6.29,6.29,Ki,B,single protein format,single_protein,9,D,2013,
@@ -888,7 +890,7 @@ CHEMBL274107,CHEMBL274107,CNC(=O)Oc1cccc2c1OC[C@@H]1CCN(C)[C@H]21,,7.53,3,7.13,7
 CHEMBL275537,CHEMBL275537,CN(C)Cc1ccc(CSCCCSCc2ccc(CN(C)C)o2)o1,,6.48,1,6.48,6.48,IC50,B,single protein format,single_protein,8,H,1992,
 CHEMBL276444,CHEMBL276444,CCN(CCCCCCNC1=CC(=O)C(NCCCCCCN(CC)Cc2ccco2)=CC1=O)Cc1ccco1,,6.84,1,6.84,6.84,IC50,B,single protein format,single_protein,9,D,2007,
 CHEMBL277984,CHEMBL277984,O=[N+]([O-])OCCNCCCCNc1c2c(nc3ccccc13)CCCC2,,7.96,1,7.96,7.96,IC50,B,single protein format,single_protein,8,H,2008,
-CHEMBL54126,CHEMBL278020,CN(C)C(=O)Oc1cccc([N+](C)(C)C)c1,NEOSTIGMINE BROMIDE,7.385,12,6.22,10.37,IC50,B,cell-based format;single protein format,mixed,8;9,D;H,1993;1996;2002;2006;2007;2008;2009;2010,4
+CHEMBL54126,CHEMBL278020,CN(C)C(=O)Oc1cccc([N+](C)(C)C)c1,NEOSTIGMINE BROMIDE,7.365,14,6.22,10.37,AC50;IC50,B;F,assay format;cell-based format;single protein format,mixed,8;9,D;H,1993;1996;2002;2006;2007;2008;2009;2010;2023,4
 CHEMBL278342,CHEMBL278342,COc1ccc(-c2cc3c(c(=O)o2)C[C@]2(O)[C@@]4(C)C(=O)C=CC(C)(C)[C@]4(O)CC[C@@]2(C)O3)cc1,,7.58,1,7.58,7.58,IC50,B,single protein format,single_protein,9,D,2000,
 CHEMBL278963,CHEMBL278963,O=C(CCCCC1CCSS1)NCCCCCCNc1c2c(nc3ccccc13)CCCC2,,7.52,1,7.52,7.52,IC50,B,single protein format,single_protein,9,D,2005,
 CHEMBL28,CHEMBL28,O=c1cc(-c2ccc(O)cc2)oc2cc(O)cc(O)c12,APIGENIN,7.92,1,7.92,7.92,IC50,B,single protein format,single_protein,9,D,2013,
@@ -1080,6 +1082,7 @@ CHEMBL3335048,CHEMBL3335048,O=c1oc2cc(OCCCN3CCN(Cc4ccccc4)CC3)ccc2c2c1CCCC2,,6.0
 CHEMBL3335050,CHEMBL3335050,CN(CCCCOc1ccc2c3c(c(=O)oc2c1)CCCC3)Cc1ccccc1,,6.0,1,6.0,6.0,IC50,B,single protein format,single_protein,9,D,2014,
 CHEMBL3335060,CHEMBL3335060,O=c1oc2cc(OCCN3CCN(Cc4ccccc4)CC3)ccc2c2ccccc12,,6.05,1,6.05,6.05,IC50,B,single protein format,single_protein,9,D,2014,
 CHEMBL3335066,CHEMBL3335066,O=c1oc2cc(OCCCN3CCN(Cc4ccccc4)CC3)ccc2c2ccccc12,,6.1,1,6.1,6.1,IC50,B,single protein format,single_protein,9,D,2014,
+CHEMBL333826,CHEMBL333826,Cc1cc(N)c2ccccc2[n+]1CCCCCCCCCC[n+]1c(C)cc(N)c2ccccc21,DEQUALINIUM,7.58,1,7.58,7.58,AC50,F,assay format,other,8,H,2023,4
 CHEMBL3338386,CHEMBL3338386,C/C=C1\[C@H]2C=C(C)C[C@]1(N[C@H]1OC(=O)C3=C4CC(C)(C)C[C@H]4[C@@H](C)[C@@H](O)C[C@]31OC)c1ccc(=O)[nH]c1C2,,6.0,1,6.0,6.0,IC50,B,single protein format,single_protein,9,D,2014,
 CHEMBL3338388,CHEMBL3338388,C/C=C1\[C@H]2C=C(C)C[C@]1(NC1OCC3=C4CC(C)(C)C[C@H]4[C@@H](C)[C@H](O)CC31O)c1ccc(=O)[nH]c1C2,,6.96,1,6.96,6.96,IC50,B,single protein format,single_protein,9,D,2014,
 CHEMBL3338389,CHEMBL3338389,C/C=C1\[C@H]2C=C(C)C[C@]1(NC1OCC3=C4CC(C)(C)[C@H](O)[C@H]4[C@@H](C)CCC31O)c1ccc(=O)[nH]c1C2,,7.22,1,7.22,7.22,IC50,B,single protein format,single_protein,9,D,2014,
@@ -1886,6 +1889,7 @@ CHEMBL430679,CHEMBL430679,CN(CCOCCNC(=S)NC(=O)c1cccc([N+](=O)[O-])c1)Cc1ccccc1,,
 CHEMBL431058,CHEMBL431058,COc1ccc(C(=O)NC(=S)NCCOCCN(C)Cc2ccccc2)cc1,,7.58,1,7.58,7.58,IC50,B,single protein format,single_protein,8,H,2010,
 CHEMBL431519,CHEMBL431519,CN1CC[C@@]2(C)c3cc(OC(=O)NCCCCCCCCCCN4CCOCC4)ccc3N(C)[C@@H]12,,7.4,1,7.4,7.4,IC50,B,single protein format,single_protein,9,D,1995,
 CHEMBL431784,CHEMBL431784,CNC(=O)Oc1ccc2c(c1)[C@]1(C)CCN(C)C1N2,,7.25,1,7.25,7.25,IC50,B,assay format,other,9,D,1997,
+CHEMBL43184,CHEMBL43184,Nc1c2ccccc2nc2ccccc12,AMINACRINE,6.73,1,6.73,6.73,AC50,F,assay format,other,8,H,2023,2
 CHEMBL431844,CHEMBL431844,Nc1c2c(nc3ccccc13)C1CCC2C1,,7.0600000000000005,2,6.62,7.5,IC50,B,single protein format,single_protein,8;9,D;H,1992;2010,
 CHEMBL432376,CHEMBL432376,COc1cc2cc(C(=O)CCC3CC[N+](C)(Cc4ccccc4)CC3)n(C)c2cc1OC,,6.92,2,6.92,6.92,IC50;Ki,B,single protein format,single_protein,8;9,D;H,2002;2004,
 CHEMBL433041,CHEMBL433041,CCCCCCCNC(=O)Oc1ccc2c(c1)[C@]1(C)CCN(C)[C@@H]1N2C,EPTASTIGMINE,7.33,8,6.54,8.3,IC50;Ki,B,assay format;single protein format,mixed,8;9,D;H,1992;1995;1996;2002;2011;2022,2
@@ -2334,7 +2338,7 @@ CHEMBL491360,CHEMBL491360,CCOC(=O)C1=C(C)Nc2nc3c(c(N)c2C1c1ccncc1)CCCC3,,6.65,1,
 CHEMBL491561,CHEMBL491561,CCOC(=O)C1=C(C)Nc2nc3c(c(N)c2C1c1ccccc1C(F)(F)F)CCCC3,,6.65,1,6.65,6.65,IC50,B,single protein format,single_protein,9,D,2009,
 CHEMBL499224,CHEMBL499224,OCCN(CCCCNc1c2c(nc3ccccc13)CCCC2)CCCNc1c2c(nc3ccccc13)CCCC2,,9.92,1,9.92,9.92,Ki,B,single protein format,single_protein,9,D,2008,
 CHEMBL501587,CHEMBL501587,CC(=O)N(CCCCNc1c2c(nc3ccccc13)CCCC2)CCCSc1c2c(nc3ccccc13)CCCC2,,7.615,2,7.55,7.68,Ki,B,single protein format,single_protein,9,D,2008,
-CHEMBL502,CHEMBL502,COc1cc2c(cc1OC)C(=O)C(CC1CCN(Cc3ccccc3)CC1)C2,DONEPEZIL,7.69,53,6.66,8.7,EC50;IC50;Kd;Ki,B;F,assay format;cell-based format;cell-free format;single protein format;tissue-based format,mixed,8;9,D;H,1992;1994;1999;2001;2002;2003;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024,4
+CHEMBL502,CHEMBL502,COc1cc2c(cc1OC)C(=O)C(CC1CCN(Cc3ccccc3)CC1)C2,DONEPEZIL,7.69,55,6.66,8.7,AC50;EC50;IC50;Kd;Ki,B;F,assay format;cell-based format;cell-free format;single protein format;tissue-based format,mixed,8;9,D;H,1992;1994;1999;2001;2002;2003;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024,4
 CHEMBL502244,CHEMBL502244,CC(C)(C)OC(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCCNc1c2c(nc3ccccc13)CCCC2,,6.89,1,6.89,6.89,Ki,B,single protein format,single_protein,9,D,2008,
 CHEMBL4845734,CHEMBL5027935,Cc1ccc2c(N)c3c(nc2c1)CCCCC3,,6.98,1,6.98,6.98,IC50,B,single protein format,single_protein,9,D,2021,
 CHEMBL4857969,CHEMBL5028046,Cc1ccc2c(N)c3c(nc2c1)CCC3,,6.46,1,6.46,6.46,IC50,B,single protein format,single_protein,9,D,2021,
@@ -2827,7 +2831,7 @@ CHEMBL64633,CHEMBL64633,CCCCCCNC(=O)Oc1ccc2c(c1)C1(C)CCN(CC)C2C1,,6.88,1,6.88,6.
 CHEMBL65018,CHEMBL65018,CN1CC[C@@]2(C)c3cc(OC(=O)NCCCCCCCCN4CCOCC4)ccc3N(C)[C@@H]12,,7.1,1,7.1,7.1,IC50,B,single protein format,single_protein,9,D,1995,
 CHEMBL65356,CHEMBL65356,CN1CC[C@@]2(C)c3cc(OC(=O)NCCCCCCN4CCOCC4)ccc3N(C)[C@@H]12,,6.03,1,6.03,6.03,IC50,B,single protein format,single_protein,9,D,1995,
 CHEMBL65585,CHEMBL65585,CN1CC[C@@]2(C)c3cc(OC(=O)NCCCCCCCCCCCCN4CCOCC4)ccc3N(C)[C@@H]12,,7.16,1,7.16,7.16,IC50,B,single protein format,single_protein,9,D,1995,
-CHEMBL659,CHEMBL659,COc1ccc2c3c1O[C@H]1C[C@@H](O)C=C[C@@]31CCN(C)C2,GALANTAMINE,6.3,15,6.01,7.21,IC50;Ki,B,single protein format,single_protein,8;9,D;H,1996;2000;2002;2006;2008;2010;2012;2014;2015;2021,4
+CHEMBL659,CHEMBL659,COc1ccc2c3c1O[C@H]1C[C@@H](O)C=C[C@@]31CCN(C)C2,GALANTAMINE,6.28,17,6.01,7.21,AC50;IC50;Ki,B;F,assay format;single protein format,mixed,8;9,D;H,1996;2000;2002;2006;2008;2010;2012;2014;2015;2021;2023,4
 CHEMBL66309,CHEMBL66309,CN1CC[C@@]2(C)c3cc(OC(=O)NCCCCCCCN4CCOCC4)ccc3N(C)[C@@H]12,,6.42,1,6.42,6.42,IC50,B,single protein format,single_protein,9,D,1995,
 CHEMBL709,CHEMBL709,COc1cc2nc(N(C)CCCNC(=O)C3CCCO3)nc(N)c2cc1OC,ALFUZOSIN,7.75,1,7.75,7.75,IC50,B,single protein format,single_protein,9,D,2018,4
 CHEMBL71740,CHEMBL71740,CCCCCCCCc1noc(/C(=N/O)SCCN(CC)CC)n1,,6.0,1,6.0,6.0,IC50,F,assay format,other,8,H,1986,
@@ -2860,6 +2864,7 @@ CHEMBL75127,CHEMBL75127,O=C(CCC1CCN(Cc2ccccc2F)CC1)c1ccc2c(c1)NCCCC2,,6.48,1,6.4
 CHEMBL75157,CHEMBL75157,O=C(CCC1CCN(Cc2ccccc2)CC1)c1ccc2c(c1)CCCCN2,,6.9,1,6.9,6.9,IC50,B,single protein format,single_protein,8,H,2010,
 CHEMBL75274,CHEMBL75274,c1ccc2c(NCCCCCCCCNc3c4c(nc5ccccc35)CCCC4)c3c(nc2c1)CCCC3,,8.8,1,8.8,8.8,IC50,B,single protein format,single_protein,8,H,2010,
 CHEMBL75305,CHEMBL75305,c1cnc2nc3c(c(NCCCCCCNc4c5c(nc6ncccc46)CCCC5)c2c1)CCCC3,,8.32,1,8.32,8.32,IC50,B,single protein format,single_protein,8,H,2010,
+CHEMBL7568,CHEMBL7568,CCN(CC)CCCC(C)Nc1c2ccc(Cl)cc2nc2ccc(OC)cc12,QUINACRINE,6.03,1,6.03,6.03,AC50,F,assay format,other,8,H,2023,4
 CHEMBL75729,CHEMBL75729,CNC(=O)Oc1ccc2c(c1)[C@]1(C)CCN(CCc3ccccc3)[C@@H]1N2C,,6.74,2,6.66,6.82,IC50,B,single protein format;tissue-based format,mixed,9,D,1990,
 CHEMBL75985,CHEMBL75985,c1cnc2nc3c(c(NCCCCCCCCNc4c5c(nc6ncccc46)CCCC5)c2c1)CCCC3,,8.72,1,8.72,8.72,IC50,B,single protein format,single_protein,8,H,2010,
 CHEMBL76014,CHEMBL76014,c1ccc2c(NCCCCCCCNc3c4c(nc5ccccc35)CCC4)c3c(nc2c1)CCC3,,7.12,1,7.12,7.12,IC50,B,single protein format,single_protein,8,H,2010,
@@ -2916,10 +2921,10 @@ CHEMBL93123,CHEMBL93123,O=C(Nc1ccc2c(CCC3CCN(Cc4ccccc4)CC3)noc2c1)c1ccccc1,,8.03
 CHEMBL93241,CHEMBL93241,c1ccc(CN2CCC(CCCc3noc4ccccc34)CC2)cc1,,6.05,3,6.05,8.05,IC50;Ki,B,assay format;single protein format,mixed,8;9,D;H,1994;2004,
 CHEMBL93619,CHEMBL93619,COc1cccc2c(CCC3CCN(Cc4ccccc4)CC3)noc12,,8.15,2,8.15,8.15,IC50;Ki,B,assay format;single protein format,mixed,8;9,D;H,1994;2004,
 CHEMBL93936,CHEMBL93936,c1ccc(CN2CCC(CCc3noc4cc(N5CCOCC5)ccc34)CC2)cc1,,9.1,2,9.1,9.1,IC50;Ki,B,assay format;single protein format,mixed,8;9,D;H,1994;2004,
-CHEMBL94,CHEMBL94,CNC(=O)Oc1ccc2c(c1)[C@]1(C)CCN(C)[C@@H]1N2C,PHYSOSTIGMINE,7.33,27,6.27,9.37,IC50,B,assay format;cell-based format;single protein format;tissue-based format,mixed,8;9,D;H,1990;1991;1992;1994;1996;1997;1998;2001;2002;2004;2006;2012;2013;2016;2018;2020;2021;2022,3
+CHEMBL94,CHEMBL94,CNC(=O)Oc1ccc2c(c1)[C@]1(C)CCN(C)[C@@H]1N2C,PHYSOSTIGMINE,7.24,29,6.27,9.37,AC50;IC50,B;F,assay format;cell-based format;single protein format;tissue-based format,mixed,8;9,D;H,1990;1991;1992;1994;1996;1997;1998;2001;2002;2004;2006;2012;2013;2016;2018;2020;2021;2022;2023,3
 CHEMBL94054,CHEMBL94054,Cc1cc(-c2ccccc2)n[nH]c1=NCCC1CCN(Cc2ccccc2)CC1,,6.5,1,6.5,6.5,IC50,B,single protein format,single_protein,8,H,2010,
 CHEMBL94186,CHEMBL94186,COc1ccc2onc(CCC3CCN(Cc4ccccc4)CC3)c2c1,,8.14,2,8.14,8.14,IC50;Ki,B,assay format;single protein format,mixed,8;9,D;H,1994;2004,
-CHEMBL95,CHEMBL95,Nc1c2c(nc3ccccc13)CCCC2,TACRINE,6.9,60,6.03,8.5,IC50;Ki,B,assay format;cell-based format;single protein format,mixed,8;9,D;H,1991;1992;1994;1995;1996;1997;1998;1999;2000;2001;2002;2003;2004;2005;2006;2007;2008;2009;2010;2011;2012;2013;2014;2016;2017;2018;2019;2020;2022,4
+CHEMBL95,CHEMBL95,Nc1c2c(nc3ccccc13)CCCC2,TACRINE,6.885,62,6.03,8.5,AC50;IC50;Ki,B;F,assay format;cell-based format;single protein format,mixed,8;9,D;H,1991;1992;1994;1995;1996;1997;1998;1999;2000;2001;2002;2003;2004;2005;2006;2007;2008;2009;2010;2011;2012;2013;2014;2016;2017;2018;2019;2020;2022;2023,4
 CHEMBL95020,CHEMBL95020,O=C1Cc2c(ccc3c(CCC4CCN(Cc5ccccc5)CC4)noc23)N1,,8.44,2,8.44,8.44,IC50;Ki,B,assay format;single protein format,mixed,8;9,D;H,1995;2004,
 CHEMBL96246,CHEMBL96246,C(=C\C1CCN(Cc2ccccc2)CC1)\c1noc2ccccc12,,6.68,1,6.68,6.68,IC50,B,assay format,other,8,H,1994,
 CHEMBL99581,CHEMBL99581,CNC(=O)Oc1ccc2c(c1)[C@]1(C)CCN(C)C1N2C=O,,6.41,1,6.41,6.41,IC50,B,assay format,other,9,D,1997,

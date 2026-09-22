@@ -24,8 +24,15 @@ DEFAULT_PROPS_FILE = "chembl_compound_properties.csv"
 DEFAULT_SUMMARY_NAME = "chembl_chemspace_summary.csv"
 DEFAULT_PCHEMBL_THRESHOLD = 6.0
 
-ACTIVE_STANDARD_TYPES = ("IC50", "Ki", "Kd", "EC50")
+ACTIVE_STANDARD_TYPES = ("IC50", "Ki", "Kd", "EC50", "AC50", "XC50")
 ACTIVE_ASSAY_TYPES = ("B", "F")
+
+# Green lane: CYP3A4 is a drug-metabolizing enzyme, so most of its ChEMBL records
+# are tagged assay_type=A (ADME / DDI liability). Those measurements report the same
+# pocket interaction as B/F records (99.6% of A rows and 99.9% of B/F rows carry
+# "CYP3A4/P450/microsome" in assay_description), so A is only a curation label here.
+# For the other 15 targets, A-type rows are misclassified pharmacology and stay excluded.
+ADME_ASSAY_TARGETS = {"cp3a4"}
 PATHOGEN_PATTERN = re.compile(
     r"neisseria|mycobacterium|pneumocystis|plasmodium|bacterial|fungal|candida|cryptosporidium",
     re.IGNORECASE,
@@ -58,17 +65,19 @@ def filter_active_rows(frame: pd.DataFrame, target_dir: str, threshold: float) -
     filtered["standard_flag"] = pd.to_numeric(filtered["standard_flag"], errors="coerce")
     filtered["potential_duplicate"] = pd.to_numeric(filtered["potential_duplicate"], errors="coerce")
 
+    assay_types = ACTIVE_ASSAY_TYPES
+    if target_dir in ADME_ASSAY_TARGETS:
+        assay_types = ACTIVE_ASSAY_TYPES + ("A",)
+
     mask = (
         filtered["standard_type"].isin(ACTIVE_STANDARD_TYPES)
         & (filtered["standard_relation"] == "=")
         & (filtered["pchembl_value"] >= threshold)
         & (filtered["standard_flag"] == 1)
         & (filtered["potential_duplicate"] == 0)
-        & (filtered["assay_type"].isin(ACTIVE_ASSAY_TYPES))
+        & (filtered["assay_type"].isin(assay_types))
         & filtered["data_validity_comment"].isna()
     )
-    if target_dir == "cp3a4":
-        mask &= filtered["assay_type"] != "A"
     if target_dir == "dyr":
         descriptions = filtered["assay_description"].fillna("")
         mask &= ~descriptions.str.contains(PATHOGEN_PATTERN)

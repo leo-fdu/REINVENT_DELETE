@@ -569,7 +569,7 @@ CHEMBL188897,CHEMBL188897,Nc1nc(N2CCN(Cc3ccccc3)CC2)nc2nc(-c3ccco3)nn12,,7.69,1,
 CHEMBL189192,CHEMBL189192,Cn1nc(C(F)(F)F)c(CN2CCN(c3nc(N)n4nc(-c5ccco5)nc4n3)CC2)c1Cl,,7.0,1,7.0,7.0,Ki,B,single protein format,single_protein,9,D,2004,
 CHEMBL1355736,CHEMBL190,Cn1c(=O)c2[nH]cnc2n(C)c1=O,THEOPHYLLINE,9.22,1,9.22,9.22,Ki,B,cell-based format,cell_based,9,D,2005,4
 CHEMBL191809,CHEMBL191809,COc1ccc(Cl)cc1CNc1ncnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O,,6.4,1,6.4,6.4,Ki,B,cell-based format,cell_based,9,D,2005,
-CHEMBL192,CHEMBL192,CCCc1nn(C)c2c(=O)[nH]c(-c3cc(S(=O)(=O)N4CCN(C)CC4)ccc3OCC)nc12,SILDENAFIL,6.7,3,6.6,6.85,IC50;Ki,B,cell membrane format;cell-based format,cell_based,8;9,D;H,2012,4
+CHEMBL192,CHEMBL192,CCCc1nn(C)c2c(=O)[nH]c(-c3cc(S(=O)(=O)N4CCN(C)CC4)ccc3OCC)nc12,SILDENAFIL,6.65,4,6.36,6.85,AC50;IC50;Ki,B,cell membrane format;cell-based format;single protein format,mixed,8;9,D;H,2012;2023,4
 CHEMBL1927422,CHEMBL1927422,CC(C)(C)OC(=O)N1CCN(c2nc(N)n3nc(-c4ccco4)nc3n2)CC1,,7.68,1,7.68,7.68,Ki,B,cell-based format,cell_based,9,D,2011,
 CHEMBL1927423,CHEMBL1927423,Nc1nc(N2CCCC2)nc2nc(-c3ccco3)nn12,,7.23,1,7.23,7.23,Ki,B,cell-based format,cell_based,9,D,2011,
 CHEMBL1927426,CHEMBL1927426,CC(C)(C)OC(=O)NCCNc1nc(N)n2nc(-c3ccco3)nc2n1,,7.39,1,7.39,7.39,Ki,B,cell-based format,cell_based,9,D,2011,
@@ -2530,6 +2530,7 @@ CHEMBL4167557,CHEMBL4167557,Nc1nc(NCCc2ccco2)nc2sc(-c3ccco3)nc12,,8.53,3,8.37,8.
 CHEMBL4167813,CHEMBL4167813,Nc1nc(NCc2ccccn2)nc2sc(-c3ccco3)nc12,,9.17,3,8.89,9.38,IC50;Ki,B;F,cell-based format,cell_based,9,D,2018,
 CHEMBL4168016,CHEMBL4168016,Nc1nc(NCc2cccs2)nc2sc(-c3cccs3)nc12,,7.88,3,7.75,8.0,IC50;Ki,B;F,cell-based format,cell_based,9,D,2018,
 CHEMBL4168980,CHEMBL4168980,COc1ccccc1CNc1nc(N)c2nc(-c3ccc(C)o3)sc2n1,,7.7,1,7.7,7.7,Ki,B,cell-based format,cell_based,9,D,2018,
+CHEMBL416956,CHEMBL416956,OC(c1cc(C(F)(F)F)nc2c(C(F)(F)F)cccc12)C1CCCCN1,MEFLOQUINE,6.65,3,6.31,6.68,AC50,B,single protein format,single_protein,8,H,2023,4
 CHEMBL4170180,CHEMBL4170180,Cn1c(-c2cccc(Cl)c2)nc2c(NC3CCCC3)ncnc21,,6.57,1,6.57,6.57,Ki,B,cell-based format,cell_based,9,D,2018,
 CHEMBL4170850,CHEMBL4170850,Cc1cccc(-c2nc3c(NC4CCCC4)ncnc3n2C)c1,,6.35,1,6.35,6.35,Ki,B,cell-based format,cell_based,9,D,2018,
 CHEMBL4171919,CHEMBL4171919,CCn1c(-c2ccccc2)nc2c(NC3CCC3)ncnc21,,6.42,1,6.42,6.42,Ki,B,cell-based format,cell_based,9,D,2018,
@@ -2678,7 +2679,7 @@ CHEMBL430227,CHEMBL430227,c1ccc(CCNc2nc3ccccc3n3nc(-c4ccco4)nc23)cc1,,7.29,1,7.2
 CHEMBL430230,CHEMBL430230,N#Cc1c(-c2ccccc2)nc(NC(=O)c2ccc(Cl)cc2)nc1-c1ccccc1,,7.48,1,7.48,7.48,Ki,B,cell-based format,cell_based,9,D,2008,
 CHEMBL4279740,CHEMBL4303054,CC1(C)C(/C=C/C=C/C=C2/N(CCCS(=O)(=O)O)c3ccc(S(=O)(=O)O)cc3C2(C)CCCCCC(=O)NCCNC(=O)COc2ccc(CCCn3ncc4c3nc(N)n3nc(-c5ccco5)nc43)cc2)=[N+](CCCS(=O)(=O)O)c2ccc(S(=O)(=O)[O-])cc21,,6.48,1,6.48,6.48,Ki,B,cell-based format,cell_based,9,D,2017,
 CHEMBL431733,CHEMBL431733,CNC(=O)[C@H]1O[C@@H](n2cnc3c(NCc4cccc(I)c4)nc(Cl)nc32)[C@H](O)[C@@H]1O,NAMODENOSON,6.375,2,6.35,6.4,Ki,B,assay format;cell-based format,cell_based,8;9,D;H,2004;2005,3
-CHEMBL431770,CHEMBL431770,CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O,ISTRADEFYLLINE,7.380000000000001,8,6.7,8.66,Ki,B;F,assay format;cell-based format;single protein format,mixed,9,D,2005;2008;2009;2010;2011;2013,4
+CHEMBL431770,CHEMBL431770,CCn1c(=O)c2c(nc(/C=C/c3ccc(OC)c(OC)c3)n2C)n(CC)c1=O,ISTRADEFYLLINE,7.32,9,6.7,8.66,AC50;Ki,B;F,assay format;cell-based format;single protein format,mixed,8;9,D;H,2005;2008;2009;2010;2011;2013;2023,4
 CHEMBL432624,CHEMBL432624,Cc1ccc(-c2nc3c(N)cc(C(=O)N4CCCC4)cn3n2)o1,,7.12,1,7.12,7.12,Ki,B,single protein format,single_protein,8,H,2004,
 CHEMBL433162,CHEMBL433162,Nc1cc(C(=O)N2CCCC2)cn2nc(-c3cccs3)nc12,,6.71,1,6.71,6.71,Ki,B,single protein format,single_protein,8,H,2004,
 CHEMBL434377,CHEMBL434377,Nc1nc(OCCc2c[nH]c3cccc(Br)c23)nc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O,,7.4,1,7.4,7.4,Ki,B,cell-based format,cell_based,9,D,2007,

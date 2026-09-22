@@ -75,6 +75,7 @@ CHEMBL116547,CHEMBL116547,COc1cc(/C=C(\C#N)C(=O)c2ccc(O)c(O)c2)cc(CSCc2ccccc2)c1
 CHEMBL116595,CHEMBL116595,COc1cc(/C=C(\C#N)C(N)=O)cc(CSc2ccccc2)c1O,,6.35,2,6.3,6.4,IC50,B,single protein format,single_protein,8,H,1992;1993,
 CHEMBL116853,CHEMBL116853,COc1cc2ncc(C#N)c(Nc3cccc(Br)c3)c2cc1NC(=O)C#CCN(C)C,,7.05,1,7.05,7.05,IC50,B,single protein format,single_protein,8,H,2003,
 CHEMBL1171792,CHEMBL1171792,Cc1ccc(Br)c2c(C#N)cc(C(=O)C3CC3)n12,,7.07,1,7.07,7.07,IC50,B,cell-based format,cell_based,9,D,2010,
+CHEMBL1171837,CHEMBL1171837,Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1C#Cc1cnc2cccnn12,PONATINIB,7.66,1,7.66,7.66,AC50,F,assay format,other,8,H,2023,4
 CHEMBL1172773,CHEMBL1172773,C=CC(=O)Nc1ccc(-c2c(-c3ccccc3)oc3ncnc(N[C@H](CO)c4ccccc4)c23)cc1,,7.09,1,7.09,7.09,IC50,B,assay format,other,8,H,2010,
 CHEMBL1172781,CHEMBL1172781,OC[C@@H](Nc1ncnc2oc(-c3ccccc3)c(-c3ccccc3)c12)c1ccccc1,,6.65,3,6.41,7.28,IC50,B,assay format;cell-based format,cell_based,8;9,D;H,2010;2013,
 CHEMBL1172843,CHEMBL1172843,C=CC(=O)Nc1cccc(-c2c(-c3ccccc3)oc3ncnc(N[C@H](CO)c4ccccc4)c23)c1,,7.7,3,7.55,8.15,IC50,B,assay format;protein format;single protein format,mixed,8;9,D;H,2010;2019,
@@ -293,7 +294,7 @@ CHEMBL139044,CHEMBL139044,C=C/C=C/C(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1,,8.265,2,7
 CHEMBL139095,CHEMBL139095,C=CS(=O)(=O)Nc1cc2c(Nc3cccc(Br)c3)ncnc2cn1,,8.87,2,8.62,9.12,IC50,B,cell-based format;single protein format,mixed,8,H,2001,
 CHEMBL139307,CHEMBL139307,C=CC(=O)N(CCCN1CCOCC1)c1ccc2ncnc(Nc3cccc(Br)c3)c2c1,,7.595000000000001,2,6.71,8.48,IC50,B,cell-based format;single protein format,mixed,8,H,2001,
 CHEMBL140561,CHEMBL140561,CN(C)CCCOC(=O)/C=C/C(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1,,6.97,3,6.97,8.62,IC50,B,cell-based format;single protein format,mixed,8;9,D;H,2001,
-CHEMBL5416410,CHEMBL1421,Cc1nc(Nc2ncc(C(=O)Nc3c(C)cccc3Cl)s2)cc(N2CCN(CCO)CC2)n1,DASATINIB,6.8,15,6.17,7.7,IC50;Kd,B,cell-based format;single protein format,mixed,8;9,D;H,2004;2008;2009;2024,4
+CHEMBL5416410,CHEMBL1421,Cc1nc(Nc2ncc(C(=O)Nc3c(C)cccc3Cl)s2)cc(N2CCN(CCO)CC2)n1,DASATINIB,6.845,16,6.17,7.7,AC50;IC50;Kd,B;F,assay format;cell-based format;single protein format,mixed,8;9,D;H,2004;2008;2009;2023;2024,4
 CHEMBL14326,CHEMBL14326,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1S,,6.0,1,6.0,6.0,Kd,B,cell-based format,cell_based,9,D,1997,
 CHEMBL144589,CHEMBL144589,N#C/C(=C\c1ccc(O)c(O)c1)C(=O)NCCCCNC(=O)/C(C#N)=C/c1ccc(O)c(O)c1,,6.22,1,6.22,6.22,IC50,B,single protein format,single_protein,8,H,1996,
 CHEMBL144760,CHEMBL144760,N#C/C(=C\c1ccc(O)c(O)c1)C(=O)NCCCCCCNC(=O)/C(C#N)=C/c1ccc(O)c(O)c1,,6.16,1,6.16,6.16,IC50,B,single protein format,single_protein,8,H,1996,
@@ -1198,7 +1199,7 @@ CHEMBL248116,CHEMBL248116,NC1CCN(Cc2ccn3ncnc(Nc4ccc(OCc5ccccn5)c(Cl)c4)c23)CC1,,
 CHEMBL248220,CHEMBL248220,COc1cc2ncc(C#N)c(N[C@@H]3C[C@H]3c3ccccc3)c2cc1OCc1ccccc1,,6.92,1,6.92,6.92,Ki,B,single protein format,single_protein,9,D,2007,
 CHEMBL248221,CHEMBL248221,COc1cc2ncc(C#N)c(N[C@@H]3C[C@H]3c3ccccc3)c2cc1OCCCN1CCOCC1,,7.28,1,7.28,7.28,Ki,B,single protein format,single_protein,9,D,2007,
 CHEMBL248222,CHEMBL248222,COc1cc2ncc(C#N)c(N[C@@H]3C[C@H]3c3ccccc3)c2cc1OCCCc1cccnc1,,7.17,2,7.17,7.17,IC50;Ki,B,cell-based format;single protein format,mixed,9,D,2007,
-CHEMBL24828,CHEMBL24828,COc1cc2/c(=N/c3ccc(Br)cc3F)nc[nH]c2cc1OCC1CCN(C)CC1,VANDETANIB,7.609999999999999,28,6.07,8.32,IC50;Kd,B;F,assay format;cell-based format;single protein format,mixed,8;9,D;H,2002;2005;2007;2008;2011;2014;2017;2019;2021;2023,4
+CHEMBL24828,CHEMBL24828,COc1cc2/c(=N/c3ccc(Br)cc3F)nc[nH]c2cc1OCC1CCN(C)CC1,VANDETANIB,7.7,29,6.07,8.32,AC50;IC50;Kd,B;F,assay format;cell-based format;single protein format,mixed,8;9,D;H,2002;2005;2007;2008;2011;2014;2017;2019;2021;2023,4
 CHEMBL248321,CHEMBL248321,NC1CCN(Cc2ccn3ncnc(Nc4ccc(OCc5cnccn5)c(Cl)c4)c23)CC1,,7.5,1,7.5,7.5,IC50,B,cell-based format,cell_based,9,D,2007,
 CHEMBL248322,CHEMBL248322,NC1CCN(Cc2ccn3ncnc(Nc4ccc(OCc5cccc[n+]5[O-])c(Cl)c4)c23)CC1,,7.16,1,7.16,7.16,IC50,B,cell-based format,cell_based,9,D,2007,
 CHEMBL248391,CHEMBL248391,COc1cc2c(N[C@@H]3C[C@H]3c3ccccc3)c(C#N)cnc2cc1OCCCc1cccnc1,,6.71,2,6.66,6.76,IC50;Ki,B,cell-based format;single protein format,mixed,9,D,2007,
@@ -1712,7 +1713,7 @@ CHEMBL3353405,CHEMBL3353405,C=CC(=O)Nc1cc(Nc2ncc(Cl)c(-c3cnn4ccccc34)n2)c(OC)cc1
 CHEMBL3353406,CHEMBL3353406,C=CC(=O)Nc1cc(Nc2ncc(C#N)c(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C,,6.05,3,6.0,7.6,IC50,B,cell-based format;single protein format,mixed,9,D,2014;2019,
 CHEMBL3353408,CHEMBL3353408,C=CC(=O)Nc1cc(Nc2ncc(Cl)c(-c3c[nH]c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C,,6.46,2,6.22,6.7,IC50,B,cell-based format,cell_based,9,D,2014,
 CHEMBL3353409,CHEMBL3353409,C=CC(=O)Nc1cc(Nc2ncc(C)c(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C,,6.0,1,6.0,6.0,IC50,B,cell-based format,cell_based,9,D,2014,
-CHEMBL3353410,CHEMBL3353410,C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C,OSIMERTINIB,7.89,99,6.04,10.7,EC50;IC50;Kd;Ki,B,assay format;cell-based format;protein format;single protein format;subcellular format,mixed,9,D,2015;2016;2017;2018;2019;2020;2021;2022;2023;2024,4
+CHEMBL3353410,CHEMBL3353410,C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C,OSIMERTINIB,7.904999999999999,100,6.04,10.7,AC50;EC50;IC50;Kd;Ki,B;F,assay format;cell-based format;protein format;single protein format;subcellular format,mixed,8;9,D;H,2015;2016;2017;2018;2019;2020;2021;2022;2023;2024,4
 CHEMBL3353411,CHEMBL3353411,C=CC(=O)Nc1cc(Nc2nccc(-c3c[nH]c4ccccc34)n2)c(OC)cc1N(C)CCN(C)C,,7.48,1,7.48,7.48,IC50,B,cell-based format,cell_based,9,D,2016,
 CHEMBL3353412,CHEMBL3353412,C=CC(=O)Nc1cc(Nc2nccc(-c3cn(C)c4ccccc34)n2)c(OC)cc1N(C)CCNC,,6.52,3,6.11,6.52,IC50,B,cell-based format,cell_based,9,D,2016;2019,
 CHEMBL3354183,CHEMBL3354183,Cc1cc(Nc2cc(NC(=O)c3c(Cl)cccc3Cl)ccn2)nc(N[C@@H](C)CO)n1,,7.66,3,7.0,8.05,Ki,B,protein format;single protein format,mixed,9,D,2014,
@@ -8225,7 +8226,7 @@ CHEMBL93635,CHEMBL93635,O=[N+]([O-])c1ccc2c(Nc3cccc(Cl)c3)ncnc2c1,,6.09,1,6.09,6
 CHEMBL93734,CHEMBL93734,CC(=O)Nc1cc2ncnc(Nc3cccc(Br)c3)c2cc1[N+](=O)[O-],,7.55,1,7.55,7.55,IC50,B,cell-based format,cell_based,8,H,1996,
 CHEMBL93783,CHEMBL93783,CN(C/C=C/C(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1)CCO,,7.85,1,7.85,7.85,IC50,B,single protein format,single_protein,8,H,2001,
 CHEMBL93784,CHEMBL93784,COCC1CCCN1CC#CC(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1,,7.19,1,7.19,7.19,IC50,B,single protein format,single_protein,8,H,2001,
-CHEMBL939,CHEMBL939,COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1,GEFITINIB,8.08,100,6.03,10.0,EC50;IC50;Kd;Ki,B;F,assay format;cell membrane format;cell-based format;protein format;single protein format;subcellular format,mixed,8;9,D;H,2001;2002;2004;2005;2006;2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024,4
+CHEMBL939,CHEMBL939,COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1,GEFITINIB,8.1,101,6.03,10.0,AC50;EC50;IC50;Kd;Ki,B;F,assay format;cell membrane format;cell-based format;protein format;single protein format;subcellular format,mixed,8;9,D;H,2001;2002;2004;2005;2006;2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024,4
 CHEMBL93966,CHEMBL93966,Nc1ccc2c(Nc3cccc(F)c3)ncnc2c1,,8.7,1,8.7,8.7,IC50,B,cell-based format,cell_based,8,H,1996,
 CHEMBL94019,CHEMBL94019,COc1cc2ncnc(NC3CCc4ccccc43)c2cc1OC,,6.04,1,6.04,6.04,IC50,B,cell-based format,cell_based,8,H,1997,
 CHEMBL94061,CHEMBL94061,CN(C)C/C=C/C(=O)Nc1ccc2ncnc(Nc3cccc(Br)c3)c2c1,,8.0,5,7.96,9.66,IC50,B,cell-based format;single protein format,mixed,8;9,D;H,2001;2005;2008,
