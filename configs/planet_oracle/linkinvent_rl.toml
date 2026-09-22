@@ -1,0 +1,44 @@
+# Wiring example only; replace /srv paths before running on Linux.
+run_type = "staged_learning"
+device = "cuda:0"
+seed = 42
+tb_logdir = "/srv/runs/planet-demo/linkinvent/tensorboard"
+json_out_config = "/srv/runs/planet-demo/linkinvent/resolved.json"
+
+[parameters]
+prior_file = "/srv/REINVENT_DELETE/REINVENT4/priors/linkinvent_transformer_pubchem.prior"
+agent_file = "/srv/REINVENT_DELETE/REINVENT4/priors/linkinvent_transformer_pubchem.prior"
+smiles_file = "/srv/REINVENT_DELETE/configs/planet_oracle/linkinvent.smi"
+summary_csv_prefix = "/srv/runs/planet-demo/linkinvent/summary"
+use_checkpoint = false
+purge_memories = false
+batch_size = 16
+randomize_smiles = true
+isomeric_smiles = true
+
+[learning_strategy]
+type = "dap"
+sigma = 128
+rate = 0.0001
+
+[[stage]]
+chkpt_file = "/srv/runs/planet-demo/linkinvent/agent.chkpt"
+termination = "simple"
+max_score = 1.0
+min_steps = 5
+max_steps = 5
+
+[stage.scoring]
+type = "arithmetic_mean"
+parallel = 1
+use_pumas = false
+
+[[stage.scoring.component]]
+[stage.scoring.component.ExternalProcess]
+[[stage.scoring.component.ExternalProcess.endpoint]]
+name = "PLANET reward"
+weight = 1.0
+params.executable = "/srv/envs/reinvent4/bin/python"
+params.args = "-m planet_oracle.client --config /srv/runs/planet-demo/client.json"
+params.property = "planet_reward"
+# No transform: reward normalization happens in the client.

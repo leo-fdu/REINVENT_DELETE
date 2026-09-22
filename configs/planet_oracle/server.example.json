@@ -1,0 +1,11 @@
+{
+  "target_id": "example_target",
+  "planet_root": "/srv/REINVENT_DELETE/PLANET",
+  "checkpoint": "/srv/REINVENT_DELETE/PLANET/PLANET.param",
+  "protein_pdb": "/srv/REINVENT_DELETE/PLANET/demo/adrb2.pdb",
+  "ligand_sdf": "/srv/REINVENT_DELETE/PLANET/demo/adrb2_ligand.sdf",
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}
