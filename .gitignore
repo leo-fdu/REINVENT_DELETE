@@ -39,3 +39,8 @@ dist/
 
 # Third-party tools (installed locally / synced to the server; not versioned here)
 PLANET/
+
+# Large ChEMBL extracts regenerable via src/fetch_chembl_sql.py / build_chemspace_ref.py
+real-world_dataset/*/chembl_*/activities_raw.csv
+real-world_dataset/*/chembl_*/actives.sdf
+real-world_dataset/chembl_compound_properties.csv

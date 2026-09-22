@@ -1,0 +1,18 @@
+target_dir,species,target_chembl_id,tid,target_pref_name,uniprot_accession,pdb_id,chembl_organism,struct_organism,note
+aa2ar,human,CHEMBL251,252,Adenosine receptor A2a,P29274,3EML,Homo sapiens,Homo sapiens,
+abl1,human,CHEMBL1862,8,Tyrosine-protein kinase ABL1,P00519,2HZI,Homo sapiens,Homo sapiens,
+aces,torpedo,CHEMBL4780,10437,Acetylcholinesterase,P04058,1E66,Torpedo californica,Torpedo californica,crystal species
+aces,human,CHEMBL220,93,Acetylcholinesterase,P22303,1E66,Homo sapiens,Torpedo californica,pharmacology species
+adrb1,human,CHEMBL213,50,Beta-1 adrenergic receptor,P08588,2VT4,Homo sapiens,Meleagris gallopavo,structure is turkey ortholog
+akt1,human,CHEMBL4282,12666,RAC-alpha serine/threonine-protein kinase,P31749,4GV1,Homo sapiens,Homo sapiens,
+cdk2,human,CHEMBL301,11678,Cyclin-dependent kinase 2,P24941,1H00,Homo sapiens,Homo sapiens,
+cp3a4,human,CHEMBL340,17045,Cytochrome P450 3A4,P08684,3NXU,Homo sapiens,Homo sapiens,exclude assay_type A
+dpp4,human,CHEMBL284,11140,Dipeptidyl peptidase 4,P27487,2I78,Homo sapiens,Homo sapiens,
+drd3,human,CHEMBL234,130,D(3) dopamine receptor,P35462,3PBL,Homo sapiens,Homo sapiens,
+dyr,human,CHEMBL202,6,Dihydrofolate reductase,P00374,3NXO,Homo sapiens,Homo sapiens,filter pathogen assay descriptions
+egfr,human,CHEMBL203,9,Epidermal growth factor receptor,P00533,2RGP,Homo sapiens,Homo sapiens,
+gria2,human,CHEMBL4016,11221,Glutamate receptor 2,P42262,3KGC,Homo sapiens,Homo sapiens,small sample
+jak2,human,CHEMBL2971,10938,Tyrosine-protein kinase JAK2,O60674,3LPB,Homo sapiens,Homo sapiens,
+kif11,human,CHEMBL4581,100166,Kinesin-like protein KIF11,P52732,3CJO,Homo sapiens,Homo sapiens,
+parp1,human,CHEMBL3105,11663,Poly [ADP-ribose] polymerase 1,P09874,3L3M,Homo sapiens,Homo sapiens,
+ppara,human,CHEMBL239,163,Peroxisome proliferator-activated receptor alpha,Q07869,2P54,Homo sapiens,Homo sapiens,
