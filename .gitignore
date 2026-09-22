@@ -36,3 +36,6 @@ dist/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+# Third-party tools (installed locally / synced to the server; not versioned here)
+PLANET/
