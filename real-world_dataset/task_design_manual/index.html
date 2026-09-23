@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>手动设计 LibINVENT / LinkINVENT 任务</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div><p class="eyebrow">REINVENT4 · 16 targets</p><h1>手动任务设计</h1></div>
+    <div class="record-area"><span id="progress">0 / 32 项完成</span><button id="record" type="button">记录全部设计</button></div>
+  </header>
+  <div class="layout">
+    <aside>
+      <h2>靶点</h2>
+      <p class="aside-hint">每个靶点需分别完成两种任务。</p>
+      <nav id="targets" aria-label="选择靶点"></nav>
+    </aside>
+    <main>
+      <div class="intro">
+        <div><p class="eyebrow" id="source">原始配体</p><h2 id="target-title">载入中…</h2></div>
+        <p class="hint">点击结构中的非环单键选为切割键；再次点击可取消。数字是原始 MOL2 原子 ID。</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="任务类型">
+        <button type="button" data-mode="libinvent" class="active">LibINVENT · 1 条键</button>
+        <button type="button" data-mode="linkinvent">LinkINVENT · 2 条键</button>
+      </div>
+      <div class="workbench">
+        <section class="molecule-panel">
+          <div class="section-title"><h3>选择切割键</h3><span id="cut-count">0 / 1</span></div>
+          <div id="molecule" aria-label="可点击切割键的配体二维结构"></div>
+          <p id="cut-list" class="cut-list">尚未选择切割键</p>
+        </section>
+        <section class="selection-panel">
+          <div class="section-title"><h3>选择保留组分</h3><span id="keep-count">0 / 1</span></div>
+          <p id="task-hint" class="hint"></p>
+          <div id="components"></div>
+          <label class="note-label" for="note">设计备注（可选）</label>
+          <textarea id="note" rows="4" maxlength="4000" placeholder="记录你选择切分位置和保留结构的理由"></textarea>
+        </section>
+      </div>
+      <div id="message" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+</body>
+</html>
