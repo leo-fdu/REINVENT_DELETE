@@ -363,7 +363,7 @@ def make_docs(rows,models):
 运行方式（从仓库根目录；需已安装 RDKit、PyTorch、Pillow 和 REINVENT4 依赖）：
 
 ```bash
-/opt/homebrew/Caskroom/miniforge/base/envs/reinvent4/bin/python real-world_dataset/task_design_2d/render_designs.py
+/opt/homebrew/Caskroom/miniforge/base/envs/reinvent4/bin/python real-world_dataset/task_design_astra/render_designs.py
 ```
 
 字体路径 `FONT` 为本机 Arial Unicode；其他机器可改为支持中文的字体。脚本只重写本文件夹内的展示文件，所有候选模型输入字符串仅在内存中用于校验。
