@@ -33,6 +33,8 @@ def test_all_atlas_examples_and_distinct_records(tmp_path):
     snapshot = design.build_snapshot(selections)
     assert len(snapshot["targets"]) == 16
     assert all(len(item["tasks"]) == 2 for item in snapshot["targets"].values())
+    assert snapshot["schema_version"] == 2
+    assert snapshot["status_counts"]["designed"] == 32
     assert snapshot["targets"]["dyr"]["tasks"]["linkinvent"]["validation"]["stereochemistry_match"] is False
     assert all(task["validation"]["connectivity_match"]
                for item in snapshot["targets"].values() for task in item["tasks"].values())
@@ -59,11 +61,35 @@ def test_invalid_cut_and_component_are_rejected():
         design.build_task("aa2ar", "libinvent", selections["aa2ar"]["libinvent"], design.models()["libinvent"])
 
 
-def test_record_requires_all_tasks():
+def test_partial_record_preserves_skipped_incomplete_and_empty_tasks(tmp_path):
     selections = atlas_examples()
-    del selections["aa2ar"]["linkinvent"]
-    with pytest.raises(ValueError, match="同时包含"):
-        design.build_snapshot(selections)
+    partial = {
+        "aa2ar": {
+            "libinvent": selections["aa2ar"]["libinvent"],
+            "linkinvent": {"skip": True, "note": "没有合适的两个保留端"},
+        },
+        "abl1": {"libinvent": {"cuts": selections["abl1"]["libinvent"]["cuts"], "note": "待选择保留端"}},
+    }
+    snapshot = design.build_snapshot(partial)
+    assert snapshot["status_counts"] == {
+        "designed": 1, "skipped": 1, "incomplete": 1, "not_started": 29,
+    }
+    assert snapshot["targets"]["aa2ar"]["tasks"]["linkinvent"]["note"] == "没有合适的两个保留端"
+    assert snapshot["targets"]["abl1"]["tasks"]["libinvent"]["cuts"]
+    assert snapshot["targets"]["ppara"]["tasks"]["linkinvent"]["status"] == "not_started"
+    folder = design.save_snapshot(partial, tmp_path)
+    assert len(list((folder / "figures").glob("*.svg"))) == 32
+    html = (folder / "index.html").read_text()
+    assert "跳过" in html and "未完成" in html and "尚未开始" in html
+
+
+def test_empty_record_is_allowed_and_bad_finished_task_is_rejected(tmp_path):
+    assert design.build_snapshot({})["status_counts"]["not_started"] == 32
+    selections = atlas_examples()
+    selections["aa2ar"]["libinvent"]["retained"] = [[1]]
+    with pytest.raises(ValueError, match="不一致"):
+        design.save_snapshot({"aa2ar": {"libinvent": selections["aa2ar"]["libinvent"]}}, tmp_path)
+    assert not list(tmp_path.iterdir())
 
 
 def test_interactive_svg_contains_clickable_bonds():

@@ -274,6 +274,7 @@ def build_task(target: str, mode: str, spec: object, prior: dict) -> dict:
     if not isinstance(note, str) or len(note) > 4000:
         raise ValueError("备注须为不超过 4000 字的文本")
     return {
+        "status": "designed",
         "cuts": [list(cut) for cut in cuts],
         "retained": [fragment_info(f, include_svg=False) for f in ordered_kept],
         "generated_reference": fragment_info(generated, include_svg=False),
@@ -286,19 +287,48 @@ def build_task(target: str, mode: str, spec: object, prior: dict) -> dict:
     }
 
 
+def task_record(target: str, mode: str, spec: object) -> dict:
+    if not isinstance(spec, dict):
+        raise ValueError(f"{target} {mode} 的任务设计必须是对象")
+    note = spec.get("note", "")
+    if not isinstance(note, str) or len(note) > 4000:
+        raise ValueError(f"{target} {mode} 的备注须为不超过 4000 字的文本")
+    skipped = spec.get("skip", False)
+    if type(skipped) is not bool:
+        raise ValueError(f"{target} {mode} 的跳过标记必须是布尔值")
+    cuts = cuts_for(target, mode, spec.get("cuts", []), complete=False)
+    raw_retained = spec.get("retained", [])
+    required = 1 if mode == "libinvent" else 2
+    if not isinstance(raw_retained, list) or len(raw_retained) > required:
+        raise ValueError(f"{target} {mode} 的保留组分数量无效")
+    fragments = fragments_for(target, cuts)
+    if fragments and len(fragments) != len(cuts) + 1:
+        raise ValueError(f"{target} {mode} 切割后未得到预期数量的组分")
+    retained = _chosen_fragments(fragments, raw_retained, len(raw_retained))
+    if any(len(atlas.dummies(fragment)) != 1 for fragment in retained):
+        raise ValueError(f"{target} {mode} 的保留组分必须各有一个连接点")
+    if not skipped and len(cuts) == required and len(retained) == required:
+        return build_task(target, mode, spec, models()[mode])
+    status = "skipped" if skipped else "incomplete" if cuts or retained or note else "not_started"
+    return {
+        "status": status,
+        "cuts": [list(cut) for cut in cuts],
+        "retained": [sorted(atlas.ids(fragment)) for fragment in retained],
+        "note": note,
+    }
+
+
 def build_snapshot(raw: object) -> dict:
-    if not isinstance(raw, dict) or set(raw) != set(atlas.CODES):
-        missing = sorted(set(atlas.CODES) - set(raw)) if isinstance(raw, dict) else list(atlas.CODES)
-        raise ValueError(f"必须包含全部 16 个靶点；缺少：{', '.join(missing)}")
-    prior_models = models()
+    if not isinstance(raw, dict) or set(raw) - set(atlas.CODES):
+        raise ValueError("设计数据必须是对象，且只能包含本项目的 16 个靶点")
     targets = {}
     for target in atlas.CODES:
         source = atlas.ROOT / "real-world_dataset" / target / "crystal.mol2"
         if hashlib.sha256(source.read_bytes()).hexdigest() != atlas.RAW_SHA256[target]:
             raise ValueError(f"{target} 原始 MOL2 已改变；请重启界面并重新核对设计")
-        tasks = raw[target]
-        if not isinstance(tasks, dict) or set(tasks) != set(MODES):
-            raise ValueError(f"{target} 必须同时包含 LibINVENT 和 LinkINVENT")
+        tasks = raw.get(target, {})
+        if not isinstance(tasks, dict) or set(tasks) - set(MODES):
+            raise ValueError(f"{target} 的任务数据必须只包含 LibINVENT/LinkINVENT")
         targets[target] = {
             "pdb": atlas.PDB[target],
             "ccd": atlas.CODES[target],
@@ -306,16 +336,22 @@ def build_snapshot(raw: object) -> dict:
             "source_sha256": atlas.RAW_SHA256[target],
             "reference_ligand_smiles": atlas.smi(ligand(target)),
             "tasks": {
-                mode: build_task(target, mode, tasks[mode], prior_models[mode]) for mode in MODES
+                mode: task_record(target, mode, tasks.get(mode, {})) for mode in MODES
             },
         }
     now = datetime.now(ZoneInfo("Asia/Shanghai"))
+    counts = {
+        status: sum(task["status"] == status for info in targets.values() for task in info["tasks"].values())
+        for status in ("designed", "skipped", "incomplete", "not_started")
+    }
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "created_at": now.isoformat(timespec="microseconds"),
         "source": "manual bond and retained-component selection",
         "rdkit_version": rdBase.rdkitVersion,
-        "model_ids": {mode: prior_models[mode]["metadata"]["model_id"] for mode in MODES},
+        "model_ids": ({mode: models()[mode]["metadata"]["model_id"] for mode in MODES}
+                      if counts["designed"] else {}),
+        "status_counts": counts,
         "targets": targets,
     }
 
@@ -327,17 +363,23 @@ def report_html(snapshot: dict) -> str:
         for mode, label in (("libinvent", "LibINVENT"), ("linkinvent", "LinkINVENT")):
             task = info["tasks"][mode]
             cuts = ", ".join(f"{a}—{b}" for a, b in task["cuts"])
-            retained = "; ".join(
-                ", ".join(map(str, frag["atom_ids"])) for frag in task["retained"]
-            )
-            stereo = "一致" if task["validation"]["stereochemistry_match"] else "不一致，需审阅"
+            status_label = {"designed": "已设计", "skipped": "跳过", "incomplete": "未完成", "not_started": "尚未开始"}[task["status"]]
+            if task["status"] == "designed":
+                retained = "; ".join(", ".join(map(str, frag["atom_ids"])) for frag in task["retained"])
+                stereo = "一致" if task["validation"]["stereochemistry_match"] else "不一致，需审阅"
+                details = (
+                    f'<dt>保留原子 ID</dt><dd>{retained}</dd>'
+                    f'<dt>待生成原子 ID</dt><dd>{", ".join(map(str, task["generated_reference"]["atom_ids"]))}</dd>'
+                    f'<dt>模型输入 SMILES</dt><dd><code>{escape(task["input_smiles"])}</code></dd>'
+                    f'<dt>参考输出 SMILES</dt><dd><code>{escape(task["reference_output_smiles"])}</code></dd>'
+                    f'<dt>拼接立体化学</dt><dd>{stereo}</dd>'
+                )
+            else:
+                retained = "; ".join(", ".join(map(str, ids)) for ids in task["retained"])
+                details = f'<dt>已选保留原子 ID</dt><dd>{retained or "—"}</dd>'
             tasks.append(
-                f'<section><h3>{label}</h3><img src="figures/{target}_{mode}.svg" alt="{target} {label} 切分图">'
-                f'<dl><dt>切割键</dt><dd>{cuts}</dd><dt>保留原子 ID</dt><dd>{retained}</dd>'
-                f'<dt>待生成原子 ID</dt><dd>{", ".join(map(str, task["generated_reference"]["atom_ids"]))}</dd>'
-                f'<dt>模型输入 SMILES</dt><dd><code>{escape(task["input_smiles"])}</code></dd>'
-                f'<dt>参考输出 SMILES</dt><dd><code>{escape(task["reference_output_smiles"])}</code></dd>'
-                f'<dt>拼接立体化学</dt><dd>{stereo}</dd>'
+                f'<section><h3>{label} · {status_label}</h3><img src="figures/{target}_{mode}.svg" alt="{target} {label} 切分图">'
+                f'<dl><dt>切割键</dt><dd>{cuts or "—"}</dd>{details}'
                 f'<dt>备注</dt><dd>{escape(task["note"]) or "—"}</dd></dl></section>'
             )
         rows.append(
@@ -358,8 +400,9 @@ def report_html(snapshot: dict) -> str:
         'dd{margin:0;overflow-wrap:anywhere}code{font-size:13px}nav{display:flex;flex-wrap:wrap;gap:12px}'
         'a{color:#09639c}@media(max-width:650px){dl{display:block}dt{margin-top:12px}}'
         '</style><header><h1>16 个靶点的手动任务设计</h1>'
-        f'<p>记录时间：{escape(snapshot["created_at"])}。完整数据见 <a href="designs.json">designs.json</a>。'
-        '橙色为参考配体中待生成区域；红色为切割键。图上的数字是原始 MOL2 原子 ID。</p>'
+        f'<p>记录时间：{escape(snapshot["created_at"])}；已设计 {snapshot["status_counts"]["designed"]} 项，'
+        f'跳过 {snapshot["status_counts"]["skipped"]} 项。完整数据见 <a href="designs.json">designs.json</a>。'
+        '已设计任务中橙色为参考配体的待生成区域；红色为切割键。图上的数字是原始 MOL2 原子 ID。</p>'
         f'<nav>{links}</nav></header><main>{"".join(rows)}</main></html>'
     )
 
@@ -370,10 +413,11 @@ def save_snapshot(raw: object, output_root: Path = HERE) -> Path:
     for target, info in snapshot["targets"].items():
         for mode in MODES:
             task = info["tasks"][mode]
-            components = tuple(
-                [set(fragment["atom_ids"]) for fragment in task["retained"]]
-                + [set(task["generated_reference"]["atom_ids"])]
-            )
+            if task["status"] == "designed":
+                components = tuple([set(fragment["atom_ids"]) for fragment in task["retained"]]
+                                   + [set(task["generated_reference"]["atom_ids"])])
+            else:
+                components = tuple(set(ids) for ids in task["retained"])
             figures[f"{target}_{mode}.svg"] = draw_svg(
                 ligand(target),
                 cuts=tuple(tuple(cut) for cut in task["cuts"]),

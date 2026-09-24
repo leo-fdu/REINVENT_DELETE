@@ -5,7 +5,7 @@
 ## 使用前检查
 
 - Python **3.11 或更新版本**，并在同一环境中安装 RDKit、PyTorch、Pillow 及 REINVENT4 所需依赖。依赖安装方式见 `REINVENT4/README.md`；本机已有可用的 `reinvent4` Conda 环境。
-- 仓库根目录下须有可用的 `REINVENT4/` 代码，以及 `REINVENT4/priors/libinvent_transformer_pubchem.prior` 和 `REINVENT4/priors/linkinvent_transformer_pubchem.prior`。启动界面要导入 REINVENT4 代码；点击“记录”还要加载这两个 prior 来检查模型词表和输入长度。
+- 仓库根目录下须有可用的 `REINVENT4/` 代码，以及 `REINVENT4/priors/libinvent_transformer_pubchem.prior` 和 `REINVENT4/priors/linkinvent_transformer_pubchem.prior`。启动界面要导入 REINVENT4 代码；记录已设计的任务时要加载 prior 来检查模型词表和输入长度。
 - `real-world_dataset/` 下的 16 个 `crystal.mol2` 和 `task_design_astra/` 须保留在原位置。程序会按图册记录的 SHA-256 核对原始 MOL2；文件内容变化时需要重新核对设计。
 
 **刚从 GitHub 克隆此仓库的人，需要先补齐 REINVENT4。** 主仓库目前把 `REINVENT4` 记为 Git 子模块引用，却没有 `.gitmodules`，因此普通 `git clone` 不会自动取回其内容。本机所用的两个 prior 是 REINVENT4 中 `8562f4a` 提交新增的文件；推送主仓库不会一并分发该提交或文件。仅克隆官方 REINVENT4 代码也不能保证具备这两个 prior。请从有权使用的来源取得兼容的 REINVENT4 代码与 prior，并放在上述路径；在这些文件齐备前，克隆出的界面不能完整使用。
@@ -45,13 +45,13 @@ Windows 上若在点击“记录”时出现 `ZoneInfoNotFoundError: 'Asia/Shang
 ## 设计与记录
 
 1. 选择靶点和任务。点击二维配体图中的**非环单键**；再次点击可取消。LibINVENT 选 1 条切割键，LinkINVENT 选 2 条。
-2. 点击切出的保留组分。LibINVENT 保留 1 个组分，LinkINVENT 保留 2 个各有一个连接点的端组分。剩余部分是原配体中的参考待生成区域。可以填写选择理由。
+2. 点击切出的保留组分。LibINVENT 保留 1 个组分，LinkINVENT 保留 2 个各有一个连接点的端组分。剩余部分是原配体中的参考待生成区域。可以填写选择理由。不适合设计的任务可勾选“暂不设计此任务”，并在备注中说明原因；取消勾选可以继续编辑。
 3. 界面把未记录的选择保存在**当前浏览器、当前地址**的 `localStorage`。重开同一地址可继续编辑；更换浏览器或端口后不会自动带过去。原 MOL2 哈希变化时旧草稿不会载入。
-4. 全部 16 个靶点的两种任务（共 32 项）完成后，点击“记录全部设计”。后端重新核对所有切分和原子覆盖、连接点、REINVENT4 实际拼接、模型标准化、prior 词表及 180 token 长度。连接图无法恢复时拒绝记录；立体化学不能完全恢复时会在记录中明确标出。
+4. **随时**点击“记录当前设计”，无需完成全部 32 项。记录会逐项标为“已设计”“跳过”“未完成”或“尚未开始”，保留跳过理由和未完成的切割/组分草稿。后端对“已设计”任务核对原子覆盖、连接点、REINVENT4 实际拼接、模型标准化、prior 词表及 180 token 长度；无法通过时会说明原因并拒绝将该项作为已设计任务记录。立体化学不能完全恢复时会在记录中明确标出。
 
 每次成功记录都在 `task_design_manual/` 下创建一个**新的** `YYYY-MM-DDTHH-MM-SS-ffffff+0800/` 文件夹，不覆盖旧记录。文件夹包含：
 
-- `designs.json`：16 个靶点的 32 项完整记录，包括源文件哈希、原 MOL2 原子 ID、切割键、保留和参考待生成组分、SMILES、token 数、验证结果及备注。LinkINVENT 的两个保留端按参考 linker 的出口顺序排列。
+- `designs.json`：列出全部 16 个靶点的 32 个任务槽位及各自状态。已设计任务记录源文件哈希、原 MOL2 原子 ID、切割键、保留和参考待生成组分、SMILES、token 数、验证结果及备注；跳过和未完成任务记录已有选择与备注。LinkINVENT 已设计任务的两个保留端按参考 linker 的出口顺序排列。
 - `index.html`：可单独在浏览器打开的只读汇总报告；它与编辑界面的 `index.html` 用途不同。
 - `figures/<靶点>_<任务>.svg`：32 张切分图，蓝/绿为保留组分，橙色为原配体参考待生成区域，红色为切割键。
 

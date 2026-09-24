@@ -23,7 +23,7 @@ async function api(path, body) {
   return result;
 }
 
-function blankTask() { return {cuts: [], retained: [], note: ""}; }
+function blankTask() { return {cuts: [], retained: [], note: "", skip: false}; }
 function blankDesigns() {
   return Object.fromEntries(targets.map(item => [item.target, {
     libinvent: blankTask(), linkinvent: blankTask()
@@ -51,16 +51,19 @@ function restoreDraft() {
 function completed(item, mode) {
   const entry = designs[item][mode];
   const count = mode === "libinvent" ? 1 : 2;
-  return entry.cuts.length === count && entry.retained.length === count;
+  return !entry.skip && entry.cuts.length === count && entry.retained.length === count;
 }
+function skipped(item, mode) { return Boolean(designs[item][mode].skip); }
 function renderProgress() {
   const count = targets.reduce((sum, item) => sum + MODES.filter(mode => completed(item.target, mode)).length, 0);
-  byId("progress").textContent = `${count} / 32 项完成`;
+  const skippedCount = targets.reduce((sum, item) => sum + MODES.filter(mode => skipped(item.target, mode)).length, 0);
+  byId("progress").textContent = `${count} 已设计 · ${skippedCount} 跳过 · ${32 - count - skippedCount} 未完成`;
   byId("targets").replaceChildren(...targets.map(item => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = item.target === currentTarget ? "active" : "";
-    button.innerHTML = `<span>${item.target.toUpperCase()}</span><span class="marks"><span class="${completed(item.target, "libinvent") ? "done" : ""}">●</span><span class="${completed(item.target, "linkinvent") ? "done" : ""}">●</span></span>`;
+    const mark = mode => completed(item.target, mode) ? "done" : skipped(item.target, mode) ? "skipped" : "";
+    button.innerHTML = `<span>${item.target.toUpperCase()}</span><span class="marks"><span class="${mark("libinvent")}">●</span><span class="${mark("linkinvent")}">●</span></span>`;
     button.addEventListener("click", () => showTarget(item.target));
     return button;
   }));
@@ -98,6 +101,8 @@ async function showMode() {
     ? "选择一条切割键，再点击要固定保留的一个组分；另一组分为参考待生成区域。"
     : "选择两条切割键，再点击要固定保留的两个端组分；剩余组分为参考 linker。保留端 A/B 会按 linker 出口顺序记录。";
   byId("note").value = task().note;
+  byId("skip").checked = Boolean(task().skip);
+  byId("note").placeholder = task().skip ? "可说明为什么不设计此任务" : "记录你选择切分位置和保留结构的理由";
   byId("cut-count").textContent = `${task().cuts.length} / ${needed()}`;
   byId("keep-count").textContent = `${task().retained.length} / ${needed()}`;
   renderCuts();
@@ -115,6 +120,7 @@ function renderCuts() {
 }
 
 function onBondClick(event) {
+  if (task().skip) { message("此任务已标记暂不设计；取消勾选后可继续编辑。", "info"); return; }
   const line = event.target.closest(".bond-hit");
   if (!line || !currentInfo) return;
   const cut = [Number(line.dataset.a), Number(line.dataset.b)];
@@ -164,6 +170,7 @@ async function updatePreview() {
 }
 
 function chooseFragment(fragment, result) {
+  if (task().skip) { message("此任务已标记暂不设计；取消勾选后可继续编辑。", "info"); return; }
   if (!result.complete) return;
   if (fragment.attachment_points !== 1) {
     message("保留端必须只有一个连接点；请选择两侧的端组分。", "error");
@@ -179,14 +186,9 @@ function chooseFragment(fragment, result) {
 }
 
 async function recordAll() {
-  const missing = targets.flatMap(item => MODES.filter(mode => !completed(item.target, mode)).map(mode => `${item.target.toUpperCase()} ${mode}`));
-  if (missing.length) {
-    message(`仍有 ${missing.length} 项未完成：${missing.join("、")}`, "error");
-    return;
-  }
   const button = byId("record");
   button.disabled = true;
-  message("正在核对 32 项设计并生成记录，请稍候…");
+  message("正在核对已设计任务并保存当前状态，请稍候…");
   try {
     const result = await api("/api/record", {designs});
     message(`记录已保存至 ${result.directory}。<a href="${result.report}" target="_blank" rel="noopener">打开报告</a>`, "success", true);
@@ -204,6 +206,12 @@ async function start() {
       showMode();
     }));
     byId("note").addEventListener("input", event => { task().note = event.target.value; saveDraft(); });
+    byId("skip").addEventListener("change", event => {
+      task().skip = event.target.checked;
+      byId("note").placeholder = task().skip ? "可说明为什么不设计此任务" : "记录你选择切分位置和保留结构的理由";
+      saveDraft();
+      message(task().skip ? "此任务将以“跳过”状态记录，当前切分选择仍保留在草稿中。" : "已恢复编辑此任务。", "info");
+    });
     byId("record").addEventListener("click", recordAll);
     await showTarget(targets[0].target);
   } catch (error) { message(error.message, "error"); }
