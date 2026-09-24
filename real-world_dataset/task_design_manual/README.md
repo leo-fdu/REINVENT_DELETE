@@ -1,28 +1,58 @@
 # 手动设计 16 个靶点的 LibINVENT / LinkINVENT 任务
 
-从仓库根目录运行：
+这是一个在自己电脑上运行的网页界面。浏览器用于选择切割键、保留组分和填写备注；本地 Python 服务用 RDKit 切分配体、预览结构，并在点击“记录全部设计”时核对和保存结果。它只记录任务设计，不执行分子生成、对接或 DELETE 实验，也不修改原始配体。
+
+## 使用前检查
+
+- Python **3.11 或更新版本**，并在同一环境中安装 RDKit、PyTorch、Pillow 及 REINVENT4 所需依赖。依赖安装方式见 `REINVENT4/README.md`；本机已有可用的 `reinvent4` Conda 环境。
+- 仓库根目录下须有可用的 `REINVENT4/` 代码，以及 `REINVENT4/priors/libinvent_transformer_pubchem.prior` 和 `REINVENT4/priors/linkinvent_transformer_pubchem.prior`。启动界面要导入 REINVENT4 代码；点击“记录”还要加载这两个 prior 来检查模型词表和输入长度。
+- `real-world_dataset/` 下的 16 个 `crystal.mol2` 和 `task_design_astra/` 须保留在原位置。程序会按图册记录的 SHA-256 核对原始 MOL2；文件内容变化时需要重新核对设计。
+
+**刚从 GitHub 克隆此仓库的人，需要先补齐 REINVENT4。** 主仓库目前把 `REINVENT4` 记为 Git 子模块引用，却没有 `.gitmodules`，因此普通 `git clone` 不会自动取回其内容。本机所用的两个 prior 是 REINVENT4 中 `8562f4a` 提交新增的文件；推送主仓库不会一并分发该提交或文件。仅克隆官方 REINVENT4 代码也不能保证具备这两个 prior。请从有权使用的来源取得兼容的 REINVENT4 代码与 prior，并放在上述路径；在这些文件齐备前，克隆出的界面不能完整使用。
+
+## macOS 启动
+
+打开“终端”，进入**本仓库根目录**并激活已安装依赖的环境：
+
+```bash
+cd /path/to/REINVENT_DELETE
+conda activate reinvent4
+python real-world_dataset/task_design_manual/app.py
+```
+
+本机现有环境也可直接用以下命令启动，无须先激活 Conda：
 
 ```bash
 /opt/homebrew/Caskroom/miniforge/base/envs/reinvent4/bin/python real-world_dataset/task_design_manual/app.py
 ```
 
-在本机浏览器打开 `http://127.0.0.1:8766`。可用 `--port` 改端口。服务只监听 `127.0.0.1`。需要该 REINVENT4 环境中的 RDKit、PyTorch、Pillow 和本仓库的 REINVENT4 代码及 LibINVENT/LinkINVENT prior；无需新增依赖或联网。
+## Windows 启动
 
-## 操作
+打开 **Anaconda PowerShell Prompt**（或已配置 Conda 的 PowerShell），进入**本仓库根目录**：
 
-1. 选择靶点与任务。点击原配体二维图上的非环单键。LibINVENT 选 1 条，LinkINVENT 选 2 条；再次点击可取消。
-2. 切分图出现后，点击要保留的组分。LibINVENT 保留 1 个组分，LinkINVENT 保留 2 个各有一个出口的端组分。其余部分是原配体中的参考待生成区域。
-3. 可写任务设计理由。浏览器会把未记录的选择保存在本机 `localStorage`，重新打开页面可继续编辑。原 MOL2 的哈希变化时旧草稿不会载入。
-4. 32 项全部完成后点击“记录全部设计”。后端重新核对全部选择和模型输入，再在本目录新建时间命名的记录目录。每次点击都创建新目录，已有记录绝不覆盖。
+```powershell
+Set-Location C:\path\to\REINVENT_DELETE
+conda activate reinvent4
+python .\real-world_dataset\task_design_manual\app.py
+```
 
-后端采用 [task_design_astra](../task_design_astra/README.md) 中核对的 16 个参考配体结构及原 MOL2 原子 ID，并在启动时和记录时核对原始文件 SHA-256。原始 MOL2 不会改动。仅接受非环单键切分；要求 LibINVENT 切出两个连续组分、LinkINVENT 切出三个连续组分，并检查保留端与待生成区域的连接点数量、原子覆盖、REINVENT4 实际拼接、模型标准化、prior 词表及 180 token 长度。连接图无法恢复时拒绝记录；立体化学无法完全恢复时，在记录中明确标为不一致。
+Windows 上若在点击“记录”时出现 `ZoneInfoNotFoundError: 'Asia/Shanghai'`，在同一环境中执行 `python -m pip install tzdata`，然后重新启动界面。REINVENT4 的 Windows 支持在其文档中标为测试较少；请先确保该平台上的 REINVENT4 依赖和两个 prior 可正常加载。
 
-## 记录格式
+两种系统启动成功后，终端会显示 `http://127.0.0.1:8766`。在**运行服务的同一台电脑**上用浏览器打开这个地址。保持终端进程运行；按 `Ctrl+C` 停止。关闭进程或重启电脑后，需重新运行启动命令。若 8766 端口被占用，可在命令末尾加 `--port 8767`，并改为打开 `http://127.0.0.1:8767`。
 
-每次记录生成 `YYYY-MM-DDTHH-MM-SS-ffffff+0800/` 目录，包含：
+这是本机地址，不是 GitHub 网页：其他电脑不能通过你的 `127.0.0.1` 访问此服务。直接双击本目录的 `index.html` 也不能使用编辑和记录功能，因为它需要 Python 后端。
 
-- `designs.json`：完整结构化记录。每个靶点有 LibINVENT 和 LinkINVENT 两项，记录源文件哈希、切割键、各组分的原 MOL2 原子 ID、重原子数、连接点数、模型输入 SMILES、参考输出 SMILES、token 数、拼接检查和备注。LinkINVENT 的两个保留端按参考 linker 的出口顺序排列，可直接辨认 `片段A|片段B` 的输入次序。
-- `index.html`：无需服务也能打开的可视化汇总报告。
-- `figures/<靶点>_<任务>.svg`：32 张切分图。蓝/绿为保留部分，橙色为原配体参考待生成部分，红色为切割键，数字为 MOL2 原子 ID。
+## 设计与记录
 
-记录目录只保存在本地，不由 Git 追踪；界面代码、说明和 `.gitignore` 则由 Git 追踪。这里的参考输出来自原配体，仅用于记录与完整性校验，不代表模型实际生成结果、三维结合约束或已验证的药效团。对比 DELETE 时还需从同一原始结构提取相同的原子保留集合和晶体坐标。
+1. 选择靶点和任务。点击二维配体图中的**非环单键**；再次点击可取消。LibINVENT 选 1 条切割键，LinkINVENT 选 2 条。
+2. 点击切出的保留组分。LibINVENT 保留 1 个组分，LinkINVENT 保留 2 个各有一个连接点的端组分。剩余部分是原配体中的参考待生成区域。可以填写选择理由。
+3. 界面把未记录的选择保存在**当前浏览器、当前地址**的 `localStorage`。重开同一地址可继续编辑；更换浏览器或端口后不会自动带过去。原 MOL2 哈希变化时旧草稿不会载入。
+4. 全部 16 个靶点的两种任务（共 32 项）完成后，点击“记录全部设计”。后端重新核对所有切分和原子覆盖、连接点、REINVENT4 实际拼接、模型标准化、prior 词表及 180 token 长度。连接图无法恢复时拒绝记录；立体化学不能完全恢复时会在记录中明确标出。
+
+每次成功记录都在 `task_design_manual/` 下创建一个**新的** `YYYY-MM-DDTHH-MM-SS-ffffff+0800/` 文件夹，不覆盖旧记录。文件夹包含：
+
+- `designs.json`：16 个靶点的 32 项完整记录，包括源文件哈希、原 MOL2 原子 ID、切割键、保留和参考待生成组分、SMILES、token 数、验证结果及备注。LinkINVENT 的两个保留端按参考 linker 的出口顺序排列。
+- `index.html`：可单独在浏览器打开的只读汇总报告；它与编辑界面的 `index.html` 用途不同。
+- `figures/<靶点>_<任务>.svg`：32 张切分图，蓝/绿为保留组分，橙色为原配体参考待生成区域，红色为切割键。
+
+时间记录文件夹由本目录的 `.gitignore` 忽略，**不会随 Git 提交或 push 自动分享**；要交给别人，请自行复制对应的整个时间文件夹。对比 DELETE 时，仍需从同一原始结构提取相同的保留原子集合和晶体坐标。
