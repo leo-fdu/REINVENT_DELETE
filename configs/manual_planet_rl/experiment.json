@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "batch_size": 50,
+  "steps": 200,
+  "sample_strategy": "multinomial",
+  "temperature": 1.0,
+  "learning_strategy": {"type": "dap", "sigma": 128, "rate": 0.0001},
+  "sigmoid": {"low": 4.0, "high": 16.0, "k": 0.25},
+  "penalty_multiplier": 0.5,
+  "planet_batch_size": 32,
+  "request_timeout": 120,
+  "startup_timeout": 600
+}
