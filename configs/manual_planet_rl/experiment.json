@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "seed": 42,
-  "batch_size": 50,
-  "steps": 200,
+  "batch_size": 100,
+  "steps": 100,
   "sample_strategy": "multinomial",
   "temperature": 1.0,
   "learning_strategy": {"type": "dap", "sigma": 128, "rate": 0.0001},

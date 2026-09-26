@@ -12,7 +12,7 @@ aces 两个模式已 skipped）批量运行为只用 PLANET 奖励的 RL 生成�
 
 与 `configs/manual_planet_rl/experiment.json` 一致，正式批量不得逐项改动：
 
-- 每个任务一次运行：batch_size 50 × max_steps 200 = **10000 次采样**，`termination = "null"` 不早停。
+- 每个任务一次运行：batch_size 100 × max_steps 100 = **10000 次采样**，`termination = "null"` 不早停。
 - 唯一评分组件为 PLANET 奖励（weight 1，arithmetic_mean）；原始亲和力经 REINVENT 内置
   sigmoid（low=4，high=16，k=0.25）转换为 0–1 奖励，客户端不做二次归一化。
 - 重复完整分子（同批次内或跨批次）奖励 ×0.5（penalty_multiplier），并照常参与 agent 更新；
