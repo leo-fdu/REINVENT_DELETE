@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Plot per-target density of Tanimoto similarity to the co-crystal ligand.
 
-Reads every ``result/<target>/<target>_tanimoto_similarity.csv`` produced by
+Reads every ``results/<target>/<target>_tanimoto_similarity.csv`` produced by
 ``crystal_actives_similarity.py`` and draws one Gaussian KDE curve per target.
 Each density is normalised to integrate to one, so the y value at a given
 similarity is the fraction of that target's ChEMBL actives per unit
@@ -30,7 +30,7 @@ except ImportError as exc:
     ) from exc
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-DEFAULT_RESULT_ROOT = SCRIPT_DIR.parent / "result"
+DEFAULT_RESULT_ROOT = SCRIPT_DIR.parent / "results"
 DEFAULT_FIGURE_NAME = "tanimoto_similarity_density.png"
 
 SIMILARITY_COLUMN = "tanimoto_similarity"
@@ -114,7 +114,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
         nargs="?",
         type=Path,
         default=DEFAULT_RESULT_ROOT,
-        help="directory with per-target result folders (default: similarity_test/result)",
+        help="directory with per-target result folders (default: similarity_test/results)",
     )
     parser.add_argument(
         "--output",

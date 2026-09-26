@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Summarise per-target Tanimoto similarity distributions.
 
-Reads every ``result/<target>/<target>_tanimoto_similarity.csv`` produced by
+Reads every ``results/<target>/<target>_tanimoto_similarity.csv`` produced by
 ``crystal_actives_similarity.py`` and writes one CSV row per target with the
 mean, median, (sample) variance, maximum, minimum, 90th percentile and 75th
 percentile of the similarities to the co-crystal ligand.
@@ -21,7 +21,7 @@ except ImportError as exc:
     raise SystemExit("This script requires numpy. Install it before running.") from exc
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-DEFAULT_RESULT_ROOT = SCRIPT_DIR.parent / "result"
+DEFAULT_RESULT_ROOT = SCRIPT_DIR.parent / "results"
 DEFAULT_SUMMARY_NAME = "similarity_summary_stats.csv"
 
 SIMILARITY_COLUMN = "tanimoto_similarity"
@@ -93,7 +93,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
         nargs="?",
         type=Path,
         default=DEFAULT_RESULT_ROOT,
-        help="directory with per-target result folders (default: similarity_test/result)",
+        help="directory with per-target result folders (default: similarity_test/results)",
     )
     parser.add_argument(
         "--output",

@@ -9,7 +9,7 @@ For every target in the real-world dataset this script
 3. computes the Morgan fingerprints of all ChEMBL active molecules listed in
    ``chembl_human/actives.csv`` for the same target, and
 4. writes a CSV table with the columns ``chembl_id``, ``smiles`` and
-   ``tanimoto_similarity`` to ``result/<target>/``.
+   ``tanimoto_similarity`` to ``results/<target>/``.
 
 MOL2 cleanup
 ------------
@@ -51,7 +51,7 @@ except ImportError as exc:
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[3]
 DEFAULT_DATASET_ROOT = REPO_ROOT / "real-world_dataset"
-DEFAULT_OUTPUT_ROOT = SCRIPT_DIR.parent / "result"
+DEFAULT_OUTPUT_ROOT = SCRIPT_DIR.parent / "results"
 
 CRYSTAL_FILENAME = "crystal.mol2"
 ACTIVES_FILENAME = Path("chembl_human") / "actives.csv"
@@ -290,7 +290,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
         "--output-root",
         type=Path,
         default=DEFAULT_OUTPUT_ROOT,
-        help="directory for per-target result folders (default: similarity_test/result)",
+        help="directory for per-target result folders (default: similarity_test/results)",
     )
     parser.add_argument(
         "--radius",
