@@ -56,3 +56,19 @@ Windows 上若在点击“记录”时出现 `ZoneInfoNotFoundError: 'Asia/Shang
 - `figures/<靶点>_<任务>.svg`：32 张切分图，蓝/绿为保留组分，橙色为原配体参考待生成区域，红色为切割键。
 
 时间记录文件夹由本目录的 `.gitignore` 忽略，**不会随 Git 提交或 push 自动分享**；要交给别人，请自行复制对应的整个时间文件夹。对比 DELETE 时，仍需从同一原始结构提取相同的保留原子集合和晶体坐标。
+
+## 导出 REINVENT 输入
+
+在仓库根目录执行，明确指定要使用的设计快照和一个不存在的输出目录：
+
+```bash
+python src/export_manual_design.py \
+  --designs real-world_dataset/task_design_manual/2026-09-24T18-37-46-136066+0800/designs.json \
+  --output configs/manual_design
+```
+
+脚本只依赖 Python 标准库，不加载模型或执行生成。它核对原始 MOL2 哈希，逐字导出已设计任务的 `input_smiles`，不更改片段顺序或立体化学。存在未完成任务时拒绝导出；跳过任务仅记录在清单中，不生成输入文件。输出目录已存在时拒绝覆盖。
+
+输出为 `<靶点>/libinvent.smi` 和 `<靶点>/linkinvent.smi`，每个文件只有一行，无表头。LibINVENT 是一个带连接点的保留片段；LinkINVENT 是用 `|` 分隔的两个保留片段。将相应文件路径填入 REINVENT RL 配置的 `parameters.smiles_file`；不要使用 `reference_output_smiles` 作为生成输入。
+
+`manifest.json` 记录源快照路径及 SHA-256、模型 ID、全部任务状态、输入文件相对路径及设计中的连接关系/立体化学标记。输入文件路径相对于此清单所在目录；立体化学标记为 false 的任务仍按原设计导出，不会被静默修改或丢弃。上述快照会导出 30 个输入文件，`aces` 的两个任务保持跳过。

@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "source_designs": "real-world_dataset/task_design_manual/2026-09-24T18-37-46-136066+0800/designs.json",
+  "source_designs_sha256": "d988bd49bdd58109794a6d6a4328c19bdb584f95362350fe293fe9f503b6109f",
+  "source_created_at": "2026-09-24T18:37:46.136066+08:00",
+  "rdkit_version": "2026.03.5",
+  "model_ids": {
+    "libinvent": "7c8e104e81124bafb5f62d14c64ec9f9",
+    "linkinvent": "9ef8cd169df24d58a16ee58b882d20af"
+  },
+  "status_counts": {
+    "designed": 30,
+    "skipped": 2,
+    "incomplete": 0,
+    "not_started": 0
+  },
+  "tasks": [
+    {
+      "target": "aa2ar",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "aa2ar/libinvent.smi",
+      "source_mol2": "real-world_dataset/aa2ar/crystal.mol2",
+      "source_sha256": "fb4f772045e80d15e919fb0cc748f4e13429e73d9b6d284ab203f51233042cc7",
+      "note": "",
+      "input_smiles": "*c1nc(N)n2nc(-c3ccco3)nc2n1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "aa2ar",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "aa2ar/linkinvent.smi",
+      "source_mol2": "real-world_dataset/aa2ar/crystal.mol2",
+      "source_sha256": "fb4f772045e80d15e919fb0cc748f4e13429e73d9b6d284ab203f51233042cc7",
+      "note": "",
+      "input_smiles": "*c1ccc(O)cc1|*c1nc(N)n2nc(-c3ccco3)nc2n1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "abl1",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "abl1/libinvent.smi",
+      "source_mol2": "real-world_dataset/abl1/crystal.mol2",
+      "source_sha256": "351685615a31721c552492a3af427e4e5ac55f50061a67a41917457403efc0e6",
+      "note": "",
+      "input_smiles": "*Nc1ncc2cc(-c3c(Cl)cccc3Cl)c(=O)n(C)c2n1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "abl1",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "abl1/linkinvent.smi",
+      "source_mol2": "real-world_dataset/abl1/crystal.mol2",
+      "source_sha256": "351685615a31721c552492a3af427e4e5ac55f50061a67a41917457403efc0e6",
+      "note": "",
+      "input_smiles": "*c1c(Cl)cccc1Cl|*c1ccc(F)c(C)c1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "aces",
+      "mode": "libinvent",
+      "status": "skipped",
+      "smiles_file": null,
+      "source_mol2": "real-world_dataset/aces/crystal.mol2",
+      "source_sha256": "1703c50c57a2c24592b2e6fb571be4b7aa3bf1604e8d1ebd591b231cbfb2631e",
+      "note": ""
+    },
+    {
+      "target": "aces",
+      "mode": "linkinvent",
+      "status": "skipped",
+      "smiles_file": null,
+      "source_mol2": "real-world_dataset/aces/crystal.mol2",
+      "source_sha256": "1703c50c57a2c24592b2e6fb571be4b7aa3bf1604e8d1ebd591b231cbfb2631e",
+      "note": ""
+    },
+    {
+      "target": "adrb1",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "adrb1/libinvent.smi",
+      "source_mol2": "real-world_dataset/adrb1/crystal.mol2",
+      "source_sha256": "cf21c52fd56a44a837fc25989a185f07d3880e3e158e6a9e08a80c622ad0d0c7",
+      "note": "",
+      "input_smiles": "*c1cccc2c1CC(C#N)=N2",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "adrb1",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "adrb1/linkinvent.smi",
+      "source_mol2": "real-world_dataset/adrb1/crystal.mol2",
+      "source_sha256": "cf21c52fd56a44a837fc25989a185f07d3880e3e158e6a9e08a80c622ad0d0c7",
+      "note": "",
+      "input_smiles": "*C(C)(C)C|*c1cccc2c1CC(C#N)=N2",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "akt1",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "akt1/libinvent.smi",
+      "source_mol2": "real-world_dataset/akt1/crystal.mol2",
+      "source_sha256": "4ad33e8a4308897c232f5b08213a1917a17b29a307c5e7fa6827338a9e6098ae",
+      "note": "",
+      "input_smiles": "*C1(N)CCN(c2ncnc3[nH]ccc23)CC1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "akt1",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "akt1/linkinvent.smi",
+      "source_mol2": "real-world_dataset/akt1/crystal.mol2",
+      "source_sha256": "4ad33e8a4308897c232f5b08213a1917a17b29a307c5e7fa6827338a9e6098ae",
+      "note": "",
+      "input_smiles": "*[C@@H](CCO)c1ccc(Cl)cc1|*c1ncnc2[nH]ccc12",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "cdk2",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "cdk2/libinvent.smi",
+      "source_mol2": "real-world_dataset/cdk2/crystal.mol2",
+      "source_sha256": "721c460ebf2db564aae3b85953a5548971b476fa8e0c0863adfe1c2c67c57c6a",
+      "note": "",
+      "input_smiles": "*Nc1cc(Nc2c(F)cccc2F)ncn1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "cdk2",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "cdk2/linkinvent.smi",
+      "source_mol2": "real-world_dataset/cdk2/crystal.mol2",
+      "source_sha256": "721c460ebf2db564aae3b85953a5548971b476fa8e0c0863adfe1c2c67c57c6a",
+      "note": "",
+      "input_smiles": "*OC[C@@H](O)CN(C)C|*c1c(F)cccc1F",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "cp3a4",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "cp3a4/libinvent.smi",
+      "source_mol2": "real-world_dataset/cp3a4/crystal.mol2",
+      "source_sha256": "af38b4da66f376d216054a89849690ad6d90d6150d6e05ee99b7c65f11099bdb",
+      "note": "",
+      "input_smiles": "*[C@@H](Cc1ccccc1)C[C@H](O)[C@H](Cc1ccccc1)NC(=O)OCc1cncs1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "cp3a4",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "cp3a4/linkinvent.smi",
+      "source_mol2": "real-world_dataset/cp3a4/crystal.mol2",
+      "source_sha256": "af38b4da66f376d216054a89849690ad6d90d6150d6e05ee99b7c65f11099bdb",
+      "note": "",
+      "input_smiles": "*c1csc(C(C)C)n1|*C[C@H](O)[C@H](Cc1ccccc1)NC(=O)OCc1cncs1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "dpp4",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "dpp4/libinvent.smi",
+      "source_mol2": "real-world_dataset/dpp4/crystal.mol2",
+      "source_sha256": "c66e797c433aa245a2ac2af30527e0f12178f38c08dcbe1aecf247d564b0a843",
+      "note": "",
+      "input_smiles": "*[C@H]1CC=C(C(=O)N2CCn3c(nnc3C(F)(F)F)C2)C[C@@H]1N",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "dpp4",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "dpp4/linkinvent.smi",
+      "source_mol2": "real-world_dataset/dpp4/crystal.mol2",
+      "source_sha256": "c66e797c433aa245a2ac2af30527e0f12178f38c08dcbe1aecf247d564b0a843",
+      "note": "",
+      "input_smiles": "*C(F)(F)F|*c1cc(F)c(F)cc1F",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": false
+      }
+    },
+    {
+      "target": "drd3",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "drd3/libinvent.smi",
+      "source_mol2": "real-world_dataset/drd3/crystal.mol2",
+      "source_sha256": "d6168ae6539f9de16c471c1dc2696757d6dd5269c65bfd122650aa93f80e2594",
+      "note": "",
+      "input_smiles": "*NC(=O)c1c(O)c(CC)cc(C)c1OC",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "drd3",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "drd3/linkinvent.smi",
+      "source_mol2": "real-world_dataset/drd3/crystal.mol2",
+      "source_sha256": "d6168ae6539f9de16c471c1dc2696757d6dd5269c65bfd122650aa93f80e2594",
+      "note": "",
+      "input_smiles": "*[C@@H]1CCCN1CC|*c1c(O)c(CC)cc(C)c1OC",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "dyr",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "dyr/libinvent.smi",
+      "source_mol2": "real-world_dataset/dyr/crystal.mol2",
+      "source_sha256": "16136044517330b22775c8c859d1a39ecf431d97b5bb2f5173ab99d9eb68a142",
+      "note": "",
+      "input_smiles": "*c1coc2nc(N)nc(N)c12",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": false
+      }
+    },
+    {
+      "target": "dyr",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "dyr/linkinvent.smi",
+      "source_mol2": "real-world_dataset/dyr/crystal.mol2",
+      "source_sha256": "16136044517330b22775c8c859d1a39ecf431d97b5bb2f5173ab99d9eb68a142",
+      "note": "",
+      "input_smiles": "*c1coc2nc(N)nc(N)c12|*c1ccccc1OC",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": false
+      }
+    },
+    {
+      "target": "egfr",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "egfr/libinvent.smi",
+      "source_mol2": "real-world_dataset/egfr/crystal.mol2",
+      "source_sha256": "c19cce10b32333f6a4a03b7e072865adc1c40ab5c83f8ad8bdc27882c3863bf8",
+      "note": "",
+      "input_smiles": "*n1ncc2cc(Nc3ncnc(N)c3CNN3CCCCC3)ccc21",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "egfr",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "egfr/linkinvent.smi",
+      "source_mol2": "real-world_dataset/egfr/crystal.mol2",
+      "source_sha256": "c19cce10b32333f6a4a03b7e072865adc1c40ab5c83f8ad8bdc27882c3863bf8",
+      "note": "",
+      "input_smiles": "*c1cccc(F)c1|*c1ncnc(N)c1CNN1CCCCC1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "gria2",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "gria2/libinvent.smi",
+      "source_mol2": "real-world_dataset/gria2/crystal.mol2",
+      "source_sha256": "1ef46e9db70370659bad4a1a32c36ca6f14594cc719653791534f54837a2cea1",
+      "note": "",
+      "input_smiles": "*c1cc2c(cc1C(F)(F)F)[nH]c(=O)c(=O)n2CP(=O)(O)O",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "gria2",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "gria2/linkinvent.smi",
+      "source_mol2": "real-world_dataset/gria2/crystal.mol2",
+      "source_sha256": "1ef46e9db70370659bad4a1a32c36ca6f14594cc719653791534f54837a2cea1",
+      "note": "",
+      "input_smiles": "*N1CCOCC1|*CP(=O)(O)O",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "jak2",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "jak2/libinvent.smi",
+      "source_mol2": "real-world_dataset/jak2/crystal.mol2",
+      "source_sha256": "cf672194d8e746a28a01968b8b30124b89423340d3b9c61e7ddfdad9dc3a80a6",
+      "note": "",
+      "input_smiles": "*c1cnc2cccc(-c3ccc(S(=O)(=O)NC)cc3)c2n1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "jak2",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "jak2/linkinvent.smi",
+      "source_mol2": "real-world_dataset/jak2/crystal.mol2",
+      "source_sha256": "cf672194d8e746a28a01968b8b30124b89423340d3b9c61e7ddfdad9dc3a80a6",
+      "note": "",
+      "input_smiles": "*c1ccc(S(=O)(=O)NC)cc1|*c1cc(OC)c(OC)c(OC)c1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "kif11",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "kif11/libinvent.smi",
+      "source_mol2": "real-world_dataset/kif11/crystal.mol2",
+      "source_sha256": "70a9d35ee57ce2752f7e707d63102b5eefc9fb916ce59a871b5d2ddcd316b8fa",
+      "note": "",
+      "input_smiles": "*N(C)C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "kif11",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "kif11/linkinvent.smi",
+      "source_mol2": "real-world_dataset/kif11/crystal.mol2",
+      "source_sha256": "70a9d35ee57ce2752f7e707d63102b5eefc9fb916ce59a871b5d2ddcd316b8fa",
+      "note": "",
+      "input_smiles": "*c1ccccc1|*[C@H]1CCN(C)C[C@H]1F",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": false
+      }
+    },
+    {
+      "target": "parp1",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "parp1/libinvent.smi",
+      "source_mol2": "real-world_dataset/parp1/crystal.mol2",
+      "source_sha256": "495f20545fafcd06d76c0edf88aec52d0ec85337ab6806ea54ee5e9d57143e8a",
+      "note": "",
+      "input_smiles": "*c1ccc(-c2nc3cccc(C(N)=O)c3[nH]2)c(F)c1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "parp1",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "parp1/linkinvent.smi",
+      "source_mol2": "real-world_dataset/parp1/crystal.mol2",
+      "source_sha256": "495f20545fafcd06d76c0edf88aec52d0ec85337ab6806ea54ee5e9d57143e8a",
+      "note": "",
+      "input_smiles": "*[C@@H]1CCCCN1|*c1nc2cccc(C(N)=O)c2[nH]1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "ppara",
+      "mode": "libinvent",
+      "status": "designed",
+      "smiles_file": "ppara/libinvent.smi",
+      "source_mol2": "real-world_dataset/ppara/crystal.mol2",
+      "source_sha256": "35db7f1d001b3d5723e2817f576394ac8436044a6890708689d2ebaedc29fd7a",
+      "note": "",
+      "input_smiles": "*NC(=O)c1sc(-c2ccc(C(F)(F)F)cc2)nc1C",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    },
+    {
+      "target": "ppara",
+      "mode": "linkinvent",
+      "status": "designed",
+      "smiles_file": "ppara/linkinvent.smi",
+      "source_mol2": "real-world_dataset/ppara/crystal.mol2",
+      "source_sha256": "35db7f1d001b3d5723e2817f576394ac8436044a6890708689d2ebaedc29fd7a",
+      "note": "",
+      "input_smiles": "*c1ccc(C(F)(F)F)cc1|*c1ccc(OC(C)(C)C(=O)O)cc1",
+      "validation": {
+        "connectivity_match": true,
+        "stereochemistry_match": true
+      }
+    }
+  ]
+}
