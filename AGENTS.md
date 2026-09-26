@@ -23,6 +23,65 @@ Do **not** introduce Mol2Mol or other REINVENT4 generation modes unless explicit
 
 Experiments should use the same target structures and, as far as possible, equivalent ligand fragments / constraints for both models so that comparisons are fair.
 
+## Evaluation Plan
+
+Evaluation lives in `evaluation/` with two independent modules:
+
+```
+evaluation/
+├── docking/      # AutoDock Vina scoring
+└── descriptor/   # molecular descriptors
+```
+
+### Data flow
+
+The single, shared contract for both modules is **SMILES strings as input**.
+
+```
+model outputs (SMILES / SDF / MOL2)
+        │
+        ▼
+  convert → canonical SMILES table  (target_id, model, canonical_smiles, ...)
+        │
+        ├──────────────► evaluation/docking/
+        └──────────────► evaluation/dcriptor/
+```
+
+DELETE outputs are not SMILES by default; they **must** be converted to SMILES
+before entering the evaluation pipeline. The conversion step is a dedicated,
+reusable adapter so both DELETE and REINVENT4 produce the same intermediate
+format. Raw model outputs are preserved; converted tables are written as new
+derived files.
+
+### `evaluation/docking/`
+
+- **Inputs:** generated-molecule SMILES + target 3D structure (receptor).
+- **Pipeline:** SMILES → 3D conformer generation (RDKit ETKDG + MMFF/UFF
+  minimization) → ligand PDBQT → Vina docking against the prepared receptor
+  PDBQT → binding affinity (kcal/mol) per molecule.
+- Receptor preparation and the docking grid box are configured per target, one
+  config per target shared by both models so the comparison stays fair.
+- Outputs: per-molecule scores plus per-target summary statistics (best, mean,
+  median, success count).
+
+### `evaluation/descriptor/`
+
+- **Inputs:** the same SMILES table (no 3D structure needed).
+- **Pipeline:** SMILES → RDKit descriptors (e.g. MW, LogP, TPSA, HBD, HBA,
+  rotatable bonds, ring counts, QED, SA score) and optionally fingerprints.
+- Outputs: one descriptor row per molecule, plus per-target summary statistics
+  for DELETE vs REINVENT4 comparison.
+
+### Fairness rules
+
+- Both modules consume the identical SMILES table for a given target, so any
+  difference in the reported numbers comes from the generation model, not from
+  the evaluation path.
+- Target structures, grid boxes, and descriptor settings are defined once in
+  `configs/` (or `evaluation/` configs) and reused across models.
+- Evaluation scripts must be deterministic (fixed random seed for conformer
+  generation) and reproducible from raw outputs.
+
 ## Development Rules
 
 - Keep scripts, configurations, intermediate data, and results organized and reproducible.
