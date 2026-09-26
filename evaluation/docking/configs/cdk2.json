@@ -1,0 +1,26 @@
+{
+  "target": "cdk2",
+  "receptor_pdb": "real-world_dataset/cdk2/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/cdk2/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/cdk2/crystal.mol2",
+  "box": {
+    "center": [
+      1.97,
+      27.559,
+      8.825
+    ],
+    "size": [
+      26.291,
+      29.895,
+      22.782
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}

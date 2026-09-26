@@ -44,3 +44,7 @@ PLANET/
 real-world_dataset/*/chembl_*/activities_raw.csv
 real-world_dataset/*/chembl_*/actives.sdf
 real-world_dataset/chembl_compound_properties.csv
+
+# Docking module derived artefacts (regenerable via evaluation/docking/prepare_receptors.py / run_docking.py)
+evaluation/docking/prepared/
+evaluation/docking/results/

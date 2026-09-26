@@ -1,0 +1,26 @@
+{
+  "target": "aa2ar",
+  "receptor_pdb": "real-world_dataset/aa2ar/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/aa2ar/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/aa2ar/crystal.mol2",
+  "box": {
+    "center": [
+      -9.064,
+      -7.145,
+      55.863
+    ],
+    "size": [
+      22.442,
+      20.946,
+      30.165
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}

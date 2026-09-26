@@ -41,11 +41,18 @@ The single, shared contract for both modules is **SMILES strings as input**.
 model outputs (SMILES / SDF / MOL2)
         │
         ▼
-  convert → canonical SMILES table  (target_id, model, canonical_smiles, ...)
+  convert → canonical SMILES table  (target, method, smiles)
         │
         ├──────────────► evaluation/docking/
         └──────────────► evaluation/dcriptor/
 ```
+
+The docking module is implemented in `evaluation/docking/`
+(`prepare_receptors.py` + `run_docking.py`; see its README). Input contract:
+one CSV with columns `target,method,smiles` (`method` ∈ `reinvent`/`delete`);
+output: `molecule_id,method,target,smiles,vina_score` plus error/summary side
+files. Grid boxes and Vina parameters are frozen per target in
+`evaluation/docking/configs/*.json`.
 
 DELETE outputs are not SMILES by default; they **must** be converted to SMILES
 before entering the evaluation pipeline. The conversion step is a dedicated,

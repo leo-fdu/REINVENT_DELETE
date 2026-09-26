@@ -1,0 +1,10 @@
+name: rd-docking
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - rdkit>=2024.03
+  - meeko>=0.6
+  - vina>=1.2.5
+  - numpy
+  - pytest

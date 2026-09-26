@@ -1,0 +1,26 @@
+{
+  "target": "adrb1",
+  "receptor_pdb": "real-world_dataset/adrb1/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/adrb1/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/adrb1/crystal.mol2",
+  "box": {
+    "center": [
+      26.376,
+      5.103,
+      1.899
+    ],
+    "size": [
+      22.706,
+      21.004,
+      25.455
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}

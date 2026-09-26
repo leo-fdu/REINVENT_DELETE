@@ -1,0 +1,26 @@
+{
+  "target": "dpp4",
+  "receptor_pdb": "real-world_dataset/dpp4/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/dpp4/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/dpp4/crystal.mol2",
+  "box": {
+    "center": [
+      -18.448,
+      -5.489,
+      60.059
+    ],
+    "size": [
+      30.864,
+      21.565,
+      22.329
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}

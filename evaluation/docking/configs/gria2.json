@@ -1,0 +1,26 @@
+{
+  "target": "gria2",
+  "receptor_pdb": "real-world_dataset/gria2/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/gria2/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/gria2/crystal.mol2",
+  "box": {
+    "center": [
+      7.531,
+      32.67,
+      -0.735
+    ],
+    "size": [
+      22.861,
+      23.245,
+      25.123
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}

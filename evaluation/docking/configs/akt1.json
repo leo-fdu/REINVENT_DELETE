@@ -1,0 +1,26 @@
+{
+  "target": "akt1",
+  "receptor_pdb": "real-world_dataset/akt1/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/akt1/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/akt1/crystal.mol2",
+  "box": {
+    "center": [
+      -20.005,
+      4.344,
+      10.74
+    ],
+    "size": [
+      24.904,
+      24.451,
+      25.81
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}

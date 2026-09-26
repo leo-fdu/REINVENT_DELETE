@@ -1,0 +1,26 @@
+{
+  "target": "egfr",
+  "receptor_pdb": "real-world_dataset/egfr/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/egfr/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/egfr/crystal.mol2",
+  "box": {
+    "center": [
+      16.292,
+      34.871,
+      92.035
+    ],
+    "size": [
+      23.619,
+      25.032,
+      28.828
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "target": "ppara",
+  "receptor_pdb": "real-world_dataset/ppara/receptor_out.pdb",
+  "receptor_pdbqt": "evaluation/docking/prepared/ppara/receptor.pdbqt",
+  "crystal_mol2": "real-world_dataset/ppara/crystal.mol2",
+  "box": {
+    "center": [
+      13.757,
+      39.45,
+      28.012
+    ],
+    "size": [
+      26.565,
+      22.178,
+      30.851
+    ],
+    "padding_angstrom": 8.0,
+    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+  },
+  "vina": {
+    "scoring": "vina",
+    "exhaustiveness": 16,
+    "num_modes": 1,
+    "seed": 42
+  }
+}
