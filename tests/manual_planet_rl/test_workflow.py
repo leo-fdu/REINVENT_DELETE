@@ -68,33 +68,36 @@ else:
 '''
 
 
-@pytest.fixture
-def prepared(tmp_path):
+def build_run(tmp_path, target_names):
+    """Prepare a fixture run whose targets share one port, like production."""
     project = tmp_path / "project"
-    ligand_dir = project / "real-world_dataset/example"
-    ligand_dir.mkdir(parents=True)
-    ligand = ligand_dir / "crystal.mol2"
-    ligand.write_text("@<TRIPOS>MOLECULE\nligand\n3 0 0\nSMALL\nNO_CHARGES\n"
-                      "@<TRIPOS>ATOM\n1 C 0 0 0 C.3\n2 N 3 0 0 N.3\n3 H 99 0 0 H\n")
-    (ligand_dir / "receptor_out.pdb").write_text("ATOM fixture\n")
     inputs = project / "configs/manual_design"
-    (inputs / "example").mkdir(parents=True)
-    tasks = []
-    for mode, smi in (("libinvent", "*C"), ("linkinvent", "*C|*N")):
-        (inputs / "example" / f"{mode}.smi").write_text(smi + "\n")
-        tasks.append({"target": "example", "mode": mode, "status": "designed",
-                      "smiles_file": f"example/{mode}.smi", "input_smiles": smi,
-                      "source_mol2": "real-world_dataset/example/crystal.mol2",
-                      "source_sha256": sha256(ligand),
-                      "validation": {"connectivity_match": True, "stereochemistry_match": False}})
+    for mode in ("libinvent", "linkinvent"):
         prior = project / "REINVENT4/priors" / f"{mode}_transformer_pubchem.prior"
         prior.parent.mkdir(parents=True, exist_ok=True)
         prior.write_bytes(b"fixture prior")
     checkpoint = project / "PLANET/PLANET.param"
-    checkpoint.parent.mkdir()
+    checkpoint.parent.mkdir(parents=True, exist_ok=True)
     checkpoint.write_bytes(b"fixture PLANET")
+    tasks = []
+    for target in target_names:
+        ligand_dir = project / "real-world_dataset" / target
+        ligand_dir.mkdir(parents=True)
+        ligand = ligand_dir / "crystal.mol2"
+        ligand.write_text("@<TRIPOS>MOLECULE\nligand\n3 0 0\nSMALL\nNO_CHARGES\n"
+                          "@<TRIPOS>ATOM\n1 C 0 0 0 C.3\n2 N 3 0 0 N.3\n3 H 99 0 0 H\n")
+        (ligand_dir / "receptor_out.pdb").write_text("ATOM fixture\n")
+        (inputs / target).mkdir(parents=True)
+        for mode, smi in (("libinvent", "*C"), ("linkinvent", "*C|*N")):
+            (inputs / target / f"{mode}.smi").write_text(smi + "\n")
+            tasks.append({"target": target, "mode": mode, "status": "designed",
+                          "smiles_file": f"{target}/{mode}.smi", "input_smiles": smi,
+                          "source_mol2": f"real-world_dataset/{target}/crystal.mol2",
+                          "source_sha256": sha256(ligand),
+                          "validation": {"connectivity_match": True, "stereochemistry_match": False}})
     write_json(inputs / "manifest.json", {"schema_version": 1, "model_ids": {}, "tasks": tasks,
-               "status_counts": {"designed": 2, "skipped": 0, "incomplete": 0, "not_started": 0}})
+               "status_counts": {"designed": len(tasks), "skipped": 0, "incomplete": 0,
+                                 "not_started": 0}})
     cfg = json.loads((ROOT / "configs/manual_planet_rl/experiment.json").read_text())
     cfg.update(steps=2, batch_size=3, startup_timeout=10)
     experiment = project / "experiment.json"
@@ -109,6 +112,11 @@ def prepared(tmp_path):
     manifest = prepare(project, inputs / "manifest.json", experiment, directory,
                        executable, executable, "cpu", port)
     return directory, manifest, port
+
+
+@pytest.fixture
+def prepared(tmp_path):
+    return build_run(tmp_path, ["example"])
 
 
 def test_prepare_budget_center_no_early_stop(prepared):
@@ -135,10 +143,27 @@ def test_runner_retains_duplicates_invalids_and_stops_children(prepared):
     assert rows[2]["planet_affinity"] == "" and rows[2]["planet_status"] == "not_scored"
     assert rows[3]["training_reward"] == "0.35"  # repeat across batches
     assert rows[6]["training_reward"] == "0.7"  # fresh memory for the other mode
+    # No active listener may remain; TIME_WAIT leftovers must not fail this bind.
     with socket.socket() as probe:
+        probe.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         probe.bind(("127.0.0.1", port))
     with pytest.raises(FileExistsError):
         run(directory)
+
+
+def test_sequential_targets_share_one_port(tmp_path):
+    # Each stopped server leaves TIME_WAIT sockets on the shared port; the next
+    # target's probe and server must still bind without waiting for them to age.
+    directory, manifest, _ = build_run(tmp_path, ["alpha", "beta"])
+    assert [entry["target"] for entry in manifest["targets"]] == ["alpha", "beta"]
+    assert run(directory)["state"] == "complete"
+    with (directory / "all_generated.csv").open() as handle:
+        rows = list(csv.DictReader(handle))
+    assert len(rows) == 24
+    assert {row["target"] for row in rows} == {"alpha", "beta"}
+    for target in ("alpha", "beta"):
+        oracle = json.loads((directory / target / "oracle-manifest.json").read_text())
+        assert oracle["oracle_id"] == f"fixture-{target}"
 
 
 def test_input_tampering_rejected_before_process_start(prepared):

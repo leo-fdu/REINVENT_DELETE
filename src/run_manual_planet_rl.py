@@ -185,6 +185,11 @@ def run(root, targets=None):
         if len(set(targets)) != len(targets) or set(targets) - {e["target"] for e in entries}:
             raise ValueError("Unknown or duplicate target selection")
         entries = [entry for entry in entries if entry["target"] in targets]
+    # A claimed directory stays claimed. Report it before the hash check: a run
+    # legitimately rewrites client.json (oracle_id), so verifying a used
+    # directory would misreport the runner's own change as tampering.
+    if (root / ".started").exists():
+        raise FileExistsError("Run directory was already used; prepare a new one")
     verify_prepared(root, manifest)
     cfg = manifest["experiment"]
     project = Path(manifest["project"])
@@ -204,7 +209,10 @@ def run(root, targets=None):
             folder = root / entry["target"]
             server = json.loads(local_path(root, entry["server_config"]).read_text())
             # Do not connect to or replace an already running service on this port.
+            # SO_REUSEADDR keeps TIME_WAIT sockets left by the previous target's
+            # stopped server from blocking the bind; an active listener still does.
             with socket.socket() as probe:
+                probe.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
                 probe.bind(("127.0.0.1", server["port"]))
             command = [manifest["planet_python"], "-m", "planet_oracle.server",
                        "--config", str(local_path(root, entry["server_config"])),
