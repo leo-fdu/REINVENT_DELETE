@@ -1,0 +1,15 @@
+{
+  "target_id": "dpp4",
+  "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+  "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+  "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dpp4/receptor_out.pdb",
+  "center": [
+    -18.448096774193548,
+    -5.489,
+    60.05896774193548
+  ],
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}

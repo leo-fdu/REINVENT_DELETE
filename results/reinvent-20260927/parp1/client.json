@@ -1,0 +1,6 @@
+{
+  "url": "http://127.0.0.1:8765",
+  "target_id": "parp1",
+  "oracle_id": "72b82f9b99753705ecf113c2979c9c364cc147595ece3315f17dcf427d0cda8d",
+  "timeout": 120
+}

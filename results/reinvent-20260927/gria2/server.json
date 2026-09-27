@@ -1,0 +1,15 @@
+{
+  "target_id": "gria2",
+  "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+  "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+  "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/receptor_out.pdb",
+  "center": [
+    7.531259259259259,
+    32.66985185185185,
+    -0.7351111111111112
+  ],
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}

@@ -1,0 +1,15 @@
+{
+  "target_id": "akt1",
+  "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+  "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+  "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/akt1/receptor_out.pdb",
+  "center": [
+    -20.0053,
+    4.3438,
+    10.7399
+  ],
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}

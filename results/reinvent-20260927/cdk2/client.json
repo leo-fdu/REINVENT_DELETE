@@ -1,0 +1,6 @@
+{
+  "url": "http://127.0.0.1:8765",
+  "target_id": "cdk2",
+  "oracle_id": "499d2ffa31415508ebcb65bff28bc1f63211afdde0ea1da44f85293b1494bd5f",
+  "timeout": 120
+}

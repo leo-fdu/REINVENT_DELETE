@@ -48,3 +48,14 @@ real-world_dataset/chembl_compound_properties.csv
 # Docking module derived artefacts (regenerable via evaluation/docking/prepare_receptors.py / run_docking.py)
 evaluation/docking/prepared/
 evaluation/docking/results/
+
+# REINVENT generation run outputs (results/reinvent-20260927/): large binaries and
+# redundant raw tables kept on the server; compressed result tables (*.csv.gz) and
+# run configuration/metadata are tracked instead
+results/reinvent-20260927/**/*.chkpt
+results/reinvent-20260927/**/tensorboard_0/
+results/reinvent-20260927/**/summary_1.csv
+results/reinvent-20260927/**/all_generated.csv
+results/reinvent-20260927/all_generated.csv
+results/reinvent-20260927/**/*.log
+results/reinvent-20260927/.started

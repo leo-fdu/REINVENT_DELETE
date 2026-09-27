@@ -1,0 +1,15 @@
+{
+  "target_id": "jak2",
+  "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+  "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+  "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/jak2/receptor.pdb",
+  "center": [
+    114.671,
+    66.11351515151516,
+    10.554818181818183
+  ],
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}

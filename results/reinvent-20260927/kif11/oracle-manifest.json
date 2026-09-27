@@ -1,0 +1,256 @@
+{
+  "adapter_sha256": {
+    "__init__.py": "4221c65d3fb99b44b0f749b6804c47e919f096e7bbdb9335a74e37730d78759d",
+    "backend.py": "156c88ca28670dfa655c78a56eb6a3d9b6284d98e8ff2dfa441cd49c56a385c1",
+    "chemistry.py": "c347395a9d71ed8333db8b395d11b067347b31af8c8082b6500112104fc343c0",
+    "client.py": "d7285f8411c70eb413b1614507cd7158406c46e8bac2bc82336aaca7da3a6487",
+    "config.py": "bc4386968ea9cdb29c2a9a1633be2a206ed20842436bd4a6ca601a138175f510",
+    "server.py": "10180d02c20cf3203d4c6da7d2a099e577d0942b1a2f5b644c654cda3e48e291",
+    "smoke.py": "ec7938099e8151f43ef59ee4d535e8fe6bd4572a5c42c2c025ddb4c1227a4778"
+  },
+  "config": {
+    "batch_size": 32,
+    "center": [
+      17.808030303030304,
+      16.11821212121212,
+      109.26678787878788
+    ],
+    "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+    "device": "cuda:0",
+    "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+    "port": 8765,
+    "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/kif11/receptor_out.pdb",
+    "seed": 42,
+    "target_id": "kif11"
+  },
+  "cuda_runtime": "12.6",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4090",
+  "input_sha256": {
+    "checkpoint": "77bd63055893d474d6b6386bbb22d615b0db7e5e450c52ee76b6c81c91ac6be3",
+    "protein_pdb": "b9e736589e80b733d29b55dd06adb5d64cc8fb6239a91705044e51ae35fd2272"
+  },
+  "oracle_id": "aada1966b276b388ec96718321f36a949a6a4163ef5c86da936ce45efc3b3d53",
+  "pocket": {
+    "center": [
+      17.80803108215332,
+      16.11821174621582,
+      109.26678466796875
+    ],
+    "radius_angstrom": 12.0,
+    "residue_count": 47,
+    "residues": [
+      [
+        "112",
+        "A"
+      ],
+      [
+        "113",
+        "A"
+      ],
+      [
+        "114",
+        "A"
+      ],
+      [
+        "115",
+        "A"
+      ],
+      [
+        "116",
+        "A"
+      ],
+      [
+        "117",
+        "A"
+      ],
+      [
+        "118",
+        "A"
+      ],
+      [
+        "119",
+        "A"
+      ],
+      [
+        "120",
+        "A"
+      ],
+      [
+        "125",
+        "A"
+      ],
+      [
+        "126",
+        "A"
+      ],
+      [
+        "127",
+        "A"
+      ],
+      [
+        "128",
+        "A"
+      ],
+      [
+        "129",
+        "A"
+      ],
+      [
+        "130",
+        "A"
+      ],
+      [
+        "132",
+        "A"
+      ],
+      [
+        "133",
+        "A"
+      ],
+      [
+        "134",
+        "A"
+      ],
+      [
+        "135",
+        "A"
+      ],
+      [
+        "136",
+        "A"
+      ],
+      [
+        "137",
+        "A"
+      ],
+      [
+        "138",
+        "A"
+      ],
+      [
+        "139",
+        "A"
+      ],
+      [
+        "140",
+        "A"
+      ],
+      [
+        "141",
+        "A"
+      ],
+      [
+        "158",
+        "A"
+      ],
+      [
+        "160",
+        "A"
+      ],
+      [
+        "162",
+        "A"
+      ],
+      [
+        "171",
+        "A"
+      ],
+      [
+        "172",
+        "A"
+      ],
+      [
+        "209",
+        "A"
+      ],
+      [
+        "210",
+        "A"
+      ],
+      [
+        "211",
+        "A"
+      ],
+      [
+        "212",
+        "A"
+      ],
+      [
+        "213",
+        "A"
+      ],
+      [
+        "214",
+        "A"
+      ],
+      [
+        "215",
+        "A"
+      ],
+      [
+        "216",
+        "A"
+      ],
+      [
+        "217",
+        "A"
+      ],
+      [
+        "218",
+        "A"
+      ],
+      [
+        "219",
+        "A"
+      ],
+      [
+        "220",
+        "A"
+      ],
+      [
+        "221",
+        "A"
+      ],
+      [
+        "222",
+        "A"
+      ],
+      [
+        "239",
+        "A"
+      ],
+      [
+        "265",
+        "A"
+      ],
+      [
+        "78",
+        "A"
+      ]
+    ]
+  },
+  "pocket_tensor_sha256": "b5a481c3a2b1bb7c45028d62d7cd153fa9c7f45fd6993ccd62ba71736374e835",
+  "python_hash_seed": "42",
+  "source_sha256": {
+    "DUDE.py": "1a9e62ffe868449c18d0821cf89fb6f8e3d43e622802641922a5f2e19de648ed",
+    "PLANET_datautils.py": "c4eee97ceb9ec1bca6db45d1909d02928c05944f7d409f860b41831ea4ad645b",
+    "PLANET_model.py": "c7fcf5c1cfe9bb68ded9f8ab90632ec01ca557deb625656d8fda679773f3ead3",
+    "PLANET_run.py": "dcf52dc241c519895715eae450e8d980a412d924a90333f25296fc672e76553b",
+    "PLANET_test.py": "cb9fbe0be577192153a46f61a079c3fe136ef8978c16a585fb7548bccca0c94b",
+    "PLANET_train.py": "02655c80c1da64586261a56d0f5c6e6ff1f24758586688b39ab40238772bb846",
+    "chemutils.py": "eff31620c501bca555b7ab4e8585901011e708d49bd5422bbbd7ef0376e84c5e",
+    "layers.py": "8feb5f147926f002d80de39419ce376cef326d7d49bbbbe93317edd05b13b43c",
+    "nnutils.py": "e9bbc648a0b1013d5dd2f5852dfcd27fa7fe36596b308ad1cd97c3efcb21bae5",
+    "process_PDBBind.py": "35c7aaf1e187fda08b3e4d4ff82edbdc15aa5ad0c4c779cda3e527e19d55dcbc"
+  },
+  "version": 1,
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "python": "3.11.16",
+    "rdkit": "2026.3.6",
+    "scipy": "1.17.1",
+    "torch": "2.12.0+cu126"
+  }
+}

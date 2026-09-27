@@ -1,0 +1,52 @@
+run_type = "staged_learning"
+device = "cuda:0"
+seed = 42
+tb_logdir = "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/aa2ar/libinvent/tensorboard"
+json_out_config = "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/aa2ar/libinvent/resolved.json"
+
+[parameters]
+prior_file = "/home/ubuntu/experiments/reinvent-20260927/project/REINVENT4/priors/libinvent_transformer_pubchem.prior"
+agent_file = "/home/ubuntu/experiments/reinvent-20260927/project/REINVENT4/priors/libinvent_transformer_pubchem.prior"
+smiles_file = "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/aa2ar/libinvent/input.smi"
+summary_csv_prefix = "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/aa2ar/libinvent/summary"
+use_checkpoint = false
+purge_memories = false
+batch_size = 100
+sample_strategy = "multinomial"
+temperature = 1.0
+randomize_smiles = false
+isomeric_smiles = true
+
+[learning_strategy]
+type = "dap"
+sigma = 128
+rate = 0.0001
+
+[diversity_filter]
+type = "PenalizeSameSmiles"
+penalty_multiplier = 0.5
+
+[[stage]]
+chkpt_file = "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/aa2ar/libinvent/agent.chkpt"
+termination = "null"
+max_score = 1.0
+min_steps = 0
+max_steps = 100
+
+[stage.scoring]
+type = "arithmetic_mean"
+parallel = 1
+use_pumas = false
+
+[[stage.scoring.component]]
+[stage.scoring.component.ExternalProcess]
+[[stage.scoring.component.ExternalProcess.endpoint]]
+name = "PLANET reward"
+weight = 1.0
+params.executable = "/home/ubuntu/experiments/reinvent-20260927/envs/reinvent/bin/python"
+params.args = "-m planet_oracle.client --config /home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/aa2ar/client.json"
+params.property = "planet_affinity_for_scoring"
+transform.type = "sigmoid"
+transform.low = 4.0
+transform.high = 16.0
+transform.k = 0.25

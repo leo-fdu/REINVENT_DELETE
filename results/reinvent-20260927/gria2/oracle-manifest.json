@@ -1,0 +1,296 @@
+{
+  "adapter_sha256": {
+    "__init__.py": "4221c65d3fb99b44b0f749b6804c47e919f096e7bbdb9335a74e37730d78759d",
+    "backend.py": "156c88ca28670dfa655c78a56eb6a3d9b6284d98e8ff2dfa441cd49c56a385c1",
+    "chemistry.py": "c347395a9d71ed8333db8b395d11b067347b31af8c8082b6500112104fc343c0",
+    "client.py": "d7285f8411c70eb413b1614507cd7158406c46e8bac2bc82336aaca7da3a6487",
+    "config.py": "bc4386968ea9cdb29c2a9a1633be2a206ed20842436bd4a6ca601a138175f510",
+    "server.py": "10180d02c20cf3203d4c6da7d2a099e577d0942b1a2f5b644c654cda3e48e291",
+    "smoke.py": "ec7938099e8151f43ef59ee4d535e8fe6bd4572a5c42c2c025ddb4c1227a4778"
+  },
+  "config": {
+    "batch_size": 32,
+    "center": [
+      7.531259259259259,
+      32.66985185185185,
+      -0.7351111111111112
+    ],
+    "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+    "device": "cuda:0",
+    "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+    "port": 8765,
+    "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/receptor_out.pdb",
+    "seed": 42,
+    "target_id": "gria2"
+  },
+  "cuda_runtime": "12.6",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4090",
+  "input_sha256": {
+    "checkpoint": "77bd63055893d474d6b6386bbb22d615b0db7e5e450c52ee76b6c81c91ac6be3",
+    "protein_pdb": "657de8348788aacb507182ef1fd6985bed5ea29908dc0a130c763ab5f72a62a2"
+  },
+  "oracle_id": "77a9707f6584125fdd1de3cdad76adedad46932da175d94860f69ae552431f93",
+  "pocket": {
+    "center": [
+      7.531259059906006,
+      32.66985321044922,
+      -0.7351111173629761
+    ],
+    "radius_angstrom": 12.0,
+    "residue_count": 57,
+    "residues": [
+      [
+        "112",
+        "B"
+      ],
+      [
+        "115",
+        "B"
+      ],
+      [
+        "116",
+        "B"
+      ],
+      [
+        "117",
+        "B"
+      ],
+      [
+        "118",
+        "B"
+      ],
+      [
+        "119",
+        "B"
+      ],
+      [
+        "130",
+        "B"
+      ],
+      [
+        "131",
+        "B"
+      ],
+      [
+        "144",
+        "B"
+      ],
+      [
+        "145",
+        "B"
+      ],
+      [
+        "146",
+        "B"
+      ],
+      [
+        "147",
+        "B"
+      ],
+      [
+        "148",
+        "B"
+      ],
+      [
+        "149",
+        "B"
+      ],
+      [
+        "152",
+        "B"
+      ],
+      [
+        "162",
+        "B"
+      ],
+      [
+        "163",
+        "B"
+      ],
+      [
+        "164",
+        "B"
+      ],
+      [
+        "165",
+        "B"
+      ],
+      [
+        "166",
+        "B"
+      ],
+      [
+        "167",
+        "B"
+      ],
+      [
+        "168",
+        "B"
+      ],
+      [
+        "193",
+        "B"
+      ],
+      [
+        "194",
+        "B"
+      ],
+      [
+        "195",
+        "B"
+      ],
+      [
+        "196",
+        "B"
+      ],
+      [
+        "197",
+        "B"
+      ],
+      [
+        "198",
+        "B"
+      ],
+      [
+        "199",
+        "B"
+      ],
+      [
+        "200",
+        "B"
+      ],
+      [
+        "228",
+        "B"
+      ],
+      [
+        "229",
+        "B"
+      ],
+      [
+        "230",
+        "B"
+      ],
+      [
+        "231",
+        "B"
+      ],
+      [
+        "246",
+        "B"
+      ],
+      [
+        "247",
+        "B"
+      ],
+      [
+        "248",
+        "B"
+      ],
+      [
+        "249",
+        "B"
+      ],
+      [
+        "250",
+        "B"
+      ],
+      [
+        "251",
+        "B"
+      ],
+      [
+        "252",
+        "B"
+      ],
+      [
+        "253",
+        "B"
+      ],
+      [
+        "255",
+        "B"
+      ],
+      [
+        "256",
+        "B"
+      ],
+      [
+        "272",
+        "B"
+      ],
+      [
+        "274",
+        "B"
+      ],
+      [
+        "275",
+        "B"
+      ],
+      [
+        "276",
+        "B"
+      ],
+      [
+        "277",
+        "B"
+      ],
+      [
+        "311",
+        "B"
+      ],
+      [
+        "68",
+        "B"
+      ],
+      [
+        "69",
+        "B"
+      ],
+      [
+        "70",
+        "B"
+      ],
+      [
+        "71",
+        "B"
+      ],
+      [
+        "72",
+        "B"
+      ],
+      [
+        "73",
+        "B"
+      ],
+      [
+        "92",
+        "B"
+      ]
+    ]
+  },
+  "pocket_tensor_sha256": "f7693da24db10abc95839957a2f93a5d8eda636bc975aea2366adc8e546e0936",
+  "python_hash_seed": "42",
+  "source_sha256": {
+    "DUDE.py": "1a9e62ffe868449c18d0821cf89fb6f8e3d43e622802641922a5f2e19de648ed",
+    "PLANET_datautils.py": "c4eee97ceb9ec1bca6db45d1909d02928c05944f7d409f860b41831ea4ad645b",
+    "PLANET_model.py": "c7fcf5c1cfe9bb68ded9f8ab90632ec01ca557deb625656d8fda679773f3ead3",
+    "PLANET_run.py": "dcf52dc241c519895715eae450e8d980a412d924a90333f25296fc672e76553b",
+    "PLANET_test.py": "cb9fbe0be577192153a46f61a079c3fe136ef8978c16a585fb7548bccca0c94b",
+    "PLANET_train.py": "02655c80c1da64586261a56d0f5c6e6ff1f24758586688b39ab40238772bb846",
+    "chemutils.py": "eff31620c501bca555b7ab4e8585901011e708d49bd5422bbbd7ef0376e84c5e",
+    "layers.py": "8feb5f147926f002d80de39419ce376cef326d7d49bbbbe93317edd05b13b43c",
+    "nnutils.py": "e9bbc648a0b1013d5dd2f5852dfcd27fa7fe36596b308ad1cd97c3efcb21bae5",
+    "process_PDBBind.py": "35c7aaf1e187fda08b3e4d4ff82edbdc15aa5ad0c4c779cda3e527e19d55dcbc"
+  },
+  "version": 1,
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "python": "3.11.16",
+    "rdkit": "2026.3.6",
+    "scipy": "1.17.1",
+    "torch": "2.12.0+cu126"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "target_id": "ppara",
+  "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+  "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+  "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/ppara/receptor_out.pdb",
+  "center": [
+    13.756636363636364,
+    39.44990909090909,
+    28.01230303030303
+  ],
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}

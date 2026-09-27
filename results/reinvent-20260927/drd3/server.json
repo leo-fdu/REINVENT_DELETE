@@ -1,0 +1,15 @@
+{
+  "target_id": "drd3",
+  "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+  "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+  "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/drd3/receptor.pdb",
+  "center": [
+    0.08530434782608695,
+    -14.828347826086958,
+    10.43204347826087
+  ],
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}

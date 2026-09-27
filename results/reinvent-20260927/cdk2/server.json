@@ -1,0 +1,15 @@
+{
+  "target_id": "cdk2",
+  "planet_root": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET",
+  "checkpoint": "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param",
+  "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cdk2/receptor_out.pdb",
+  "center": [
+    1.9698666666666669,
+    27.5588,
+    8.824866666666667
+  ],
+  "device": "cuda:0",
+  "batch_size": 32,
+  "port": 8765,
+  "seed": 42
+}

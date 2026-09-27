@@ -1,0 +1,79 @@
+{
+    "run_type": "staged_learning",
+    "device": "cuda:0",
+    "tb_logdir": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/egfr/libinvent/tensorboard",
+    "json_out_config": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/egfr/libinvent/resolved.json",
+    "seed": 42,
+    "parameters": {
+        "prior_file": "/home/ubuntu/experiments/reinvent-20260927/project/REINVENT4/priors/libinvent_transformer_pubchem.prior",
+        "agent_file": "/home/ubuntu/experiments/reinvent-20260927/project/REINVENT4/priors/libinvent_transformer_pubchem.prior",
+        "summary_csv_prefix": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/egfr/libinvent/summary",
+        "use_checkpoint": false,
+        "purge_memories": false,
+        "smiles_file": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/egfr/libinvent/input.smi",
+        "sample_strategy": "multinomial",
+        "distance_threshold": 99999,
+        "batch_size": 100,
+        "randomize_smiles": false,
+        "isomeric_smiles": true,
+        "temperature": 1.0,
+        "tb_isim": false
+    },
+    "scoring": null,
+    "scheduler": null,
+    "responder": null,
+    "filter": null,
+    "stage": [
+        {
+            "max_steps": 100,
+            "max_score": 1.0,
+            "chkpt_file": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/egfr/libinvent/agent.chkpt",
+            "termination": "null",
+            "min_steps": 0,
+            "scoring": {
+                "type": "arithmetic_mean",
+                "parallel": 1,
+                "use_pumas": false,
+                "component": [
+                    {
+                        "ExternalProcess": {
+                            "endpoint": [
+                                {
+                                    "name": "PLANET reward",
+                                    "weight": 1.0,
+                                    "params": {
+                                        "executable": "/home/ubuntu/experiments/reinvent-20260927/envs/reinvent/bin/python",
+                                        "args": "-m planet_oracle.client --config /home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/egfr/client.json",
+                                        "property": "planet_affinity_for_scoring"
+                                    },
+                                    "transform": {
+                                        "type": "sigmoid",
+                                        "low": 4.0,
+                                        "high": 16.0,
+                                        "k": 0.25
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "filename": null
+            },
+            "diversity_filter": null
+        }
+    ],
+    "learning_strategy": {
+        "type": "dap",
+        "sigma": 128,
+        "rate": 0.0001
+    },
+    "diversity_filter": {
+        "type": "PenalizeSameSmiles",
+        "bucket_size": 25,
+        "minscore": 0.4,
+        "minsimilarity": 0.4,
+        "penalty_multiplier": 0.5
+    },
+    "intrinsic_penalty": null,
+    "inception": null
+}

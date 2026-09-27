@@ -1,0 +1,816 @@
+{
+  "schema_version": 1,
+  "project": "/home/ubuntu/experiments/reinvent-20260927/project",
+  "run_dir": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full",
+  "reinvent_python": "/home/ubuntu/experiments/reinvent-20260927/envs/reinvent/bin/python",
+  "planet_python": "/home/ubuntu/experiments/reinvent-20260927/envs/planet/bin/python",
+  "experiment": {
+    "schema_version": 1,
+    "seed": 42,
+    "batch_size": 100,
+    "steps": 100,
+    "sample_strategy": "multinomial",
+    "temperature": 1.0,
+    "learning_strategy": {
+      "type": "dap",
+      "sigma": 128,
+      "rate": 0.0001
+    },
+    "sigmoid": {
+      "low": 4.0,
+      "high": 16.0,
+      "k": 0.25
+    },
+    "penalty_multiplier": 0.5,
+    "planet_batch_size": 32,
+    "request_timeout": 120,
+    "startup_timeout": 600
+  },
+  "model_ids": {
+    "libinvent": "7c8e104e81124bafb5f62d14c64ec9f9",
+    "linkinvent": "9ef8cd169df24d58a16ee58b882d20af"
+  },
+  "input_hashes": {
+    "/home/ubuntu/experiments/reinvent-20260927/project/configs/manual_design/manifest.json": "060d210a9066b276bd1d58ce487388aec8e0c70458b157c3af82a15aa2b7978c",
+    "/home/ubuntu/experiments/reinvent-20260927/project/REINVENT4/priors/libinvent_transformer_pubchem.prior": "4876dc45f1362d434b03ff4df2ad43f59f7721b93d6bd16f51374c93975bf3f2",
+    "/home/ubuntu/experiments/reinvent-20260927/project/REINVENT4/priors/linkinvent_transformer_pubchem.prior": "3c79ee1b5e7d48d381d1e24b0ef77cc318b091abd100963cb334ecca63384320",
+    "/home/ubuntu/experiments/reinvent-20260927/project/PLANET/PLANET.param": "77bd63055893d474d6b6386bbb22d615b0db7e5e450c52ee76b6c81c91ac6be3",
+    "/home/ubuntu/experiments/reinvent-20260927/project/configs/manual_planet_rl/target_inputs.json": "0e63b862e0f222f125fe503cf0b3db134b5e395376002b43cbaa15cb7dd61282",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3LPB.pdb": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/drd3/receptor_out.pdb": "7102faabd3c23241b304197a1ae835fde0b8eb26885fe7fd783264fdb442a4f2",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3PBL.pdb": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/aa2ar/receptor_out.pdb": "141569eff51ade761c7b3258ff9bbcaab2bd417c6dfb93d2ceca454302876862",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/aa2ar/crystal.mol2": "fb4f772045e80d15e919fb0cc748f4e13429e73d9b6d284ab203f51233042cc7",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/abl1/receptor_out.pdb": "991d53308c900c7cf4e43faa9b8920482afc9e246a0a130858cdfa955666e5aa",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/abl1/crystal.mol2": "351685615a31721c552492a3af427e4e5ac55f50061a67a41917457403efc0e6",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/adrb1/receptor_out.pdb": "6eb7dae1b6c48e112667b66609f7832a7a531a51e6c29bb3f71b9f83f531351d",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/adrb1/crystal.mol2": "cf21c52fd56a44a837fc25989a185f07d3880e3e158e6a9e08a80c622ad0d0c7",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/akt1/receptor_out.pdb": "0bc74983a29c4c3deb78e93ebb7d38174544727d47efecf62fce22025c4d7967",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/akt1/crystal.mol2": "4ad33e8a4308897c232f5b08213a1917a17b29a307c5e7fa6827338a9e6098ae",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cdk2/receptor_out.pdb": "c7de36182ea309360a7ae0c90da9ee54741eaa7a8b921c7882ae7b1b283f93d4",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cdk2/crystal.mol2": "721c460ebf2db564aae3b85953a5548971b476fa8e0c0863adfe1c2c67c57c6a",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cp3a4/receptor_out.pdb": "c4cff89a94b31a5e21cd728eb397e9b63e6996a5b9c96bffdc102d50e5856edf",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cp3a4/crystal.mol2": "af38b4da66f376d216054a89849690ad6d90d6150d6e05ee99b7c65f11099bdb",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dpp4/receptor_out.pdb": "d154466762bdced04f08a0ef15cf1970845f2443397a8ec95f1d58a466f08bee",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dpp4/crystal.mol2": "c66e797c433aa245a2ac2af30527e0f12178f38c08dcbe1aecf247d564b0a843",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/drd3/crystal.mol2": "d6168ae6539f9de16c471c1dc2696757d6dd5269c65bfd122650aa93f80e2594",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dyr/receptor_out.pdb": "561d7367e78b1a761eb930ede7da7b529255aecd332bc08ffdfcbd58bd5f8ff1",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dyr/crystal.mol2": "16136044517330b22775c8c859d1a39ecf431d97b5bb2f5173ab99d9eb68a142",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/egfr/receptor_out.pdb": "3fabf2927a166940c8409cb1b9e7a7e4d1c209ee36756c8a87f76726d18b0ed7",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/egfr/crystal.mol2": "c19cce10b32333f6a4a03b7e072865adc1c40ab5c83f8ad8bdc27882c3863bf8",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/receptor_out.pdb": "657de8348788aacb507182ef1fd6985bed5ea29908dc0a130c763ab5f72a62a2",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/crystal.mol2": "1ef46e9db70370659bad4a1a32c36ca6f14594cc719653791534f54837a2cea1",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/jak2/crystal.mol2": "cf672194d8e746a28a01968b8b30124b89423340d3b9c61e7ddfdad9dc3a80a6",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/kif11/receptor_out.pdb": "b9e736589e80b733d29b55dd06adb5d64cc8fb6239a91705044e51ae35fd2272",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/kif11/crystal.mol2": "70a9d35ee57ce2752f7e707d63102b5eefc9fb916ce59a871b5d2ddcd316b8fa",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/parp1/receptor_out.pdb": "2427ea04d7a53661403f2896b012775411ea9af88b8fcfa8d648f78ac6bb779a",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/parp1/crystal.mol2": "495f20545fafcd06d76c0edf88aec52d0ec85337ab6806ea54ee5e9d57143e8a",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/ppara/receptor_out.pdb": "9c369ac92278289b41eceac5da6f0e6a53ca4c63f5589d0895486b6d81901468",
+    "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/ppara/crystal.mol2": "35db7f1d001b3d5723e2817f576394ac8436044a6890708689d2ebaedc29fd7a"
+  },
+  "prepared_hashes": {
+    "aa2ar/client.json": "4b1f1f0d4721276b29064bb8c7ee67074c4eaeeb674064be216b078f95beca32",
+    "aa2ar/libinvent/input.smi": "5e79b345afcf248690e0e518d2027172acac5d4d8770bcf926f2ddbae45efe05",
+    "aa2ar/libinvent/rl.toml": "6d5418684e249c04d6bc3ea3fcc38d9c433d372900e993b7495001e8f5c52efc",
+    "aa2ar/linkinvent/input.smi": "e896a5bf7891202f045ff38a4923a9f69337147d847506cc504fe942acf5b3ba",
+    "aa2ar/linkinvent/rl.toml": "b104c2f80c7cfda2d57cf6a4ded727d9e1b6eedde9a100e6f10d4438d8f836d5",
+    "aa2ar/server.json": "c854523298ef8ff151bfcec61355532e6e6e5e05253b1eb05c2316b4da82d131",
+    "abl1/client.json": "ed20557c27182db302114d5450a8421554a7a912caca208ff16fe15dd4060818",
+    "abl1/libinvent/input.smi": "dbfb93b80f4dda1c2d44d109eb0d8ab3a5a5c721a95f40b7502fd8d9010d1203",
+    "abl1/libinvent/rl.toml": "b48e854cb693a8e00b108aa079d72a94003921cf8bee20f3bfa5df46124b31a7",
+    "abl1/linkinvent/input.smi": "7a1d7b63e7d1170d07f07a9e19e15602c14d7c852eb8292e9ce1d4837ad1bb81",
+    "abl1/linkinvent/rl.toml": "22438cc4489d9c435b764990aa8fd93768f11f2abc2fd5486cdd45f38eab2d5f",
+    "abl1/server.json": "d54cf67d7a690b27e5db2bc9dc053a65bd1f0ad4861a018f1bc454b2baaa28f1",
+    "adrb1/client.json": "4357c2e0044b37cc8bd68ae4eff56de15d94daa92f44efb84908e807feb1a1d8",
+    "adrb1/libinvent/input.smi": "2e1085de5d0f9466fa8cf9a51eaee04a37bf9faf9e665732b140a3e658e83e5b",
+    "adrb1/libinvent/rl.toml": "c8d33a930b0ba20a7b8ef326cc7128d547f3b3ec8a82e46df239ca6b25ba1045",
+    "adrb1/linkinvent/input.smi": "2019a916a25d318edbf7bb0ca8e07b4cfaa6dc4105d084106d8fff8321804b0a",
+    "adrb1/linkinvent/rl.toml": "ffda8c9337c2d7610a53c44ad158178f8b91a96baebcc0411a3f405948998f46",
+    "adrb1/server.json": "e0dcacfe00018c9b8c3db8e592cecbd06779ca26e9a1ef86d7ca132748833439",
+    "akt1/client.json": "51a1ddfac166fbf015df4eb0368c38c1bb7ef5f598427b3dc1ef6bed4f9b2ead",
+    "akt1/libinvent/input.smi": "391e110ae84344d00c3f876350bc3163106552265d3fee7403d47833d4d70884",
+    "akt1/libinvent/rl.toml": "05891b83a0d11a6619f476689731facfb75d7feac22efb2d9f58b9026ed8ba91",
+    "akt1/linkinvent/input.smi": "af0fad638b211caaa45e15433fd7d07add22dba3b26d8c7b750d96c3fde42f6b",
+    "akt1/linkinvent/rl.toml": "ac692aa76dbb218eb2cea0daf6b9bc2abce795f0c6dad6d4b51b0763c4d5caa6",
+    "akt1/server.json": "4dc72f2e7dd6218830c2ab52ec4e224bb6e855f7533ef89c02e7df77a6cc046b",
+    "cdk2/client.json": "a2867e913998ac89afd795133880cbb9af3bba9f186c35f200afb140b9e487d8",
+    "cdk2/libinvent/input.smi": "e0992afdf6efefe46b7b9d71c417b099b99d215245b067694b31a2c07cb86dfa",
+    "cdk2/libinvent/rl.toml": "36953387999654f10ec42f27d2c4a406385f3fa3bd8f7bbe23ccfd3549086376",
+    "cdk2/linkinvent/input.smi": "8b6def6a60d052a1066bae0c1f8c2a3ccb072ee6afbedc470bd390111a654b10",
+    "cdk2/linkinvent/rl.toml": "61dbad77b2190591632c2229bb0d080a5abd728366b37c0cca6bfd7fbb0d316d",
+    "cdk2/server.json": "dea2ae68972ecaf4b002cb38607bc0625776fb3b7633459c7f978529ed8002fe",
+    "cp3a4/client.json": "bbc04c0f1ca393b46c10a6484f8ea1894604d4ef2d193ed4637c5b180d572676",
+    "cp3a4/libinvent/input.smi": "1444388291543cc82bee5574e0f382bd3dd45977aec24297b7e6c301013dabe1",
+    "cp3a4/libinvent/rl.toml": "4f9d67131c3cf020390a74a4041f4157bc5012fb7504e3a1fff596ab31d222d7",
+    "cp3a4/linkinvent/input.smi": "051963f88b8c81d4f22f490648789723d9a78ca962e49fdeab9899e49fa93965",
+    "cp3a4/linkinvent/rl.toml": "9137368b0454a462b8b9de6543777164b28d176fd42ac940a5fb89414f1cfc23",
+    "cp3a4/server.json": "8a087df2d3f07ef8d5006a0ba70f0b79f057d8b25a69724c9797d19d01649f35",
+    "dpp4/client.json": "3a79726bf9cf6109821e994de047627671fae02b32f5846b8c237d4e3798c58c",
+    "dpp4/libinvent/input.smi": "5e6af4e5ceca67ac2a3149d5688d2f07976ce077741b9844a9eabb01f8706879",
+    "dpp4/libinvent/rl.toml": "e0e61edcae174fae312f7b19d497d1b5f768800fcf50baa08e90807949bcba21",
+    "dpp4/linkinvent/input.smi": "5543a511425b13f5479d7824d4138144e024d0123afd66f7da61fe2fc71ce4ca",
+    "dpp4/linkinvent/rl.toml": "9d247ba88a24c26e04b3de91461cbf625e6e1865a2a7b03108bf1c1314ceab3c",
+    "dpp4/server.json": "7276156304a2fad0f4d0f258e9be1b9ad304563b96e4245b8414bdc90cabb218",
+    "drd3/client.json": "4031cebc1d15e6d3b38c94977c82066e9f3e9ee9c5eab841f59ab8612c064405",
+    "drd3/libinvent/input.smi": "fb89d6742b78d05fa3986a3e5d4e7535d7f16d898ca042d50e8341acceaf765e",
+    "drd3/libinvent/rl.toml": "c60f568dce6078d6f956f6ea39ea3e20f1bdd8b733a68c0308298e569459724c",
+    "drd3/linkinvent/input.smi": "ca3a3f87cbd681153f51eb8ad6fdd50dc64d5af7ccdacb9bdb32b1cec0d59c1a",
+    "drd3/linkinvent/rl.toml": "db0c58a815eea9636c5dc1e15d81acdd0fb6c832213254b06f9129e4a9e0467e",
+    "drd3/receptor.pdb": "cb44526bc4f09db36115083349d48f7b166f77f7f0935726702f9be1e5c35db8",
+    "drd3/server.json": "46119d397b35293cd551fc1f8a829928da4e3c22d689fca3f946dc443798bb1b",
+    "dyr/client.json": "45852fb675ce26574a0d373fe003cd6e7825274fa136d7d4f2b002fc7aa7bd50",
+    "dyr/libinvent/input.smi": "8113729938d01cf71ed279b538c1471307eacea31ca6a1bde3bdd361c28bbef0",
+    "dyr/libinvent/rl.toml": "11b33620967eef0ee00eb930155f27270184688efb94d63e55287f72486e39c2",
+    "dyr/linkinvent/input.smi": "cd2d3866f618641c8a52695fa822effc27576fc5c12b1b482e8cf089b6125d22",
+    "dyr/linkinvent/rl.toml": "eb1f28c2b6de8c4c17ef665fb3fef01f334a13b623455a2e67b080cce5f45922",
+    "dyr/server.json": "2862b88ab1c6f24f976400e68d755fd643aab593c2446165481e7bc64a618db3",
+    "egfr/client.json": "f64d9fc69fcff6df93f57bcb77d60077f75d5370b1d32b86e165609f497aa0b6",
+    "egfr/libinvent/input.smi": "9c155ac1ea2318dd3cd5bb27230f6ea05b097ca66d800eccc46e7294d722c03f",
+    "egfr/libinvent/rl.toml": "b2e74dab10e982a73dade4ffa39190db9c3179accbe7b4fa929eaaea5f502d28",
+    "egfr/linkinvent/input.smi": "a0bbfd4260983d338bdb5774b9b835c4254c9d35aba08b2c31d371cad3f887aa",
+    "egfr/linkinvent/rl.toml": "a70fedb024aa8bd3dfb0f6b7863d49106c05a5f3df3a3cdf5b34740765939bf0",
+    "egfr/server.json": "06838c4128fd4edf2a07c50ad6621e0a3aad50adc05ead99d7607daad6b60036",
+    "experiment.json": "593306de95393890db40733428573d51a0bbb5872ca5fa20164ef627b8aee01c",
+    "gria2/client.json": "18875137cb99dc6776a177d539802779c41bd547786591138916802aa4efba70",
+    "gria2/libinvent/input.smi": "1841ab1ba574a9caa245259a18b1d39dd54f255e2348639088b67cb9043eb899",
+    "gria2/libinvent/rl.toml": "2d72943283c24235539a333b8bde41398adbff83c4f4ce8b96062d4a4e23a206",
+    "gria2/linkinvent/input.smi": "88e6390750d7d8856872cbb349fb639d00cf09fcd2700de0f1a168135b0feb20",
+    "gria2/linkinvent/rl.toml": "11217c750a4bcbc9f70c0019affac1f78f8e5f81e3218608081c025d2c842e2a",
+    "gria2/server.json": "e6dc91f074972dbf7525047ea3eb6c90889dd1ad6da0ec32cbdcb74bb4539094",
+    "jak2/client.json": "265b1e34f1e72538e2cb43a5a2b6d234ee441510ebf4d46ad6efa040888f1010",
+    "jak2/libinvent/input.smi": "fe166c3c0c922fef890c3d42c4b144a72291f21145f6bb86898a0349e166fc6f",
+    "jak2/libinvent/rl.toml": "c2aac0d7f6848c557a33d5fa11d37978c2792b9dc81593272a6ce477a5963372",
+    "jak2/linkinvent/input.smi": "1e435336054faf3ff23b26949b9f75578c746bd1ec3c3b52ebba88564ab73223",
+    "jak2/linkinvent/rl.toml": "a14124b3c7fb35ebb384a431c36dbf860ad6a5ff02337f17d45f323def4352cb",
+    "jak2/receptor.pdb": "0ce22ecb72dc66951026d7f0c50a9885698a27ddb0a9307d4b4a06f6703ce86b",
+    "jak2/server.json": "55e2ecf4f2a4d2098384d1194d2fe7528105f82ff84bbac016a9c7ceb546bb84",
+    "kif11/client.json": "7b01a388ba4030d966a0ea10433776a3109862bdd4aaf5b52b1cdf365b1026b2",
+    "kif11/libinvent/input.smi": "1491efa8d8ad34558c4bc502aa41ef6dee0bcb0466799295afa71b0b7194d1d4",
+    "kif11/libinvent/rl.toml": "e52c75058e8d87505e4bc906fbff0b22dacb216f83c519d65ff4d5e1da291061",
+    "kif11/linkinvent/input.smi": "2ade33e0882f41c645a05d3b2cc5f17892c9c792f963442e77b50a6d4422a28c",
+    "kif11/linkinvent/rl.toml": "cf27019326dc43166e736a51e879bf1935a1377bfffafd98f2341cf4b00bc2cd",
+    "kif11/server.json": "c8f1722e3d286e6a2556fe3ac7f170948d198e9ac307b74b459f215428f3e580",
+    "parp1/client.json": "ac06426ba6d1fb5eefbf378b4c7c599a5eeaa2a9bf7d3bbbdb26d6d7b09a7bd9",
+    "parp1/libinvent/input.smi": "6e0fd7b15d7367991bdaa3d54090175fd753b3e6981cb9e92d71d88b122abbb9",
+    "parp1/libinvent/rl.toml": "ecaceca0c124ba6087b9fb315479e16de36280bc146ef364dfb582ba103b9b89",
+    "parp1/linkinvent/input.smi": "c5160a497de7eda3d6ace328339b24ab5f552c9da450d61fdf177778f2bba8af",
+    "parp1/linkinvent/rl.toml": "8b87ba11aafa136819ca97c25a856c2c0d243a4a006548b5fd3043274e76e785",
+    "parp1/server.json": "cf33f5ac16b8d60c891f96727e58d7157b290a0fccd6d92de12768e6b27633c2",
+    "ppara/client.json": "2a2726902398178a65fdf8c5d2d6722dc8bdaaabba51da88a02e4d3dfc8cc203",
+    "ppara/libinvent/input.smi": "c816cf27daa0a8bf9e006363502fd9c572137f17e6434e6dd21fda44bb6ffa6e",
+    "ppara/libinvent/rl.toml": "1779ac7584bc34f5afa5d74f992e275f442078814a9cb8ef064699965c06f42e",
+    "ppara/linkinvent/input.smi": "312430ad7142a3ec8ca7aec7e1c690547f81458872d608ccd7753a1c8a089523",
+    "ppara/linkinvent/rl.toml": "74e3887f29158b6018a45233bd37c84c1004ea8c9124f26f985e928abb5bd45f",
+    "ppara/server.json": "1fff749ca71a5072434a48d46d6362361e1c8cc18cd0616d6ea38ac58c0e681c"
+  },
+  "targets": [
+    {
+      "target": "aa2ar",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/aa2ar/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/aa2ar/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/aa2ar/receptor_out.pdb",
+      "center": [
+        -9.06364,
+        -7.1446000000000005,
+        55.8626
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/aa2ar/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "aa2ar/server.json",
+      "client_config": "aa2ar/client.json",
+      "oracle_manifest": "aa2ar/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "aa2ar/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1nc(N)n2nc(-c3ccco3)nc2n1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "aa2ar/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(O)cc1|*c1nc(N)n2nc(-c3ccco3)nc2n1"
+        }
+      ]
+    },
+    {
+      "target": "abl1",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/abl1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/abl1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/abl1/receptor_out.pdb",
+      "center": [
+        16.19551724137931,
+        14.587206896551724,
+        3.938137931034483
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/abl1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "abl1/server.json",
+      "client_config": "abl1/client.json",
+      "oracle_manifest": "abl1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "abl1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*Nc1ncc2cc(-c3c(Cl)cccc3Cl)c(=O)n(C)c2n1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "abl1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1c(Cl)cccc1Cl|*c1ccc(F)c(C)c1"
+        }
+      ]
+    },
+    {
+      "target": "adrb1",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/adrb1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/adrb1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/adrb1/receptor_out.pdb",
+      "center": [
+        26.376285714285718,
+        5.1030476190476195,
+        1.8988095238095237
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/adrb1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "adrb1/server.json",
+      "client_config": "adrb1/client.json",
+      "oracle_manifest": "adrb1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "adrb1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cccc2c1CC(C#N)=N2"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "adrb1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*C(C)(C)C|*c1cccc2c1CC(C#N)=N2"
+        }
+      ]
+    },
+    {
+      "target": "akt1",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/akt1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/akt1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/akt1/receptor_out.pdb",
+      "center": [
+        -20.0053,
+        4.3438,
+        10.7399
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/akt1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "akt1/server.json",
+      "client_config": "akt1/client.json",
+      "oracle_manifest": "akt1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "akt1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*C1(N)CCN(c2ncnc3[nH]ccc23)CC1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "akt1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H](CCO)c1ccc(Cl)cc1|*c1ncnc2[nH]ccc12"
+        }
+      ]
+    },
+    {
+      "target": "cdk2",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cdk2/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cdk2/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cdk2/receptor_out.pdb",
+      "center": [
+        1.9698666666666669,
+        27.5588,
+        8.824866666666667
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cdk2/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "cdk2/server.json",
+      "client_config": "cdk2/client.json",
+      "oracle_manifest": "cdk2/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "cdk2/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*Nc1cc(Nc2c(F)cccc2F)ncn1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "cdk2/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*OC[C@@H](O)CN(C)C|*c1c(F)cccc1F"
+        }
+      ]
+    },
+    {
+      "target": "cp3a4",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cp3a4/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cp3a4/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cp3a4/receptor_out.pdb",
+      "center": [
+        36.68594,
+        -15.693620000000001,
+        29.690540000000002
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/cp3a4/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "cp3a4/server.json",
+      "client_config": "cp3a4/client.json",
+      "oracle_manifest": "cp3a4/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "cp3a4/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H](Cc1ccccc1)C[C@H](O)[C@H](Cc1ccccc1)NC(=O)OCc1cncs1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "cp3a4/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1csc(C(C)C)n1|*C[C@H](O)[C@H](Cc1ccccc1)NC(=O)OCc1cncs1"
+        }
+      ]
+    },
+    {
+      "target": "dpp4",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dpp4/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dpp4/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dpp4/receptor_out.pdb",
+      "center": [
+        -18.448096774193548,
+        -5.489,
+        60.05896774193548
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dpp4/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "dpp4/server.json",
+      "client_config": "dpp4/client.json",
+      "oracle_manifest": "dpp4/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "dpp4/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@H]1CC=C(C(=O)N2CCn3c(nnc3C(F)(F)F)C2)C[C@@H]1N"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "dpp4/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*C(F)(F)F|*c1cc(F)c(F)cc1F"
+        }
+      ]
+    },
+    {
+      "target": "drd3",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/drd3/receptor.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/drd3/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/drd3/receptor_out.pdb",
+      "center": [
+        0.08530434782608695,
+        -14.828347826086958,
+        10.43204347826087
+      ],
+      "pocket_reference": {
+        "source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3PBL.pdb",
+        "source_sha256": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+        "chain": "A",
+        "origin": "https://files.rcsb.org/download/3PBL.pdb",
+        "resname": "ETQ",
+        "residue_id": "1200"
+      },
+      "input_correction": {
+        "receptor": {
+          "source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/drd3/receptor_out.pdb",
+          "source_sha256": "7102faabd3c23241b304197a1ae835fde0b8eb26885fe7fd783264fdb442a4f2",
+          "chain": "A",
+          "origin": "DURIAN original receptor (user-verified byte identity); author chain A of 3PBL"
+        },
+        "pocket_reference": {
+          "source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3PBL.pdb",
+          "source_sha256": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+          "chain": "A",
+          "origin": "https://files.rcsb.org/download/3PBL.pdb",
+          "resname": "ETQ",
+          "residue_id": "1200"
+        },
+        "reason": "The design MOL2 centroid selects a different non-overlapping region. Choose the first author monomer A and its crystallographic ETQ 1200 orthosteric pocket; retain the original design ligand and all LibINVENT/LinkINVENT SMILES."
+      },
+      "server_config": "drd3/server.json",
+      "client_config": "drd3/client.json",
+      "oracle_manifest": "drd3/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "drd3/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*NC(=O)c1c(O)c(CC)cc(C)c1OC"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "drd3/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H]1CCCN1CC|*c1c(O)c(CC)cc(C)c1OC"
+        }
+      ]
+    },
+    {
+      "target": "dyr",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dyr/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dyr/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dyr/receptor_out.pdb",
+      "center": [
+        15.243583333333333,
+        5.837541666666667,
+        -0.19933333333333333
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/dyr/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "dyr/server.json",
+      "client_config": "dyr/client.json",
+      "oracle_manifest": "dyr/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "dyr/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*c1coc2nc(N)nc(N)c12"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "dyr/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*c1coc2nc(N)nc(N)c12|*c1ccccc1OC"
+        }
+      ]
+    },
+    {
+      "target": "egfr",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/egfr/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/egfr/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/egfr/receptor_out.pdb",
+      "center": [
+        16.292121212121213,
+        34.87081818181819,
+        92.03530303030303
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/egfr/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "egfr/server.json",
+      "client_config": "egfr/client.json",
+      "oracle_manifest": "egfr/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "egfr/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*n1ncc2cc(Nc3ncnc(N)c3CNN3CCCCC3)ccc21"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "egfr/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cccc(F)c1|*c1ncnc(N)c1CNN1CCCCC1"
+        }
+      ]
+    },
+    {
+      "target": "gria2",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/receptor_out.pdb",
+      "center": [
+        7.531259259259259,
+        32.66985185185185,
+        -0.7351111111111112
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/gria2/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "gria2/server.json",
+      "client_config": "gria2/client.json",
+      "oracle_manifest": "gria2/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "gria2/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cc2c(cc1C(F)(F)F)[nH]c(=O)c(=O)n2CP(=O)(O)O"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "gria2/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*N1CCOCC1|*CP(=O)(O)O"
+        }
+      ]
+    },
+    {
+      "target": "jak2",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/input-fix-20260927/prepared-full/jak2/receptor.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/jak2/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+      "center": [
+        114.671,
+        66.11351515151516,
+        10.554818181818183
+      ],
+      "pocket_reference": {
+        "source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+        "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+        "chain": "A",
+        "origin": "https://files.rcsb.org/download/3LPB.pdb",
+        "resname": "NVB",
+        "residue_id": "1133"
+      },
+      "input_correction": {
+        "receptor": {
+          "source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+          "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+          "chain": "A",
+          "origin": "https://files.rcsb.org/download/3LPB.pdb"
+        },
+        "pocket_reference": {
+          "source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+          "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+          "chain": "A",
+          "origin": "https://files.rcsb.org/download/3LPB.pdb",
+          "resname": "NVB",
+          "residue_id": "1133"
+        },
+        "reason": "DURIAN receptor_out.pdb is an upstream JNK3/mixed/truncated input; retain original data. 3LPB/A NVB coordinates exactly match the existing design crystal.mol2. Extract the JAK2 author chain A without coordinate or chemistry changes."
+      },
+      "server_config": "jak2/server.json",
+      "client_config": "jak2/client.json",
+      "oracle_manifest": "jak2/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "jak2/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cnc2cccc(-c3ccc(S(=O)(=O)NC)cc3)c2n1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "jak2/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(S(=O)(=O)NC)cc1|*c1cc(OC)c(OC)c(OC)c1"
+        }
+      ]
+    },
+    {
+      "target": "kif11",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/kif11/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/kif11/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/kif11/receptor_out.pdb",
+      "center": [
+        17.808030303030304,
+        16.11821212121212,
+        109.26678787878788
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/kif11/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "kif11/server.json",
+      "client_config": "kif11/client.json",
+      "oracle_manifest": "kif11/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "kif11/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*N(C)C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "kif11/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*c1ccccc1|*[C@H]1CCN(C)C[C@H]1F"
+        }
+      ]
+    },
+    {
+      "target": "parp1",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/parp1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/parp1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/parp1/receptor_out.pdb",
+      "center": [
+        26.36508,
+        11.22196,
+        27.02348
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/parp1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "parp1/server.json",
+      "client_config": "parp1/client.json",
+      "oracle_manifest": "parp1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "parp1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(-c2nc3cccc(C(N)=O)c3[nH]2)c(F)c1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "parp1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H]1CCCCN1|*c1nc2cccc(C(N)=O)c2[nH]1"
+        }
+      ]
+    },
+    {
+      "target": "ppara",
+      "protein_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/ppara/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/ppara/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/ppara/receptor_out.pdb",
+      "center": [
+        13.756636363636364,
+        39.44990909090909,
+        28.01230303030303
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/reinvent-20260927/project/real-world_dataset/ppara/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "ppara/server.json",
+      "client_config": "ppara/client.json",
+      "oracle_manifest": "ppara/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "ppara/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*NC(=O)c1sc(-c2ccc(C(F)(F)F)cc2)nc1C"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "ppara/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(C(F)(F)F)cc1|*c1ccc(OC(C)(C)C(=O)O)cc1"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "target": "aces",
+      "mode": "libinvent",
+      "status": "skipped",
+      "smiles_file": null,
+      "source_mol2": "real-world_dataset/aces/crystal.mol2",
+      "source_sha256": "1703c50c57a2c24592b2e6fb571be4b7aa3bf1604e8d1ebd591b231cbfb2631e",
+      "note": ""
+    },
+    {
+      "target": "aces",
+      "mode": "linkinvent",
+      "status": "skipped",
+      "smiles_file": null,
+      "source_mol2": "real-world_dataset/aces/crystal.mol2",
+      "source_sha256": "1703c50c57a2c24592b2e6fb571be4b7aa3bf1604e8d1ebd591b231cbfb2631e",
+      "note": ""
+    }
+  ],
+  "attempts_per_task": 10000,
+  "total_tasks": 30,
+  "target_inputs_file": "/home/ubuntu/experiments/reinvent-20260927/project/configs/manual_planet_rl/target_inputs.json"
+}
