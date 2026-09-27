@@ -1,6 +1,6 @@
 {
   "target": "jak2",
-  "receptor_pdb": "real-world_dataset/jak2/receptor_out.pdb",
+  "receptor_pdb": "evaluation/docking/prepared/jak2/receptor.pdb",
   "receptor_pdbqt": "evaluation/docking/prepared/jak2/receptor.pdbqt",
   "crystal_mol2": "real-world_dataset/jak2/crystal.mol2",
   "box": {
@@ -15,12 +15,29 @@
       26.283
     ],
     "padding_angstrom": 8.0,
-    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+    "definition": "center = pocket-reference ligand heavy-atom centroid (NVB A/1133); size = reference ligand bounding box + padding on each side"
   },
   "vina": {
     "scoring": "vina",
     "exhaustiveness": 16,
     "num_modes": 1,
     "seed": 42
+  },
+  "input_correction": {
+    "receptor": {
+      "source_pdb": "real-world_dataset/planet_reference_sources/3LPB.pdb",
+      "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+      "chain": "A",
+      "origin": "https://files.rcsb.org/download/3LPB.pdb"
+    },
+    "pocket_reference": {
+      "source_pdb": "real-world_dataset/planet_reference_sources/3LPB.pdb",
+      "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+      "chain": "A",
+      "origin": "https://files.rcsb.org/download/3LPB.pdb",
+      "resname": "NVB",
+      "residue_id": "1133"
+    },
+    "reason": "DURIAN receptor_out.pdb is an upstream JNK3/mixed/truncated input; retain original data. 3LPB/A NVB coordinates exactly match the existing design crystal.mol2. Extract the JAK2 author chain A without coordinate or chemistry changes."
   }
 }

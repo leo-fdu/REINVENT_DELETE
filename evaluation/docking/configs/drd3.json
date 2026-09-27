@@ -1,26 +1,43 @@
 {
   "target": "drd3",
-  "receptor_pdb": "real-world_dataset/drd3/receptor_out.pdb",
+  "receptor_pdb": "evaluation/docking/prepared/drd3/receptor.pdb",
   "receptor_pdbqt": "evaluation/docking/prepared/drd3/receptor.pdbqt",
   "crystal_mol2": "real-world_dataset/drd3/crystal.mol2",
   "box": {
     "center": [
-      8.405,
-      21.356,
-      23.563
+      0.085,
+      -14.828,
+      10.432
     ],
     "size": [
-      22.568,
-      26.41,
-      21.768
+      20.796,
+      25.596,
+      22.782
     ],
     "padding_angstrom": 8.0,
-    "definition": "center = crystal ligand heavy-atom centroid; size = ligand bounding box + padding on each side"
+    "definition": "center = pocket-reference ligand heavy-atom centroid (ETQ A/1200); size = reference ligand bounding box + padding on each side"
   },
   "vina": {
     "scoring": "vina",
     "exhaustiveness": 16,
     "num_modes": 1,
     "seed": 42
+  },
+  "input_correction": {
+    "receptor": {
+      "source_pdb": "real-world_dataset/drd3/receptor_out.pdb",
+      "source_sha256": "7102faabd3c23241b304197a1ae835fde0b8eb26885fe7fd783264fdb442a4f2",
+      "chain": "A",
+      "origin": "DURIAN original receptor (user-verified byte identity); author chain A of 3PBL"
+    },
+    "pocket_reference": {
+      "source_pdb": "real-world_dataset/planet_reference_sources/3PBL.pdb",
+      "source_sha256": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+      "chain": "A",
+      "origin": "https://files.rcsb.org/download/3PBL.pdb",
+      "resname": "ETQ",
+      "residue_id": "1200"
+    },
+    "reason": "The design MOL2 centroid selects a different non-overlapping region. Choose the first author monomer A and its crystallographic ETQ 1200 orthosteric pocket; retain the original design ligand and all LibINVENT/LinkINVENT SMILES."
   }
 }

@@ -75,6 +75,35 @@ For each of the 16 targets in `real-world_dataset/` this writes:
 Useful options: `--targets adrb1 cdk2` (subset), `--box-only` (rewrite only
 the JSON configs, skip receptor conversion).
 
+### Corrected targets: JAK2 and DRD3
+
+The original upstream receptors/pockets for JAK2 and DRD3 were found to be
+wrong during the PLANET RL workflow audit (JAK2's `receptor_out.pdb` is a
+JNK3/mixed/truncated input; DRD3's design-ligand centroid misses the
+crystallographic orthosteric pocket). See
+`configs/manual_planet_rl/README.md` for the full analysis.
+
+When `configs/manual_planet_rl/target_inputs.json` is present (it is
+versioned in this repo), `prepare_receptors.py` prepares these two targets
+from the **same traceable corrections** so the Vina numbers stay comparable
+with the generation experiment:
+
+- receptor: the extracted author chain (`src/planet_target_inputs.py`,
+  identical code and source hashes as the RL workflow) written to
+  `evaluation/docking/prepared/<target>/receptor.pdb`, then converted to
+  PDBQT. The original `receptor_out.pdb` files are retained untouched.
+- grid box: derived from the pocket-reference crystallographic ligand
+  (JAK2: 3LPB NVB A/1133; DRD3: 3PBL ETQ A/1200) with the same 8 Å padding
+  policy. For JAK2 the reference coordinates are identical to the design
+  `crystal.mol2`, so its box numbers do not change; DRD3's box moves to the
+  ETQ pocket (center `[0.085, -14.828, 10.432]`).
+- provenance: each corrected config carries an `input_correction` block
+  (source PDB, SHA-256, chain, reference residue, reason). Source hashes are
+  re-validated on every prepare run; any change fails loudly.
+
+All other 14 targets keep using `receptor_out.pdb` + `crystal.mol2` as
+before.
+
 ## 3. Step 2 — run docking
 
 ```bash

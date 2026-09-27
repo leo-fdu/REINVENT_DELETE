@@ -67,7 +67,8 @@ def receptor_chain(path, chain):
     return "\n".join(header + atoms + ["TER", "END"]) + "\n"
 
 
-def reference_center(path, chain, resname, residue_id):
+def reference_coords(path, chain, resname, residue_id):
+    """Heavy-atom coordinates of the pocket-reference residue, one per atom."""
     atoms = [line for line in pdb_lines(path) if line.startswith(("ATOM  ", "HETATM"))
              and line[21] == chain and line[17:20].strip() == resname
              and line[22:27].strip() == residue_id]
@@ -87,6 +88,11 @@ def reference_center(path, chain, resname, residue_id):
         coordinates.append(xyz)
     if not coordinates:
         raise ValueError(f"Missing reference residue {chain}/{resname}/{residue_id}: {path}")
+    return coordinates
+
+
+def reference_center(path, chain, resname, residue_id):
+    coordinates = reference_coords(path, chain, resname, residue_id)
     return [math.fsum(x[axis] for x in coordinates) / len(coordinates) for axis in range(3)]
 
 
