@@ -25,13 +25,16 @@ derived from the pocket-reference crystallographic ligand instead of the
 design ``crystal.mol2``. All other targets are unchanged.
 
 Receptor sanitization (uniform for all targets): several source receptors
-contain residues truncated to backbone+CB (e.g. CDK2's G-loop LYS A:9), which
-Meeko cannot template-match. Dropping them would punch holes in the binding
-site; instead they are relabeled to ALA — the atom records (and all
-coordinates) stay byte-identical, so the receptor still contains exactly the
-atoms PLANET saw during generation. The sanitized copy
-``prepared/<target>/receptor_sanitized.pdb`` is what Meeko actually reads;
-relabelings are logged to ``prepared/<target>/receptor_sanitized.log``.
+contain residues with truncated side chains (e.g. CDK2's G-loop LYS A:9 keeps
+only backbone+CB) and alternate locations. Meeko cannot template-match
+truncated residues, and dropping them would punch holes in the binding site.
+``sanitize_receptor_pdb`` therefore (1) resolves alternate locations with the
+same policy as the PLANET RL receptor extraction (highest mean occupancy,
+ties -> lexicographic label), and (2) truncates incomplete standard side
+chains to backbone+CB and relabels them ALA. Coordinates of kept atoms never
+change. The sanitized copy ``prepared/<target>/receptor_sanitized.pdb`` is
+what Meeko actually reads; all decisions are logged to
+``prepared/<target>/receptor_sanitized.log``.
 
 Usage:
     python evaluation/docking/prepare_receptors.py                 # all targets
@@ -52,7 +55,11 @@ from box_utils import box_from_coords, box_from_mol2
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
-from planet_target_inputs import corrected_inputs, reference_coords  # noqa: E402
+from planet_target_inputs import (  # noqa: E402
+    corrected_inputs,
+    reference_coords,
+    select_alternates,
+)
 
 DATASET_DIR = ROOT / "real-world_dataset"
 DOCKING_DIR = ROOT / "evaluation" / "docking"
@@ -140,39 +147,93 @@ def write_config(target: str, correction: dict | None = None,
     return cfg_path
 
 
-BACKBONE_CB = {"N", "CA", "C", "O", "CB"}
+BACKBONE = {"N", "CA", "C", "O"}
+BACKBONE_CB = BACKBONE | {"CB"}
+
+# Standard amino-acid side-chain heavy atoms (beyond the N, CA, C, O backbone).
+SIDECHAIN_ATOMS = {
+    "ALA": {"CB"},
+    "ARG": {"CB", "CG", "CD", "NE", "CZ", "NH1", "NH2"},
+    "ASN": {"CB", "CG", "OD1", "ND2"},
+    "ASP": {"CB", "CG", "OD1", "OD2"},
+    "CYS": {"CB", "SG"},
+    "GLN": {"CB", "CG", "CD", "OE1", "NE2"},
+    "GLU": {"CB", "CG", "CD", "OE1", "OE2"},
+    "GLY": set(),
+    "HIS": {"CB", "CG", "ND1", "CD2", "CE1", "NE2"},
+    "ILE": {"CB", "CG1", "CG2", "CD1"},
+    "LEU": {"CB", "CG", "CD1", "CD2"},
+    "LYS": {"CB", "CG", "CD", "CE", "NZ"},
+    "MET": {"CB", "CG", "SD", "CE"},
+    "PHE": {"CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ"},
+    "PRO": {"CB", "CG", "CD"},
+    "SER": {"CB", "OG"},
+    "THR": {"CB", "OG1", "CG2"},
+    "TRP": {"CB", "CG", "CD1", "CD2", "NE1", "CE2", "CE3", "CZ2", "CZ3", "CH2"},
+    "TYR": {"CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ", "OH"},
+    "VAL": {"CB", "CG1", "CG2"},
+}
 
 
 def sanitize_receptor_pdb(src_pdb: Path, dst_pdb: Path, log_path: Path) -> list:
-    """Relabel backbone+CB-only residues as ALA so Meeko can type them.
+    """Resolve altlocs and truncate incomplete side chains to ALA for Meeko.
 
-    Only residues whose ATOM names are exactly {N, CA, C, O, CB} and whose
-    resname is neither ALA nor GLY are relabeled; every other record is kept
-    byte-identical (coordinates never change). Returns the relabeling list.
+    Steps (coordinates of kept atoms never change):
+
+    1. Alternate locations are resolved with the same policy as the PLANET RL
+       receptor extraction (``planet_target_inputs.select_alternates``):
+       highest mean occupancy per residue, ties -> lexicographic label.
+    2. Any standard residue whose side chain is incomplete is truncated to
+       backbone+CB and relabeled ALA; residues with non-standard atom names
+       or missing backbone atoms are left for Meeko to report.
+
+    Returns the truncation list (``chain:resseq RES->ALA (dropped N atoms)``).
     """
     lines = Path(src_pdb).read_text(encoding="utf-8").splitlines()
+    atom_lines = [l for l in lines if l.startswith(("ATOM  ", "HETATM"))]
+    selected = select_alternates(atom_lines)
+    keep_serials = {line[6:11] for line in selected}
+    lines = [l for l in lines
+             if not l.startswith(("ATOM  ", "HETATM")) or l[6:11] in keep_serials]
+    altloc_removed = len(atom_lines) - len(selected)
+
     residues: dict = {}
     for line in lines:
         if line.startswith("ATOM  "):
             residues.setdefault((line[21], line[22:27]), []).append(line)
-    relabeled, relabel_keys = [], set()
-    for (chain, resseq), atoms in sorted(residues.items()):
-        names = {atom[12:16].strip() for atom in atoms}
+    truncate: dict = {}
+    for key, atoms in sorted(residues.items()):
         resname = atoms[0][17:20].strip()
-        if resname not in ("ALA", "GLY") and names == BACKBONE_CB:
-            relabel_keys.add((chain, resseq))
-            relabeled.append(f"{chain}:{resseq.strip()} {resname}->ALA")
+        side = SIDECHAIN_ATOMS.get(resname)
+        names = {a[12:16].strip() for a in atoms}
+        if side is None or not BACKBONE <= names \
+                or not names <= BACKBONE | side | {"OXT"}:
+            continue  # non-standard chemistry: leave for Meeko to report
+        if side - names:
+            truncate[key] = resname, len(atoms) - sum(
+                a[12:16].strip() in BACKBONE_CB for a in atoms)
+
     out = []
     for line in lines:
-        if line.startswith("ATOM  ") and (line[21], line[22:27]) in relabel_keys:
+        if line.startswith("ATOM  ") and (line[21], line[22:27]) in truncate:
+            if line[12:16].strip() not in BACKBONE_CB:
+                continue  # drop the incomplete side chain beyond CB
             line = line[:17] + "ALA" + line[20:]
         out.append(line)
     dst_pdb.parent.mkdir(parents=True, exist_ok=True)
     dst_pdb.write_text("\n".join(out) + "\n", encoding="utf-8")
-    log_path.write_text(
-        "backbone+CB-only residues relabeled to ALA (atom records unchanged):\n"
-        + "\n".join(relabeled) + ("\n" if relabeled else "(none)\n"), encoding="utf-8")
-    return relabeled
+
+    report = [
+        f"alternate locations resolved: kept {len(selected)} of {len(atom_lines)} "
+        f"atom records ({altloc_removed} dropped)",
+        "incomplete side chains truncated to backbone+CB and relabeled ALA "
+        "(coordinates of kept atoms unchanged):",
+    ]
+    report += [f"{chain}:{resseq.strip()} {resname}->ALA (dropped {dropped} atoms)"
+               for (chain, resseq), (resname, dropped) in truncate.items()] or ["(none)"]
+    log_path.write_text("\n".join(report) + "\n", encoding="utf-8")
+    return [f"{chain}:{resseq.strip()} {truncate[(chain, resseq)][0]}->ALA"
+            for chain, resseq in truncate]
 
 
 def prepare_corrected_receptor_pdb(target: str, correction: dict,

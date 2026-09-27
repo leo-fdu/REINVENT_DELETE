@@ -99,10 +99,10 @@ def test_uncorrected_targets_have_no_correction(tmp_path):
     assert cfg["box"]["center"] == [1.97, 27.559, 8.825]  # design crystal.mol2
 
 
-def _atom(serial, name, resname, resseq):
-    return (f"ATOM  {serial:>5} {name:^4} {resname:>3} A{resseq:>5}   "
-            "  0.000   0.000   0.000  1.00  0.00           "
-            + name.strip()[0].rjust(2) + "  ")
+def _atom(serial, name, resname, resseq, altloc=" ", occ=1.0):
+    return (f"ATOM  {serial:5d} {name:^4}{altloc}{resname:>3} A{resseq:4d}    "
+            f"{1.0:8.3f}{2.0:8.3f}{3.0:8.3f}{occ:6.2f}{0.0:6.2f}          "
+            f"{name.strip()[0]:>2}  ")
 
 
 def test_sanitize_relabels_only_backbone_cb_residues(tmp_path):
@@ -131,6 +131,42 @@ def test_sanitize_relabels_only_backbone_cb_residues(tmp_path):
             assert before[:17] == after[:17] and before[20:] == after[20:]
         else:
             assert before == after
+
+
+def test_sanitize_truncates_partial_side_chains(tmp_path):
+    src = tmp_path / "in.pdb"
+    atoms = [
+        _atom(1, "N", "LYS", 857), _atom(2, "CA", "LYS", 857),
+        _atom(3, "C", "LYS", 857), _atom(4, "O", "LYS", 857),
+        _atom(5, "CB", "LYS", 857), _atom(6, "CG", "LYS", 857),
+        _atom(7, "CD", "LYS", 857),  # LYS missing CE, NZ
+    ]
+    src.write_text("\n".join(atoms) + "\nEND\n")
+    dst = tmp_path / "out.pdb"
+    relabeled = sanitize_receptor_pdb(src, dst, tmp_path / "out.log")
+    assert relabeled == ["A:857 LYS->ALA"]
+    lines = [l for l in dst.read_text().splitlines() if l.startswith("ATOM")]
+    assert [l[12:16].strip() for l in lines] == ["N", "CA", "C", "O", "CB"]
+    assert {l[17:20] for l in lines} == {"ALA"}
+
+
+def test_sanitize_resolves_alternate_locations(tmp_path):
+    src = tmp_path / "in.pdb"
+    atoms = []
+    serial = 0
+    for label, occ in (("A", 0.5), ("B", 0.5)):
+        for name in ("N", "CA", "C", "O", "CB", "CG", "CD", "NE", "CZ", "NH1", "NH2"):
+            serial += 1
+            atoms.append(_atom(serial, name, "ARG", 88, altloc=label, occ=occ))
+    src.write_text("\n".join(atoms) + "\nEND\n")
+    dst = tmp_path / "out.pdb"
+    relabeled = sanitize_receptor_pdb(src, dst, tmp_path / "out.log")
+    assert relabeled == []  # complete after picking one conformation
+    lines = [l for l in dst.read_text().splitlines() if l.startswith("ATOM")]
+    assert len(lines) == 11
+    assert {l[16] for l in lines} == {"A"}  # tie broken lexicographically
+    assert {l[17:20] for l in lines} == {"ARG"}
+    assert "kept 11 of 22" in (tmp_path / "out.log").read_text()
 
 
 def test_sanitize_noop_on_complete_receptor(tmp_path):
