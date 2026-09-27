@@ -64,8 +64,12 @@ python evaluation/docking/prepare_receptors.py
 For each of the 16 targets in `real-world_dataset/` this writes:
 
 - `evaluation/docking/prepared/<target>/receptor.pdbqt` — receptor converted
-  from `receptor_out.pdb` (the PDBs contain no HETATM/waters, so default
-  Meeko receptor preparation applies directly);
+  by Meeko's `mk_prepare_receptor.py` with a deterministic policy:
+  `--default_altloc A` (several original receptors contain alternate
+  locations) and `--allow_bad_res` (drops residues Meeko has no template
+  for, e.g. JAK2's two PTR phosphotyrosines, which PLANET ignores as well).
+  Meeko's full output is saved next to each PDBQT as
+  `receptor.meeko.log` so removed residues stay auditable;
 - `evaluation/docking/configs/<target>.json` — the frozen fairness contract:
   - `box.center` = heavy-atom centroid of `crystal.mol2`
   - `box.size` = crystal-ligand bounding box + 8 Å padding on **each** side

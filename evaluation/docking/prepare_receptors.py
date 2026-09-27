@@ -141,7 +141,15 @@ def prepare_corrected_receptor_pdb(target: str, correction: dict,
 
 
 def prepare_receptor_pdbqt(receptor_pdb: Path, pdbqt_path: Path) -> None:
-    """Convert a receptor PDB to PDBQT via Meeko's mk_prepare_receptor.py."""
+    """Convert a receptor PDB to PDBQT via Meeko's mk_prepare_receptor.py.
+
+    ``--default_altloc A`` deterministically resolves alternate locations
+    (present in several original receptors) and ``--allow_bad_res`` drops
+    residues that do not match Meeko's templates (e.g. the two PTR
+    phosphotyrosines in the JAK2 3LPB chain, which PLANET ignores too).
+    Meeko's full output is kept in ``<target>/receptor.meeko.log`` so any
+    removed residue is auditable.
+    """
     exe = shutil.which("mk_prepare_receptor.py")
     if exe is None:
         raise SystemExit(
@@ -149,8 +157,11 @@ def prepare_receptor_pdbqt(receptor_pdb: Path, pdbqt_path: Path) -> None:
             "environment first (see evaluation/docking/README.md)."
         )
     pdbqt_path.parent.mkdir(parents=True, exist_ok=True)
-    cmd = [exe, "--read_pdb", str(receptor_pdb), "-p", str(pdbqt_path)]
+    cmd = [exe, "--read_pdb", str(receptor_pdb), "-p", str(pdbqt_path),
+           "--default_altloc", "A", "--allow_bad_res"]
     result = subprocess.run(cmd, capture_output=True, text=True)
+    pdbqt_path.with_suffix(".meeko.log").write_text(
+        result.stdout + result.stderr, encoding="utf-8")
     if result.returncode != 0 or not pdbqt_path.is_file():
         sys.stderr.write(result.stdout)
         sys.stderr.write(result.stderr)
