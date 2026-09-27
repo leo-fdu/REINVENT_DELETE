@@ -59,3 +59,8 @@ results/reinvent-20260927/**/all_generated.csv
 results/reinvent-20260927/all_generated.csv
 results/reinvent-20260927/**/*.log
 results/reinvent-20260927/.started
+
+# Server-side run evidence mirror (results/server-evidence/): local-only backup of
+# smoke-test outputs and validation artefacts; the audited evidence chain stays on
+# the server and is intentionally kept out of version control
+results/server-evidence/
