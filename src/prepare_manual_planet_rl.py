@@ -10,6 +10,8 @@ from pathlib import Path
 import re
 import shlex
 
+from planet_target_inputs import corrected_inputs
+
 
 ROOT = Path(__file__).resolve().parents[1]
 MODES = ("libinvent", "linkinvent")
@@ -157,7 +159,7 @@ transform.k = {curve["k"]}
 
 
 def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
-            planet_python, device="cuda:0", port=8765):
+            planet_python, device="cuda:0", port=8765, target_inputs=None):
     project, run_dir = Path(project).resolve(), Path(run_dir).resolve()
     if run_dir.is_relative_to(project) or run_dir.exists():
         raise ValueError("Choose a new run directory outside the project")
@@ -171,6 +173,9 @@ def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
     inputs = json.loads(input_manifest.read_text(encoding="utf-8"))
     if inputs["schema_version"] != 1:
         raise ValueError("Unexpected input manifest schema")
+    corrections, correction_files = corrected_inputs(project, target_inputs)
+    if set(corrections) - {task["target"] for task in inputs["tasks"]}:
+        raise ValueError("Target correction is not present in the design manifest")
     records, skipped, seen = {}, [], set()
     counts = Counter()
     for task in inputs["tasks"]:
@@ -198,12 +203,22 @@ def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
         smiles = task["input_smiles"]
         if not smiles or any(c.isspace() for c in smiles) or smiles_path.read_text() != smiles + "\n":
             raise ValueError(f"Input SMILES changed: {target}/{mode}")
-        protein = project / "real-world_dataset" / target / "receptor_out.pdb"
-        if not protein.is_file() or protein.stat().st_size == 0:
+        correction = corrections.get(target)
+        protein_source = (Path(correction["receptor"]["source_pdb"]) if correction else
+                          project / "real-world_dataset" / target / "receptor_out.pdb")
+        protein = run_dir / target / "receptor.pdb" if correction else protein_source
+        if not protein_source.is_file() or protein_source.stat().st_size == 0:
             raise ValueError(f"Missing protein: {target}")
         record = records.setdefault(target, {
             "target": target, "protein_pdb": str(protein), "source_mol2": str(source),
-            "center": crystal_center(source), "tasks": [],
+            "protein_source_pdb": str(protein_source),
+            "center": correction["center"] if correction else crystal_center(source),
+            "pocket_reference": (correction["pocket_reference"] if correction else
+                                 {"kind": "design_mol2_centroid", "source_mol2": str(source)}),
+            "input_correction": ({key: value for key, value in correction.items()
+                                  if key not in ("receptor_text", "center")} if correction else None),
+            "receptor_text": correction["receptor_text"] if correction else None,
+            "tasks": [],
         })
         record["tasks"].append(task)
     actual = {s: counts[s] for s in ("designed", "skipped", "incomplete", "not_started")}
@@ -212,9 +227,9 @@ def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
     model_paths = {mode: project / "REINVENT4/priors" / f"{mode}_transformer_pubchem.prior"
                    for mode in MODES}
     checkpoint = project / "PLANET/PLANET.param"
-    source_files = [input_manifest, *model_paths.values(), checkpoint]
+    source_files = [input_manifest, *model_paths.values(), checkpoint, *correction_files]
     source_files += [Path(record[key]) for record in records.values()
-                     for key in ("protein_pdb", "source_mol2")]
+                     for key in ("protein_source_pdb", "source_mol2")]
     source_hashes = {str(path): sha256(path) for path in source_files}
     manifest = {
         "schema_version": 1, "project": str(project), "run_dir": str(run_dir),
@@ -223,12 +238,15 @@ def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
         "prepared_hashes": {}, "targets": [], "skipped": skipped,
         "attempts_per_task": cfg["batch_size"] * cfg["steps"],
         "total_tasks": counts["designed"],
+        "target_inputs_file": str(correction_files[0]) if correction_files else None,
     }
     run_dir.mkdir(parents=True)
     write_json(run_dir / "experiment.json", cfg)
     for target, record in sorted(records.items()):
         folder = run_dir / target
         folder.mkdir()
+        if record["receptor_text"] is not None:
+            (folder / "receptor.pdb").write_text(record["receptor_text"], encoding="utf-8")
         server = {
             "target_id": target, "planet_root": str(project / "PLANET"),
             "checkpoint": str(checkpoint), "protein_pdb": record["protein_pdb"],
@@ -240,7 +258,7 @@ def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
             "url": f"http://127.0.0.1:{port}", "target_id": target,
             "oracle_id": "UNBOUND_UNTIL_SERVER_STARTS", "timeout": cfg["request_timeout"],
         })
-        entry = {key: value for key, value in record.items() if key != "tasks"}
+        entry = {key: value for key, value in record.items() if key not in ("tasks", "receptor_text")}
         entry.update(server_config=f"{target}/server.json", client_config=f"{target}/client.json",
                      oracle_manifest=f"{target}/oracle-manifest.json", tasks=[])
         for task in sorted(record["tasks"], key=lambda t: MODES.index(t["mode"])):
@@ -269,6 +287,8 @@ def main():
     parser.add_argument("--project", type=Path, default=ROOT)
     parser.add_argument("--inputs", type=Path)
     parser.add_argument("--experiment", type=Path)
+    parser.add_argument("--target-inputs", type=Path,
+                        help="Traceable receptor/pocket overrides (default: project target_inputs.json if present)")
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--reinvent-python", required=True)
     parser.add_argument("--planet-python", required=True)
@@ -281,6 +301,7 @@ def main():
             project, args.inputs or project / "configs/manual_design/manifest.json",
             args.experiment or project / "configs/manual_planet_rl/experiment.json",
             args.run_dir, args.reinvent_python, args.planet_python, args.device, args.port,
+            args.target_inputs,
         )
     except (ValueError, KeyError, IndexError, OSError) as error:
         parser.exit(1, f"Preparation failed: {error}\n")

@@ -131,6 +131,96 @@ def test_prepare_budget_center_no_early_stop(prepared):
     assert manifest["targets"][0]["tasks"][0]["validation"]["stereochemistry_match"] is False
 
 
+def corrected_fixture(prepared, tmp_path):
+    directory, old, port = prepared
+    project = Path(old["project"])
+    source = project / "reference.pdb"
+    def atom(serial, atom, chain, number, x, record="ATOM", residue="ALA", alt=" ", occupancy=1.):
+        return (f"{record:6s}{serial:5d} {atom:>4s}{alt}{residue:3s} {chain}{number:4d}    "
+                f"{x:8.3f}{0.:8.3f}{0.:8.3f}{occupancy:6.2f}{20.:6.2f}           C  \n")
+    source.write_text(atom(1, "CA", "A", 1, 50., alt="A", occupancy=.7) +
+                      atom(2, "CA", "A", 1, 80., alt="B", occupancy=.3) +
+                      atom(3, "CA", "B", 1, 0.) +
+                      atom(4, "C1", "A", 9, 50., "HETATM", "ETQ") +
+                      atom(5, "C2", "A", 9, 52., "HETATM", "ETQ"))
+    spec = {"source_pdb": "reference.pdb", "source_sha256": sha256(source),
+            "chain": "A", "origin": "fixture reference"}
+    config = project / "configs/manual_planet_rl/target_inputs.json"
+    config.parent.mkdir(parents=True, exist_ok=True)
+    write_json(config, {"schema_version": 1, "targets": {"example": {
+        "receptor": spec,
+        "pocket_reference": {**spec, "resname": "ETQ", "residue_id": "9"},
+        "reason": "Keep design input while correcting pocket location",
+    }}})
+    fresh = tmp_path / "corrected run"
+    args = (project, project / "configs/manual_design/manifest.json", project / "experiment.json",
+            fresh, old["reinvent_python"], old["planet_python"], "cpu", port)
+    return args, source, config
+
+
+def test_corrected_reference_is_independent_of_design_and_frozen(prepared, tmp_path):
+    args, source, config = corrected_fixture(prepared, tmp_path)
+    manifest = prepare(*args)
+    folder = args[3]
+    entry = manifest["targets"][0]
+    assert entry["center"] == [51., 0., 0.]
+    assert crystal_center(entry["source_mol2"]) == [1.5, 0., 0.]
+    assert (folder / "example/libinvent/input.smi").read_text() == "*C\n"
+    assert (folder / "example/linkinvent/input.smi").read_text() == "*C|*N\n"
+    receptor = (folder / "example/receptor.pdb").read_text()
+    atoms = [line for line in receptor.splitlines() if line.startswith("ATOM")]
+    assert len(atoms) == 1 and atoms[0][21] == "A" and float(atoms[0][30:38]) == 50.
+    assert "ETQ" not in receptor
+    server = json.loads((folder / "example/server.json").read_text())
+    assert server["protein_pdb"] == str(folder / "example/receptor.pdb")
+    assert server["center"] == entry["center"]
+    assert manifest["input_hashes"][str(source)] == sha256(source)
+    assert manifest["input_hashes"][str(config)] == sha256(config)
+    assert manifest["prepared_hashes"]["example/receptor.pdb"] == sha256(folder / "example/receptor.pdb")
+    source.write_text(source.read_text().replace("  52.000", "  53.000"))
+    with pytest.raises(ValueError, match="Source input changed"):
+        run(folder)
+    assert not (folder / ".started").exists()
+
+
+@pytest.mark.parametrize("failure", ["hash", "residue", "chain", "unknown_target"])
+def test_bad_corrections_fail_before_creating_run(prepared, tmp_path, failure):
+    args, _, config = corrected_fixture(prepared, tmp_path)
+    cfg = json.loads(config.read_text())
+    target = cfg["targets"]["example"]
+    if failure == "hash":
+        target["receptor"]["source_sha256"] = "0" * 64
+    elif failure == "residue":
+        target["pocket_reference"]["residue_id"] = "99"
+    elif failure == "chain":
+        target["receptor"]["chain"] = "Z"
+    else:
+        cfg["targets"] = {"unknown": target}
+    write_json(config, cfg)
+    with pytest.raises(ValueError):
+        prepare(*args)
+    assert not args[3].exists()
+
+
+@pytest.mark.parametrize("filename", ["example/receptor.pdb", "configs/manual_planet_rl/target_inputs.json"])
+def test_corrected_receptor_and_config_tampering_rejected(prepared, tmp_path, filename):
+    args, _, config = corrected_fixture(prepared, tmp_path)
+    prepare(*args)
+    path = config if filename.startswith("configs/") else args[3] / filename
+    path.write_text(path.read_text() + "\n")
+    with pytest.raises(ValueError, match="changed"):
+        run(args[3])
+    assert not (args[3] / ".started").exists()
+
+
+def test_truncated_reference_atoms_are_rejected(tmp_path):
+    from planet_target_inputs import receptor_chain
+    path = tmp_path / "truncated.pdb"
+    path.write_text("ATOM      1  CA  ALA A   1\n")
+    with pytest.raises(ValueError, match="Truncated"):
+        receptor_chain(path, "A")
+
+
 def test_runner_retains_duplicates_invalids_and_stops_children(prepared):
     directory, _, port = prepared
     assert run(directory)["state"] == "complete"
