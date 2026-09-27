@@ -24,6 +24,15 @@ receptor is the extracted author chain written to
 derived from the pocket-reference crystallographic ligand instead of the
 design ``crystal.mol2``. All other targets are unchanged.
 
+Receptor sanitization (uniform for all targets): several source receptors
+contain residues truncated to backbone+CB (e.g. CDK2's G-loop LYS A:9), which
+Meeko cannot template-match. Dropping them would punch holes in the binding
+site; instead they are relabeled to ALA — the atom records (and all
+coordinates) stay byte-identical, so the receptor still contains exactly the
+atoms PLANET saw during generation. The sanitized copy
+``prepared/<target>/receptor_sanitized.pdb`` is what Meeko actually reads;
+relabelings are logged to ``prepared/<target>/receptor_sanitized.log``.
+
 Usage:
     python evaluation/docking/prepare_receptors.py                 # all targets
     python evaluation/docking/prepare_receptors.py --targets adrb1 cdk2
@@ -131,6 +140,41 @@ def write_config(target: str, correction: dict | None = None,
     return cfg_path
 
 
+BACKBONE_CB = {"N", "CA", "C", "O", "CB"}
+
+
+def sanitize_receptor_pdb(src_pdb: Path, dst_pdb: Path, log_path: Path) -> list:
+    """Relabel backbone+CB-only residues as ALA so Meeko can type them.
+
+    Only residues whose ATOM names are exactly {N, CA, C, O, CB} and whose
+    resname is neither ALA nor GLY are relabeled; every other record is kept
+    byte-identical (coordinates never change). Returns the relabeling list.
+    """
+    lines = Path(src_pdb).read_text(encoding="utf-8").splitlines()
+    residues: dict = {}
+    for line in lines:
+        if line.startswith("ATOM  "):
+            residues.setdefault((line[21], line[22:27]), []).append(line)
+    relabeled, relabel_keys = [], set()
+    for (chain, resseq), atoms in sorted(residues.items()):
+        names = {atom[12:16].strip() for atom in atoms}
+        resname = atoms[0][17:20].strip()
+        if resname not in ("ALA", "GLY") and names == BACKBONE_CB:
+            relabel_keys.add((chain, resseq))
+            relabeled.append(f"{chain}:{resseq.strip()} {resname}->ALA")
+    out = []
+    for line in lines:
+        if line.startswith("ATOM  ") and (line[21], line[22:27]) in relabel_keys:
+            line = line[:17] + "ALA" + line[20:]
+        out.append(line)
+    dst_pdb.parent.mkdir(parents=True, exist_ok=True)
+    dst_pdb.write_text("\n".join(out) + "\n", encoding="utf-8")
+    log_path.write_text(
+        "backbone+CB-only residues relabeled to ALA (atom records unchanged):\n"
+        + "\n".join(relabeled) + ("\n" if relabeled else "(none)\n"), encoding="utf-8")
+    return relabeled
+
+
 def prepare_corrected_receptor_pdb(target: str, correction: dict,
                                    prepared_dir: Path = PREPARED_DIR) -> Path:
     """Write the extracted author-chain receptor PDB for a corrected target."""
@@ -140,15 +184,27 @@ def prepare_corrected_receptor_pdb(target: str, correction: dict,
     return pdb_path
 
 
+def prepare_sanitized_receptor(target: str, receptor_pdb: Path,
+                               prepared_dir: Path = PREPARED_DIR) -> Path:
+    """Write the sanitized receptor copy that Meeko reads; log relabelings."""
+    sanitized = prepared_dir / target / "receptor_sanitized.pdb"
+    log_path = prepared_dir / target / "receptor_sanitized.log"
+    relabeled = sanitize_receptor_pdb(receptor_pdb, sanitized, log_path)
+    if relabeled:
+        print(f"[{target}] relabeled {len(relabeled)} truncated residue(s) to ALA"
+              f" (see {log_path.relative_to(ROOT)})", flush=True)
+    return sanitized
+
+
 def prepare_receptor_pdbqt(receptor_pdb: Path, pdbqt_path: Path) -> None:
     """Convert a receptor PDB to PDBQT via Meeko's mk_prepare_receptor.py.
 
     ``--default_altloc A`` deterministically resolves alternate locations
-    (present in several original receptors) and ``--allow_bad_res`` drops
-    residues that do not match Meeko's templates (e.g. the two PTR
-    phosphotyrosines in the JAK2 3LPB chain, which PLANET ignores too).
-    Meeko's full output is kept in ``<target>/receptor.meeko.log`` so any
-    removed residue is auditable.
+    (present in several original receptors). ``--allow_bad_res`` is kept as a
+    last-resort guard; any residue it drops is recorded in
+    ``receptor.meeko.log`` and must be checked to be far from the grid box
+    (truncated side chains are preserved via ALA relabeling instead, see
+    ``sanitize_receptor_pdb``).
     """
     exe = shutil.which("mk_prepare_receptor.py")
     if exe is None:
@@ -196,8 +252,9 @@ def main(argv: list[str] | None = None) -> None:
                 print(f"[{target}] wrote {receptor_pdb.relative_to(ROOT)} (corrected)", flush=True)
             else:
                 receptor_pdb = DATASET_DIR / target / "receptor_out.pdb"
+            sanitized = prepare_sanitized_receptor(target, receptor_pdb)
             pdbqt_path = PREPARED_DIR / target / "receptor.pdbqt"
-            prepare_receptor_pdbqt(receptor_pdb, pdbqt_path)
+            prepare_receptor_pdbqt(sanitized, pdbqt_path)
             print(f"[{target}] wrote {pdbqt_path.relative_to(ROOT)}", flush=True)
     print(f"done: {len(targets)} target(s)", flush=True)
 

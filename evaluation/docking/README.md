@@ -64,12 +64,19 @@ python evaluation/docking/prepare_receptors.py
 For each of the 16 targets in `real-world_dataset/` this writes:
 
 - `evaluation/docking/prepared/<target>/receptor.pdbqt` — receptor converted
-  by Meeko's `mk_prepare_receptor.py` with a deterministic policy:
-  `--default_altloc A` (several original receptors contain alternate
-  locations) and `--allow_bad_res` (drops residues Meeko has no template
-  for, e.g. JAK2's two PTR phosphotyrosines, which PLANET ignores as well).
-  Meeko's full output is saved next to each PDBQT as
-  `receptor.meeko.log` so removed residues stay auditable;
+  by Meeko's `mk_prepare_receptor.py` from
+  `prepared/<target>/receptor_sanitized.pdb`. Two deterministic policies apply:
+  - **ALA relabeling** (`receptor_sanitized.log`): several source receptors
+    contain residues truncated to backbone+CB (e.g. CDK2's G-loop, JAK2's
+    C-lobe). Dropping them would punch holes in the pocket, so they are
+    relabeled to ALA — atom records and coordinates stay byte-identical, and
+    the receptor keeps exactly the atoms PLANET saw during generation.
+  - **Meeko flags** (`receptor.meeko.log`): `--default_altloc A` resolves
+    alternate locations present in several original receptors;
+    `--allow_bad_res` remains only as a last-resort guard — any residue it
+    drops is logged and must be verified to be far from the grid box (JAK2's
+    two PTR phosphotyrosine HETATM records are dropped this way; PLANET
+    ignores HETATM records as well);
 - `evaluation/docking/configs/<target>.json` — the frozen fairness contract:
   - `box.center` = heavy-atom centroid of `crystal.mol2`
   - `box.size` = crystal-ligand bounding box + 8 Å padding on **each** side
