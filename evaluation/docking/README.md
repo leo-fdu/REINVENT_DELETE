@@ -69,11 +69,15 @@ For each of the 16 targets in `real-world_dataset/` this writes:
   and fully logged in `receptor_sanitized.log`:
   - **Alternate locations** are resolved with the same policy as the PLANET
     RL receptor extraction (highest mean occupancy, ties → lexicographic).
-  - **Incomplete side chains** (several source receptors truncate residues
-    partway, e.g. CDK2's G-loop LYS A:9) are truncated to backbone+CB and
-    relabeled ALA — dropping whole residues would punch holes in the pocket
-    (CDK2 alone has 7 truncated residues inside the grid box). Coordinates
-    of kept atoms never change.
+  - **Untypable side chains** are truncated instead of dropped (dropping
+    whole residues would punch holes in the pocket — CDK2 alone has 7
+    affected residues inside the grid box). Two cases, both fully logged:
+    incomplete side chains (e.g. CDK2's G-loop LYS A:9) become ALA
+    (backbone+CB kept); complete side chains whose coordinates are
+    geometrically impossible — e.g. ACES A:88 has CZ-NH1 = 3.6 Å because
+    its two altloc copies are scrambled — become ALA as well, or GLY when
+    even the CA-CB bond is broken. Accepted bond window: [1.0, 2.0] Å.
+    Coordinates of kept atoms never change.
   - **Meeko flags** (`receptor.meeko.log`): `--default_altloc A` and
     `--allow_bad_res` remain only as last-resort guards — any residue Meeko
     still drops is logged and must be verified to be far from the grid box

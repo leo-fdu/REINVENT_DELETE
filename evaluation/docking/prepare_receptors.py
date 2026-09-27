@@ -46,6 +46,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import shutil
 import subprocess
 import sys
@@ -150,29 +151,41 @@ def write_config(target: str, correction: dict | None = None,
 BACKBONE = {"N", "CA", "C", "O"}
 BACKBONE_CB = BACKBONE | {"CB"}
 
-# Standard amino-acid side-chain heavy atoms (beyond the N, CA, C, O backbone).
-SIDECHAIN_ATOMS = {
-    "ALA": {"CB"},
-    "ARG": {"CB", "CG", "CD", "NE", "CZ", "NH1", "NH2"},
-    "ASN": {"CB", "CG", "OD1", "ND2"},
-    "ASP": {"CB", "CG", "OD1", "OD2"},
-    "CYS": {"CB", "SG"},
-    "GLN": {"CB", "CG", "CD", "OE1", "NE2"},
-    "GLU": {"CB", "CG", "CD", "OE1", "OE2"},
-    "GLY": set(),
-    "HIS": {"CB", "CG", "ND1", "CD2", "CE1", "NE2"},
-    "ILE": {"CB", "CG1", "CG2", "CD1"},
-    "LEU": {"CB", "CG", "CD1", "CD2"},
-    "LYS": {"CB", "CG", "CD", "CE", "NZ"},
-    "MET": {"CB", "CG", "SD", "CE"},
-    "PHE": {"CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ"},
-    "PRO": {"CB", "CG", "CD"},
-    "SER": {"CB", "OG"},
-    "THR": {"CB", "OG1", "CG2"},
-    "TRP": {"CB", "CG", "CD1", "CD2", "NE1", "CE2", "CE3", "CZ2", "CZ3", "CH2"},
-    "TYR": {"CB", "CG", "CD1", "CD2", "CE1", "CE2", "CZ", "OH"},
-    "VAL": {"CB", "CG1", "CG2"},
+# Covalent heavy-atom bonds within each standard side chain (CA-CB included).
+SIDECHAIN_BONDS = {
+    "ALA": [("CA", "CB")],
+    "ARG": [("CA", "CB"), ("CB", "CG"), ("CG", "CD"), ("CD", "NE"),
+            ("NE", "CZ"), ("CZ", "NH1"), ("CZ", "NH2")],
+    "ASN": [("CA", "CB"), ("CB", "CG"), ("CG", "OD1"), ("CG", "ND2")],
+    "ASP": [("CA", "CB"), ("CB", "CG"), ("CG", "OD1"), ("CG", "OD2")],
+    "CYS": [("CA", "CB"), ("CB", "SG")],
+    "GLN": [("CA", "CB"), ("CB", "CG"), ("CG", "CD"), ("CD", "OE1"), ("CD", "NE2")],
+    "GLU": [("CA", "CB"), ("CB", "CG"), ("CG", "CD"), ("CD", "OE1"), ("CD", "OE2")],
+    "GLY": [],
+    "HIS": [("CA", "CB"), ("CB", "CG"), ("CG", "ND1"), ("CG", "CD2"),
+            ("ND1", "CE1"), ("CD2", "NE2"), ("CE1", "NE2")],
+    "ILE": [("CA", "CB"), ("CB", "CG1"), ("CB", "CG2"), ("CG1", "CD1")],
+    "LEU": [("CA", "CB"), ("CB", "CG"), ("CG", "CD1"), ("CG", "CD2")],
+    "LYS": [("CA", "CB"), ("CB", "CG"), ("CG", "CD"), ("CD", "CE"), ("CE", "NZ")],
+    "MET": [("CA", "CB"), ("CB", "CG"), ("CG", "SD"), ("SD", "CE")],
+    "PHE": [("CA", "CB"), ("CB", "CG"), ("CG", "CD1"), ("CG", "CD2"),
+            ("CD1", "CE1"), ("CD2", "CE2"), ("CE1", "CZ"), ("CE2", "CZ")],
+    "PRO": [("CA", "CB"), ("CB", "CG"), ("CG", "CD"), ("N", "CD")],
+    "SER": [("CA", "CB"), ("CB", "OG")],
+    "THR": [("CA", "CB"), ("CB", "OG1"), ("CB", "CG2")],
+    "TRP": [("CA", "CB"), ("CB", "CG"), ("CG", "CD1"), ("CG", "CD2"),
+            ("CD1", "NE1"), ("NE1", "CE2"), ("CD2", "CE2"), ("CD2", "CE3"),
+            ("CE2", "CZ2"), ("CE3", "CZ3"), ("CZ2", "CH2"), ("CZ3", "CH2")],
+    "TYR": [("CA", "CB"), ("CB", "CG"), ("CG", "CD1"), ("CG", "CD2"),
+            ("CD1", "CE1"), ("CD2", "CE2"), ("CE1", "CZ"), ("CE2", "CZ"), ("CZ", "OH")],
+    "VAL": [("CA", "CB"), ("CB", "CG1"), ("CB", "CG2")],
 }
+SIDECHAIN_ATOMS = {
+    resname: {atom for bond in bonds for atom in bond if atom not in BACKBONE}
+    for resname, bonds in SIDECHAIN_BONDS.items()
+}
+# Accepted covalent bond-length window (generous; real heavy bonds are 1.2-1.6 A).
+BOND_MIN, BOND_MAX = 1.0, 2.0
 
 
 def sanitize_receptor_pdb(src_pdb: Path, dst_pdb: Path, log_path: Path) -> list:
@@ -186,8 +199,12 @@ def sanitize_receptor_pdb(src_pdb: Path, dst_pdb: Path, log_path: Path) -> list:
     2. Any standard residue whose side chain is incomplete is truncated to
        backbone+CB and relabeled ALA; residues with non-standard atom names
        or missing backbone atoms are left for Meeko to report.
+    3. Any complete side chain with a broken bond (outside
+       [BOND_MIN, BOND_MAX] A, e.g. scrambled altloc coordinates mixing both
+       conformations) is likewise truncated: broken CA-CB drops the CB as
+       well and relabels GLY, otherwise backbone+CB is kept (ALA).
 
-    Returns the truncation list (``chain:resseq RES->ALA (dropped N atoms)``).
+    Returns the truncation list (``chain:resseq RES->ALA`` or ``RES->GLY``).
     """
     lines = Path(src_pdb).read_text(encoding="utf-8").splitlines()
     atom_lines = [l for l in lines if l.startswith(("ATOM  ", "HETATM"))]
@@ -201,7 +218,12 @@ def sanitize_receptor_pdb(src_pdb: Path, dst_pdb: Path, log_path: Path) -> list:
     for line in lines:
         if line.startswith("ATOM  "):
             residues.setdefault((line[21], line[22:27]), []).append(line)
+
+    def _xyz(atom_line):
+        return [float(atom_line[30:38]), float(atom_line[38:46]), float(atom_line[46:54])]
+
     truncate: dict = {}
+    reasons: dict = {}
     for key, atoms in sorted(residues.items()):
         resname = atoms[0][17:20].strip()
         side = SIDECHAIN_ATOMS.get(resname)
@@ -210,15 +232,30 @@ def sanitize_receptor_pdb(src_pdb: Path, dst_pdb: Path, log_path: Path) -> list:
                 or not names <= BACKBONE | side | {"OXT"}:
             continue  # non-standard chemistry: leave for Meeko to report
         if side - names:
-            truncate[key] = resname, len(atoms) - sum(
-                a[12:16].strip() in BACKBONE_CB for a in atoms)
+            truncate[key] = "ALA"
+            reasons[key] = f"incomplete side chain (missing: {' '.join(sorted(side - names))})"
+            continue
+        coords = {a[12:16].strip(): _xyz(a) for a in atoms if a[12:16].strip() != "OXT"}
+        broken = [(a, b, math.dist(coords[a], coords[b]))
+                  for a, b in SIDECHAIN_BONDS[resname]
+                  if not BOND_MIN <= math.dist(coords[a], coords[b]) <= BOND_MAX]
+        if broken:
+            a, b, dist = broken[0]
+            if (a, b) == ("CA", "CB"):
+                truncate[key] = "GLY"
+                reasons[key] = f"broken CA-CB bond ({dist:.2f} A); backbone kept"
+            else:
+                truncate[key] = "ALA"
+                reasons[key] = f"broken side-chain bond {a}-{b} ({dist:.2f} A)"
 
     out = []
     for line in lines:
         if line.startswith("ATOM  ") and (line[21], line[22:27]) in truncate:
-            if line[12:16].strip() not in BACKBONE_CB:
-                continue  # drop the incomplete side chain beyond CB
-            line = line[:17] + "ALA" + line[20:]
+            target_resname = truncate[(line[21], line[22:27])]
+            keep_names = BACKBONE_CB if target_resname == "ALA" else BACKBONE
+            if line[12:16].strip() not in keep_names:
+                continue  # drop the untypable side chain (beyond CB)
+            line = line[:17] + target_resname + line[20:]
         out.append(line)
     dst_pdb.parent.mkdir(parents=True, exist_ok=True)
     dst_pdb.write_text("\n".join(out) + "\n", encoding="utf-8")
@@ -226,14 +263,18 @@ def sanitize_receptor_pdb(src_pdb: Path, dst_pdb: Path, log_path: Path) -> list:
     report = [
         f"alternate locations resolved: kept {len(selected)} of {len(atom_lines)} "
         f"atom records ({altloc_removed} dropped)",
-        "incomplete side chains truncated to backbone+CB and relabeled ALA "
-        "(coordinates of kept atoms unchanged):",
+        "untypable side chains truncated (coordinates of kept atoms unchanged):",
     ]
-    report += [f"{chain}:{resseq.strip()} {resname}->ALA (dropped {dropped} atoms)"
-               for (chain, resseq), (resname, dropped) in truncate.items()] or ["(none)"]
+    report += [f"{chain}:{resseq.strip()} {resname}->{truncate[(chain, resseq)]} "
+               f"({reasons[(chain, resseq)]})"
+               for (chain, resseq), resname in
+               sorted(((k, residues[k][0][17:20].strip()) for k in truncate),
+                      key=lambda item: item[0])] or ["(none)"]
     log_path.write_text("\n".join(report) + "\n", encoding="utf-8")
-    return [f"{chain}:{resseq.strip()} {truncate[(chain, resseq)][0]}->ALA"
-            for chain, resseq in truncate]
+    return [f"{chain}:{resseq.strip()} {resname}->{truncate[(chain, resseq)]}"
+            for (chain, resseq), resname in
+            sorted(((k, residues[k][0][17:20].strip()) for k in truncate),
+                   key=lambda item: item[0])]
 
 
 def prepare_corrected_receptor_pdb(target: str, correction: dict,
