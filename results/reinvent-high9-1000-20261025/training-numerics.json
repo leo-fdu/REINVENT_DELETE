@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "tasks": {
+    "aa2ar/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "aa2ar/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "abl1/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "abl1/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "adrb1/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "adrb1/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "akt1/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "akt1/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "cdk2/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "cdk2/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "cp3a4/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "cp3a4/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "dpp4/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "dpp4/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "drd3/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "drd3/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "dyr/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "dyr/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "egfr/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "egfr/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "gria2/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "gria2/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "jak2/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "jak2/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "kif11/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "kif11/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "parp1/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "parp1/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "ppara/libinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    },
+    "ppara/linkinvent": {
+      "finite_parameters": true,
+      "changed_tensors": 260,
+      "total_tensors": 262,
+      "finite_training_rows": 1000
+    }
+  }
+}

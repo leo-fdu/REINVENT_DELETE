@@ -5,7 +5,9 @@ import csv
 import gzip
 import hashlib
 import importlib.util
+from importlib.metadata import version
 import json
+import platform
 from collections import Counter
 from pathlib import Path
 
@@ -32,6 +34,21 @@ def main():
     analysis.DATA_PATH = data
     analysis.ANALYSIS_ROOT = package / "analysis"
     analysis.main()
+    baseline = package.parent / "generation_analysis_reinvent_1000/analysis/summary_table.csv"
+    with baseline.open() as handle:
+        old = {row["task"]: row for row in csv.DictReader(handle)}
+    with (package / "analysis/summary_table.csv").open() as handle:
+        current = list(csv.DictReader(handle))
+    if set(old) != {row["task"] for row in current}:
+        raise ValueError("Baseline and rerun task sets differ")
+    with (package / "analysis/comparison_high16_first1000.csv").open("w", newline="") as handle:
+        fields = ["task", "metric", "high16_first1000", "high9_rerun", "difference_high9_minus_high16"]
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for row in current:
+            for metric in analysis.SUMMARY_COLUMNS:
+                before, after = float(old[row["task"]][metric]), float(row[metric])
+                writer.writerow(dict(zip(fields, [row["task"], metric, before, after, after - before])))
     provenance = {
         "independent_rerun": True, "rows": sum(counts.values()), "tasks": len(tasks),
         "experiment": experiment,
@@ -39,6 +56,10 @@ def main():
         "input_sha256": hashlib.sha256(data.read_bytes()).hexdigest(),
         "shared_analysis_source": str(source.relative_to(repo)),
         "shared_analysis_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+        "baseline_summary": str(baseline.relative_to(repo)),
+        "baseline_summary_sha256": hashlib.sha256(baseline.read_bytes()).hexdigest(),
+        "analysis_versions": {name: version(name) for name in ("rdkit", "numpy", "matplotlib")},
+        "analysis_python": platform.python_version(),
     }
     (package / "analysis/provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
 

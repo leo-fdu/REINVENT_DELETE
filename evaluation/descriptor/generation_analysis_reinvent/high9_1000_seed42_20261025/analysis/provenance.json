@@ -1,0 +1,39 @@
+{
+  "independent_rerun": true,
+  "rows": 30000,
+  "tasks": 30,
+  "experiment": {
+    "schema_version": 1,
+    "seed": 42,
+    "batch_size": 100,
+    "steps": 10,
+    "sample_strategy": "multinomial",
+    "temperature": 1.0,
+    "learning_strategy": {
+      "type": "dap",
+      "sigma": 128,
+      "rate": 0.0001
+    },
+    "sigmoid": {
+      "low": 4.0,
+      "high": 9.0,
+      "k": 0.25
+    },
+    "penalty_multiplier": 0.5,
+    "planet_batch_size": 32,
+    "request_timeout": 120,
+    "startup_timeout": 600
+  },
+  "input": "results/reinvent-high9-1000-20261025/all_generated.csv.gz",
+  "input_sha256": "29bb6f58d338dc4d1e4f5dd65108cdc6cdd547a4cc1c7e4e0708559b66b16fc7",
+  "shared_analysis_source": "evaluation/descriptor/generation_analysis_reinvent/generation_analysis_reinvent_1000/src/run_analysis.py",
+  "shared_analysis_sha256": "534b1554607b9ee01fcdc3b4c5358f8296d2d31e5b9144f36f938efd8afa6394",
+  "baseline_summary": "evaluation/descriptor/generation_analysis_reinvent/generation_analysis_reinvent_1000/analysis/summary_table.csv",
+  "baseline_summary_sha256": "48ea28808d6a6d871d2f182715dc2bdf3087dfa7b5edb971328db84f1d68c269",
+  "analysis_versions": {
+    "rdkit": "2026.3.5",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1"
+  },
+  "analysis_python": "3.11.16"
+}
