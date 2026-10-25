@@ -5,6 +5,7 @@ from collections import Counter
 import csv
 import json
 import math
+import multiprocessing
 import os
 from pathlib import Path
 import signal
@@ -184,7 +185,7 @@ def combine(root, entries):
                 writer.writerows(reader)
 
 
-def run(root, targets=None):
+def run(root, targets=None, _worker=False):
     root = Path(root).resolve()
     manifest = read_run(root)
     entries = manifest["targets"]
@@ -195,9 +196,12 @@ def run(root, targets=None):
     # A claimed directory stays claimed. Report it before the hash check: a run
     # legitimately rewrites client.json (oracle_id), so verifying a used
     # directory would misreport the runner's own change as tampering.
-    if (root / ".started").exists():
+    marker = root / (f".started-{targets[0]}" if _worker else ".started")
+    status_path = root / (f"status-{targets[0]}.json" if _worker else "status.json")
+    if marker.exists():
         raise FileExistsError("Run directory was already used; prepare a new one")
-    verify_prepared(root, manifest)
+    if not _worker:
+        verify_prepared(root, manifest)
     cfg = manifest["experiment"]
     project = Path(manifest["project"])
     env = os.environ.copy()
@@ -207,9 +211,9 @@ def run(root, targets=None):
     env["PYTHONHASHSEED"] = str(cfg["seed"])
     state = {"state": "running", "targets": [e["target"] for e in entries], "tasks": {}}
     # This marker permanently claims the run, including failed/interrupted runs.
-    with (root / ".started").open("x") as handle:
+    with marker.open("x") as handle:
         handle.write(f"{os.getpid()}\n")
-    write_json(root / "status.json", state)
+    write_json(status_path, state)
     server_process = rl_process = None
     try:
         for entry in entries:
@@ -235,7 +239,7 @@ def run(root, targets=None):
                         name = f"{entry['target']}/{task['mode']}"
                         task_dir = local_path(root, task["directory"])
                         state["tasks"][name] = "running"
-                        write_json(root / "status.json", state)
+                        write_json(status_path, state)
                         print(f"Starting {name}: {manifest['attempts_per_task']} attempts", flush=True)
                         command = [manifest["reinvent_python"], "-m", "manual_planet_rl",
                                    "-l", str(task_dir / "run.log"), str(task_dir / "rl.toml")]
@@ -257,13 +261,14 @@ def run(root, targets=None):
                             raise RuntimeError(f"RL did not save its final agent: {name}")
                         collect_task(root, manifest, entry, task)
                         state["tasks"][name] = "complete"
-                        write_json(root / "status.json", state)
+                        write_json(status_path, state)
                 finally:
                     stop_process(rl_process)
                     rl_process = None
                     stop_process(server_process)
                     server_process = None
-        combine(root, entries)
+        if not _worker:
+            combine(root, entries)
         state["state"] = "complete"
     except BaseException as error:
         state.update(state="interrupted" if isinstance(error, KeyboardInterrupt) else "failed",
@@ -274,6 +279,63 @@ def run(root, targets=None):
     finally:
         stop_process(rl_process)
         stop_process(server_process)
+        write_json(status_path, state)
+    return state
+
+
+def run_parallel(root, workers):
+    """One isolated process per target; its two modes run sequentially."""
+    if not 1 <= workers <= 4:
+        raise ValueError("workers must be between 1 and 4")
+    root = Path(root).resolve()
+    manifest = read_run(root)
+    if (root / ".started").exists():
+        raise FileExistsError("Run directory was already used")
+    verify_prepared(root, manifest)
+    entries = manifest["targets"]
+    ports = [json.loads(local_path(root, e["server_config"]).read_text())["port"] for e in entries]
+    if len(set(ports)) != len(ports):
+        raise ValueError("Parallel execution requires preparation with --separate-ports")
+    with (root / ".started").open("x") as handle:
+        handle.write(f"{os.getpid()}\n")
+    state = {"state": "running", "workers": workers, "targets": [e["target"] for e in entries], "tasks": {}}
+    pending = list(entries)
+    active = []
+    context = multiprocessing.get_context("fork")
+    try:
+        while pending or active:
+            for process, target in list(active):
+                if not process.is_alive():
+                    process.join()
+                    active.remove((process, target))
+                    if process.exitcode != 0:
+                        raise RuntimeError(f"Target worker failed: {target} ({process.exitcode})")
+            while pending and len(active) < workers:
+                entry = pending.pop(0)
+                process = context.Process(target=run, args=(root, [entry["target"]], True))
+                process.start()
+                active.append((process, entry["target"]))
+            for entry in entries:
+                status = root / f"status-{entry['target']}.json"
+                if status.exists():
+                    try:
+                        state["tasks"].update(json.loads(status.read_text())["tasks"])
+                    except json.JSONDecodeError:
+                        pass  # A worker may currently be replacing its status.
+            write_json(root / "status.json", state)
+            if active:
+                time.sleep(1)
+        combine(root, entries)
+        state["state"] = "complete"
+    except BaseException as error:
+        state.update(state="failed", error=f"{type(error).__name__}: {error}")
+        raise
+    finally:
+        for process, _ in active:
+            if process.is_alive():
+                process.terminate()  # inherited SIGTERM handler cleans up RL and PLANET
+        for process, _ in active:
+            process.join()
         write_json(root / "status.json", state)
     return state
 
@@ -282,6 +344,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--targets", nargs="+", help="Optional target subset; default: all prepared targets")
+    parser.add_argument("--workers", type=int, default=1)
     args = parser.parse_args()
 
     def interrupted(signum, frame):
@@ -289,7 +352,12 @@ def main():
 
     previous = signal.signal(signal.SIGTERM, interrupted)
     try:
-        run(args.run_dir, args.targets)
+        if args.workers == 1:
+            run(args.run_dir, args.targets)
+        else:
+            if args.targets:
+                raise ValueError("Parallel runs use all prepared targets")
+            run_parallel(args.run_dir, args.workers)
     except KeyboardInterrupt:
         parser.exit(130, "Run interrupted; partial outputs are retained.\n")
     except (ValueError, KeyError, OSError, RuntimeError) as error:

@@ -169,7 +169,7 @@ transform.k = {curve["k"]}
 
 
 def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
-            planet_python, device="cuda:0", port=8765, target_inputs=None):
+            planet_python, device="cuda:0", port=8765, target_inputs=None, separate_ports=False):
     project, run_dir = Path(project).resolve(), Path(run_dir).resolve()
     if run_dir.is_relative_to(project) or run_dir.exists():
         raise ValueError("Choose a new run directory outside the project")
@@ -250,9 +250,13 @@ def prepare(project, input_manifest, experiment, run_dir, reinvent_python,
         "total_tasks": counts["designed"],
         "target_inputs_file": str(correction_files[0]) if correction_files else None,
     }
+    if separate_ports and port + len(records) - 1 > 65535:
+        raise ValueError("Target ports exceed 65535")
+    base_port = port
     run_dir.mkdir(parents=True)
     write_json(run_dir / "experiment.json", cfg)
-    for target, record in sorted(records.items()):
+    for index, (target, record) in enumerate(sorted(records.items())):
+        port = base_port + index if separate_ports else base_port
         folder = run_dir / target
         folder.mkdir()
         if record["receptor_text"] is not None:
@@ -304,6 +308,7 @@ def main():
     parser.add_argument("--planet-python", required=True)
     parser.add_argument("--device", default="cuda:0")
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--separate-ports", action="store_true", help="Assign a distinct port per target for parallel runs")
     args = parser.parse_args()
     project = args.project.resolve()
     try:
@@ -311,7 +316,7 @@ def main():
             project, args.inputs or project / "configs/manual_design/manifest.json",
             args.experiment or project / "configs/manual_planet_rl/experiment.json",
             args.run_dir, args.reinvent_python, args.planet_python, args.device, args.port,
-            args.target_inputs,
+            args.target_inputs, args.separate_ports,
         )
     except (ValueError, KeyError, IndexError, OSError) as error:
         parser.exit(1, f"Preparation failed: {error}\n")
