@@ -1,0 +1,75 @@
+{
+  "concurrency": 1,
+  "cpu_threads_per_process": 2,
+  "requested_tasks": 8,
+  "completed_tasks": 8,
+  "interrupted_tasks": 0,
+  "failed": false,
+  "attempts": 8000,
+  "wall_seconds": 414.22172380100164,
+  "start_epoch": 1792921583.384936,
+  "end_epoch": 1792921997.60666,
+  "attempts_per_second": 19.31332796018038,
+  "gpu_util_mean_pct": 25.982758620689655,
+  "gpu_util_median_pct": 15.0,
+  "gpu_util_ge90_fraction": 0.0812807881773399,
+  "full_worker_count_gpu_util_mean_pct": 25.982758620689655,
+  "gpu_memory_peak_mib": 5885.0,
+  "cpu_busy_mean_pct": 11.50198778239742,
+  "power_mean_w": 99.3712315270936,
+  "available_ram_min_mib": 28798.1328125,
+  "sampling_interval_seconds": 1,
+  "samples": 406,
+  "workers": [
+    {
+      "target": "cp3a4",
+      "mode": "libinvent",
+      "returncode": 0,
+      "wall_seconds": 60.191160219001176
+    },
+    {
+      "target": "cp3a4",
+      "mode": "linkinvent",
+      "returncode": 0,
+      "wall_seconds": 60.15291879700089
+    },
+    {
+      "target": "egfr",
+      "mode": "libinvent",
+      "returncode": 0,
+      "wall_seconds": 43.89729075200012
+    },
+    {
+      "target": "egfr",
+      "mode": "linkinvent",
+      "returncode": 0,
+      "wall_seconds": 55.13734299799762
+    },
+    {
+      "target": "jak2",
+      "mode": "libinvent",
+      "returncode": 0,
+      "wall_seconds": 51.037286827999196
+    },
+    {
+      "target": "jak2",
+      "mode": "linkinvent",
+      "returncode": 0,
+      "wall_seconds": 53.02300749200003
+    },
+    {
+      "target": "aa2ar",
+      "mode": "libinvent",
+      "returncode": 0,
+      "wall_seconds": 45.91075129899764
+    },
+    {
+      "target": "aa2ar",
+      "mode": "linkinvent",
+      "returncode": 0,
+      "wall_seconds": 44.86574824100171
+    }
+  ],
+  "notes": "One independent PLANET service per worker; startup and task transitions included. Preparation and audits excluded. GPU-memory peak is sampled, not allocator peak.",
+  "all_reward_audits_passed": true
+}

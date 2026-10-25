@@ -1,0 +1,56 @@
+[
+  {
+    "concurrency": 2,
+    "cpu_threads_per_process": 2,
+    "warmup_seconds": 10,
+    "observed_seconds": 39.07325649500126,
+    "measured_samples": 25,
+    "gpu_mean": 73.32,
+    "gpu_peak": 100.0,
+    "gpu_ge90_fraction": 0.56,
+    "vram_peak_mib": 9306.0,
+    "cpu_mean": 24.669419047770983,
+    "pre_stop_returncodes": [
+      null,
+      null
+    ],
+    "note": "Short load probe; incomplete RL tasks stopped intentionally after measurement, not production results."
+  },
+  {
+    "concurrency": 3,
+    "cpu_threads_per_process": 2,
+    "warmup_seconds": 10,
+    "observed_seconds": 40.84083062300124,
+    "measured_samples": 25,
+    "gpu_mean": 83.92,
+    "gpu_peak": 100.0,
+    "gpu_ge90_fraction": 0.64,
+    "vram_peak_mib": 14949.0,
+    "cpu_mean": 34.247799479260536,
+    "pre_stop_returncodes": [
+      null,
+      null,
+      null
+    ],
+    "note": "Short load probe; incomplete RL tasks stopped intentionally after measurement, not production results."
+  },
+  {
+    "concurrency": 4,
+    "cpu_threads_per_process": 2,
+    "warmup_seconds": 10,
+    "observed_seconds": 42.947469855000236,
+    "measured_samples": 25,
+    "gpu_mean": 89.4,
+    "gpu_peak": 100.0,
+    "gpu_ge90_fraction": 0.68,
+    "vram_peak_mib": 18014.0,
+    "cpu_mean": 42.757429076312455,
+    "pre_stop_returncodes": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "note": "Short load probe; incomplete RL tasks stopped intentionally after measurement, not production results."
+  }
+]

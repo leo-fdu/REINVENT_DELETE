@@ -1,0 +1,20 @@
+{
+  "project": "/home/ubuntu/experiments/high9_cap9_size001_1000_seed42_20261025/project",
+  "experiment": "/home/ubuntu/experiments/high9_cap9_size001_1000_seed42_20261025/project/configs/manual_planet_rl/experiment_high9_cap9_size001_1000.json",
+  "experiment_sha256": "fddd2db09aa0fcaa07bccfaab8cd623b879793d83db328a473b1a88d850d2e46",
+  "levels": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "targets": [
+    "cp3a4",
+    "egfr",
+    "jak2",
+    "aa2ar"
+  ],
+  "cpu_threads_per_process": 2,
+  "cohort_tasks": 8,
+  "script_sha256": "2fd6dcdbf60a12ae746f46a03e327bab9ffccec61fdd05abba0ccf46bdd05684"
+}
