@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "verified_files": 349,
+  "raw_mirror": "results/server-evidence/high9_cap9_size001_1000_seed42_20261025/run",
+  "summary": {
+    "rows": 30000,
+    "states": {
+      "1": 27645,
+      "2": 2077,
+      "0": 278
+    },
+    "planet_status": {
+      "ok": 29722,
+      "not_scored": 278
+    },
+    "repeats": 3954,
+    "high_raw_over8": 19455,
+    "high_raw_over9": 11119,
+    "sigmoid_over095": 0,
+    "negative_base_rewards": 300,
+    "negative_training_rewards": 300,
+    "max_capped_affinity": 9.0
+  }
+}

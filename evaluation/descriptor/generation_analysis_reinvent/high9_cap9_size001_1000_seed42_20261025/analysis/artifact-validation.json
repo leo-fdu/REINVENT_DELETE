@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "png_files": 324,
+  "curve_tables": 324,
+  "summary_rows": 33,
+  "metrics": [
+    "average_oracle_score_origin",
+    "average_oracle_score_sigmoid",
+    "average_atom_number",
+    "average_MW",
+    "repetition_count",
+    "noncanonical_count",
+    "average_generated_heavy_atoms",
+    "average_base_reward",
+    "average_training_reward"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "baseline": "high9_1000_seed42_20261025",
+  "rows_compared": 3000,
+  "identical_smiles": 3000,
+  "max_abs_raw_score_difference": 0.0,
+  "note": "First batches precede reward-driven updates; later trajectories may diverge."
+}
