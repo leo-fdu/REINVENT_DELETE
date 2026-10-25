@@ -20,6 +20,24 @@ ATLAS = HERE.parent / "task_design_astra"
 sys.path.insert(0, str(ATLAS))
 import render_designs as atlas  # noqa: E402
 
+
+def configure_dataset(path):
+    """Opt in once at startup; the legacy dataset remains the default."""
+    global atlas
+    from dataset import DatasetAtlas
+    atlas = DatasetAtlas(path, atlas)
+    ligand.cache_clear()
+
+
+def source_path(target):
+    if hasattr(atlas, "entries"):
+        return atlas.source_path(target)
+    return atlas.ROOT / "real-world_dataset" / target / "crystal.mol2"
+
+
+def target_metadata(target):
+    return atlas.entries[target] if hasattr(atlas, "entries") else {}
+
 MODES = ("libinvent", "linkinvent")
 COLORS = ((0.36, 0.68, 0.93), (0.38, 0.76, 0.50), (1.0, 0.70, 0.35))
 
@@ -56,6 +74,8 @@ def cuts_for(target: str, mode: str, raw_cuts: object, *, complete: bool) -> lis
         raise ValueError(f"未知任务类型：{mode}")
     if not isinstance(raw_cuts, list):
         raise ValueError("切割键必须是列表")
+    if (complete or raw_cuts) and not target_metadata(target).get("editable", True):
+        raise ValueError("此配体尚未形成完整设计输入；请先决定缺失部分/封端方案")
     required = 1 if mode == "libinvent" else 2
     if len(raw_cuts) > required or (complete and len(raw_cuts) != required):
         raise ValueError(f"{mode} 需要选择 {required} 条切割键")
@@ -107,7 +127,8 @@ def preview(target: str, mode: str, raw_cuts: object, raw_retained: object = Non
         "cuts": [list(cut) for cut in cuts],
         "complete": len(cuts) == required,
         "fragments": [fragment_info(fragment) for fragment in fragments],
-        "svg": draw_svg(ligand(target), cuts=tuple(cuts), components=tuple(components), interactive=True),
+        "svg": draw_svg(ligand(target), cuts=tuple(cuts), components=tuple(components),
+                        interactive=target_metadata(target).get("editable", True)),
     }
 
 
@@ -173,7 +194,11 @@ def target_info(target: str) -> dict:
         "ccd": atlas.CODES[target],
         "source_sha256": atlas.RAW_SHA256[target],
         "heavy_atoms": mol.GetNumHeavyAtoms(),
-        "svg": draw_svg(mol, interactive=True),
+        "label": target_metadata(target).get("label", target.upper()),
+        "warning": target_metadata(target).get("warning", ""),
+        "editable": target_metadata(target).get("editable", True),
+        "source_format": source_path(target).suffix.lstrip(".").upper(),
+        "svg": draw_svg(mol, interactive=target_metadata(target).get("editable", True)),
     }
 
 
@@ -320,25 +345,27 @@ def task_record(target: str, mode: str, spec: object) -> dict:
 
 def build_snapshot(raw: object) -> dict:
     if not isinstance(raw, dict) or set(raw) - set(atlas.CODES):
-        raise ValueError("设计数据必须是对象，且只能包含本项目的 16 个靶点")
+        raise ValueError("设计数据必须是对象，且只能包含当前数据集的靶点")
     targets = {}
     for target in atlas.CODES:
-        source = atlas.ROOT / "real-world_dataset" / target / "crystal.mol2"
+        source = source_path(target)
         if hashlib.sha256(source.read_bytes()).hexdigest() != atlas.RAW_SHA256[target]:
-            raise ValueError(f"{target} 原始 MOL2 已改变；请重启界面并重新核对设计")
+            raise ValueError(f"{target} 源配体已改变；请重启界面并重新核对设计")
         tasks = raw.get(target, {})
         if not isinstance(tasks, dict) or set(tasks) - set(MODES):
             raise ValueError(f"{target} 的任务数据必须只包含 LibINVENT/LinkINVENT")
         targets[target] = {
             "pdb": atlas.PDB[target],
             "ccd": atlas.CODES[target],
-            "source_mol2": f"real-world_dataset/{target}/crystal.mol2",
+            ("source_ligand" if hasattr(atlas, "entries") else "source_mol2"): str(source.relative_to(atlas.ROOT)),
             "source_sha256": atlas.RAW_SHA256[target],
             "reference_ligand_smiles": atlas.smi(ligand(target)),
             "tasks": {
                 mode: task_record(target, mode, tasks.get(mode, {})) for mode in MODES
             },
         }
+        if hasattr(atlas, "entries"):
+            targets[target]["provenance"] = dict(target_metadata(target))
     now = datetime.now(ZoneInfo("Asia/Shanghai"))
     counts = {
         status: sum(task["status"] == status for info in targets.values() for task in info["tasks"].values())
@@ -384,7 +411,8 @@ def report_html(snapshot: dict) -> str:
             )
         rows.append(
             f'<article id="{target}"><h2>{target.upper()} · {info["pdb"]} / {info["ccd"]}</h2>'
-            f'<p>原始 MOL2 SHA-256：<code>{info["source_sha256"]}</code></p>'
+            f'<p>源配体 SHA-256：<code>{info["source_sha256"]}</code></p>'
+            f'<p>{escape(info.get("provenance", {}).get("warning", ""))}</p>'
             + "".join(tasks) + "</article>"
         )
     links = " ".join(f'<a href="#{target}">{target.upper()}</a>' for target in snapshot["targets"])
@@ -399,10 +427,10 @@ def report_html(snapshot: dict) -> str:
         'dl{display:grid;grid-template-columns:180px 1fr;gap:7px 14px}dt{font-weight:700}'
         'dd{margin:0;overflow-wrap:anywhere}code{font-size:13px}nav{display:flex;flex-wrap:wrap;gap:12px}'
         'a{color:#09639c}@media(max-width:650px){dl{display:block}dt{margin-top:12px}}'
-        '</style><header><h1>16 个靶点的手动任务设计</h1>'
+        f'</style><header><h1>{len(snapshot["targets"])} 个配体条目的手动任务设计</h1>'
         f'<p>记录时间：{escape(snapshot["created_at"])}；已设计 {snapshot["status_counts"]["designed"]} 项，'
         f'跳过 {snapshot["status_counts"]["skipped"]} 项。完整数据见 <a href="designs.json">designs.json</a>。'
-        '已设计任务中橙色为参考配体的待生成区域；红色为切割键。图上的数字是原始 MOL2 原子 ID。</p>'
+        '已设计任务中橙色为参考配体的待生成区域；红色为切割键。图上的数字是源配体原子 ID。</p>'
         f'<nav>{links}</nav></header><main>{"".join(rows)}</main></html>'
     )
 

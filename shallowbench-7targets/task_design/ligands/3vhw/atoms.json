@@ -1,0 +1,576 @@
+[
+  {
+    "source_id": 1,
+    "pdb_serial": 2024,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C1",
+    "altloc": "",
+    "xyz": [
+      13.008,
+      -1.756,
+      -34.477
+    ]
+  },
+  {
+    "source_id": 2,
+    "pdb_serial": 2025,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C2",
+    "altloc": "",
+    "xyz": [
+      14.257,
+      -2.26,
+      -33.769
+    ]
+  },
+  {
+    "source_id": 3,
+    "pdb_serial": 2026,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C3",
+    "altloc": "",
+    "xyz": [
+      13.862,
+      -2.722,
+      -32.387
+    ]
+  },
+  {
+    "source_id": 4,
+    "pdb_serial": 2027,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C4",
+    "altloc": "",
+    "xyz": [
+      12.2,
+      -0.705,
+      -33.687
+    ]
+  },
+  {
+    "source_id": 5,
+    "pdb_serial": 2028,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C5",
+    "altloc": "",
+    "xyz": [
+      11.908,
+      -1.159,
+      -32.264
+    ]
+  },
+  {
+    "source_id": 6,
+    "pdb_serial": 2029,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C6",
+    "altloc": "",
+    "xyz": [
+      13.19,
+      -1.63,
+      -31.605
+    ]
+  },
+  {
+    "source_id": 7,
+    "pdb_serial": 2030,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C7",
+    "altloc": "",
+    "xyz": [
+      12.926,
+      -1.698,
+      -30.085
+    ]
+  },
+  {
+    "source_id": 8,
+    "pdb_serial": 2031,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C8",
+    "altloc": "",
+    "xyz": [
+      11.852,
+      -0.636,
+      -29.838
+    ]
+  },
+  {
+    "source_id": 9,
+    "pdb_serial": 2032,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C9",
+    "altloc": "",
+    "xyz": [
+      11.598,
+      -0.044,
+      -31.245
+    ]
+  },
+  {
+    "source_id": 10,
+    "pdb_serial": 2033,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C10",
+    "altloc": "",
+    "xyz": [
+      14.111,
+      -3.968,
+      -31.924
+    ]
+  },
+  {
+    "source_id": 11,
+    "pdb_serial": 2034,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C11",
+    "altloc": "",
+    "xyz": [
+      14.818,
+      -5.031,
+      -32.679
+    ]
+  },
+  {
+    "source_id": 12,
+    "pdb_serial": 2035,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C12",
+    "altloc": "",
+    "xyz": [
+      14.643,
+      -6.351,
+      -32.367
+    ]
+  },
+  {
+    "source_id": 13,
+    "pdb_serial": 2036,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C13",
+    "altloc": "",
+    "xyz": [
+      15.403,
+      -7.39,
+      -33.129
+    ]
+  },
+  {
+    "source_id": 14,
+    "pdb_serial": 2037,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C14",
+    "altloc": "",
+    "xyz": [
+      15.923,
+      -8.509,
+      -32.225
+    ]
+  },
+  {
+    "source_id": 15,
+    "pdb_serial": 2038,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C15",
+    "altloc": "",
+    "xyz": [
+      14.86,
+      -9.035,
+      -31.265
+    ]
+  },
+  {
+    "source_id": 16,
+    "pdb_serial": 2039,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C16",
+    "altloc": "",
+    "xyz": [
+      14.258,
+      -7.944,
+      -30.391
+    ]
+  },
+  {
+    "source_id": 17,
+    "pdb_serial": 2040,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C17",
+    "altloc": "",
+    "xyz": [
+      13.744,
+      -6.862,
+      -31.309
+    ]
+  },
+  {
+    "source_id": 18,
+    "pdb_serial": 2041,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C18",
+    "altloc": "",
+    "xyz": [
+      12.493,
+      -6.432,
+      -31.19
+    ]
+  },
+  {
+    "source_id": 19,
+    "pdb_serial": 2042,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "O19",
+    "altloc": "",
+    "xyz": [
+      17.049,
+      -8.065,
+      -31.411
+    ]
+  },
+  {
+    "source_id": 20,
+    "pdb_serial": 2043,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "O20",
+    "altloc": "",
+    "xyz": [
+      13.23,
+      -8.631,
+      -29.676
+    ]
+  },
+  {
+    "source_id": 21,
+    "pdb_serial": 2044,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C21",
+    "altloc": "",
+    "xyz": [
+      10.291,
+      0.771,
+      -31.436
+    ]
+  },
+  {
+    "source_id": 22,
+    "pdb_serial": 2045,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C22",
+    "altloc": "",
+    "xyz": [
+      10.849,
+      -2.274,
+      -32.292
+    ]
+  },
+  {
+    "source_id": 23,
+    "pdb_serial": 2046,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C23",
+    "altloc": "",
+    "xyz": [
+      9.025,
+      0.069,
+      -30.976
+    ]
+  },
+  {
+    "source_id": 24,
+    "pdb_serial": 2047,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C24",
+    "altloc": "",
+    "xyz": [
+      10.355,
+      2.157,
+      -30.751
+    ]
+  },
+  {
+    "source_id": 25,
+    "pdb_serial": 2048,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C25",
+    "altloc": "",
+    "xyz": [
+      8.005,
+      -0.149,
+      -31.827
+    ]
+  },
+  {
+    "source_id": 26,
+    "pdb_serial": 2049,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C26",
+    "altloc": "",
+    "xyz": [
+      8.006,
+      0.204,
+      -33.301
+    ]
+  },
+  {
+    "source_id": 27,
+    "pdb_serial": 2050,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C27",
+    "altloc": "",
+    "xyz": [
+      6.659,
+      -0.3,
+      -33.864
+    ]
+  },
+  {
+    "source_id": 28,
+    "pdb_serial": 2051,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C28",
+    "altloc": "",
+    "xyz": [
+      6.021,
+      -1.068,
+      -32.733
+    ]
+  },
+  {
+    "source_id": 29,
+    "pdb_serial": 2052,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C29",
+    "altloc": "",
+    "xyz": [
+      6.771,
+      -0.786,
+      -31.455
+    ]
+  },
+  {
+    "source_id": 30,
+    "pdb_serial": 2053,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "O30",
+    "altloc": "",
+    "xyz": [
+      6.458,
+      -1.056,
+      -30.299
+    ]
+  },
+  {
+    "source_id": 31,
+    "pdb_serial": 2054,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C31",
+    "altloc": "",
+    "xyz": [
+      4.847,
+      -2.033,
+      -32.986
+    ]
+  },
+  {
+    "source_id": 32,
+    "pdb_serial": 2055,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C32",
+    "altloc": "",
+    "xyz": [
+      5.035,
+      0.097,
+      -32.462
+    ]
+  },
+  {
+    "source_id": 33,
+    "pdb_serial": 2056,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C33",
+    "altloc": "",
+    "xyz": [
+      4.08,
+      -2.457,
+      -31.774
+    ]
+  },
+  {
+    "source_id": 34,
+    "pdb_serial": 2057,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "O34",
+    "altloc": "",
+    "xyz": [
+      4.747,
+      1.064,
+      -33.498
+    ]
+  },
+  {
+    "source_id": 35,
+    "pdb_serial": 2058,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "O35",
+    "altloc": "",
+    "xyz": [
+      4.443,
+      0.335,
+      -31.404
+    ]
+  },
+  {
+    "source_id": 36,
+    "pdb_serial": 2059,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C36",
+    "altloc": "",
+    "xyz": [
+      3.626,
+      1.938,
+      -33.337
+    ]
+  },
+  {
+    "source_id": 37,
+    "pdb_serial": 2060,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "O37",
+    "altloc": "",
+    "xyz": [
+      13.844,
+      -9.742,
+      -31.981
+    ]
+  },
+  {
+    "source_id": 38,
+    "pdb_serial": 2061,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C38",
+    "altloc": "",
+    "xyz": [
+      14.491,
+      -10.972,
+      -32.179
+    ]
+  },
+  {
+    "source_id": 39,
+    "pdb_serial": 2062,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C39",
+    "altloc": "",
+    "xyz": [
+      13.676,
+      -12.191,
+      -31.927
+    ]
+  },
+  {
+    "source_id": 40,
+    "pdb_serial": 2063,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "C40",
+    "altloc": "",
+    "xyz": [
+      14.629,
+      -13.123,
+      -31.207
+    ]
+  },
+  {
+    "source_id": 41,
+    "pdb_serial": 2064,
+    "chain": "A",
+    "residue": 1,
+    "ccd": "VHW",
+    "atom_name": "O41",
+    "altloc": "",
+    "xyz": [
+      13.889,
+      -13.505,
+      -30.031
+    ]
+  }
+]

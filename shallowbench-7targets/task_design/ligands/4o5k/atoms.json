@@ -1,0 +1,394 @@
+[
+  {
+    "source_id": 1,
+    "pdb_serial": 3251,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "PG",
+    "altloc": "",
+    "xyz": [
+      -21.56,
+      -6.258,
+      16.617
+    ]
+  },
+  {
+    "source_id": 2,
+    "pdb_serial": 3252,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O1G",
+    "altloc": "",
+    "xyz": [
+      -22.555,
+      -5.138,
+      17.189
+    ]
+  },
+  {
+    "source_id": 3,
+    "pdb_serial": 3253,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O2G",
+    "altloc": "",
+    "xyz": [
+      -20.217,
+      -6.381,
+      17.25
+    ]
+  },
+  {
+    "source_id": 4,
+    "pdb_serial": 3254,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O3G",
+    "altloc": "",
+    "xyz": [
+      -22.444,
+      -7.568,
+      16.906
+    ]
+  },
+  {
+    "source_id": 5,
+    "pdb_serial": 3255,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "PB",
+    "altloc": "",
+    "xyz": [
+      -21.677,
+      -4.789,
+      14.178
+    ]
+  },
+  {
+    "source_id": 6,
+    "pdb_serial": 3256,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O1B",
+    "altloc": "",
+    "xyz": [
+      -21.646,
+      -5.266,
+      12.643
+    ]
+  },
+  {
+    "source_id": 7,
+    "pdb_serial": 3257,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O2B",
+    "altloc": "",
+    "xyz": [
+      -22.943,
+      -4.089,
+      14.483
+    ]
+  },
+  {
+    "source_id": 8,
+    "pdb_serial": 3258,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O3B",
+    "altloc": "",
+    "xyz": [
+      -21.601,
+      -6.179,
+      15.015
+    ]
+  },
+  {
+    "source_id": 9,
+    "pdb_serial": 3259,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "PA",
+    "altloc": "",
+    "xyz": [
+      -20.593,
+      -2.427,
+      15.26
+    ]
+  },
+  {
+    "source_id": 10,
+    "pdb_serial": 3260,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O1A",
+    "altloc": "",
+    "xyz": [
+      -21.705,
+      -2.466,
+      16.241
+    ]
+  },
+  {
+    "source_id": 11,
+    "pdb_serial": 3261,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O2A",
+    "altloc": "",
+    "xyz": [
+      -19.176,
+      -2.082,
+      15.946
+    ]
+  },
+  {
+    "source_id": 12,
+    "pdb_serial": 3262,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "N3A",
+    "altloc": "",
+    "xyz": [
+      -20.283,
+      -3.866,
+      14.352
+    ]
+  },
+  {
+    "source_id": 13,
+    "pdb_serial": 3263,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O5'",
+    "altloc": "",
+    "xyz": [
+      -20.8,
+      -1.294,
+      14.139
+    ]
+  },
+  {
+    "source_id": 14,
+    "pdb_serial": 3264,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C5'",
+    "altloc": "",
+    "xyz": [
+      -21.952,
+      -1.261,
+      13.308
+    ]
+  },
+  {
+    "source_id": 15,
+    "pdb_serial": 3265,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C4'",
+    "altloc": "",
+    "xyz": [
+      -21.333,
+      -1.048,
+      11.904
+    ]
+  },
+  {
+    "source_id": 16,
+    "pdb_serial": 3266,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O4'",
+    "altloc": "",
+    "xyz": [
+      -21.102,
+      0.384,
+      11.855
+    ]
+  },
+  {
+    "source_id": 17,
+    "pdb_serial": 3267,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C3'",
+    "altloc": "",
+    "xyz": [
+      -20.381,
+      -1.741,
+      11.024
+    ]
+  },
+  {
+    "source_id": 18,
+    "pdb_serial": 3268,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O3'",
+    "altloc": "",
+    "xyz": [
+      -21.02,
+      -2.934,
+      10.592
+    ]
+  },
+  {
+    "source_id": 19,
+    "pdb_serial": 3269,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C2'",
+    "altloc": "",
+    "xyz": [
+      -20.751,
+      -0.474,
+      10.068
+    ]
+  },
+  {
+    "source_id": 20,
+    "pdb_serial": 3270,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C1'",
+    "altloc": "",
+    "xyz": [
+      -20.386,
+      0.859,
+      10.723
+    ]
+  },
+  {
+    "source_id": 21,
+    "pdb_serial": 3271,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "N1",
+    "altloc": "",
+    "xyz": [
+      -18.965,
+      0.354,
+      10.722
+    ]
+  },
+  {
+    "source_id": 22,
+    "pdb_serial": 3272,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C2",
+    "altloc": "",
+    "xyz": [
+      -18.149,
+      0.347,
+      9.641
+    ]
+  },
+  {
+    "source_id": 23,
+    "pdb_serial": 3273,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "N3",
+    "altloc": "",
+    "xyz": [
+      -16.785,
+      0.018,
+      9.775
+    ]
+  },
+  {
+    "source_id": 24,
+    "pdb_serial": 3274,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C4",
+    "altloc": "",
+    "xyz": [
+      -16.161,
+      -0.188,
+      11.001
+    ]
+  },
+  {
+    "source_id": 25,
+    "pdb_serial": 3275,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C5",
+    "altloc": "",
+    "xyz": [
+      -16.938,
+      -0.077,
+      12.131
+    ]
+  },
+  {
+    "source_id": 26,
+    "pdb_serial": 3276,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "C6",
+    "altloc": "",
+    "xyz": [
+      -18.271,
+      0.303,
+      11.972
+    ]
+  },
+  {
+    "source_id": 27,
+    "pdb_serial": 3277,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "O2",
+    "altloc": "",
+    "xyz": [
+      -18.556,
+      0.505,
+      8.49
+    ]
+  },
+  {
+    "source_id": 28,
+    "pdb_serial": 3278,
+    "chain": "A",
+    "residue": 405,
+    "ccd": "0KX",
+    "atom_name": "N4",
+    "altloc": "",
+    "xyz": [
+      -14.873,
+      -0.497,
+      11.124
+    ]
+  }
+]

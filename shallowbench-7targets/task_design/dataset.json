@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "title": "ShallowBench · 7 个结构 / 8 个配体候选",
+  "rdkit_version": "2026.03.5",
+  "targets": {
+    "4qyg": {
+      "pdb": "4QYG",
+      "ccd": "3DW",
+      "label": "4QYG · 3DW",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/4qyg/ligand.sdf",
+      "source_sha256": "acb1d5114f60fc56f0a188a32274d88602850692522d5f54c8ab682a88273c03",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/4qyg/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/4QYG.pdb",
+      "source_pdb_sha256": "97950d21e7b44ad80762b198bce6788f0cc98eedc0b09d5ddfdb0d5a04ce81bd",
+      "residues": [
+        [
+          "A",
+          301,
+          "3DW"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/4qyg/atoms.json",
+      "smiles": "CN1CCN(c2ccc(-c3cnc4[nH]c5cnc(C(=O)O)cc5c4c3)cc2)CC1",
+      "mapped_smiles": "[OH:1][C:2](=[O:3])[c:4]1[n:5][cH:6][c:7]2[nH:8][c:9]3[c:12]([c:11]2[cH:10]1)[cH:13][c:14](-[c:17]1[cH:18][cH:19][c:20]([N:23]2[CH2:24][CH2:25][N:26]([CH3:27])[CH2:28][CH2:29]2)[cH:21][cH:22]1)[cH:15][n:16]3",
+      "heavy_atoms": 29,
+      "shallowbench_id": 135853,
+      "shallowbench_center": [
+        4.8024173,
+        -35.594334,
+        77.21834
+      ],
+      "observed_centroid": [
+        2.084896551724139,
+        6.586103448275862,
+        18.038551724137932
+      ],
+      "center_distance_angstrom": 72.72428454595538,
+      "editable": true,
+      "warning": "3DW A/301：仅选择一个晶体副本供二维设计；ShallowBench 口袋对应关系尚未确认。保留稠合核心，优先考虑侧链或环系之间的非环单键。",
+      "pocket_mapping_confirmed": false
+    },
+    "4u1ofwf": {
+      "pdb": "4U1O",
+      "ccd": "FWF",
+      "label": "4U1O · FWF",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/4u1ofwf/ligand.sdf",
+      "source_sha256": "416a8142df97e73fa15af8ae6dc2bcb22567f22b11a20d0341f91a5f380f8749",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/4u1ofwf/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/4U1O.pdb",
+      "source_pdb_sha256": "02896effabfe9a18bcb10a0c5864b13e93c46de4ad1dc1b72d725ee0e3f43c51",
+      "residues": [
+        [
+          "A",
+          302,
+          "FWF"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/4u1ofwf/atoms.json",
+      "smiles": "CC(C)S(=O)(=O)NC[C@H](C)c1ccc(-c2ccc([C@@H](C)CNS(=O)(=O)C(C)C)cc2)cc1",
+      "mapped_smiles": "[O:1]=[S:2](=[O:3])([CH:4]([CH3:31])[CH3:32])[NH:5][CH2:6][C@H:7]([CH3:8])[c:9]1[cH:10][cH:11][c:12](-[c:15]2[cH:16][cH:17][c:20]([C@@H:21]([CH3:22])[CH2:23][NH:24][S:25](=[O:26])(=[O:27])[CH:28]([CH3:29])[CH3:30])[cH:19][cH:18]2)[cH:13][cH:14]1",
+      "heavy_atoms": 32,
+      "shallowbench_id": 81720,
+      "shallowbench_center": [
+        11.811876,
+        42.081596,
+        39.518345
+      ],
+      "observed_centroid": [
+        0.0005937499999999693,
+        -0.006249999999999839,
+        65.26209375
+      ],
+      "center_distance_angstrom": 50.73099416542128,
+      "editable": true,
+      "warning": "FWF A/302：与 KAI 是不同配体/位点的候选，尚未确认条目 81720 对应哪一个。先设计不代表选定正式实验配体。",
+      "pocket_mapping_confirmed": false
+    },
+    "4u1okai": {
+      "pdb": "4U1O",
+      "ccd": "KAI",
+      "label": "4U1O · KAI",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/4u1okai/ligand.sdf",
+      "source_sha256": "f4a4da592b51fd2623bf90fceb531746b7692941df7a2401a6f5576b9a0cced4",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/4u1okai/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/4U1O.pdb",
+      "source_pdb_sha256": "02896effabfe9a18bcb10a0c5864b13e93c46de4ad1dc1b72d725ee0e3f43c51",
+      "residues": [
+        [
+          "A",
+          301,
+          "KAI"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/4u1okai/atoms.json",
+      "smiles": "C=C(C)[C@H]1CN[C@H](C(=O)O)[C@H]1CC(=O)O",
+      "mapped_smiles": "[NH:1]1[CH2:2][C@H:8]([C:10](=[CH2:3])[CH3:4])[C@H:6]([CH2:7][C:9]([OH:13])=[O:14])[C@H:5]1[C:11](=[O:12])[OH:15]",
+      "heavy_atoms": 15,
+      "shallowbench_id": 81720,
+      "shallowbench_center": [
+        11.811876,
+        42.081596,
+        39.518345
+      ],
+      "observed_centroid": [
+        16.22553333333333,
+        -3.537866666666667,
+        64.22033333333334
+      ],
+      "center_distance_angstrom": 52.065381710610914,
+      "editable": true,
+      "warning": "KAI A/301：与 FWF 分开记录；环内键不能切，两个端片段可能较小，且切键可能影响手性恢复。",
+      "pocket_mapping_confirmed": false
+    },
+    "2roy": {
+      "pdb": "2ROY",
+      "ccd": "P28",
+      "label": "2ROY · P28",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/2roy/ligand.sdf",
+      "source_sha256": "59abee7343b400c1457780b83d291e706b6ec97422b4026dffd5ef7c10ec7ac3",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/2roy/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/2ROY.pdb",
+      "source_pdb_sha256": "cf217fb9a85202078e75cb74aab0757e211ab8e28cdfccf5518fc173be8ba957",
+      "residues": [
+        [
+          "A",
+          128,
+          "P28"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/2roy/atoms.json",
+      "smiles": "CC(=O)N[C@@H](Cc1ccc(Oc2cc([N+](=O)[O-])c(O)c([N+](=O)[O-])c2)cc1)C(=O)O",
+      "mapped_smiles": "[c:1]1([CH2:7][C@@H:8]([C:9](=[O:10])[OH:11])[NH:12][C:13]([CH3:14])=[O:15])[cH:2][cH:3][c:4]([O:16][c:17]2[cH:18][c:19]([N+:20](=[O:21])[O-:22])[c:23]([OH:24])[c:25]([N+:26](=[O:27])[O-:28])[cH:29]2)[cH:5][cH:6]1",
+      "heavy_atoms": 29,
+      "shallowbench_id": 68990,
+      "shallowbench_center": [
+        0.49066657,
+        6.230534,
+        9.609067
+      ],
+      "observed_centroid": [
+        20.736620689655172,
+        42.64279310344827,
+        5.828137931034482
+      ],
+      "center_distance_angstrom": 41.83355944521554,
+      "editable": true,
+      "warning": "P28 A/128：保留原始硝基、羧酸和立体化学；晶体副本与多链口袋仍待确认。",
+      "pocket_mapping_confirmed": false
+    },
+    "4n4f": {
+      "pdb": "4N4F",
+      "ccd": "GLY+LYS+GLY+LEU+GLY+ALY",
+      "label": "4N4F · 肽片段",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/4n4f/ligand.sdf",
+      "source_sha256": "95d9ad4bf7a5e1b0ae0ed234f9b20e816036019c9be096cac19690e790e2622e",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/4n4f/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/4n4f.pdb",
+      "source_pdb_sha256": "74a897cc79804ee16f00e847fbc7c0cce14534f3ef63ce75257fc760aa09ae38",
+      "residues": [
+        [
+          "C",
+          7,
+          "GLY"
+        ],
+        [
+          "C",
+          8,
+          "LYS"
+        ],
+        [
+          "C",
+          9,
+          "GLY"
+        ],
+        [
+          "C",
+          10,
+          "LEU"
+        ],
+        [
+          "C",
+          11,
+          "GLY"
+        ],
+        [
+          "C",
+          12,
+          "ALY"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/4n4f/atoms.json",
+      "smiles": "*NCC(=O)N[C@@H](CCCC[NH3+])C(=O)NCC(=O)N[C@@H](CC(C)C)C(=O)NCC(=O)N[C@@H](CCCCNC(C)=O)C(*)=O",
+      "mapped_smiles": "[NH:1]([CH2:2][C:3](=[O:4])[NH:5][C@H:6]([C:7](=[O:8])[NH:14][CH2:15][C:16](=[O:17])[NH:18][C@H:19]([C:20](=[O:21])[NH:26][CH2:27][C:28](=[O:29])[NH:39][C@@H:38]([CH2:37][CH2:36][CH2:35][CH2:34][NH:33][C:31](=[O:30])[CH3:32])[C:40](=[O:41])[*:43])[CH2:22][CH:23]([CH3:24])[CH3:25])[CH2:9][CH2:10][CH2:11][CH2:12][NH3+:13])[*:42]",
+      "heavy_atoms": 41,
+      "shallowbench_id": 9015,
+      "shallowbench_center": [
+        12.642302,
+        19.37176,
+        -7.28906
+      ],
+      "observed_centroid": [
+        -24.29004878048781,
+        17.4879756097561,
+        -8.391975609756098
+      ],
+      "center_distance_angstrom": 36.99680527618795,
+      "editable": false,
+      "warning": "仅展示已解析的 C 链 7–12；两端 * 表示未解析肽链的延续，不是已设计连接点。未补建原子或封端；此项暂不可切割，可记录备注/跳过。",
+      "pocket_mapping_confirmed": false
+    },
+    "3vhw": {
+      "pdb": "3VHW",
+      "ccd": "VHW",
+      "label": "3VHW · VHW",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/3vhw/ligand.sdf",
+      "source_sha256": "c7fbd58e118361a9f50573cbaecd0b14a15ce19e9f9f7d0df34fc88ab17d5df4",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/3vhw/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/3VHW.pdb",
+      "source_pdb_sha256": "029e678650aa3039d479c8906d35731dbc4d7a48bc481ca6dd230f41815e5a77",
+      "residues": [
+        [
+          "A",
+          1,
+          "VHW"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/3vhw/atoms.json",
+      "smiles": "C=C1/C(=C\\C=C2/CCC[C@]3(C)[C@@H]([C@H](C)/C=C4\\CC[C@](CC)(C(=O)OC)C4=O)CC[C@@H]23)C[C@@H](O)[C@H](OCCCO)[C@@H]1O",
+      "mapped_smiles": "[CH2:1]1[CH2:2]/[C:3](=[CH:10]\\[CH:11]=[C:12]2\\[CH2:13][C@@H:14]([OH:19])[C@H:15]([O:37][CH2:38][CH2:39][CH2:40][OH:41])[C@H:16]([OH:20])[C:17]2=[CH2:18])[C@H:6]2[C@:5]([CH3:22])([CH2:4]1)[C@@H:9]([C@@H:21](/[CH:23]=[C:25]1\\[CH2:26][CH2:27][C@:28]([CH2:31][CH3:33])([C:32]([O:34][CH3:36])=[O:35])[C:29]1=[O:30])[CH3:24])[CH2:8][CH2:7]2",
+      "heavy_atoms": 41,
+      "shallowbench_id": 115690,
+      "shallowbench_center": [
+        21.598145,
+        -6.8101907,
+        15.56662
+      ],
+      "observed_centroid": [
+        11.099512195121953,
+        -3.752414634146341,
+        -31.91812195121952
+      ],
+      "center_distance_angstrom": 48.72752818904809,
+      "editable": true,
+      "warning": "VHW A/1：多手性中心和共轭双键；避开会破坏保留片段立体化学的切键，记录时核对 stereo 标记。",
+      "pocket_mapping_confirmed": false,
+      "draft_compatible_hashes": [
+        "3e77ffea8a2dafa6ee94db0aff307a6fe34d9cfb247bfd61ed7506bef1bbb84c"
+      ]
+    },
+    "4o5k": {
+      "pdb": "4O5K",
+      "ccd": "0KX",
+      "label": "4O5K · 0KX",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/4o5k/ligand.sdf",
+      "source_sha256": "71fdf30d70ae20c119ad6d28e53ce52b5b96a78f0aaa47942a7c5f0c223fca0a",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/4o5k/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/4O5K.pdb",
+      "source_pdb_sha256": "5c75c6ed791c2664d5064afaeeb33622d67327eb9a4b46b918cfb0809f06c9a1",
+      "residues": [
+        [
+          "A",
+          405,
+          "0KX"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/4o5k/atoms.json",
+      "smiles": "Nc1ccn([C@H]2C[C@H](O)[C@@H](COP(=O)(O)NP(=O)(O)OP(=O)(O)O)O2)c(=O)n1",
+      "mapped_smiles": "[P:1]([OH:2])(=[O:3])([OH:4])[O:8][P:5]([OH:6])(=[O:7])[NH:12][P:9](=[O:10])([OH:11])[O:13][CH2:14][C@H:15]1[O:16][C@@H:20]([n:21]2[c:22](=[O:27])[n:23][c:24]([NH2:28])[cH:25][cH:26]2)[CH2:19][C@@H:17]1[OH:18]",
+      "heavy_atoms": 28,
+      "shallowbench_id": 147001,
+      "shallowbench_center": [
+        29.3824,
+        -3.6452,
+        42.366497
+      ],
+      "observed_centroid": [
+        -20.10082142857143,
+        -2.259035714285715,
+        13.019607142857142
+      ],
+      "center_distance_angstrom": 57.54781141505987,
+      "editable": true,
+      "warning": "0KX A/405：含磷酸基和核糖结构；保留 CCD 化学状态，尚未选定溶液质子化状态。PLANET 不表示 DNA/金属环境。",
+      "pocket_mapping_confirmed": false
+    },
+    "4pwj": {
+      "pdb": "4PWJ",
+      "ccd": "30Z",
+      "label": "4PWJ · 30Z",
+      "source_ligand": "shallowbench-7targets/task_design/ligands/4pwj/ligand.sdf",
+      "source_sha256": "99cde74a10f317e63a16719d62027e6828fca264ae8cbed4d49fab6da5727413",
+      "design_graph_sdf": "shallowbench-7targets/task_design/ligands/4pwj/design_graph.sdf",
+      "source_pdb": "shallowbench-7targets/4PWJ.pdb",
+      "source_pdb_sha256": "ca56d6095d92e8fa81c067095c300874c41d63654f57a3b0d5096278c19b9482",
+      "residues": [
+        [
+          "A",
+          201,
+          "30Z"
+        ]
+      ],
+      "atom_mapping": "shallowbench-7targets/task_design/ligands/4pwj/atoms.json",
+      "smiles": "C[C@@H](Cc1ccc(O)c(O)c1)[C@@H](C)Cc1ccc(O)c(O)c1",
+      "mapped_smiles": "[OH:1][c:2]1[cH:3][c:8]([CH2:9][C@H:10]([CH3:11])[C@@H:12]([CH3:13])[CH2:14][c:15]2[cH:16][cH:21][c:20]([OH:22])[c:18]([OH:19])[cH:17]2)[cH:7][cH:6][c:4]1[OH:5]",
+      "heavy_atoms": 22,
+      "shallowbench_id": 69315,
+      "shallowbench_center": [
+        -11.080059,
+        1.9159414,
+        1.0909412
+      ],
+      "observed_centroid": [
+        -22.036863636363634,
+        0.16859090909090912,
+        -5.521136363636364
+      ],
+      "center_distance_angstrom": 12.916050916788121,
+      "editable": true,
+      "warning": "30Z A/201：仅选择一个晶体副本供二维设计；两个芳环之间有非环连接链，需检查手性恢复及多链口袋。",
+      "pocket_mapping_confirmed": false
+    }
+  },
+  "ccd_sources": {
+    "0KX": {
+      "url": "https://files.rcsb.org/ligands/download/0KX.cif",
+      "sha256": "08c04246b804629ed8124aa6536c5d683e12771c679777835d2fffeaa63b7bee"
+    },
+    "30Z": {
+      "url": "https://files.rcsb.org/ligands/download/30Z.cif",
+      "sha256": "5a6f84a7c4fd8985d4d6d89c8c54dae1132dea4765f8f7c3c5e8bd31f001796c"
+    },
+    "3DW": {
+      "url": "https://files.rcsb.org/ligands/download/3DW.cif",
+      "sha256": "50a788cfb71a41adb9abba89c2b827f0f7d0cbf78fced6238536686823d43e5c"
+    },
+    "ALY": {
+      "url": "https://files.rcsb.org/ligands/download/ALY.cif",
+      "sha256": "2b51dcd1dc065fb46df3a05ea166b61271aa5d6d60341dc792df1e1b53ff92c2"
+    },
+    "FWF": {
+      "url": "https://files.rcsb.org/ligands/download/FWF.cif",
+      "sha256": "821d4bd85b91db7f5468bbc23ee9eb26d0b921dd722fe478cc5e4462f6511de4"
+    },
+    "GLY": {
+      "url": "https://files.rcsb.org/ligands/download/GLY.cif",
+      "sha256": "c49458946b0ebc057db6ad0a4e1557a1caaed4c80a203accd458efddccbf92ff"
+    },
+    "KAI": {
+      "url": "https://files.rcsb.org/ligands/download/KAI.cif",
+      "sha256": "c575c58e30fe09c9f0b6a6b3beeadd677e3fba7c2b10c0651aed47e60846de25"
+    },
+    "LEU": {
+      "url": "https://files.rcsb.org/ligands/download/LEU.cif",
+      "sha256": "fc56e022bc8baa25dc6e543b2c46664e365779aa1dda9831576fdf10b30ab84b"
+    },
+    "LYS": {
+      "url": "https://files.rcsb.org/ligands/download/LYS.cif",
+      "sha256": "318a0f6fa8f98682b35e1793517d5b683b9045c1e6174bc564b7d43e07e4c07c"
+    },
+    "P28": {
+      "url": "https://files.rcsb.org/ligands/download/P28.cif",
+      "sha256": "c81c5cd13eeabdd4667c2b848099d68719fe90eb2ade266f3a3c4270d33eb54d"
+    },
+    "VHW": {
+      "url": "https://files.rcsb.org/ligands/download/VHW.cif",
+      "sha256": "f20255c8c6f124b3f14712125b4feed82b8f537155b37813bd6da91b48b0893f"
+    }
+  }
+}

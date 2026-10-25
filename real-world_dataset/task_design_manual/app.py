@@ -13,6 +13,7 @@ import re
 import design
 
 HERE = Path(__file__).resolve().parent
+RECORDS = HERE
 STATIC = {
     "/": ("index.html", "text/html; charset=utf-8"),
     "/app.js": ("app.js", "text/javascript; charset=utf-8"),
@@ -41,9 +42,14 @@ class Handler(BaseHTTPRequestHandler):
             return
         if path == "/api/targets":
             self.send_json(200, [
-                {"target": target, "pdb": design.atlas.PDB[target], "sha256": design.atlas.RAW_SHA256[target]}
+                {"target": target, "pdb": design.atlas.PDB[target], "sha256": design.atlas.RAW_SHA256[target],
+                 "label": design.target_metadata(target).get("label", target.upper()),
+                 "draft_compatible_hashes": design.target_metadata(target).get("draft_compatible_hashes", [])}
                 for target in design.atlas.CODES
             ])
+            return
+        if path == "/api/dataset":
+            self.send_json(200, {"title": getattr(design.atlas, "title", "REINVENT4 · 16 targets")})
             return
         if path.startswith("/api/targets/"):
             try:
@@ -54,7 +60,7 @@ class Handler(BaseHTTPRequestHandler):
         match = RECORD_PATH.fullmatch(path)
         if match:
             folder, filename = match.groups()
-            record_file = HERE / folder / filename
+            record_file = RECORDS / folder / filename
             if record_file.is_file():
                 content_type = ("text/html" if filename.endswith(".html") else
                                 "application/json" if filename.endswith(".json") else "image/svg+xml")
@@ -78,7 +84,7 @@ class Handler(BaseHTTPRequestHandler):
                 result = design.preview(body.get("target"), body.get("mode"), body.get("cuts"), body.get("retained"))
                 self.send_json(200, result)
             else:
-                folder = design.save_snapshot(body.get("designs"))
+                folder = design.save_snapshot(body.get("designs"), RECORDS)
                 self.send_json(201, {"directory": folder.name, "report": f"/{folder.name}/index.html"})
         except (ValueError, AssertionError, KeyError, TypeError, json.JSONDecodeError) as error:
             self.send_json(400, {"error": str(error)})
@@ -87,9 +93,18 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main() -> None:
+    global RECORDS
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=8766, help="本机端口，默认 8766")
+    parser.add_argument("--dataset", type=Path, help="独立配体数据集 JSON；不指定则使用原始 16 靶点")
+    parser.add_argument("--records", type=Path, help="独立设计记录目录，使用 --dataset 时必须指定")
     args = parser.parse_args()
+    if args.dataset:
+        if not args.records:
+            parser.error("--dataset requires --records to keep original designs isolated")
+        design.configure_dataset(args.dataset)
+    if args.records:
+        RECORDS = args.records.resolve()
     for target in design.atlas.CODES:
         design.ligand(target)
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)

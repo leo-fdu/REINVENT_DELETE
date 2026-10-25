@@ -28,7 +28,8 @@ def export(designs: Path, output: Path) -> dict:
             raise ValueError(f"Invalid target name: {target}")
         if set(info["tasks"]) != set(MODES):
             raise ValueError(f"Expected both LibINVENT and LinkINVENT tasks: {target}")
-        source = ROOT / info["source_mol2"]
+        source_key = "source_ligand" if "source_ligand" in info else "source_mol2"
+        source = ROOT / info[source_key]
         if hashlib.sha256(source.read_bytes()).hexdigest() != info["source_sha256"]:
             raise ValueError(f"Original ligand has changed: {target}")
         for mode in MODES:
@@ -42,10 +43,12 @@ def export(designs: Path, output: Path) -> dict:
                 "mode": mode,
                 "status": status,
                 "smiles_file": None,
-                "source_mol2": info["source_mol2"],
+                source_key: info[source_key],
                 "source_sha256": info["source_sha256"],
                 "note": task.get("note", ""),
             }
+            if "provenance" in info:
+                record["provenance"] = info["provenance"]
             if status == "designed":
                 smiles = task["input_smiles"]
                 if (

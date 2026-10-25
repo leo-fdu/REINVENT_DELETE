@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="topbar">
-    <div><p class="eyebrow">REINVENT4 · 16 targets</p><h1>手动任务设计</h1></div>
+    <div><p class="eyebrow" id="dataset-title">REINVENT4</p><h1>手动任务设计</h1></div>
     <div class="record-area"><span id="progress">0 已设计 · 0 跳过</span><button id="record" type="button">记录当前设计</button></div>
   </header>
   <div class="layout">
@@ -21,8 +21,9 @@
     <main>
       <div class="intro">
         <div><p class="eyebrow" id="source">原始配体</p><h2 id="target-title">载入中…</h2></div>
-        <p class="hint">点击结构中的非环单键选为切割键；再次点击可取消。数字是原始 MOL2 原子 ID。</p>
+        <p class="hint">点击结构中的非环单键选为切割键；再次点击可取消。数字是源配体原子 ID。</p>
       </div>
+      <p class="hint" id="ligand-warning" role="note"></p>
       <div class="tabs" role="tablist" aria-label="任务类型">
         <button type="button" data-mode="libinvent" class="active">LibINVENT · 1 条键</button>
         <button type="button" data-mode="linkinvent">LinkINVENT · 2 条键</button>

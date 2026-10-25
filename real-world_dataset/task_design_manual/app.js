@@ -42,7 +42,8 @@ function restoreDraft() {
     const saved = localStorage.getItem(DRAFT_KEY);
     if (!saved) return;
     const parsed = JSON.parse(saved);
-    if (targets.every(item => parsed.hashes[item.target] === item.sha256) &&
+    if (targets.every(item => parsed.hashes[item.target] === item.sha256 ||
+                      (item.draft_compatible_hashes || []).includes(parsed.hashes[item.target])) &&
         targets.every(item => MODES.every(mode => parsed.designs[item.target][mode]))) {
       designs = parsed.designs;
     }
@@ -57,13 +58,14 @@ function skipped(item, mode) { return Boolean(designs[item][mode].skip); }
 function renderProgress() {
   const count = targets.reduce((sum, item) => sum + MODES.filter(mode => completed(item.target, mode)).length, 0);
   const skippedCount = targets.reduce((sum, item) => sum + MODES.filter(mode => skipped(item.target, mode)).length, 0);
-  byId("progress").textContent = `${count} 已设计 · ${skippedCount} 跳过 · ${32 - count - skippedCount} 未完成`;
+  byId("progress").textContent = `${count} 已设计 · ${skippedCount} 跳过 · ${targets.length * MODES.length - count - skippedCount} 未完成`;
   byId("targets").replaceChildren(...targets.map(item => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = item.target === currentTarget ? "active" : "";
     const mark = mode => completed(item.target, mode) ? "done" : skipped(item.target, mode) ? "skipped" : "";
     button.innerHTML = `<span>${item.target.toUpperCase()}</span><span class="marks"><span class="${mark("libinvent")}">●</span><span class="${mark("linkinvent")}">●</span></span>`;
+    button.firstElementChild.textContent = item.label || item.target.toUpperCase();
     button.addEventListener("click", () => showTarget(item.target));
     return button;
   }));
@@ -85,7 +87,8 @@ async function showTarget(target) {
     if (currentTarget !== target) return;
     currentInfo = info;
     byId("target-title").textContent = `${target.toUpperCase()} · ${info.pdb} / ${info.ccd}`;
-    byId("source").textContent = `${info.heavy_atoms} 个重原子 · MOL2 SHA-256 ${info.source_sha256.slice(0, 14)}…`;
+    byId("source").textContent = `${info.heavy_atoms} 个重原子 · ${info.source_format} SHA-256 ${info.source_sha256.slice(0, 14)}…`;
+    byId("ligand-warning").textContent = info.warning || "";
     byId("molecule").innerHTML = info.svg;
     byId("molecule").onclick = onBondClick;
     await showMode();
@@ -199,6 +202,8 @@ async function recordAll() {
 async function start() {
   try {
     targets = await api("/api/targets");
+    const metadata = await api("/api/dataset");
+    byId("dataset-title").textContent = metadata.title;
     designs = blankDesigns();
     restoreDraft();
     document.querySelectorAll(".tabs button").forEach(button => button.addEventListener("click", () => {
