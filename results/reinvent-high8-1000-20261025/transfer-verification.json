@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "verified_files": 350,
+  "raw_mirror": "results/server-evidence/high8_1000_seed42_20261025/run-v2",
+  "summary": {
+    "rows": 30000,
+    "states": {
+      "1": 27814,
+      "2": 1823,
+      "0": 363
+    },
+    "planet_status": {
+      "ok": 29637,
+      "not_scored": 363
+    },
+    "repeats": 3463,
+    "high_raw_over8": 19811,
+    "high_raw_over9": 11958,
+    "sigmoid_over095": 19470
+  }
+}

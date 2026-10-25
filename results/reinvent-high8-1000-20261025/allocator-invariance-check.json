@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "identical_completed_tasks": {
+    "aa2ar/libinvent": 1000,
+    "aa2ar/linkinvent": 1000,
+    "abl1/libinvent": 1000,
+    "abl1/linkinvent": 1000,
+    "adrb1/libinvent": 1000,
+    "adrb1/linkinvent": 1000,
+    "akt1/libinvent": 1000,
+    "akt1/linkinvent": 1000,
+    "cdk2/libinvent": 1000,
+    "cdk2/linkinvent": 1000,
+    "cp3a4/libinvent": 1000
+  },
+  "identical_rows": 11000,
+  "comparison": "Default PLANET allocator vs PYTORCH_NO_CUDA_MEMORY_CACHING=1; all CSV fields compared exactly."
+}

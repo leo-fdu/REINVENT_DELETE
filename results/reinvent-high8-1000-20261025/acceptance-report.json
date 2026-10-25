@@ -1,0 +1,600 @@
+{
+  "passed": true,
+  "tasks": 30,
+  "rows": 30000,
+  "experiment": {
+    "schema_version": 1,
+    "seed": 42,
+    "batch_size": 100,
+    "steps": 10,
+    "sample_strategy": "multinomial",
+    "temperature": 1.0,
+    "learning_strategy": {
+      "type": "dap",
+      "sigma": 128,
+      "rate": 0.0001
+    },
+    "sigmoid": {
+      "low": 4.0,
+      "high": 8.0,
+      "k": 0.25
+    },
+    "penalty_multiplier": 0.5,
+    "planet_batch_size": 32,
+    "request_timeout": 120,
+    "startup_timeout": 600
+  },
+  "all_generated_sha256": "8eaa6a2e60d2652c2ac385b3629894952997e6e96985f9bdc595ea2d8825a9f2",
+  "task_results": {
+    "aa2ar/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 861,
+        "2": 138,
+        "0": 1
+      },
+      "status_counts": {
+        "ok": 999,
+        "not_scored": 1
+      },
+      "valid_unique_smiles": 689,
+      "repeats": 310,
+      "raw_mean": 8.112007030853638,
+      "raw_min": 5.068006992340088,
+      "raw_max": 11.396066665649414,
+      "checkpoint_sha256": "2f53fa4c38fdbdae6d99df04cea15fa321743b1bc7b92b0af05dd6bbad8b8f5b",
+      "checkpoint_bytes": 80336923
+    },
+    "aa2ar/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 872,
+        "2": 122,
+        "0": 6
+      },
+      "status_counts": {
+        "ok": 994,
+        "not_scored": 6
+      },
+      "valid_unique_smiles": 822,
+      "repeats": 172,
+      "raw_mean": 9.436848322390551,
+      "raw_min": 6.026583671569824,
+      "raw_max": 15.3133544921875,
+      "checkpoint_sha256": "882ff296fc31fff058897ee936362051bec77cbb6389fb2f50b63090131e585c",
+      "checkpoint_bytes": 80254363
+    },
+    "abl1/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 968,
+        "2": 27,
+        "0": 5
+      },
+      "status_counts": {
+        "ok": 995,
+        "not_scored": 5
+      },
+      "valid_unique_smiles": 911,
+      "repeats": 84,
+      "raw_mean": 8.682618623283041,
+      "raw_min": 5.967884063720703,
+      "raw_max": 12.712394714355469,
+      "checkpoint_sha256": "63cc3099d48872677e90e41c7eff3604d111b28348b822f75638c91dd9d7a426",
+      "checkpoint_bytes": 80363163
+    },
+    "abl1/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 957,
+        "2": 33,
+        "0": 10
+      },
+      "status_counts": {
+        "ok": 990,
+        "not_scored": 10
+      },
+      "valid_unique_smiles": 919,
+      "repeats": 71,
+      "raw_mean": 9.236582988922041,
+      "raw_min": 3.1295738220214844,
+      "raw_max": 17.29347801208496,
+      "checkpoint_sha256": "622a0381450b8eca1ae7c7c14ceed035aaa22f1f06e465374273a68b265b9901",
+      "checkpoint_bytes": 80259931
+    },
+    "adrb1/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 952,
+        "2": 40,
+        "0": 8
+      },
+      "status_counts": {
+        "ok": 992,
+        "not_scored": 8
+      },
+      "valid_unique_smiles": 940,
+      "repeats": 52,
+      "raw_mean": 11.345935975591983,
+      "raw_min": 2.562012195587158,
+      "raw_max": 22.34385871887207,
+      "checkpoint_sha256": "b33e742075d38b21185b15d05a0ff5ea3bdd9e69fc271a2e382dc31e10a0270f",
+      "checkpoint_bytes": 80362971
+    },
+    "adrb1/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 933,
+        "2": 52,
+        "0": 15
+      },
+      "status_counts": {
+        "ok": 985,
+        "not_scored": 15
+      },
+      "valid_unique_smiles": 851,
+      "repeats": 134,
+      "raw_mean": 10.369242078035615,
+      "raw_min": 0.6657978296279907,
+      "raw_max": 20.31616973876953,
+      "checkpoint_sha256": "65e6afcc3080b3aad28e62ec5a9c9867284d6ccf45c5f7c6d0f5d375e7ed4576",
+      "checkpoint_bytes": 80242395
+    },
+    "akt1/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 954,
+        "2": 28,
+        "0": 18
+      },
+      "status_counts": {
+        "ok": 982,
+        "not_scored": 18
+      },
+      "valid_unique_smiles": 944,
+      "repeats": 38,
+      "raw_mean": 8.96378522298001,
+      "raw_min": 3.0162153244018555,
+      "raw_max": 16.16353988647461,
+      "checkpoint_sha256": "081a6dfc26b781d9ffb67abbfb1863d3cf83fe356d26d300ee884c1aec9dfaef",
+      "checkpoint_bytes": 80365787
+    },
+    "akt1/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 915,
+        "2": 83,
+        "0": 2
+      },
+      "status_counts": {
+        "ok": 998,
+        "not_scored": 2
+      },
+      "valid_unique_smiles": 838,
+      "repeats": 160,
+      "raw_mean": 8.410366373752545,
+      "raw_min": 0.6007158160209656,
+      "raw_max": 14.69066047668457,
+      "checkpoint_sha256": "c89bf214bb9423ab56e5d6c35a63f310e0756c7f38f66590dae6066a4d508f93",
+      "checkpoint_bytes": 80254683
+    },
+    "cdk2/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 924,
+        "2": 62,
+        "0": 14
+      },
+      "status_counts": {
+        "ok": 986,
+        "not_scored": 14
+      },
+      "valid_unique_smiles": 831,
+      "repeats": 155,
+      "raw_mean": 6.955917748669823,
+      "raw_min": 4.193340301513672,
+      "raw_max": 19.97574234008789,
+      "checkpoint_sha256": "ac5d7f6d06e7c8c0407541d12135a4dab3755d31721e32fbc7a70e05bdc61b50",
+      "checkpoint_bytes": 80353435
+    },
+    "cdk2/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 909,
+        "2": 28,
+        "0": 63
+      },
+      "status_counts": {
+        "ok": 937,
+        "not_scored": 63
+      },
+      "valid_unique_smiles": 893,
+      "repeats": 44,
+      "raw_mean": 7.813904215934564,
+      "raw_min": 0.30138036608695984,
+      "raw_max": 18.066638946533203,
+      "checkpoint_sha256": "ff46dcf8c10066db0d90b60e3adfae3b9e37bfed2bd0f11813a28ab2fe4121db",
+      "checkpoint_bytes": 80274523
+    },
+    "cp3a4/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 871,
+        "2": 117,
+        "0": 12
+      },
+      "status_counts": {
+        "ok": 988,
+        "not_scored": 12
+      },
+      "valid_unique_smiles": 823,
+      "repeats": 165,
+      "raw_mean": 8.17556276639946,
+      "raw_min": 2.6991782188415527,
+      "raw_max": 12.002401351928711,
+      "checkpoint_sha256": "293fad85f1b49f1517ceb89c1f472e70416409d35e9ad25997e73b9476a740f6",
+      "checkpoint_bytes": 80387547
+    },
+    "cp3a4/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 982,
+        "2": 14,
+        "0": 4
+      },
+      "status_counts": {
+        "ok": 996,
+        "not_scored": 4
+      },
+      "valid_unique_smiles": 948,
+      "repeats": 48,
+      "raw_mean": 8.211068592397085,
+      "raw_min": 5.29918909072876,
+      "raw_max": 12.209593772888184,
+      "checkpoint_sha256": "a3208dff53d8c41d52b8c539f9872da5f86305c8d742aef68280082b952c1a5a",
+      "checkpoint_bytes": 80294939
+    },
+    "dpp4/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 918,
+        "2": 71,
+        "0": 11
+      },
+      "status_counts": {
+        "ok": 989,
+        "not_scored": 11
+      },
+      "valid_unique_smiles": 901,
+      "repeats": 88,
+      "raw_mean": 9.194932778515637,
+      "raw_min": 4.906864166259766,
+      "raw_max": 19.37839126586914,
+      "checkpoint_sha256": "fe8c9c045d11a84080b43d066fd8f98ec84a423e995d03ecef9352467c79ce32",
+      "checkpoint_bytes": 80376283
+    },
+    "dpp4/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 969,
+        "0": 25,
+        "2": 6
+      },
+      "status_counts": {
+        "ok": 975,
+        "not_scored": 25
+      },
+      "valid_unique_smiles": 956,
+      "repeats": 19,
+      "raw_mean": 8.489260579133646,
+      "raw_min": 2.787008285522461,
+      "raw_max": 16.79803466796875,
+      "checkpoint_sha256": "f5838e232f18c378cf2ddea7d4ae55650490ea18f51250b2d470a728ecf32ed2",
+      "checkpoint_bytes": 80272603
+    },
+    "drd3/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 879,
+        "2": 116,
+        "0": 5
+      },
+      "status_counts": {
+        "ok": 995,
+        "not_scored": 5
+      },
+      "valid_unique_smiles": 779,
+      "repeats": 216,
+      "raw_mean": 7.731683859861826,
+      "raw_min": 0.04578455165028572,
+      "raw_max": 15.304693222045898,
+      "checkpoint_sha256": "c07f0765da6e010bbeec42ff2691800b7f7d49fecf3bfb5223f56a6c282a0537",
+      "checkpoint_bytes": 80348123
+    },
+    "drd3/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 947,
+        "2": 44,
+        "0": 9
+      },
+      "status_counts": {
+        "ok": 991,
+        "not_scored": 9
+      },
+      "valid_unique_smiles": 883,
+      "repeats": 108,
+      "raw_mean": 8.48719875661113,
+      "raw_min": 0.048912934958934784,
+      "raw_max": 26.740055084228516,
+      "checkpoint_sha256": "902be826f0002ab6cd5f712580ec70f6e74e48556a1633eaf1c6867b5ca68528",
+      "checkpoint_bytes": 80248859
+    },
+    "dyr/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 941,
+        "2": 11,
+        "0": 48
+      },
+      "status_counts": {
+        "ok": 952,
+        "not_scored": 48
+      },
+      "valid_unique_smiles": 937,
+      "repeats": 15,
+      "raw_mean": 9.19029104909977,
+      "raw_min": 1.729271650314331,
+      "raw_max": 17.683704376220703,
+      "checkpoint_sha256": "d428942a5db84aae8dda2e0437c55a352b95eea4503e8280851e145013a79243",
+      "checkpoint_bytes": 80386587
+    },
+    "dyr/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 947,
+        "2": 48,
+        "0": 5
+      },
+      "status_counts": {
+        "ok": 995,
+        "not_scored": 5
+      },
+      "valid_unique_smiles": 942,
+      "repeats": 53,
+      "raw_mean": 9.250761367927245,
+      "raw_min": 0.3897770643234253,
+      "raw_max": 14.203516006469727,
+      "checkpoint_sha256": "b0fd10bf14e46154da6277add5fdfe4599bb02c158c7db5d6df9668171fcaf1e",
+      "checkpoint_bytes": 80271067
+    },
+    "egfr/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 801,
+        "2": 192,
+        "0": 7
+      },
+      "status_counts": {
+        "ok": 993,
+        "not_scored": 7
+      },
+      "valid_unique_smiles": 648,
+      "repeats": 345,
+      "raw_mean": 8.836754271150955,
+      "raw_min": 4.5023722648620605,
+      "raw_max": 15.511497497558594,
+      "checkpoint_sha256": "32b765c267b2fd12f16a4ec37e2447b1519305fa21c8ba479bd7b7b93f21a629",
+      "checkpoint_bytes": 80339547
+    },
+    "egfr/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 943,
+        "2": 55,
+        "0": 2
+      },
+      "status_counts": {
+        "ok": 998,
+        "not_scored": 2
+      },
+      "valid_unique_smiles": 904,
+      "repeats": 94,
+      "raw_mean": 10.777979109234705,
+      "raw_min": 6.645578384399414,
+      "raw_max": 15.488346099853516,
+      "checkpoint_sha256": "335931aef7f44598d489edbc6c23bdf25a191bea81d7b74014c6a86e58136379",
+      "checkpoint_bytes": 80252059
+    },
+    "gria2/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 837,
+        "2": 147,
+        "0": 16
+      },
+      "status_counts": {
+        "ok": 984,
+        "not_scored": 16
+      },
+      "valid_unique_smiles": 796,
+      "repeats": 188,
+      "raw_mean": 7.6115070625049315,
+      "raw_min": 3.599266529083252,
+      "raw_max": 12.253594398498535,
+      "checkpoint_sha256": "962698a478a7407a749339695617d68449ca24a4ce6e310197d2c7fce0f10229",
+      "checkpoint_bytes": 80360923
+    },
+    "gria2/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 980,
+        "0": 18,
+        "2": 2
+      },
+      "status_counts": {
+        "ok": 982,
+        "not_scored": 18
+      },
+      "valid_unique_smiles": 977,
+      "repeats": 5,
+      "raw_mean": 7.503541712726935,
+      "raw_min": 0.4956098794937134,
+      "raw_max": 13.836589813232422,
+      "checkpoint_sha256": "2a9e6fab32e2b5043a5e86c975d881eb1e16f28a61886f2a8392ad02faedcaf9",
+      "checkpoint_bytes": 80266779
+    },
+    "jak2/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 928,
+        "2": 68,
+        "0": 4
+      },
+      "status_counts": {
+        "ok": 996,
+        "not_scored": 4
+      },
+      "valid_unique_smiles": 814,
+      "repeats": 182,
+      "raw_mean": 8.522910915225385,
+      "raw_min": 6.828503608703613,
+      "raw_max": 18.10982894897461,
+      "checkpoint_sha256": "ea6bb681c3d5c31fe8ca59d4d35cc7ed92403e8d71107208e28363c6812f4502",
+      "checkpoint_bytes": 80355611
+    },
+    "jak2/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 921,
+        "2": 69,
+        "0": 10
+      },
+      "status_counts": {
+        "ok": 990,
+        "not_scored": 10
+      },
+      "valid_unique_smiles": 823,
+      "repeats": 167,
+      "raw_mean": 8.575219813019338,
+      "raw_min": 2.1231796741485596,
+      "raw_max": 15.32127571105957,
+      "checkpoint_sha256": "a0850c6d1037c6f02fbef51c39e892742252997928898a28eccb69bfe62db175",
+      "checkpoint_bytes": 80248155
+    },
+    "kif11/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 941,
+        "2": 56,
+        "0": 3
+      },
+      "status_counts": {
+        "ok": 997,
+        "not_scored": 3
+      },
+      "valid_unique_smiles": 879,
+      "repeats": 118,
+      "raw_mean": 9.309744906640699,
+      "raw_min": 0.8046324253082275,
+      "raw_max": 17.4431209564209,
+      "checkpoint_sha256": "1c2bef5b9abf0a31f8a2c35f8eb345c202e0c9249f193e249fa486b9b33b7220",
+      "checkpoint_bytes": 80375579
+    },
+    "kif11/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 978,
+        "2": 3,
+        "0": 19
+      },
+      "status_counts": {
+        "ok": 981,
+        "not_scored": 19
+      },
+      "valid_unique_smiles": 972,
+      "repeats": 9,
+      "raw_mean": 8.902355665825194,
+      "raw_min": 2.697866201400757,
+      "raw_max": 15.606585502624512,
+      "checkpoint_sha256": "66da9606f58e7997985c620fcf24390be807f92621fc4f26b3a7abc0a0297d2c",
+      "checkpoint_bytes": 80272795
+    },
+    "parp1/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 941,
+        "2": 52,
+        "0": 7
+      },
+      "status_counts": {
+        "ok": 993,
+        "not_scored": 7
+      },
+      "valid_unique_smiles": 839,
+      "repeats": 154,
+      "raw_mean": 9.637551733134137,
+      "raw_min": 2.9307453632354736,
+      "raw_max": 15.752135276794434,
+      "checkpoint_sha256": "e27f1cd23f7a5531533abfe82fe24fba512955a2f9c211ae44f19be58cb50a38",
+      "checkpoint_bytes": 80359195
+    },
+    "parp1/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 930,
+        "2": 62,
+        "0": 8
+      },
+      "status_counts": {
+        "ok": 992,
+        "not_scored": 8
+      },
+      "valid_unique_smiles": 868,
+      "repeats": 124,
+      "raw_mean": 9.01251784844264,
+      "raw_min": 0.9502441883087158,
+      "raw_max": 16.456968307495117,
+      "checkpoint_sha256": "c8ec69f7cf59a2f9e1f01e459036a166127671c18680d9abffe0b6af6d721b2e",
+      "checkpoint_bytes": 80252315
+    },
+    "ppara/libinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 921,
+        "2": 75,
+        "0": 4
+      },
+      "status_counts": {
+        "ok": 996,
+        "not_scored": 4
+      },
+      "valid_unique_smiles": 862,
+      "repeats": 134,
+      "raw_mean": 7.43804087038021,
+      "raw_min": 1.4882707595825195,
+      "raw_max": 12.554981231689453,
+      "checkpoint_sha256": "ae37fb45361f11312538dfd80b80ee47ca5b3d36ac072c30c55750eaeb58d3b8",
+      "checkpoint_bytes": 80365787
+    },
+    "ppara/linkinvent": {
+      "attempts": 1000,
+      "state_counts": {
+        "1": 994,
+        "2": 2,
+        "0": 4
+      },
+      "status_counts": {
+        "ok": 996,
+        "not_scored": 4
+      },
+      "valid_unique_smiles": 985,
+      "repeats": 11,
+      "raw_mean": 8.368671372233624,
+      "raw_min": 4.810460567474365,
+      "raw_max": 14.023799896240234,
+      "checkpoint_sha256": "1db1d5ae70ffc66e68225f0360fca6f0c6f3987c094424664b3db5bdf72601ed",
+      "checkpoint_bytes": 80273755
+    }
+  }
+}
