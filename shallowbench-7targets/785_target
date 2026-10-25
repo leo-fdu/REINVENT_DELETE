@@ -1,0 +1,6282 @@
+Total targets: 785
+
+--- Target 0 ---
+  id: 90546
+  idx: 90546
+  concavity: 499.6964042075556
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.218582   4.8711944 20.18778  ]...
+  pdb_id: 4jwy
+
+--- Target 1 ---
+  id: 28262
+  idx: 28262
+  concavity: 253.01116847286085
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -6.4653325 -22.408167   31.804335 ]...
+  pdb_id: 5hjp
+
+--- Target 2 ---
+  id: 28288
+  idx: 28288
+  concavity: 369.6276139368651
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -6.806889 -21.73372   31.348616]...
+  pdb_id: 5i4v
+
+--- Target 3 ---
+  id: 28297
+  idx: 28297
+  concavity: 284.5217317454716
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[-2.734044 -7.341    26.06031 ]...
+  pdb_id: 5kya
+
+--- Target 4 ---
+  id: 28329
+  idx: 28329
+  concavity: 397.2867677450128
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -7.4813333 -21.396944   31.068054 ]...
+  pdb_id: 3fal
+
+--- Target 5 ---
+  id: 29301
+  idx: 29301
+  concavity: 445.5524769067105
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[  8.155523  -23.568052   -3.9568992]...
+  pdb_id: 1xv9
+
+--- Target 6 ---
+  id: 29302
+  idx: 29302
+  concavity: 321.8733554611205
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[  7.884392  -23.991095   -3.8504393]...
+  pdb_id: 1xv9
+
+--- Target 7 ---
+  id: 29308
+  idx: 29308
+  concavity: 490.9766382393467
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.584388  -22.970163   -3.5472262]...
+  pdb_id: 1xvp
+
+--- Target 8 ---
+  id: 55989
+  idx: 55989
+  concavity: 116.78210321037832
+  surface_area: 168.0
+  ligand_com: shape=(3,), dtype=float32, values=[-8.412222  -1.1085556 19.649445 ]...
+  pdb_id: 4hoa
+
+--- Target 9 ---
+  id: 56005
+  idx: 56005
+  concavity: 417.0195279432871
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.70775 -20.8018   42.25455]...
+  pdb_id: 4emr
+
+--- Target 10 ---
+  id: 56012
+  idx: 56012
+  concavity: 446.2663642065789
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 11.16085  -20.5051    43.374702]...
+  pdb_id: 4yp2
+
+--- Target 11 ---
+  id: 56013
+  idx: 56013
+  concavity: 497.23632306038587
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 11.376801 -20.35225   43.648098]...
+  pdb_id: 4o8e
+
+--- Target 12 ---
+  id: 56020
+  idx: 56020
+  concavity: 493.3050330879688
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 11.415651 -19.601149  43.480297]...
+  pdb_id: 4q9f
+
+--- Target 13 ---
+  id: 56023
+  idx: 56023
+  concavity: 380.7450424170127
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 11.3237   -20.63345   43.989403]...
+  pdb_id: 3u8f
+
+--- Target 14 ---
+  id: 56045
+  idx: 56045
+  concavity: 463.15185662453825
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.095301 -20.722298  40.9314  ]...
+  pdb_id: 3n3x
+
+--- Target 15 ---
+  id: 56052
+  idx: 56052
+  concavity: 487.0377241911908
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 11.398001 -19.990698  43.99685 ]...
+  pdb_id: 4hoa
+
+--- Target 16 ---
+  id: 56056
+  idx: 56056
+  concavity: 472.28010030718474
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.9941   -19.938398  42.954742]...
+  pdb_id: 4yp2
+
+--- Target 17 ---
+  id: 57719
+  idx: 57719
+  concavity: 125.13037746114423
+  surface_area: 168.0
+  ligand_com: shape=(3,), dtype=float32, values=[127.22579 111.6057   35.4223 ]...
+  pdb_id: 3t8n
+
+--- Target 18 ---
+  id: 57720
+  idx: 57720
+  concavity: 196.70880212251836
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[119.4554  108.62889  69.8026 ]...
+  pdb_id: 3fzw
+
+--- Target 19 ---
+  id: 57722
+  idx: 57722
+  concavity: 308.5594700134447
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[131.0276   122.792755  75.34642 ]...
+  pdb_id: 1oh0
+
+--- Target 20 ---
+  id: 57727
+  idx: 57727
+  concavity: 434.43417826471705
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[136.05557  114.762     43.107224]...
+  pdb_id: 3fzw
+
+--- Target 21 ---
+  id: 57728
+  idx: 57728
+  concavity: 88.71200485766059
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[141.0282   110.49725   47.222622]...
+  pdb_id: 5d82
+
+--- Target 22 ---
+  id: 57729
+  idx: 57729
+  concavity: 147.80403866627526
+  surface_area: 192.0
+  ligand_com: shape=(3,), dtype=float32, values=[137.86742 110.43165  47.14304]...
+  pdb_id: 3ows
+
+--- Target 23 ---
+  id: 57730
+  idx: 57730
+  concavity: 163.20219108097328
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[138.01978 109.20355  50.161  ]...
+  pdb_id: 1w6y
+
+--- Target 24 ---
+  id: 57731
+  idx: 57731
+  concavity: 118.79941250277065
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[142.83144  111.02896   47.761585]...
+  pdb_id: 4k1u
+
+--- Target 25 ---
+  id: 57732
+  idx: 57732
+  concavity: 356.1214489112662
+  surface_area: 456.0
+  ligand_com: shape=(3,), dtype=float32, values=[106.8775   113.991104  36.6847  ]...
+  pdb_id: 1oh0
+
+--- Target 26 ---
+  id: 57734
+  idx: 57734
+  concavity: 169.44591067794934
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[106.076195 113.774     37.2851  ]...
+  pdb_id: 1gs3
+
+--- Target 27 ---
+  id: 57735
+  idx: 57735
+  concavity: 200.3404763944778
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[106.967094 114.303925  37.21575 ]...
+  pdb_id: 1ogx
+
+--- Target 28 ---
+  id: 57737
+  idx: 57737
+  concavity: 302.77812943706584
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[105.99517  114.96307   36.766415]...
+  pdb_id: 3vgn
+
+--- Target 29 ---
+  id: 57741
+  idx: 57741
+  concavity: 299.43555935284195
+  surface_area: 488.0
+  ligand_com: shape=(3,), dtype=float32, values=[104.978676 112.63166   37.339085]...
+  pdb_id: 3cpo
+
+--- Target 30 ---
+  id: 57742
+  idx: 57742
+  concavity: 413.8497315319211
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[105.854    115.46958   37.468666]...
+  pdb_id: 3rgr
+
+--- Target 31 ---
+  id: 57744
+  idx: 57744
+  concavity: 264.1586496506012
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[120.3264   108.428795  68.834   ]...
+  pdb_id: 1w6y
+
+--- Target 32 ---
+  id: 57745
+  idx: 57745
+  concavity: 138.55459897464507
+  surface_area: 192.0
+  ligand_com: shape=(3,), dtype=float32, values=[140.11147 110.66448  46.73875]...
+  pdb_id: 1w6y
+
+--- Target 33 ---
+  id: 57746
+  idx: 57746
+  concavity: 143.29923102995852
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[141.64378  110.79728   47.778122]...
+  pdb_id: 5kp1
+
+--- Target 34 ---
+  id: 57755
+  idx: 57755
+  concavity: 95.95721511541808
+  surface_area: 160.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 52.26421  -25.298372 -40.442295]...
+  pdb_id: 3ipt
+
+--- Target 35 ---
+  id: 57756
+  idx: 57756
+  concavity: 331.9692464458399
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 54.235332 -24.346212 -42.86292 ]...
+  pdb_id: 1w01
+
+--- Target 36 ---
+  id: 57771
+  idx: 57771
+  concavity: 268.71590993801664
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 59.322506  15.896335 -36.118835]...
+  pdb_id: 5kp3
+
+--- Target 37 ---
+  id: 57786
+  idx: 57786
+  concavity: 320.50414657112105
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 59.73033   15.557835 -35.82433 ]...
+  pdb_id: 1oh0
+
+--- Target 38 ---
+  id: 57899
+  idx: 57899
+  concavity: 432.25212577609403
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.150104 -3.344655 22.276829]...
+  pdb_id: 1w01
+
+--- Target 39 ---
+  id: 58065
+  idx: 58065
+  concavity: 416.37937763195185
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.7576065  9.650464  37.01771  ]...
+  pdb_id: 1ogx
+
+--- Target 40 ---
+  id: 58072
+  idx: 58072
+  concavity: 96.86208751663527
+  surface_area: 144.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.357928 15.62275  36.660748]...
+  pdb_id: 1ogx
+
+--- Target 41 ---
+  id: 90109
+  idx: 90109
+  concavity: 499.7435166368964
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.138806  4.693226 20.36845 ]...
+  pdb_id: 1og3
+
+--- Target 42 ---
+  id: 83348
+  idx: 83348
+  concavity: 422.1819479670799
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 14.666667   1.054    116.614105]...
+  pdb_id: 5dx6
+
+--- Target 43 ---
+  id: 67443
+  idx: 67443
+  concavity: 481.74228629041363
+  surface_area: 456.0
+  ligand_com: shape=(3,), dtype=float32, values=[-16.394876    6.1064997  27.059376 ]...
+  pdb_id: 5u4a
+
+--- Target 44 ---
+  id: 67486
+  idx: 67486
+  concavity: 491.72212865178324
+  surface_area: 504.0
+  ligand_com: shape=(3,), dtype=float32, values=[-5.795    11.307501 68.68137 ]...
+  pdb_id: 3ng5
+
+--- Target 45 ---
+  id: 67632
+  idx: 67632
+  concavity: 366.1300799829584
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-16.1795     5.896625  26.989124]...
+  pdb_id: 4hju
+
+--- Target 46 ---
+  id: 67640
+  idx: 67640
+  concavity: 430.11204497453474
+  surface_area: 424.0
+  ligand_com: shape=(3,), dtype=float32, values=[-16.23975    6.2105    26.953875]...
+  pdb_id: 5e23
+
+--- Target 47 ---
+  id: 67671
+  idx: 67671
+  concavity: 317.60026612124915
+  surface_area: 408.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.159875 11.896625 67.27338 ]...
+  pdb_id: 4n86
+
+--- Target 48 ---
+  id: 67709
+  idx: 67709
+  concavity: 474.72438797759366
+  surface_area: 504.0
+  ligand_com: shape=(3,), dtype=float32, values=[-16.127625   5.886875  26.919876]...
+  pdb_id: 5u4a
+
+--- Target 49 ---
+  id: 67762
+  idx: 67762
+  concavity: 444.8970109678469
+  surface_area: 456.0
+  ligand_com: shape=(3,), dtype=float32, values=[-15.002332  27.412666  30.496002]...
+  pdb_id: 5jid
+
+--- Target 50 ---
+  id: 68205
+  idx: 68205
+  concavity: 256.8678684562468
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 1.433375   6.5019994 11.967625 ]...
+  pdb_id: 5u4e
+
+--- Target 51 ---
+  id: 68218
+  idx: 68218
+  concavity: 487.71471610531125
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.130534    3.8725998   1.2213333]...
+  pdb_id: 3gs0
+
+--- Target 52 ---
+  id: 68236
+  idx: 68236
+  concavity: 423.40860415057796
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.716538   -5.7         4.7776923]...
+  pdb_id: 4ydm
+
+--- Target 53 ---
+  id: 68246
+  idx: 68246
+  concavity: 479.88986627668316
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[-4.7140718  8.850215   5.9697146]...
+  pdb_id: 1dvz
+
+--- Target 54 ---
+  id: 68249
+  idx: 68249
+  concavity: 453.49750940685504
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.162643    2.3677142   0.5397143]...
+  pdb_id: 2b77
+
+--- Target 55 ---
+  id: 68287
+  idx: 68287
+  concavity: 494.1189759586649
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.765429    4.549714    1.2176429]...
+  pdb_id: 1dvy
+
+--- Target 56 ---
+  id: 68322
+  idx: 68322
+  concavity: 276.70265273173464
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.9590586  4.5568824  8.407646 ]...
+  pdb_id: 3esn
+
+--- Target 57 ---
+  id: 68334
+  idx: 68334
+  concavity: 490.59703122415453
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.638946    2.321278    1.3162779]...
+  pdb_id: 1u21
+
+--- Target 58 ---
+  id: 68355
+  idx: 68355
+  concavity: 243.98762307272267
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[-13.0138   6.0479   3.1747]...
+  pdb_id: 5e23
+
+--- Target 59 ---
+  id: 68382
+  idx: 68382
+  concavity: 277.15085989750463
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[0.07685003 7.2860003  9.268199  ]...
+  pdb_id: 4l1s
+
+--- Target 60 ---
+  id: 68415
+  idx: 68415
+  concavity: 434.21740533116395
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.524429     2.1790001    0.55821425]...
+  pdb_id: 3gs4
+
+--- Target 61 ---
+  id: 68435
+  idx: 68435
+  concavity: 410.55126250827675
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.17119996 12.1786995   9.563301  ]...
+  pdb_id: 1dvu
+
+--- Target 62 ---
+  id: 68441
+  idx: 68441
+  concavity: 227.1355643889163
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[-4.795473   2.2806056  7.098    ]...
+  pdb_id: 3imw
+
+--- Target 63 ---
+  id: 68453
+  idx: 68453
+  concavity: 300.63359178240603
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[0.7440668 6.746734  9.564134 ]...
+  pdb_id: 5e4a
+
+--- Target 64 ---
+  id: 68466
+  idx: 68466
+  concavity: 354.58256219755526
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[1.738     7.3199997 9.352818 ]...
+  pdb_id: 5ihh
+
+--- Target 65 ---
+  id: 68473
+  idx: 68473
+  concavity: 466.40456823576994
+  surface_area: 480.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.705927    4.1225      1.2632142]...
+  pdb_id: 5akt
+
+--- Target 66 ---
+  id: 68512
+  idx: 68512
+  concavity: 431.4014933091628
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[-7.975052   -0.34589466  4.794737  ]...
+  pdb_id: 4i85
+
+--- Target 67 ---
+  id: 68516
+  idx: 68516
+  concavity: 484.95509704376775
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.411263    0.57284206  4.328316  ]...
+  pdb_id: 4i85
+
+--- Target 68 ---
+  id: 68522
+  idx: 68522
+  concavity: 493.22874124979455
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.307001    3.3563335   1.0293334]...
+  pdb_id: 4i85
+
+--- Target 69 ---
+  id: 68576
+  idx: 68576
+  concavity: 212.09386169937804
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.21900003 11.9459      9.557001  ]...
+  pdb_id: 1dvz
+
+--- Target 70 ---
+  id: 68587
+  idx: 68587
+  concavity: 425.1901201777776
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.986158    0.24468441  3.0385787 ]...
+  pdb_id: 1dvz
+
+--- Target 71 ---
+  id: 68606
+  idx: 68606
+  concavity: 316.5190531734404
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.481895   0.714579   4.0811577]...
+  pdb_id: 4pwf
+
+--- Target 72 ---
+  id: 68620
+  idx: 68620
+  concavity: 494.92564649470796
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.278067     3.5218       0.96346664]...
+  pdb_id: 5ihh
+
+--- Target 73 ---
+  id: 68629
+  idx: 68629
+  concavity: 474.3403354354597
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.553572     2.9132857    0.44092867]...
+  pdb_id: 5ihh
+
+--- Target 74 ---
+  id: 68688
+  idx: 68688
+  concavity: 458.3638634161986
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-13.569834     3.6722221    0.63761115]...
+  pdb_id: 4ydn
+
+--- Target 75 ---
+  id: 68700
+  idx: 68700
+  concavity: 428.45422740216105
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.056263    0.6146315   3.0791056]...
+  pdb_id: 3gs4
+
+--- Target 76 ---
+  id: 68723
+  idx: 68723
+  concavity: 241.81700074459144
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.268842     0.01431581   3.6174212 ]...
+  pdb_id: 4n86
+
+--- Target 77 ---
+  id: 68726
+  idx: 68726
+  concavity: 487.64163358419046
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.390213    4.901786    1.4348572]...
+  pdb_id: 4n86
+
+--- Target 78 ---
+  id: 68727
+  idx: 68727
+  concavity: 495.06620333297735
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-6.2921767  2.1494706  5.2358227]...
+  pdb_id: 4n86
+
+--- Target 79 ---
+  id: 68748
+  idx: 68748
+  concavity: 383.16129393323746
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 1.3940834  6.704334  12.0395   ]...
+  pdb_id: 3imw
+
+--- Target 80 ---
+  id: 68767
+  idx: 68767
+  concavity: 489.781794958927
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.392072    2.455       0.2725714]...
+  pdb_id: 3imw
+
+--- Target 81 ---
+  id: 68787
+  idx: 68787
+  concavity: 492.4987298005856
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.712857    4.3417854   1.1018571]...
+  pdb_id: 1thc
+
+--- Target 82 ---
+  id: 68795
+  idx: 68795
+  concavity: 498.5208660858382
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-6.5075884  1.0491176  5.0994115]...
+  pdb_id: 1thc
+
+--- Target 83 ---
+  id: 68801
+  idx: 68801
+  concavity: 360.8276432073432
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.6777693  1.3174615 10.580078 ]...
+  pdb_id: 5u4d
+
+--- Target 84 ---
+  id: 68855
+  idx: 68855
+  concavity: 319.11314741984796
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 2.8978462  8.043769  11.605154 ]...
+  pdb_id: 4y9g
+
+--- Target 85 ---
+  id: 68899
+  idx: 68899
+  concavity: 498.1670866674243
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.383666   3.554067   1.0514  ]...
+  pdb_id: 3esn
+
+--- Target 86 ---
+  id: 68907
+  idx: 68907
+  concavity: 474.62689865841327
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.372264    0.90468425  3.8856843 ]...
+  pdb_id: 3esn
+
+--- Target 87 ---
+  id: 68911
+  idx: 68911
+  concavity: 308.85802526165895
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.5265385  2.9033077 10.385924 ]...
+  pdb_id: 3esn
+
+--- Target 88 ---
+  id: 68919
+  idx: 68919
+  concavity: 292.0114492184679
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.489581     0.59215784   3.259579  ]...
+  pdb_id: 3esn
+
+--- Target 89 ---
+  id: 68935
+  idx: 68935
+  concavity: 211.84380607810502
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.65559995 11.691701    8.8898    ]...
+  pdb_id: 3p3u
+
+--- Target 90 ---
+  id: 68938
+  idx: 68938
+  concavity: 343.85402957974765
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[1.5257858 7.265358  9.988643 ]...
+  pdb_id: 3p3u
+
+--- Target 91 ---
+  id: 68949
+  idx: 68949
+  concavity: 402.20464621266484
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[2.2441666 8.598166  9.645833 ]...
+  pdb_id: 3p3s
+
+--- Target 92 ---
+  id: 68952
+  idx: 68952
+  concavity: 448.9791234526348
+  surface_area: 432.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.17     12.6569    9.977699]...
+  pdb_id: 3p3s
+
+--- Target 93 ---
+  id: 68956
+  idx: 68956
+  concavity: 473.3163095348576
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.186571     2.6685712    0.52142864]...
+  pdb_id: 3p3s
+
+--- Target 94 ---
+  id: 68957
+  idx: 68957
+  concavity: 335.41009052159825
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.606526    0.8975789   3.1120002]...
+  pdb_id: 3p3s
+
+--- Target 95 ---
+  id: 68972
+  idx: 68972
+  concavity: 478.5921759670367
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.367501     2.476286     0.48657146]...
+  pdb_id: 3p3s
+
+--- Target 96 ---
+  id: 68990
+  idx: 68990
+  concavity: 410.3893083549545
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[0.49066657 6.230534   9.609067  ]...
+  pdb_id: 2roy
+
+--- Target 97 ---
+  id: 69046
+  idx: 69046
+  concavity: 497.5239432786826
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.385334    3.7480001   1.1322   ]...
+  pdb_id: 1u21
+
+--- Target 98 ---
+  id: 69079
+  idx: 69079
+  concavity: 486.3093005710315
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.388286     2.7477856    0.39564285]...
+  pdb_id: 4pwi
+
+--- Target 99 ---
+  id: 69082
+  idx: 69082
+  concavity: 446.88195971018604
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[1.6655453 8.113819  9.562819 ]...
+  pdb_id: 4pwi
+
+--- Target 100 ---
+  id: 69084
+  idx: 69084
+  concavity: 252.30916481531546
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.48063162  5.1335263   9.740105  ]...
+  pdb_id: 4pwi
+
+--- Target 101 ---
+  id: 69086
+  idx: 69086
+  concavity: 486.81777443656665
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[0.10986666 5.7983336  9.539533  ]...
+  pdb_id: 4pwi
+
+--- Target 102 ---
+  id: 69087
+  idx: 69087
+  concavity: 405.6969259917634
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[1.4135833 7.756167  9.032332 ]...
+  pdb_id: 4y9b
+
+--- Target 103 ---
+  id: 69151
+  idx: 69151
+  concavity: 431.2866807736807
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.337144    2.2299287   0.6407857]...
+  pdb_id: 4pm1
+
+--- Target 104 ---
+  id: 69216
+  idx: 69216
+  concavity: 486.5758611256516
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.223        2.3862002    0.10219999]...
+  pdb_id: 5u4c
+
+--- Target 105 ---
+  id: 69238
+  idx: 69238
+  concavity: 440.99796457608267
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.0757065   1.9222939   1.0851763]...
+  pdb_id: 4l1t
+
+--- Target 106 ---
+  id: 69249
+  idx: 69249
+  concavity: 489.99088266935723
+  surface_area: 392.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.233334     2.1974165    0.44883335]...
+  pdb_id: 5e23
+
+--- Target 107 ---
+  id: 69268
+  idx: 69268
+  concavity: 493.5348158776452
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.367466    3.8811336   1.0461333]...
+  pdb_id: 5e4o
+
+--- Target 108 ---
+  id: 69304
+  idx: 69304
+  concavity: 349.8857020080928
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-13.169001    4.031333    1.1597778]...
+  pdb_id: 5boj
+
+--- Target 109 ---
+  id: 69315
+  idx: 69315
+  concavity: 481.8549000001319
+  surface_area: 536.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.080059    1.9159414   1.0909412]...
+  pdb_id: 4pwj
+
+--- Target 110 ---
+  id: 69353
+  idx: 69353
+  concavity: 490.7898788884278
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.128734    3.8612666   1.3164   ]...
+  pdb_id: 3ng5
+
+--- Target 111 ---
+  id: 69356
+  idx: 69356
+  concavity: 472.5211239423637
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.3455       1.9687144    0.59442854]...
+  pdb_id: 4ac2
+
+--- Target 112 ---
+  id: 69364
+  idx: 69364
+  concavity: 491.288900544644
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.3102665   3.8463333   1.2596666]...
+  pdb_id: 4ac2
+
+--- Target 113 ---
+  id: 69372
+  idx: 69372
+  concavity: 477.8431936181107
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.3437 11.9177  8.6366]...
+  pdb_id: 3p3t
+
+--- Target 114 ---
+  id: 69407
+  idx: 69407
+  concavity: 409.21351831108973
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 3.1726003  8.096133  12.577732 ]...
+  pdb_id: 3p3t
+
+--- Target 115 ---
+  id: 69410
+  idx: 69410
+  concavity: 238.65990954238242
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.21805264  5.3064218   9.724684  ]...
+  pdb_id: 3m1o
+
+--- Target 116 ---
+  id: 69417
+  idx: 69417
+  concavity: 440.22790030963307
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[1.8658333 8.275001  9.349083 ]...
+  pdb_id: 3m1o
+
+--- Target 117 ---
+  id: 69426
+  idx: 69426
+  concavity: 494.90966293500003
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.621944    3.8723886   1.0933334]...
+  pdb_id: 3m1o
+
+--- Target 118 ---
+  id: 69427
+  idx: 69427
+  concavity: 454.78941729525724
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.325499    2.7117002   0.3553   ]...
+  pdb_id: 3m1o
+
+--- Target 119 ---
+  id: 69429
+  idx: 69429
+  concavity: 465.98114526943175
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.509573     2.637643     0.47542858]...
+  pdb_id: 3m1o
+
+--- Target 120 ---
+  id: 69434
+  idx: 69434
+  concavity: 491.2369199460285
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.7342005   2.5986667   0.8084   ]...
+  pdb_id: 4hju
+
+--- Target 121 ---
+  id: 69496
+  idx: 69496
+  concavity: 493.9869190640359
+  surface_area: 504.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.180588    1.9817058   1.2127059]...
+  pdb_id: 5u4e
+
+--- Target 122 ---
+  id: 69501
+  idx: 69501
+  concavity: 221.3542490816535
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[  2.5046923  -1.862769  167.61278  ]...
+  pdb_id: 3eso
+
+--- Target 123 ---
+  id: 69502
+  idx: 69502
+  concavity: 79.00303659075759
+  surface_area: 152.0
+  ligand_com: shape=(3,), dtype=float32, values=[  2.9654615  -4.6549997 170.82977  ]...
+  pdb_id: 3eso
+
+--- Target 124 ---
+  id: 69504
+  idx: 69504
+  concavity: 190.02311890162616
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[  2.5146153  -4.169924  169.86046  ]...
+  pdb_id: 3eso
+
+--- Target 125 ---
+  id: 69530
+  idx: 69530
+  concavity: 453.972597324443
+  surface_area: 424.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 33.26591    -1.6793913 -24.076958 ]...
+  pdb_id: 3eso
+
+--- Target 126 ---
+  id: 41831
+  idx: 41831
+  concavity: 318.4600354706863
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.334575 41.90223  17.057898]...
+  pdb_id: 2itk
+
+--- Target 127 ---
+  id: 41833
+  idx: 41833
+  concavity: 425.4496179434241
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.535025 41.401077 18.264027]...
+  pdb_id: 4u86
+
+--- Target 128 ---
+  id: 41859
+  idx: 41859
+  concavity: 280.7350956727495
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 4.7021956 42.497433  15.80837  ]...
+  pdb_id: 4u86
+
+--- Target 129 ---
+  id: 41863
+  idx: 41863
+  concavity: 160.23457122680205
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 4.476348 42.513504 15.479713]...
+  pdb_id: 3kaf
+
+--- Target 130 ---
+  id: 41864
+  idx: 41864
+  concavity: 460.3047182998598
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.402975 41.530716 18.43035 ]...
+  pdb_id: 2zqs
+
+--- Target 131 ---
+  id: 41874
+  idx: 41874
+  concavity: 484.7319783767142
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.816532 43.497334 18.128632]...
+  pdb_id: 3kad
+
+--- Target 132 ---
+  id: 41877
+  idx: 41877
+  concavity: 274.3508921470788
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.173475 42.168602 17.157827]...
+  pdb_id: 4tyo
+
+--- Target 133 ---
+  id: 41884
+  idx: 41884
+  concavity: 453.2943192886633
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.303327 41.953392 18.002172]...
+  pdb_id: 3kac
+
+--- Target 134 ---
+  id: 41888
+  idx: 41888
+  concavity: 434.49978244801247
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.122826 41.38076  18.301607]...
+  pdb_id: 3ntp
+
+--- Target 135 ---
+  id: 41890
+  idx: 41890
+  concavity: 288.13408637247176
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.339775 41.497826 18.350925]...
+  pdb_id: 2xp5
+
+--- Target 136 ---
+  id: 41893
+  idx: 41893
+  concavity: 428.9097609403568
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 4.6098695 42.594025  15.769195 ]...
+  pdb_id: 3kce
+
+--- Target 137 ---
+  id: 41902
+  idx: 41902
+  concavity: 463.3610223346047
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.490779 41.514122 18.178925]...
+  pdb_id: 3ntp
+
+--- Target 138 ---
+  id: 41905
+  idx: 41905
+  concavity: 346.5123685821643
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.223699 42.370407 17.032999]...
+  pdb_id: 3odk
+
+--- Target 139 ---
+  id: 41906
+  idx: 41906
+  concavity: 379.6800280360582
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.9620495 42.064156  16.986925 ]...
+  pdb_id: 2xpb
+
+--- Target 140 ---
+  id: 41908
+  idx: 41908
+  concavity: 351.7218578120519
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.359784 42.52362  17.831167]...
+  pdb_id: 4u84
+
+--- Target 141 ---
+  id: 41913
+  idx: 41913
+  concavity: 470.29098870225005
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.212512 42.523376 18.267626]...
+  pdb_id: 3jyj
+
+--- Target 142 ---
+  id: 41941
+  idx: 41941
+  concavity: 409.76448588523067
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.599635 41.532337 18.244734]...
+  pdb_id: 2xpb
+
+--- Target 143 ---
+  id: 41946
+  idx: 41946
+  concavity: 417.06883120577527
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.356974 41.660027 18.081425]...
+  pdb_id: 3ikg
+
+--- Target 144 ---
+  id: 41950
+  idx: 41950
+  concavity: 257.8506238043306
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.544527 42.6005   18.033278]...
+  pdb_id: 3kai
+
+--- Target 145 ---
+  id: 41951
+  idx: 41951
+  concavity: 419.4471285612495
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.0989714 42.620796  17.401587 ]...
+  pdb_id: 2xpa
+
+--- Target 146 ---
+  id: 41954
+  idx: 41954
+  concavity: 479.32006786121474
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.572212 42.766758 17.388031]...
+  pdb_id: 3kah
+
+--- Target 147 ---
+  id: 41967
+  idx: 41967
+  concavity: 441.9833377073296
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.777823 42.13105  17.144001]...
+  pdb_id: 2xp6
+
+--- Target 148 ---
+  id: 41972
+  idx: 41972
+  concavity: 471.11381634210704
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.24286  42.33997  18.158882]...
+  pdb_id: 4tns
+
+--- Target 149 ---
+  id: 41974
+  idx: 41974
+  concavity: 469.51927815623924
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.481784 43.32878  20.305914]...
+  pdb_id: 4u84
+
+--- Target 150 ---
+  id: 41975
+  idx: 41975
+  concavity: 491.74567171704814
+  surface_area: 456.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.399534 40.414497 21.486233]...
+  pdb_id: 2xp5
+
+--- Target 151 ---
+  id: 41977
+  idx: 41977
+  concavity: 234.58263775383006
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.524075 41.575375 17.999651]...
+  pdb_id: 4tns
+
+--- Target 152 ---
+  id: 41982
+  idx: 41982
+  concavity: 454.0652106173484
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.997667 42.892265 16.28377 ]...
+  pdb_id: 3jyj
+
+--- Target 153 ---
+  id: 41983
+  idx: 41983
+  concavity: 468.6862433472703
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.371258 43.233948 17.78037 ]...
+  pdb_id: 4u86
+
+--- Target 154 ---
+  id: 41992
+  idx: 41992
+  concavity: 476.58433016593824
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.63116  43.78076  19.124401]...
+  pdb_id: 2zqt
+
+--- Target 155 ---
+  id: 41996
+  idx: 41996
+  concavity: 372.3278573426231
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.5129747 42.08202   17.841566 ]...
+  pdb_id: 3tcz
+
+--- Target 156 ---
+  id: 41998
+  idx: 41998
+  concavity: 495.78914595696756
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.9190674 42.904697  16.422832 ]...
+  pdb_id: 2q5a
+
+--- Target 157 ---
+  id: 42023
+  idx: 42023
+  concavity: 494.316207157221
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.934765 42.7705   17.389442]...
+  pdb_id: 3kah
+
+--- Target 158 ---
+  id: 42027
+  idx: 42027
+  concavity: 470.29098870225005
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.0872135 42.580402  18.192526 ]...
+  pdb_id: 2xp6
+
+--- Target 159 ---
+  id: 42049
+  idx: 42049
+  concavity: 479.8360667352457
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.664112 42.57861  18.034168]...
+  pdb_id: 3kai
+
+--- Target 160 ---
+  id: 42051
+  idx: 42051
+  concavity: 480.1220007619289
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.458115 43.206398 17.647343]...
+  pdb_id: 2itk
+
+--- Target 161 ---
+  id: 42052
+  idx: 42052
+  concavity: 340.75210088487034
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.6084   41.768127 18.057325]...
+  pdb_id: 2xp3
+
+--- Target 162 ---
+  id: 42056
+  idx: 42056
+  concavity: 340.75210088487034
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.635824 41.609444 18.00325 ]...
+  pdb_id: 3kai
+
+--- Target 163 ---
+  id: 42057
+  idx: 42057
+  concavity: 499.89107691177117
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.111452 42.223003 18.123642]...
+  pdb_id: 2f21
+
+--- Target 164 ---
+  id: 42106
+  idx: 42106
+  concavity: 408.2685619444269
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.701099 43.6706   17.986467]...
+  pdb_id: 2f21
+
+--- Target 165 ---
+  id: 42108
+  idx: 42108
+  concavity: 431.161102165337
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.569918 42.66689  18.048805]...
+  pdb_id: 2xpb
+
+--- Target 166 ---
+  id: 42109
+  idx: 42109
+  concavity: 495.0483719527209
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.854192 40.662426 19.229723]...
+  pdb_id: 2f21
+
+--- Target 167 ---
+  id: 42112
+  idx: 42112
+  concavity: 499.9157273262862
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.027395 40.635216 19.485672]...
+  pdb_id: 2xpb
+
+--- Target 168 ---
+  id: 42119
+  idx: 42119
+  concavity: 482.42974903290417
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.638474 41.637527 18.148476]...
+  pdb_id: 2xpb
+
+--- Target 169 ---
+  id: 42127
+  idx: 42127
+  concavity: 474.80602455076064
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.018214 42.32888  18.026524]...
+  pdb_id: 3oob
+
+--- Target 170 ---
+  id: 42154
+  idx: 42154
+  concavity: 449.8130690505646
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.260258 43.215313 17.531029]...
+  pdb_id: 3ikg
+
+--- Target 171 ---
+  id: 42163
+  idx: 42163
+  concavity: 498.26627927943105
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.079943 42.91377  17.675943]...
+  pdb_id: 2xp6
+
+--- Target 172 ---
+  id: 42176
+  idx: 42176
+  concavity: 423.28022376865556
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.455335 42.997677 17.799665]...
+  pdb_id: 3kaf
+
+--- Target 173 ---
+  id: 42178
+  idx: 42178
+  concavity: 339.07845454650436
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.3800693 42.6759    17.79317  ]...
+  pdb_id: 3kaf
+
+--- Target 174 ---
+  id: 42195
+  idx: 42195
+  concavity: 372.4981347764626
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.6222944 42.397766  17.413149 ]...
+  pdb_id: 2zqt
+
+--- Target 175 ---
+  id: 42203
+  idx: 42203
+  concavity: 484.7389897868301
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.2172165 41.808937  18.329327 ]...
+  pdb_id: 3jyj
+
+--- Target 176 ---
+  id: 42205
+  idx: 42205
+  concavity: 427.2828527441623
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.539463 41.49739  18.044342]...
+  pdb_id: 4tns
+
+--- Target 177 ---
+  id: 42228
+  idx: 42228
+  concavity: 344.81862815652283
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.945349 42.136425 16.66315 ]...
+  pdb_id: 2xp8
+
+--- Target 178 ---
+  id: 42254
+  idx: 42254
+  concavity: 434.49978244801247
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.087827 41.50904  18.353176]...
+  pdb_id: 3tdb
+
+--- Target 179 ---
+  id: 42257
+  idx: 42257
+  concavity: 424.69098959799504
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.903857 42.108074 18.033379]...
+  pdb_id: 3wh0
+
+--- Target 180 ---
+  id: 42265
+  idx: 42265
+  concavity: 499.2873639636599
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.983136 41.21811  18.624544]...
+  pdb_id: 2itk
+
+--- Target 181 ---
+  id: 42268
+  idx: 42268
+  concavity: 461.26053511266144
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.56164  43.457203 19.095118]...
+  pdb_id: 2zqs
+
+--- Target 182 ---
+  id: 42283
+  idx: 42283
+  concavity: 432.1054575431756
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.403889 43.07817  17.84886 ]...
+  pdb_id: 3kac
+
+--- Target 183 ---
+  id: 42291
+  idx: 42291
+  concavity: 433.97638936470594
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.801961 43.83308  19.0182  ]...
+  pdb_id: 3tcz
+
+--- Target 184 ---
+  id: 91735
+  idx: 91735
+  concavity: 446.0456582849344
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.54895  36.518578 26.059698]...
+  pdb_id: 2ql6
+
+--- Target 185 ---
+  id: 91744
+  idx: 91744
+  concavity: 456.77023411258614
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.7562118 36.51197   25.883814 ]...
+  pdb_id: 2qt0
+
+--- Target 186 ---
+  id: 117277
+  idx: 117277
+  concavity: 276.40731654917835
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.981563  12.659595 -11.757906]...
+  pdb_id: 5d5q
+
+--- Target 187 ---
+  id: 117289
+  idx: 117289
+  concavity: 379.6457180815526
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.0960655  13.039224  -11.615291 ]...
+  pdb_id: 3wb0
+
+--- Target 188 ---
+  id: 117294
+  idx: 117294
+  concavity: 328.5521100247982
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.71471   12.649742 -11.775485]...
+  pdb_id: 3wb2
+
+--- Target 189 ---
+  id: 117296
+  idx: 117296
+  concavity: 368.2559153832858
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.246322  13.140034 -11.637643]...
+  pdb_id: 3wb0
+
+--- Target 190 ---
+  id: 117305
+  idx: 117305
+  concavity: 488.51890416224126
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.83815   13.621361 -11.725423]...
+  pdb_id: 3wb2
+
+--- Target 191 ---
+  id: 68970
+  idx: 68970
+  concavity: 351.8084404533991
+  surface_area: 432.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.2425785 -0.828      3.7673686]...
+  pdb_id: 2y1g
+
+--- Target 192 ---
+  id: 69081
+  idx: 69081
+  concavity: 247.17395791463127
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 3.2086668  8.078267  12.7228   ]...
+  pdb_id: 2jcx
+
+--- Target 193 ---
+  id: 69148
+  idx: 69148
+  concavity: 492.6829432254748
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.876571    4.3882146   1.1501428]...
+  pdb_id: 3zi0
+
+--- Target 194 ---
+  id: 150230
+  idx: 150230
+  concavity: 120.02628336848443
+  surface_area: 192.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -4.1096253  27.640291  -23.895792 ]...
+  pdb_id: 5jo0
+
+--- Target 195 ---
+  id: 150231
+  idx: 150231
+  concavity: 328.92000301210214
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -0.98091674  27.9465     -22.557543  ]...
+  pdb_id: 5jnl
+
+--- Target 196 ---
+  id: 150232
+  idx: 150232
+  concavity: 290.0978567702569
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -0.91670847  27.882624   -22.786375  ]...
+  pdb_id: 4y6r
+
+--- Target 197 ---
+  id: 150233
+  idx: 150233
+  concavity: 120.3264252146779
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.765708  27.796333 -23.969084]...
+  pdb_id: 5jmp
+
+--- Target 198 ---
+  id: 150271
+  idx: 150271
+  concavity: 439.08579815739654
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.6555713 12.769572   1.9437143]...
+  pdb_id: 5jmw
+
+--- Target 199 ---
+  id: 150282
+  idx: 150282
+  concavity: 403.0435619080478
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.8995715 12.858286   1.8258572]...
+  pdb_id: 5jbi
+
+--- Target 200 ---
+  id: 150283
+  idx: 150283
+  concavity: 482.6005888677904
+  surface_area: 384.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.9095715 13.202001   1.9540001]...
+  pdb_id: 4kp7
+
+--- Target 201 ---
+  id: 150285
+  idx: 150285
+  concavity: 412.9993225261528
+  surface_area: 384.0
+  ligand_com: shape=(3,), dtype=float32, values=[-2.2938573 12.615571   2.0595715]...
+  pdb_id: 5jo0
+
+--- Target 202 ---
+  id: 150300
+  idx: 150300
+  concavity: 325.2693483382568
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.5825714 12.723      3.5102856]...
+  pdb_id: 5jc1
+
+--- Target 203 ---
+  id: 150355
+  idx: 150355
+  concavity: 170.11156992154153
+  surface_area: 120.0
+  ligand_com: shape=(3,), dtype=float32, values=[-29.63325   14.181073 -13.664473]...
+  pdb_id: 4y67
+
+--- Target 204 ---
+  id: 150375
+  idx: 150375
+  concavity: 151.78077021826343
+  surface_area: 128.0
+  ligand_com: shape=(3,), dtype=float32, values=[-29.778912  14.22986  -13.76101 ]...
+  pdb_id: 5jmw
+
+--- Target 205 ---
+  id: 124353
+  idx: 124353
+  concavity: 478.26473437752236
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[90.41735  34.87617   9.763564]...
+  pdb_id: 3dj8
+
+--- Target 206 ---
+  id: 124382
+  idx: 124382
+  concavity: 391.0843283761863
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[52.508198 38.463802 40.7391  ]...
+  pdb_id: 3e6v
+
+--- Target 207 ---
+  id: 124387
+  idx: 124387
+  concavity: 469.8315753052604
+  surface_area: 168.0
+  ligand_com: shape=(3,), dtype=float32, values=[50.062813 38.16613  40.325996]...
+  pdb_id: 3mfv
+
+--- Target 208 ---
+  id: 124393
+  idx: 124393
+  concavity: 469.75781327052425
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.569637 38.18854  39.389   ]...
+  pdb_id: 4fci
+
+--- Target 209 ---
+  id: 124443
+  idx: 124443
+  concavity: 366.88726079279286
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[52.8771   38.673428 40.611202]...
+  pdb_id: 1zpe
+
+--- Target 210 ---
+  id: 124451
+  idx: 124451
+  concavity: 304.19715251455654
+  surface_area: 168.0
+  ligand_com: shape=(3,), dtype=float32, values=[49.83039  36.865776 41.700123]...
+  pdb_id: 1zpg
+
+--- Target 211 ---
+  id: 124461
+  idx: 124461
+  concavity: 488.9557147514138
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.4694   38.730255 41.653606]...
+  pdb_id: 3e9b
+
+--- Target 212 ---
+  id: 124464
+  idx: 124464
+  concavity: 450.2204039018971
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.55927  38.975548 39.618088]...
+  pdb_id: 1rla
+
+--- Target 213 ---
+  id: 124468
+  idx: 124468
+  concavity: 451.09866696255705
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[52.205597 40.1757   40.558945]...
+  pdb_id: 1p8s
+
+--- Target 214 ---
+  id: 124473
+  idx: 124473
+  concavity: 446.14927349829276
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[52.765205 38.578167 41.063335]...
+  pdb_id: 1p8r
+
+--- Target 215 ---
+  id: 124479
+  idx: 124479
+  concavity: 448.72823874173673
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[50.169697 38.301582 40.288982]...
+  pdb_id: 1tbl
+
+--- Target 216 ---
+  id: 124483
+  idx: 124483
+  concavity: 427.97112511891606
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.63345  38.652634 39.597088]...
+  pdb_id: 1t4p
+
+--- Target 217 ---
+  id: 124489
+  idx: 124489
+  concavity: 309.6001897041717
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.813637 37.691452 38.430183]...
+  pdb_id: 1t4p
+
+--- Target 218 ---
+  id: 124511
+  idx: 124511
+  concavity: 404.90524527117714
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.075733 38.590305 40.81563 ]...
+  pdb_id: 1p8s
+
+--- Target 219 ---
+  id: 124522
+  idx: 124522
+  concavity: 363.5755112410538
+  surface_area: 168.0
+  ligand_com: shape=(3,), dtype=float32, values=[50.24353  38.418945 40.013584]...
+  pdb_id: 1p8q
+
+--- Target 220 ---
+  id: 10188
+  idx: 10188
+  concavity: 434.5144417964091
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-29.63074   29.071892  20.708826]...
+  pdb_id: 5lhh
+
+--- Target 221 ---
+  id: 145089
+  idx: 145089
+  concavity: 224.3029664252776
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.845667 106.11208   21.574417]...
+  pdb_id: 4bb6
+
+--- Target 222 ---
+  id: 145090
+  idx: 145090
+  concavity: 174.77330369537174
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.552084 105.89167   22.367416]...
+  pdb_id: 3h6k
+
+--- Target 223 ---
+  id: 145092
+  idx: 145092
+  concavity: 184.1948260407893
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.557251 106.86059   22.033918]...
+  pdb_id: 4c7k
+
+--- Target 224 ---
+  id: 145094
+  idx: 145094
+  concavity: 224.68385130980465
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.342333 106.037575  21.50225 ]...
+  pdb_id: 3oq1
+
+--- Target 225 ---
+  id: 145096
+  idx: 145096
+  concavity: 183.20448056442976
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.515417 104.248436  21.1025  ]...
+  pdb_id: 2irw
+
+--- Target 226 ---
+  id: 145110
+  idx: 145110
+  concavity: 233.5159737505307
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.890165 105.9475    21.803833]...
+  pdb_id: 2ilt
+
+--- Target 227 ---
+  id: 145116
+  idx: 145116
+  concavity: 291.16453447887164
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.612751 105.67941   20.04975 ]...
+  pdb_id: 4c7k
+
+--- Target 228 ---
+  id: 145118
+  idx: 145118
+  concavity: 195.48564800282034
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.391916 107.02842   23.33625 ]...
+  pdb_id: 4p38
+
+--- Target 229 ---
+  id: 145121
+  idx: 145121
+  concavity: 217.88063895498468
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.203333 105.74258   21.113167]...
+  pdb_id: 5pgw
+
+--- Target 230 ---
+  id: 145127
+  idx: 145127
+  concavity: 208.76112546335744
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.502584 106.457085  21.894835]...
+  pdb_id: 4c7k
+
+--- Target 231 ---
+  id: 145129
+  idx: 145129
+  concavity: 235.61002132512175
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.087334 106.30691   21.562166]...
+  pdb_id: 3pdj
+
+--- Target 232 ---
+  id: 145133
+  idx: 145133
+  concavity: 231.4710409113614
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.471582 106.21567   21.55925 ]...
+  pdb_id: 5pgv
+
+--- Target 233 ---
+  id: 145136
+  idx: 145136
+  concavity: 184.41467502203673
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.709915 106.269905  21.408834]...
+  pdb_id: 4bb6
+
+--- Target 234 ---
+  id: 145137
+  idx: 145137
+  concavity: 362.58774705472996
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -1.3327751 105.1086     22.991077 ]...
+  pdb_id: 3h6k
+
+--- Target 235 ---
+  id: 145139
+  idx: 145139
+  concavity: 203.0969384463091
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.02775  106.24267   21.237835]...
+  pdb_id: 3czr
+
+--- Target 236 ---
+  id: 145141
+  idx: 145141
+  concavity: 154.11826278013777
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.862669 106.97275   22.529417]...
+  pdb_id: 3bzu
+
+--- Target 237 ---
+  id: 145143
+  idx: 145143
+  concavity: 208.68271651327368
+  surface_area: 192.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.473501 105.67774   21.833582]...
+  pdb_id: 2bel
+
+--- Target 238 ---
+  id: 145144
+  idx: 145144
+  concavity: 254.45375132330918
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.125334 106.981575  22.467415]...
+  pdb_id: 3czr
+
+--- Target 239 ---
+  id: 145150
+  idx: 145150
+  concavity: 152.3075804331935
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.622252 106.843834  23.113668]...
+  pdb_id: 3bzu
+
+--- Target 240 ---
+  id: 145152
+  idx: 145152
+  concavity: 236.45563068036137
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.376335 106.00791   21.048166]...
+  pdb_id: 5pgy
+
+--- Target 241 ---
+  id: 145192
+  idx: 145192
+  concavity: 158.17342707457576
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.74275 107.72509  23.20675]...
+  pdb_id: 4bb6
+
+--- Target 242 ---
+  id: 145199
+  idx: 145199
+  concavity: 362.3643798002679
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -1.4637749 104.88556    22.574673 ]...
+  pdb_id: 4k1l
+
+--- Target 243 ---
+  id: 145203
+  idx: 145203
+  concavity: 320.5727572751855
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -1.9344525 105.32387    23.069372 ]...
+  pdb_id: 4bb5
+
+--- Target 244 ---
+  id: 145207
+  idx: 145207
+  concavity: 368.6294299401352
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -1.5672249 104.88507    22.907925 ]...
+  pdb_id: 5pgx
+
+--- Target 245 ---
+  id: 145212
+  idx: 145212
+  concavity: 299.9208872581425
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.03983 105.44403  23.13596]...
+  pdb_id: 3oq1
+
+--- Target 246 ---
+  id: 145226
+  idx: 145226
+  concavity: 472.2538193798546
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -1.8749231 107.71346    22.461153 ]...
+  pdb_id: 2irw
+
+--- Target 247 ---
+  id: 145243
+  idx: 145243
+  concavity: 485.300805337259
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -1.8103846 107.587296   22.196615 ]...
+  pdb_id: 5pgx
+
+--- Target 248 ---
+  id: 145253
+  idx: 145253
+  concavity: 482.5596335390584
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.2904615 107.86669    22.83854  ]...
+  pdb_id: 3byz
+
+--- Target 249 ---
+  id: 145255
+  idx: 145255
+  concavity: 229.65241400240535
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.674385 -12.298847 -12.979384]...
+  pdb_id: 3ch6
+
+--- Target 250 ---
+  id: 145256
+  idx: 145256
+  concavity: 324.52493727428504
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.66323  -11.34477  -12.490232]...
+  pdb_id: 2ilt
+
+--- Target 251 ---
+  id: 145259
+  idx: 145259
+  concavity: 371.77741864012984
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.981384 -11.115076 -12.019692]...
+  pdb_id: 3fco
+
+--- Target 252 ---
+  id: 145260
+  idx: 145260
+  concavity: 193.60940141080027
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.102613 -12.983538 -14.782693]...
+  pdb_id: 4p38
+
+--- Target 253 ---
+  id: 145264
+  idx: 145264
+  concavity: 424.88165273991217
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.37564704 -2.3430002   1.1132354 ]...
+  pdb_id: 3d3e
+
+--- Target 254 ---
+  id: 145265
+  idx: 145265
+  concavity: 376.95726643998506
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[8.3872    5.9692    0.6390999]...
+  pdb_id: 2irw
+
+--- Target 255 ---
+  id: 145273
+  idx: 145273
+  concavity: 403.4569578409598
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.93923  -11.30123  -12.319615]...
+  pdb_id: 3d3e
+
+--- Target 256 ---
+  id: 145282
+  idx: 145282
+  concavity: 287.5750490379252
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.585539 -11.254    -11.765769]...
+  pdb_id: 3qqp
+
+--- Target 257 ---
+  id: 145284
+  idx: 145284
+  concavity: 273.3265107041592
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.212385 -12.241537 -13.432076]...
+  pdb_id: 3bzu
+
+--- Target 258 ---
+  id: 145286
+  idx: 145286
+  concavity: 301.29995246453143
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.39423  -11.20677  -11.767232]...
+  pdb_id: 3fco
+
+--- Target 259 ---
+  id: 145294
+  idx: 145294
+  concavity: 429.24466895411246
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.957771 -12.909923 -12.823846]...
+  pdb_id: 4ijw
+
+--- Target 260 ---
+  id: 145303
+  idx: 145303
+  concavity: 235.71670755696522
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.080309 -13.204077 -13.242306]...
+  pdb_id: 2ilt
+
+--- Target 261 ---
+  id: 145308
+  idx: 145308
+  concavity: 428.36106720770573
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.3599412 -2.558588   1.1279999]...
+  pdb_id: 3qqp
+
+--- Target 262 ---
+  id: 145311
+  idx: 145311
+  concavity: 417.16879668798396
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.35458824 -2.4135292   0.9438235 ]...
+  pdb_id: 4k1l
+
+--- Target 263 ---
+  id: 145321
+  idx: 145321
+  concavity: 437.5310952589258
+  surface_area: 528.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.399921 -12.622615 -13.598692]...
+  pdb_id: 3ch6
+
+--- Target 264 ---
+  id: 145322
+  idx: 145322
+  concavity: 482.92858218065874
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[5.133053  2.9203155 2.495737 ]...
+  pdb_id: 3d5q
+
+--- Target 265 ---
+  id: 145325
+  idx: 145325
+  concavity: 415.78159652613004
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.059538 -12.869847 -13.217615]...
+  pdb_id: 3frj
+
+--- Target 266 ---
+  id: 145330
+  idx: 145330
+  concavity: 292.3997716923387
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.519926  -11.111462  -11.7420025]...
+  pdb_id: 3h6k
+
+--- Target 267 ---
+  id: 145336
+  idx: 145336
+  concavity: 270.8800470696124
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 22.501308 -10.739155  -9.665231]...
+  pdb_id: 3d5q
+
+--- Target 268 ---
+  id: 145337
+  idx: 145337
+  concavity: 289.14168277572014
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.93     -11.292924 -11.988692]...
+  pdb_id: 3ch6
+
+--- Target 269 ---
+  id: 145341
+  idx: 145341
+  concavity: 473.55065083549414
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.33823532 -2.486529    0.8849412 ]...
+  pdb_id: 4p38
+
+--- Target 270 ---
+  id: 145344
+  idx: 145344
+  concavity: 468.42242297363816
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.70076466 -2.3771176   0.9081177 ]...
+  pdb_id: 3ey4
+
+--- Target 271 ---
+  id: 145347
+  idx: 145347
+  concavity: 332.97313758838965
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.542692 -11.025309 -12.520538]...
+  pdb_id: 2ilt
+
+--- Target 272 ---
+  id: 145348
+  idx: 145348
+  concavity: 314.1573098622684
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-5.369625  -5.96225    2.3749998]...
+  pdb_id: 3ey4
+
+--- Target 273 ---
+  id: 145349
+  idx: 145349
+  concavity: 178.5956738761449
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[3.3500004 4.056263  4.7210526]...
+  pdb_id: 2ilt
+
+--- Target 274 ---
+  id: 145350
+  idx: 145350
+  concavity: 358.154144121381
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.591076 -13.435385 -13.401769]...
+  pdb_id: 2irw
+
+--- Target 275 ---
+  id: 145355
+  idx: 145355
+  concavity: 280.6015188038327
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.685154  -12.3009205 -10.227385 ]...
+  pdb_id: 5pgy
+
+--- Target 276 ---
+  id: 145360
+  idx: 145360
+  concavity: 286.03527765600484
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.965    -10.352693 -11.463769]...
+  pdb_id: 3ch6
+
+--- Target 277 ---
+  id: 145364
+  idx: 145364
+  concavity: 224.4079605318313
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 18.941383 -11.325231 -13.778692]...
+  pdb_id: 4ijw
+
+--- Target 278 ---
+  id: 145366
+  idx: 145366
+  concavity: 300.87331217554004
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 21.88223  -13.614924 -13.274231]...
+  pdb_id: 3czr
+
+--- Target 279 ---
+  id: 145369
+  idx: 145369
+  concavity: 368.34188934776074
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.687386 -11.511077 -12.586076]...
+  pdb_id: 4ijw
+
+--- Target 280 ---
+  id: 145371
+  idx: 145371
+  concavity: 386.3601478357732
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.34864706 -2.3621767   0.56005883]...
+  pdb_id: 3pdj
+
+--- Target 281 ---
+  id: 145376
+  idx: 145376
+  concavity: 436.2954193777853
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.639997 -12.971154 -12.08923 ]...
+  pdb_id: 2irw
+
+--- Target 282 ---
+  id: 145378
+  idx: 145378
+  concavity: 268.399115192304
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.552614 -11.221308 -12.589462]...
+  pdb_id: 3qqp
+
+--- Target 283 ---
+  id: 145384
+  idx: 145384
+  concavity: 428.3398825393876
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.32147056 -2.5279999   0.87570584]...
+  pdb_id: 4ijw
+
+--- Target 284 ---
+  id: 145386
+  idx: 145386
+  concavity: 361.44249941155545
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.253077 -11.672923 -13.382462]...
+  pdb_id: 3bzu
+
+--- Target 285 ---
+  id: 145396
+  idx: 145396
+  concavity: 428.83461414423823
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.4017647 -2.504      0.8616471]...
+  pdb_id: 4ijv
+
+--- Target 286 ---
+  id: 145400
+  idx: 145400
+  concavity: 365.83676646811864
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[8.695     6.0281    0.5032002]...
+  pdb_id: 5pgu
+
+--- Target 287 ---
+  id: 145402
+  idx: 145402
+  concavity: 401.04538652016436
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[-4.1136246 -5.771      3.1046252]...
+  pdb_id: 5pgu
+
+--- Target 288 ---
+  id: 145405
+  idx: 145405
+  concavity: 396.41610222273056
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[-4.63675  -6.026     3.094125]...
+  pdb_id: 3ch6
+
+--- Target 289 ---
+  id: 145413
+  idx: 145413
+  concavity: 360.65903015722574
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[8.2525    6.2377005 0.9028999]...
+  pdb_id: 3d5q
+
+--- Target 290 ---
+  id: 145438
+  idx: 145438
+  concavity: 389.7745738838433
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.4192857  -3.2714288  -0.42300004]...
+  pdb_id: 5pgv
+
+--- Target 291 ---
+  id: 145449
+  idx: 145449
+  concavity: 474.49861302444356
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[  4.8162174  -8.847783  -10.199087 ]...
+  pdb_id: 2ilt
+
+--- Target 292 ---
+  id: 145454
+  idx: 145454
+  concavity: 364.39602788313454
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.7669998  1.5127273  9.642545 ]...
+  pdb_id: 2irw
+
+--- Target 293 ---
+  id: 145498
+  idx: 145498
+  concavity: 190.87636015407512
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[9.341308  6.2553077 0.7652308]...
+  pdb_id: 4bb6
+
+--- Target 294 ---
+  id: 145505
+  idx: 145505
+  concavity: 442.2607029229821
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[4.7522635 2.732263  3.104105 ]...
+  pdb_id: 4bb6
+
+--- Target 295 ---
+  id: 145515
+  idx: 145515
+  concavity: 376.6468061172074
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.7292727  1.4576364  9.724273 ]...
+  pdb_id: 3fco
+
+--- Target 296 ---
+  id: 145523
+  idx: 145523
+  concavity: 399.3829076642891
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.5549091  1.4785453  9.408817 ]...
+  pdb_id: 3frj
+
+--- Target 297 ---
+  id: 145524
+  idx: 145524
+  concavity: 377.27095314778506
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.50454  -11.447307 -12.848078]...
+  pdb_id: 3d4n
+
+--- Target 298 ---
+  id: 145527
+  idx: 145527
+  concavity: 344.98519990735923
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[9.0373    6.1236    1.0417001]...
+  pdb_id: 4c7k
+
+--- Target 299 ---
+  id: 145528
+  idx: 145528
+  concavity: 387.9153632691662
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.549461 -11.542616 -12.729845]...
+  pdb_id: 3frj
+
+--- Target 300 ---
+  id: 145529
+  idx: 145529
+  concavity: 316.5151244612846
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[9.017099 6.4278   0.8165  ]...
+  pdb_id: 3frj
+
+--- Target 301 ---
+  id: 145533
+  idx: 145533
+  concavity: 393.1609749818276
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.6872729  1.7074546  9.751818 ]...
+  pdb_id: 3frj
+
+--- Target 302 ---
+  id: 150066
+  idx: 150066
+  concavity: 363.7728815109122
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[17.873499 15.434001 20.64125 ]...
+  pdb_id: 4kw5
+
+--- Target 303 ---
+  id: 150077
+  idx: 150077
+  concavity: 487.17745623605754
+  surface_area: 536.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.610939 12.287687 21.355812]...
+  pdb_id: 4p8l
+
+--- Target 304 ---
+  id: 150078
+  idx: 150078
+  concavity: 379.65383598317266
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.935233 12.412499 24.087133]...
+  pdb_id: 4p8y
+
+--- Target 305 ---
+  id: 150084
+  idx: 150084
+  concavity: 473.5547835557056
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.989311 11.919062 21.653688]...
+  pdb_id: 4p8n
+
+--- Target 306 ---
+  id: 150088
+  idx: 150088
+  concavity: 477.19913109824427
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.930126 11.962875 21.49725 ]...
+  pdb_id: 4p8l
+
+--- Target 307 ---
+  id: 150092
+  idx: 150092
+  concavity: 413.71366897180593
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.347564 12.359499 21.311813]...
+  pdb_id: 4p8t
+
+--- Target 308 ---
+  id: 150094
+  idx: 150094
+  concavity: 429.6086101594572
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.425437 12.210751 21.449501]...
+  pdb_id: 4pfd
+
+--- Target 309 ---
+  id: 159108
+  idx: 159108
+  concavity: 497.55251393964477
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.792848  18.9853     8.298273]...
+  pdb_id: 4qqj
+
+--- Target 310 ---
+  id: 11616
+  idx: 11616
+  concavity: 448.2854921854789
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[11.490726   -4.431091   -0.72672725]...
+  pdb_id: 5fp3
+
+--- Target 311 ---
+  id: 11632
+  idx: 11632
+  concavity: 484.43310717961003
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[11.807705  -5.5247064  1.4485292]...
+  pdb_id: 5fp3
+
+--- Target 312 ---
+  id: 82191
+  idx: 82191
+  concavity: 477.6773646460339
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 17.569166   8.278056 116.66356 ]...
+  pdb_id: 5a2s
+
+--- Target 313 ---
+  id: 82193
+  idx: 82193
+  concavity: 404.9548830715916
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 14.490666    0.9977778 115.478325 ]...
+  pdb_id: 2vqq
+
+--- Target 314 ---
+  id: 82199
+  idx: 82199
+  concavity: 446.3364748262392
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 14.382778   1.377111 115.92033 ]...
+  pdb_id: 5a2s
+
+--- Target 315 ---
+  id: 82224
+  idx: 82224
+  concavity: 489.4549535139937
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 17.822166    7.7212777 114.91593  ]...
+  pdb_id: 2vqm
+
+--- Target 316 ---
+  id: 29304
+  idx: 29304
+  concavity: 491.53657550358014
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.612293 -23.631676  -3.320029]...
+  pdb_id: 1xnx
+
+--- Target 317 ---
+  id: 114467
+  idx: 114467
+  concavity: 386.0944478742304
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.867827 18.564089 24.66574 ]...
+  pdb_id: 5nky
+
+--- Target 318 ---
+  id: 114468
+  idx: 114468
+  concavity: 375.51224225524305
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.7516074 18.545696  24.634087 ]...
+  pdb_id: 4q0a
+
+--- Target 319 ---
+  id: 114470
+  idx: 114470
+  concavity: 465.4438006986304
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[24.670479   7.8663044 24.407913 ]...
+  pdb_id: 2hbh
+
+--- Target 320 ---
+  id: 114471
+  idx: 114471
+  concavity: 298.46113934508475
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[19.481737  11.766782  -2.8321743]...
+  pdb_id: 3o1d
+
+--- Target 321 ---
+  id: 114472
+  idx: 114472
+  concavity: 293.0062929709388
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.6753042 -11.6088705  -6.216    ]...
+  pdb_id: 5e7v
+
+--- Target 322 ---
+  id: 114476
+  idx: 114476
+  concavity: 296.67178369319714
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[19.33226   11.922651  -2.6860435]...
+  pdb_id: 4q0a
+
+--- Target 323 ---
+  id: 114478
+  idx: 114478
+  concavity: 488.1359617332499
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.2938824 -12.043822   -3.5967054]...
+  pdb_id: 4g1y
+
+--- Target 324 ---
+  id: 114479
+  idx: 114479
+  concavity: 477.6164709303738
+  surface_area: 392.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.2000768 -11.4855385  -4.695846 ]...
+  pdb_id: 5lga
+
+--- Target 325 ---
+  id: 114481
+  idx: 114481
+  concavity: 493.286092155579
+  surface_area: 392.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.1885002 -11.33625    -4.4235   ]...
+  pdb_id: 4q0a
+
+--- Target 326 ---
+  id: 114482
+  idx: 114482
+  concavity: 393.4078598509039
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.0796156 -11.316615   -4.7549233]...
+  pdb_id: 4fhi
+
+--- Target 327 ---
+  id: 114484
+  idx: 114484
+  concavity: 310.6965629608585
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.484913 -11.737043  -6.260739]...
+  pdb_id: 5nky
+
+--- Target 328 ---
+  id: 114485
+  idx: 114485
+  concavity: 385.16310500843946
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.1869233 -11.441538   -4.7093077]...
+  pdb_id: 3o1e
+
+--- Target 329 ---
+  id: 114486
+  idx: 114486
+  concavity: 463.488414321169
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.4008462 -11.466615   -4.6698465]...
+  pdb_id: 4g1y
+
+--- Target 330 ---
+  id: 114487
+  idx: 114487
+  concavity: 264.03584592621877
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.325435 -11.639174  -6.391435]...
+  pdb_id: 5nma
+
+--- Target 331 ---
+  id: 114488
+  idx: 114488
+  concavity: 278.438130130336
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.8759131 -11.538043   -6.2527823]...
+  pdb_id: 4g1d
+
+--- Target 332 ---
+  id: 114489
+  idx: 114489
+  concavity: 270.43647720010017
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.3393912 -11.657739   -6.3656526]...
+  pdb_id: 4fhh
+
+--- Target 333 ---
+  id: 114490
+  idx: 114490
+  concavity: 293.8589495012466
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.465     -11.8173485  -6.338348 ]...
+  pdb_id: 3dr1
+
+--- Target 334 ---
+  id: 114492
+  idx: 114492
+  concavity: 380.78262520446566
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.0982308 -11.386153   -4.7816153]...
+  pdb_id: 5lga
+
+--- Target 335 ---
+  id: 114493
+  idx: 114493
+  concavity: 380.78262520446566
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.246846  -11.389845   -4.9136925]...
+  pdb_id: 4ruo
+
+--- Target 336 ---
+  id: 114496
+  idx: 114496
+  concavity: 471.07298430553635
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.1457694 -11.482383   -4.7813845]...
+  pdb_id: 4g1z
+
+--- Target 337 ---
+  id: 114497
+  idx: 114497
+  concavity: 479.4462459081301
+  surface_area: 416.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -1.9494616 -11.524001   -4.730923 ]...
+  pdb_id: 4g20
+
+--- Target 338 ---
+  id: 114498
+  idx: 114498
+  concavity: 456.0042098127924
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.303769  -11.5445385  -4.7379227]...
+  pdb_id: 4g1z
+
+--- Target 339 ---
+  id: 114499
+  idx: 114499
+  concavity: 282.12467389983334
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -3.499174  -11.581696   -6.2980003]...
+  pdb_id: 2hbh
+
+--- Target 340 ---
+  id: 114507
+  idx: 114507
+  concavity: 447.272620947612
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[41.077  31.3013 63.1281]...
+  pdb_id: 3dr1
+
+--- Target 341 ---
+  id: 114520
+  idx: 114520
+  concavity: 482.4972348430766
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.3935   52.401    32.18375]...
+  pdb_id: 4q0a
+
+--- Target 342 ---
+  id: 114527
+  idx: 114527
+  concavity: 380.0777525115006
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.56319   53.685814  32.35109 ]...
+  pdb_id: 4ruo
+
+--- Target 343 ---
+  id: 114529
+  idx: 114529
+  concavity: 349.8454067036683
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.81639  53.18673  32.70382]...
+  pdb_id: 4fhh
+
+--- Target 344 ---
+  id: 114531
+  idx: 114531
+  concavity: 387.5778512358811
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.73236   53.292637  32.780273]...
+  pdb_id: 4q0a
+
+--- Target 345 ---
+  id: 114532
+  idx: 114532
+  concavity: 470.07352420041605
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.60292   52.441174  32.19975 ]...
+  pdb_id: 4g20
+
+--- Target 346 ---
+  id: 114533
+  idx: 114533
+  concavity: 460.608224126671
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.54926   52.45958   32.251667]...
+  pdb_id: 3o1d
+
+--- Target 347 ---
+  id: 114535
+  idx: 114535
+  concavity: 447.36802051736936
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.65474   52.26642   32.088913]...
+  pdb_id: 4q0a
+
+--- Target 348 ---
+  id: 114537
+  idx: 114537
+  concavity: 353.37832683654466
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.25764   55.25575   33.275948]...
+  pdb_id: 4g1d
+
+--- Target 349 ---
+  id: 114538
+  idx: 114538
+  concavity: 377.5899231189833
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.11938   55.23345   32.930702]...
+  pdb_id: 2hc4
+
+--- Target 350 ---
+  id: 114539
+  idx: 114539
+  concavity: 360.00700688957545
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[132.9912    55.533447  32.8098  ]...
+  pdb_id: 4fhi
+
+--- Target 351 ---
+  id: 114540
+  idx: 114540
+  concavity: 438.618483774005
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[132.7783    55.22105   32.970146]...
+  pdb_id: 4ia1
+
+--- Target 352 ---
+  id: 114541
+  idx: 114541
+  concavity: 373.4348403212477
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[133.03046   54.95755   32.941196]...
+  pdb_id: 4fhh
+
+--- Target 353 ---
+  id: 114915
+  idx: 114915
+  concavity: 143.25458917449154
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 14.439026 -48.266186 -16.502892]...
+  pdb_id: 4ite
+
+--- Target 354 ---
+  id: 114929
+  idx: 114929
+  concavity: 285.30494078912693
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 39.025375 -41.36331  -18.96103 ]...
+  pdb_id: 3w0c
+
+--- Target 355 ---
+  id: 114967
+  idx: 114967
+  concavity: 242.62664329026387
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 39.704193 -40.65369  -18.532187]...
+  pdb_id: 3a3z
+
+--- Target 356 ---
+  id: 114987
+  idx: 114987
+  concavity: 371.4020124503952
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 38.71672  -41.134533 -19.866344]...
+  pdb_id: 1rjk
+
+--- Target 357 ---
+  id: 115062
+  idx: 115062
+  concavity: 336.9965347814377
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[39.37971 73.06857 31.5105 ]...
+  pdb_id: 3w0i
+
+--- Target 358 ---
+  id: 115119
+  idx: 115119
+  concavity: 383.01806132238335
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[41.88187  46.42693  30.287834]...
+  pdb_id: 3aun
+
+--- Target 359 ---
+  id: 115160
+  idx: 115160
+  concavity: 186.84690056019278
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.477582 -9.352082 15.856   ]...
+  pdb_id: 5gid
+
+--- Target 360 ---
+  id: 115177
+  idx: 115177
+  concavity: 473.03142584386194
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[25.210846  8.54123  -5.706846]...
+  pdb_id: 2zfx
+
+--- Target 361 ---
+  id: 115517
+  idx: 115517
+  concavity: 196.47372589084716
+  surface_area: 192.0
+  ligand_com: shape=(3,), dtype=float32, values=[-43.176205  41.651382 -23.761   ]...
+  pdb_id: 3p8x
+
+--- Target 362 ---
+  id: 115530
+  idx: 115530
+  concavity: 431.23436699908535
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[-41.93297   41.147144 -22.86212 ]...
+  pdb_id: 3az2
+
+--- Target 363 ---
+  id: 115544
+  idx: 115544
+  concavity: 175.08380589689867
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[-43.276943  43.714203 -23.495056]...
+  pdb_id: 3az2
+
+--- Target 364 ---
+  id: 115631
+  idx: 115631
+  concavity: 428.6518161280806
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[21.363808 -8.030346 15.78796 ]...
+  pdb_id: 1s0z
+
+--- Target 365 ---
+  id: 115661
+  idx: 115661
+  concavity: 494.4786012583785
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[20.89373   -7.1454616 15.459039 ]...
+  pdb_id: 3a3z
+
+--- Target 366 ---
+  id: 115690
+  idx: 115690
+  concavity: 489.8328890727697
+  surface_area: 392.0
+  ligand_com: shape=(3,), dtype=float32, values=[21.598145  -6.8101907 15.56662  ]...
+  pdb_id: 3vhw
+
+--- Target 367 ---
+  id: 115693
+  idx: 115693
+  concavity: 486.2776048120045
+  surface_area: 384.0
+  ligand_com: shape=(3,), dtype=float32, values=[21.652285 -6.683143 15.411715]...
+  pdb_id: 1rk3
+
+--- Target 368 ---
+  id: 116504
+  idx: 116504
+  concavity: 281.54606121448904
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[54.232994 82.2552   48.9703  ]...
+  pdb_id: 3wt5
+
+--- Target 369 ---
+  id: 116545
+  idx: 116545
+  concavity: 292.2226924414595
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.833397 82.127914 48.5552  ]...
+  pdb_id: 3vrt
+
+--- Target 370 ---
+  id: 116557
+  idx: 116557
+  concavity: 461.6386179702661
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.0485  80.87219 50.2063 ]...
+  pdb_id: 2zlc
+
+--- Target 371 ---
+  id: 116578
+  idx: 116578
+  concavity: 408.0426173361213
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.2584   80.65951  50.094097]...
+  pdb_id: 3vtd
+
+--- Target 372 ---
+  id: 116598
+  idx: 116598
+  concavity: 411.38110892552726
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[54.107502 79.9135   51.250896]...
+  pdb_id: 3vru
+
+--- Target 373 ---
+  id: 116607
+  idx: 116607
+  concavity: 439.2509249646767
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.262596 81.0382   50.303497]...
+  pdb_id: 5awk
+
+--- Target 374 ---
+  id: 116627
+  idx: 116627
+  concavity: 418.8624322132295
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.362297 82.6898   49.0632  ]...
+  pdb_id: 3wt7
+
+--- Target 375 ---
+  id: 116642
+  idx: 116642
+  concavity: 304.76212041773863
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.7635   79.010796 50.5959  ]...
+  pdb_id: 3w5r
+
+--- Target 376 ---
+  id: 13196
+  idx: 13196
+  concavity: 481.12950081630504
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.8754445 11.4539995 15.950776 ]...
+  pdb_id: 5lih
+
+--- Target 377 ---
+  id: 13240
+  idx: 13240
+  concavity: 492.62091642589905
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 1.009111 10.683593 16.918594]...
+  pdb_id: 1zrz
+
+--- Target 378 ---
+  id: 98472
+  idx: 98472
+  concavity: 429.1556267773985
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-36.659966  15.492927  29.091671]...
+  pdb_id: 4ih5
+
+--- Target 379 ---
+  id: 98536
+  idx: 98536
+  concavity: 467.7896579001799
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-36.71141   15.629     29.333187]...
+  pdb_id: 1yvf
+
+--- Target 380 ---
+  id: 98583
+  idx: 98583
+  concavity: 476.69067189728867
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-36.64537   15.46133   29.404114]...
+  pdb_id: 4mib
+
+--- Target 381 ---
+  id: 98910
+  idx: 98910
+  concavity: 482.87410183692134
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.19481  82.61934  44.713287]...
+  pdb_id: 3h2l
+
+--- Target 382 ---
+  id: 98920
+  idx: 98920
+  concavity: 465.64492621866424
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.281048 82.77077  44.663815]...
+  pdb_id: 2giq
+
+--- Target 383 ---
+  id: 98971
+  idx: 98971
+  concavity: 476.84440684903257
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 54.03264 106.50742 102.36472]...
+  pdb_id: 3cde
+
+--- Target 384 ---
+  id: 59770
+  idx: 59770
+  concavity: 407.5950391921571
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-37.865597    2.7128499  53.730152 ]...
+  pdb_id: 2rd2
+
+--- Target 385 ---
+  id: 90655
+  idx: 90655
+  concavity: 499.1235169014676
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.0032425  5.0172124 20.692    ]...
+  pdb_id: 5otc
+
+--- Target 386 ---
+  id: 90673
+  idx: 90673
+  concavity: 475.44435451257675
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.236801   4.6297994 19.649628 ]...
+  pdb_id: 5ot9
+
+--- Target 387 ---
+  id: 22609
+  idx: 22609
+  concavity: 425.00482615489574
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[11.050294  50.33436   -1.6449267]...
+  pdb_id: 3nnv
+
+--- Target 388 ---
+  id: 22611
+  idx: 22611
+  concavity: 406.9185039215729
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.776365  50.307514  -1.5724876]...
+  pdb_id: 3nww
+
+--- Target 389 ---
+  id: 22612
+  idx: 22612
+  concavity: 406.9185039215729
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.72866   50.361214  -1.5661712]...
+  pdb_id: 3nww
+
+--- Target 390 ---
+  id: 22911
+  idx: 22911
+  concavity: 485.38844510795866
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.8458257  7.259652  -9.911956 ]...
+  pdb_id: 4aa4
+
+--- Target 391 ---
+  id: 5013
+  idx: 5013
+  concavity: 491.446791062173
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.606139 14.307965 -8.436173]...
+  pdb_id: 2icj
+
+--- Target 392 ---
+  id: 5019
+  idx: 5019
+  concavity: 436.1052670926985
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.535857  14.800429  -3.2662857]...
+  pdb_id: 2i6k
+
+--- Target 393 ---
+  id: 5020
+  idx: 5020
+  concavity: 378.5405116765962
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[  9.436399  12.672201 -10.857699]...
+  pdb_id: 2ick
+
+--- Target 394 ---
+  id: 20581
+  idx: 20581
+  concavity: 480.5162133953786
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-65.40308    -1.9999092  52.64027  ]...
+  pdb_id: 2xtk
+
+--- Target 395 ---
+  id: 73844
+  idx: 73844
+  concavity: 464.5247995795735
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.941233  -3.4972332 20.349432 ]...
+  pdb_id: 1pa9
+
+--- Target 396 ---
+  id: 1649
+  idx: 1649
+  concavity: 467.33512364250134
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 29.00546  -12.664922  68.24077 ]...
+  pdb_id: 1nga
+
+--- Target 397 ---
+  id: 1678
+  idx: 1678
+  concavity: 478.74876133838904
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 28.937923 -12.908692  68.14592 ]...
+  pdb_id: 3c7n
+
+--- Target 398 ---
+  id: 2146
+  idx: 2146
+  concavity: 445.6880138100368
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -5.478947 -37.803314  32.329845]...
+  pdb_id: 5aqq
+
+--- Target 399 ---
+  id: 159627
+  idx: 159627
+  concavity: 430.5898404046388
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.922892  19.713352   9.245974]...
+  pdb_id: 2v7w
+
+--- Target 400 ---
+  id: 159629
+  idx: 159629
+  concavity: 465.6811119226476
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.576515  19.653517   9.328151]...
+  pdb_id: 1rqp
+
+--- Target 401 ---
+  id: 159631
+  idx: 159631
+  concavity: 445.48990979101
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.22494   18.304451   9.985061]...
+  pdb_id: 2v7w
+
+--- Target 402 ---
+  id: 159632
+  idx: 159632
+  concavity: 407.381870401626
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.384849  17.681305  10.938849]...
+  pdb_id: 2c2w
+
+--- Target 403 ---
+  id: 159678
+  idx: 159678
+  concavity: 443.99893077958257
+  surface_area: 456.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.689487 17.548874  8.712359]...
+  pdb_id: 2v7t
+
+--- Target 404 ---
+  id: 159685
+  idx: 159685
+  concavity: 474.0682360562904
+  surface_area: 480.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.463676  18.50906   10.305   ]...
+  pdb_id: 2v7t
+
+--- Target 405 ---
+  id: 159689
+  idx: 159689
+  concavity: 279.0957546307373
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.517637  18.541395  10.12188 ]...
+  pdb_id: 2c2w
+
+--- Target 406 ---
+  id: 159691
+  idx: 159691
+  concavity: 404.74116921545027
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.254701  20.563948   8.548297]...
+  pdb_id: 2c2w
+
+--- Target 407 ---
+  id: 159693
+  idx: 159693
+  concavity: 252.02901317498294
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[-10.006411  17.362125   9.085204]...
+  pdb_id: 2v7t
+
+--- Target 408 ---
+  id: 159695
+  idx: 159695
+  concavity: 421.2334827449474
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.77959   18.552967  10.563675]...
+  pdb_id: 2c5b
+
+--- Target 409 ---
+  id: 159696
+  idx: 159696
+  concavity: 395.34707296594996
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.727789  19.265879   9.155182]...
+  pdb_id: 2c5b
+
+--- Target 410 ---
+  id: 159697
+  idx: 159697
+  concavity: 352.01036667153613
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.970071   18.513643   10.1013565]...
+  pdb_id: 2c5b
+
+--- Target 411 ---
+  id: 159706
+  idx: 159706
+  concavity: 449.2119399641259
+  surface_area: 480.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.192296  18.587732  10.104059]...
+  pdb_id: 2v7w
+
+--- Target 412 ---
+  id: 159710
+  idx: 159710
+  concavity: 307.5312164268294
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.361323  19.643938   9.388236]...
+  pdb_id: 2c4u
+
+--- Target 413 ---
+  id: 159726
+  idx: 159726
+  concavity: 470.4328837562224
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.896147  19.15474   10.42053 ]...
+  pdb_id: 2v7x
+
+--- Target 414 ---
+  id: 159730
+  idx: 159730
+  concavity: 384.0533657573936
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.634001  18.463106  10.30943 ]...
+  pdb_id: 2c5h
+
+--- Target 415 ---
+  id: 159733
+  idx: 159733
+  concavity: 395.4900721883221
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.155913  18.087353   9.602058]...
+  pdb_id: 2cbx
+
+--- Target 416 ---
+  id: 159737
+  idx: 159737
+  concavity: 484.49056947373504
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.891516  19.122385   8.873387]...
+  pdb_id: 2cc2
+
+--- Target 417 ---
+  id: 159745
+  idx: 159745
+  concavity: 413.1344933015138
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[-12.08745   19.436998   9.667242]...
+  pdb_id: 2c5h
+
+--- Target 418 ---
+  id: 159750
+  idx: 159750
+  concavity: 437.09957390173275
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.376     17.851242  11.018149]...
+  pdb_id: 1rqp
+
+--- Target 419 ---
+  id: 159752
+  idx: 159752
+  concavity: 450.6962558114739
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-9.601077 22.188465  4.810718]...
+  pdb_id: 2c5h
+
+--- Target 420 ---
+  id: 159756
+  idx: 159756
+  concavity: 486.1479199200203
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.872002  20.123547   9.100635]...
+  pdb_id: 2c5h
+
+--- Target 421 ---
+  id: 159766
+  idx: 159766
+  concavity: 300.01738532797617
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.216122  18.45097   10.059486]...
+  pdb_id: 1rqp
+
+--- Target 422 ---
+  id: 159791
+  idx: 159791
+  concavity: 356.31610424913
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.691437  18.634125  10.290564]...
+  pdb_id: 1rqp
+
+--- Target 423 ---
+  id: 159803
+  idx: 159803
+  concavity: 279.4971402269013
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.416649  19.459621  10.02992 ]...
+  pdb_id: 2v7v
+
+--- Target 424 ---
+  id: 159808
+  idx: 159808
+  concavity: 399.80618476109595
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.518765  19.304703   9.274559]...
+  pdb_id: 1rqp
+
+--- Target 425 ---
+  id: 159912
+  idx: 159912
+  concavity: 392.5118268931342
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-11.180118  17.868822   9.674617]...
+  pdb_id: 4jh2
+
+--- Target 426 ---
+  id: 91778
+  idx: 91778
+  concavity: 499.0902834915213
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.447861 36.33086  25.95475 ]...
+  pdb_id: 1z4k
+
+--- Target 427 ---
+  id: 91779
+  idx: 91779
+  concavity: 443.0725819065613
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.998    37.420616 24.924408]...
+  pdb_id: 4yik
+
+--- Target 428 ---
+  id: 91784
+  idx: 91784
+  concavity: 494.93468481196214
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.7318883 36.566254  25.807945 ]...
+  pdb_id: 1z4p
+
+--- Target 429 ---
+  id: 91815
+  idx: 91815
+  concavity: 352.8480349902102
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.0291915 37.660122  24.592642 ]...
+  pdb_id: 4l6c
+
+--- Target 430 ---
+  id: 91818
+  idx: 91818
+  concavity: 461.00118898232665
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.1735835 36.716732  25.086039 ]...
+  pdb_id: 2jaw
+
+--- Target 431 ---
+  id: 91819
+  idx: 91819
+  concavity: 435.75588221182267
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.030376 36.67244  25.193932]...
+  pdb_id: 4l6c
+
+--- Target 432 ---
+  id: 91823
+  idx: 91823
+  concavity: 438.54842301283094
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.9608974 36.622765  25.01871  ]...
+  pdb_id: 4mwo
+
+--- Target 433 ---
+  id: 91830
+  idx: 91830
+  concavity: 447.3845454154576
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.198395 36.742374 25.070631]...
+  pdb_id: 1z4l
+
+--- Target 434 ---
+  id: 91854
+  idx: 91854
+  concavity: 447.1943805421533
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.471    36.47377  25.965487]...
+  pdb_id: 4nfl
+
+--- Target 435 ---
+  id: 91860
+  idx: 91860
+  concavity: 386.8337030649307
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.794105 37.52389  26.008947]...
+  pdb_id: 1z4q
+
+--- Target 436 ---
+  id: 91865
+  idx: 91865
+  concavity: 431.96686688451524
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.32223  36.788937 25.144936]...
+  pdb_id: 1q91
+
+--- Target 437 ---
+  id: 91868
+  idx: 91868
+  concavity: 487.8634147732837
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.7796316 36.42439   25.942947 ]...
+  pdb_id: 1q91
+
+--- Target 438 ---
+  id: 91874
+  idx: 91874
+  concavity: 435.64974779992053
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.2112894 37.585785  25.982029 ]...
+  pdb_id: 1z4k
+
+--- Target 439 ---
+  id: 91877
+  idx: 91877
+  concavity: 483.8928556126069
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.752737 37.459103 25.928131]...
+  pdb_id: 1z4k
+
+--- Target 440 ---
+  id: 91878
+  idx: 91878
+  concavity: 415.97121997997334
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.042625 36.96359  25.080019]...
+  pdb_id: 1z4k
+
+--- Target 441 ---
+  id: 91881
+  idx: 91881
+  concavity: 422.0707442736873
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.679158 37.395737 25.927658]...
+  pdb_id: 1z4k
+
+--- Target 442 ---
+  id: 91882
+  idx: 91882
+  concavity: 474.6095370122705
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.279064 36.706085 25.310583]...
+  pdb_id: 1z4m
+
+--- Target 443 ---
+  id: 91885
+  idx: 91885
+  concavity: 362.78228914456827
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.952974 37.53279  26.282839]...
+  pdb_id: 1z4i
+
+--- Target 444 ---
+  id: 91886
+  idx: 91886
+  concavity: 430.08243663631373
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.1822824 36.701077  25.387283 ]...
+  pdb_id: 1z4i
+
+--- Target 445 ---
+  id: 91887
+  idx: 91887
+  concavity: 454.0499424854413
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.031285 37.441425 25.80017 ]...
+  pdb_id: 4yik
+
+--- Target 446 ---
+  id: 91890
+  idx: 91890
+  concavity: 471.23598126993886
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.3721056 37.57134   25.823238 ]...
+  pdb_id: 1z4i
+
+--- Target 447 ---
+  id: 91895
+  idx: 91895
+  concavity: 497.0520666204129
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.4978247 36.77765   25.864552 ]...
+  pdb_id: 1z4i
+
+--- Target 448 ---
+  id: 91896
+  idx: 91896
+  concavity: 412.9542168171453
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.9235005 37.51906   26.063105 ]...
+  pdb_id: 1q91
+
+--- Target 449 ---
+  id: 90706
+  idx: 90706
+  concavity: 488.66372671219335
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.1293936  5.2743325 20.98182  ]...
+  pdb_id: 1vag
+
+--- Target 450 ---
+  id: 90722
+  idx: 90722
+  concavity: 485.9545287223308
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.6753616  6.0735555 21.382364 ]...
+  pdb_id: 4kcl
+
+--- Target 451 ---
+  id: 90729
+  idx: 90729
+  concavity: 459.23624474306826
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.9498444  5.263469  20.628185 ]...
+  pdb_id: 4v3w
+
+--- Target 452 ---
+  id: 90731
+  idx: 90731
+  concavity: 429.37551929847365
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.034416   4.8218613 20.461998 ]...
+  pdb_id: 5fvo
+
+--- Target 453 ---
+  id: 90732
+  idx: 90732
+  concavity: 429.37551929847365
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.046259  4.978967 20.45787 ]...
+  pdb_id: 3ufw
+
+--- Target 454 ---
+  id: 90733
+  idx: 90733
+  concavity: 491.3229905374517
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.029484  4.765711 20.524776]...
+  pdb_id: 5fvo
+
+--- Target 455 ---
+  id: 90734
+  idx: 90734
+  concavity: 459.2362447430685
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.7498183  5.3350906 20.652426 ]...
+  pdb_id: 3ufo
+
+--- Target 456 ---
+  id: 90742
+  idx: 90742
+  concavity: 397.1982557884933
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.583031  5.294395 20.665577]...
+  pdb_id: 3tyn
+
+--- Target 457 ---
+  id: 90752
+  idx: 90752
+  concavity: 479.23468349966504
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.8958893  4.70725   20.536724 ]...
+  pdb_id: 3ufo
+
+--- Target 458 ---
+  id: 90786
+  idx: 90786
+  concavity: 495.58279121175565
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.136097   5.1798716 20.167803 ]...
+  pdb_id: 5unx
+
+--- Target 459 ---
+  id: 90787
+  idx: 90787
+  concavity: 495.58279121175553
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.221967   5.3200665 20.520298 ]...
+  pdb_id: 4v3x
+
+--- Target 460 ---
+  id: 90951
+  idx: 90951
+  concavity: 366.2998542966637
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 52.48479  -21.357119  31.058815]...
+  pdb_id: 1dwx
+
+--- Target 461 ---
+  id: 90962
+  idx: 90962
+  concavity: 364.168925732328
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 51.589996 -25.38558   30.397257]...
+  pdb_id: 1m8e
+
+--- Target 462 ---
+  id: 91000
+  idx: 91000
+  concavity: 496.4291451428189
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 38.786823 -21.950052  26.487179]...
+  pdb_id: 3nw2
+
+--- Target 463 ---
+  id: 91056
+  idx: 91056
+  concavity: 486.72244965352434
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 51.365795 -19.205677  27.638498]...
+  pdb_id: 5adk
+
+--- Target 464 ---
+  id: 91252
+  idx: 91252
+  concavity: 496.5028059301925
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 40.183464 -20.130743  27.193218]...
+  pdb_id: 4kcr
+
+--- Target 465 ---
+  id: 91351
+  idx: 91351
+  concavity: 466.06916946848713
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 40.17108  -20.443727  27.114258]...
+  pdb_id: 4uge
+
+--- Target 466 ---
+  id: 91375
+  idx: 91375
+  concavity: 460.3850798491467
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 40.263123 -20.106922  27.096899]...
+  pdb_id: 4d3u
+
+--- Target 467 ---
+  id: 91438
+  idx: 91438
+  concavity: 467.4797668976941
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 40.38843  -20.181433  26.816778]...
+  pdb_id: 4ug5
+
+--- Target 468 ---
+  id: 91473
+  idx: 91473
+  concavity: 455.07222618493967
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 40.275524 -20.281744  26.9784  ]...
+  pdb_id: 4ugj
+
+--- Target 469 ---
+  id: 91524
+  idx: 91524
+  concavity: 476.1151208639145
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 40.07841  -20.173412  26.985136]...
+  pdb_id: 4lwb
+
+--- Target 470 ---
+  id: 91586
+  idx: 91586
+  concavity: 496.0779692752552
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 40.26669  -20.113369  27.016918]...
+  pdb_id: 4uqs
+
+--- Target 471 ---
+  id: 91622
+  idx: 91622
+  concavity: 482.5593284753418
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.0550785 36.481735  25.865238 ]...
+  pdb_id: 4ug7
+
+--- Target 472 ---
+  id: 90074
+  idx: 90074
+  concavity: 444.8701028878335
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.820849  5.250667 20.74009 ]...
+  pdb_id: 6eku
+
+--- Target 473 ---
+  id: 81676
+  idx: 81676
+  concavity: 222.10235630527717
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[16.429474 46.048    34.19774 ]...
+  pdb_id: 3b7d
+
+--- Target 474 ---
+  id: 81679
+  idx: 81679
+  concavity: 389.36130096113294
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.097411 43.45712  36.101997]...
+  pdb_id: 1wvj
+
+--- Target 475 ---
+  id: 81681
+  idx: 81681
+  concavity: 110.60330191070446
+  surface_area: 176.0
+  ligand_com: shape=(3,), dtype=float32, values=[17.454998 36.00769  39.326187]...
+  pdb_id: 5fhn
+
+--- Target 476 ---
+  id: 81687
+  idx: 81687
+  concavity: 392.2100302549998
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.297251 42.5802   33.259605]...
+  pdb_id: 1wvj
+
+--- Target 477 ---
+  id: 81688
+  idx: 81688
+  concavity: 284.4114385311224
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[16.265238 42.939194 35.578472]...
+  pdb_id: 1wvj
+
+--- Target 478 ---
+  id: 81689
+  idx: 81689
+  concavity: 491.2025121092555
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.458236 40.616474 32.525234]...
+  pdb_id: 1wvj
+
+--- Target 479 ---
+  id: 81693
+  idx: 81693
+  concavity: 497.38021493333986
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.794588 40.854473 32.381584]...
+  pdb_id: 1wvj
+
+--- Target 480 ---
+  id: 81697
+  idx: 81697
+  concavity: 478.03525814652266
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[13.876699 42.310753 33.52445 ]...
+  pdb_id: 1mqj
+
+--- Target 481 ---
+  id: 81698
+  idx: 81698
+  concavity: 468.20046444828824
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.571334 40.140945 32.638664]...
+  pdb_id: 1wvj
+
+--- Target 482 ---
+  id: 81699
+  idx: 81699
+  concavity: 371.0187094807906
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[12.218905 44.71414  36.084282]...
+  pdb_id: 1mqj
+
+--- Target 483 ---
+  id: 81700
+  idx: 81700
+  concavity: 462.6069516907073
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.870155 46.62505  35.139576]...
+  pdb_id: 1mqj
+
+--- Target 484 ---
+  id: 81704
+  idx: 81704
+  concavity: 376.69649025275316
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.003526 42.47586  32.657192]...
+  pdb_id: 4u1o
+
+--- Target 485 ---
+  id: 81705
+  idx: 81705
+  concavity: 162.0934754927555
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.673436 39.256    38.97931 ]...
+  pdb_id: 4igt
+
+--- Target 486 ---
+  id: 81708
+  idx: 81708
+  concavity: 454.4216705536774
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[16.116762 41.035427 38.124573]...
+  pdb_id: 4igt
+
+--- Target 487 ---
+  id: 81716
+  idx: 81716
+  concavity: 342.81237886593664
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[16.769789 39.44095  37.477367]...
+  pdb_id: 5fhn
+
+--- Target 488 ---
+  id: 81717
+  idx: 81717
+  concavity: 490.06082460079415
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.34147  40.636124 38.455   ]...
+  pdb_id: 4u1o
+
+--- Target 489 ---
+  id: 81718
+  idx: 81718
+  concavity: 459.68839307571403
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[23.292665 44.247086 32.049335]...
+  pdb_id: 4u1o
+
+--- Target 490 ---
+  id: 81719
+  idx: 81719
+  concavity: 359.02745833567013
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[12.796942 43.87218  37.011707]...
+  pdb_id: 4u1o
+
+--- Target 491 ---
+  id: 81720
+  idx: 81720
+  concavity: 122.94441375583753
+  surface_area: 168.0
+  ligand_com: shape=(3,), dtype=float32, values=[11.811876 42.081596 39.518345]...
+  pdb_id: 4u1o
+
+--- Target 492 ---
+  id: 81723
+  idx: 81723
+  concavity: 296.9058404452519
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[13.788883 45.173176 35.53671 ]...
+  pdb_id: 4u1o
+
+--- Target 493 ---
+  id: 81729
+  idx: 81729
+  concavity: 353.1826145671765
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.029156 42.4286   33.330933]...
+  pdb_id: 1syh
+
+--- Target 494 ---
+  id: 81730
+  idx: 81730
+  concavity: 376.51101293835444
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[16.035032 46.22662  36.265938]...
+  pdb_id: 1syh
+
+--- Target 495 ---
+  id: 81732
+  idx: 81732
+  concavity: 149.35643230265757
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[17.482649 38.970406 38.976116]...
+  pdb_id: 5jei
+
+--- Target 496 ---
+  id: 81734
+  idx: 81734
+  concavity: 467.4416631251112
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.375047 40.178474 32.832283]...
+  pdb_id: 1syh
+
+--- Target 497 ---
+  id: 81735
+  idx: 81735
+  concavity: 109.14469726184225
+  surface_area: 144.0
+  ligand_com: shape=(3,), dtype=float32, values=[12.156561 43.485973 39.45103 ]...
+  pdb_id: 1syh
+
+--- Target 498 ---
+  id: 81737
+  idx: 81737
+  concavity: 235.09785409824173
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[11.827    41.762768 38.530415]...
+  pdb_id: 1syh
+
+--- Target 499 ---
+  id: 81738
+  idx: 81738
+  concavity: 490.1096895685299
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.825581 46.253784 35.083996]...
+  pdb_id: 1syh
+
+--- Target 500 ---
+  id: 81742
+  idx: 81742
+  concavity: 492.6072936871741
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[13.995648 42.4833   33.16805 ]...
+  pdb_id: 4f31
+
+--- Target 501 ---
+  id: 81743
+  idx: 81743
+  concavity: 483.67686987565105
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[13.80995  45.633095 35.784447]...
+  pdb_id: 1ftl
+
+--- Target 502 ---
+  id: 81745
+  idx: 81745
+  concavity: 473.6408076223305
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.4938   41.902447 32.914402]...
+  pdb_id: 4f29
+
+--- Target 503 ---
+  id: 81750
+  idx: 81750
+  concavity: 499.3337566857607
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.29     40.843292 32.58371 ]...
+  pdb_id: 3kfm
+
+--- Target 504 ---
+  id: 81751
+  idx: 81751
+  concavity: 216.093145348533
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[12.834564 41.659187 38.433064]...
+  pdb_id: 3kfm
+
+--- Target 505 ---
+  id: 81759
+  idx: 81759
+  concavity: 44.55420065623463
+  surface_area: 120.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.131437 46.491684 35.97966 ]...
+  pdb_id: 5fhm
+
+--- Target 506 ---
+  id: 81763
+  idx: 81763
+  concavity: 246.04729671888055
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[13.170311 46.662033 37.783905]...
+  pdb_id: 3en3
+
+--- Target 507 ---
+  id: 81765
+  idx: 81765
+  concavity: 368.2018138201532
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.401049 42.368    33.145653]...
+  pdb_id: 3kfm
+
+--- Target 508 ---
+  id: 81767
+  idx: 81767
+  concavity: 83.92327893240649
+  surface_area: 136.0
+  ligand_com: shape=(3,), dtype=float32, values=[13.451858 42.199905 39.41819 ]...
+  pdb_id: 3fat
+
+--- Target 509 ---
+  id: 13491
+  idx: 13491
+  concavity: 459.3117929310159
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.47311112 11.041001   16.930222  ]...
+  pdb_id: 4fz7
+
+--- Target 510 ---
+  id: 13514
+  idx: 13514
+  concavity: 467.8221363575209
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[-1.2033461 11.844655  16.04104  ]...
+  pdb_id: 5c27
+
+--- Target 511 ---
+  id: 13588
+  idx: 13588
+  concavity: 496.32180583682987
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.90803707 10.682405   16.842037  ]...
+  pdb_id: 4wnm
+
+--- Target 512 ---
+  id: 13596
+  idx: 13596
+  concavity: 225.09670632127876
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 2.967625  8.037625 22.392124]...
+  pdb_id: 4yjt
+
+--- Target 513 ---
+  id: 13701
+  idx: 13701
+  concavity: 409.7178982707953
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.73775005 11.756401   16.267603  ]...
+  pdb_id: 4rss
+
+--- Target 514 ---
+  id: 13773
+  idx: 13773
+  concavity: 213.02752204610775
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 3.2942498  7.2184997 21.7885   ]...
+  pdb_id: 5cxh
+
+--- Target 515 ---
+  id: 13786
+  idx: 13786
+  concavity: 436.5662888612075
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.7338519 10.626222  16.793924 ]...
+  pdb_id: 4xg9
+
+--- Target 516 ---
+  id: 13812
+  idx: 13812
+  concavity: 416.8765151968412
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.8429628 11.710518  15.914925 ]...
+  pdb_id: 3emg
+
+--- Target 517 ---
+  id: 13833
+  idx: 13833
+  concavity: 433.83017991769157
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.92823064 11.768769   15.894882  ]...
+  pdb_id: 4dfl
+
+--- Target 518 ---
+  id: 13851
+  idx: 13851
+  concavity: 441.46286185506204
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 0.607074 10.366444 16.873667]...
+  pdb_id: 4f4p
+
+--- Target 519 ---
+  id: 13864
+  idx: 13864
+  concavity: 490.11695562823263
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.8137778 11.242296  15.966779 ]...
+  pdb_id: 4fl1
+
+--- Target 520 ---
+  id: 13995
+  idx: 13995
+  concavity: 231.5850331247828
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 3.16      7.629875 21.883877]...
+  pdb_id: 5tr6
+
+--- Target 521 ---
+  id: 14022
+  idx: 14022
+  concavity: 463.7619426163851
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.5533999 11.41895   15.996847 ]...
+  pdb_id: 4dfl
+
+--- Target 522 ---
+  id: 10121
+  idx: 10121
+  concavity: 372.5524303719524
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[-32.367523  30.388931  19.854359]...
+  pdb_id: 5vlo
+
+--- Target 523 ---
+  id: 10124
+  idx: 10124
+  concavity: 368.37067410376284
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[-29.30159   29.741673  19.360825]...
+  pdb_id: 2vn9
+
+--- Target 524 ---
+  id: 10153
+  idx: 10153
+  concavity: 471.5846691042999
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-29.620886  29.118069  20.588282]...
+  pdb_id: 6ayw
+
+--- Target 525 ---
+  id: 151892
+  idx: 151892
+  concavity: 126.9024510021965
+  surface_area: 152.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.361099   0.7801     1.6778002]...
+  pdb_id: 2xh4
+
+--- Target 526 ---
+  id: 151893
+  idx: 151893
+  concavity: 191.89579349236166
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.677551    0.85539997  0.7518    ]...
+  pdb_id: 7enl
+
+--- Target 527 ---
+  id: 110313
+  idx: 110313
+  concavity: 177.6458953131331
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[88.5423   88.016846 14.44675 ]...
+  pdb_id: 5e73
+
+--- Target 528 ---
+  id: 114447
+  idx: 114447
+  concavity: 498.81569603782395
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 31.016499 -10.718937 -48.034744]...
+  pdb_id: 5l8t
+
+--- Target 529 ---
+  id: 114469
+  idx: 114469
+  concavity: 294.79908245184424
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[19.378002  11.446261  -3.1106086]...
+  pdb_id: 5l8t
+
+--- Target 530 ---
+  id: 114491
+  idx: 114491
+  concavity: 392.5266576445606
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -2.0641668 -11.283417   -4.6401663]...
+  pdb_id: 4ir4
+
+--- Target 531 ---
+  id: 114525
+  idx: 114525
+  concavity: 373.4348403212477
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[132.96411   54.986095  32.95565 ]...
+  pdb_id: 5cq7
+
+--- Target 532 ---
+  id: 115069
+  idx: 115069
+  concavity: 128.45885490660748
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[38.95609  74.44073  30.780457]...
+  pdb_id: 4cup
+
+--- Target 533 ---
+  id: 116503
+  idx: 116503
+  concavity: 347.66251263063737
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[53.279198 80.914    49.6159  ]...
+  pdb_id: 4cur
+
+--- Target 534 ---
+  id: 116580
+  idx: 116580
+  concavity: 438.5970405278185
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[52.7472 80.2607 50.525 ]...
+  pdb_id: 4cur
+
+--- Target 535 ---
+  id: 14814
+  idx: 14814
+  concavity: 306.9357319967232
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 46.71936   53.258152 -37.62153 ]...
+  pdb_id: 2cjg
+
+--- Target 536 ---
+  id: 14816
+  idx: 14816
+  concavity: 291.58032600515793
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 46.55125  53.5885  -37.7499 ]...
+  pdb_id: 2cjg
+
+--- Target 537 ---
+  id: 14820
+  idx: 14820
+  concavity: 331.8476046826149
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 47.07742   53.462418 -38.050632]...
+  pdb_id: 2jjh
+
+--- Target 538 ---
+  id: 90053
+  idx: 90053
+  concavity: 496.45792513363006
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.4132056  5.7919116 20.903938 ]...
+  pdb_id: 1eus
+
+--- Target 539 ---
+  id: 90064
+  idx: 90064
+  concavity: 471.9843206104134
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.7848234  4.8872943 20.80897  ]...
+  pdb_id: 1wcq
+
+--- Target 540 ---
+  id: 90065
+  idx: 90065
+  concavity: 484.28946087900715
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.294371   5.0571856 20.575962 ]...
+  pdb_id: 1w8o
+
+--- Target 541 ---
+  id: 161388
+  idx: 161388
+  concavity: 316.9064472822959
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[-22.052189     0.05719047  -6.177429  ]...
+  pdb_id: 2w0v
+
+--- Target 542 ---
+  id: 161392
+  idx: 161392
+  concavity: 310.5909284320167
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[-2.1844397e+01 -1.8700017e-02 -7.0560503e+00]...
+  pdb_id: 4e1k
+
+--- Target 543 ---
+  id: 161416
+  idx: 161416
+  concavity: 397.276153495629
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-22.398523     0.81590474  -6.4507623 ]...
+  pdb_id: 4kpz
+
+--- Target 544 ---
+  id: 161450
+  idx: 161450
+  concavity: 428.7403273330956
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-22.542578    0.5916842  -7.086422 ]...
+  pdb_id: 4kpx
+
+--- Target 545 ---
+  id: 161469
+  idx: 161469
+  concavity: 388.0693042231028
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-21.363142     0.37147626  -6.406523  ]...
+  pdb_id: 4g87
+
+--- Target 546 ---
+  id: 116887
+  idx: 116887
+  concavity: 264.4350963811604
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[-2.4148571 54.641     45.023003 ]...
+  pdb_id: 5m6e
+
+--- Target 547 ---
+  id: 83463
+  idx: 83463
+  concavity: 286.4933570597577
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 24.723349   9.327607 105.6473  ]...
+  pdb_id: 5coq
+
+--- Target 548 ---
+  id: 83552
+  idx: 83552
+  concavity: 491.1256621863546
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[69.802956 46.51825  26.021715]...
+  pdb_id: 5mtp
+
+--- Target 549 ---
+  id: 83578
+  idx: 83578
+  concavity: 487.3512293288385
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[69.58096  46.05757  26.394688]...
+  pdb_id: 4r9s
+
+--- Target 550 ---
+  id: 83648
+  idx: 83648
+  concavity: 410.80778150041056
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[73.44233  42.259556 27.558445]...
+  pdb_id: 4bqr
+
+--- Target 551 ---
+  id: 83654
+  idx: 83654
+  concavity: 385.20792522411574
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[71.35013  45.67844  26.219784]...
+  pdb_id: 4r9s
+
+--- Target 552 ---
+  id: 83665
+  idx: 83665
+  concavity: 414.774694232249
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[70.454185 45.531193 26.408907]...
+  pdb_id: 4trn
+
+--- Target 553 ---
+  id: 83788
+  idx: 83788
+  concavity: 496.8008492358547
+  surface_area: 392.0
+  ligand_com: shape=(3,), dtype=float32, values=[73.30867 43.046   27.92278]...
+  pdb_id: 4tzt
+
+--- Target 554 ---
+  id: 83919
+  idx: 83919
+  concavity: 410.80778150041056
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[73.42867  42.226444 27.580887]...
+  pdb_id: 4bge
+
+--- Target 555 ---
+  id: 83921
+  idx: 83921
+  concavity: 421.0362350069836
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[73.52945  42.23722  27.498556]...
+  pdb_id: 4bge
+
+--- Target 556 ---
+  id: 83922
+  idx: 83922
+  concavity: 421.0362350069836
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[73.51367  42.235886 27.481222]...
+  pdb_id: 5cpf
+
+--- Target 557 ---
+  id: 84099
+  idx: 84099
+  concavity: 467.18028162988014
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 66.774    186.27187   35.442177]...
+  pdb_id: 4trj
+
+--- Target 558 ---
+  id: 160948
+  idx: 160948
+  concavity: 388.0693042231028
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-21.353094     0.38195238  -6.533762  ]...
+  pdb_id: 5e6m
+
+--- Target 559 ---
+  id: 9015
+  idx: 9015
+  concavity: 485.6403602065237
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[12.642302 19.37176  -7.28906 ]...
+  pdb_id: 4n4f
+
+--- Target 560 ---
+  id: 139649
+  idx: 139649
+  concavity: 312.71322658115173
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[-3.8264513 84.98806   24.587786 ]...
+  pdb_id: 4enh
+
+--- Target 561 ---
+  id: 139671
+  idx: 139671
+  concavity: 392.2699758155629
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[-3.8743808 84.939964  25.100664 ]...
+  pdb_id: 3mdr
+
+--- Target 562 ---
+  id: 139674
+  idx: 139674
+  concavity: 485.1301725396535
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[-4.1104393 84.95193   25.061935 ]...
+  pdb_id: 3mdv
+
+--- Target 563 ---
+  id: 139677
+  idx: 139677
+  concavity: 473.62758522331353
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 25.996613 171.64008   19.13723 ]...
+  pdb_id: 3mdt
+
+--- Target 564 ---
+  id: 89837
+  idx: 89837
+  concavity: 433.95085560663875
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.4948525  4.792942  20.818    ]...
+  pdb_id: 2ax9
+
+--- Target 565 ---
+  id: 90070
+  idx: 90070
+  concavity: 480.4001220064216
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.842607  4.034697 19.854818]...
+  pdb_id: 3b65
+
+--- Target 566 ---
+  id: 90247
+  idx: 90247
+  concavity: 422.4800040244606
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.505758   4.9930906 20.902395 ]...
+  pdb_id: 4oha
+
+--- Target 567 ---
+  id: 90281
+  idx: 90281
+  concavity: 487.2618902731069
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.2548337  6.418767  21.1302   ]...
+  pdb_id: 3v4a
+
+--- Target 568 ---
+  id: 90369
+  idx: 90369
+  concavity: 481.85518941107136
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.646882   4.8907933 20.67706  ]...
+  pdb_id: 2axa
+
+--- Target 569 ---
+  id: 90491
+  idx: 90491
+  concavity: 459.0606041376084
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.837097   4.7073216 20.54842  ]...
+  pdb_id: 2ax8
+
+--- Target 570 ---
+  id: 90702
+  idx: 90702
+  concavity: 455.0086590891453
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.137772   5.0715146 20.487543 ]...
+  pdb_id: 2hvc
+
+--- Target 571 ---
+  id: 90736
+  idx: 90736
+  concavity: 498.25973656694487
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.038148  4.795889 20.696367]...
+  pdb_id: 3b67
+
+--- Target 572 ---
+  id: 91625
+  idx: 91625
+  concavity: 487.16410121760543
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.478277 36.48572  25.851772]...
+  pdb_id: 3g0w
+
+--- Target 573 ---
+  id: 91702
+  idx: 91702
+  concavity: 481.0362997434522
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.8664536 37.429455  24.57407  ]...
+  pdb_id: 1xow
+
+--- Target 574 ---
+  id: 91847
+  idx: 91847
+  concavity: 354.3085867961268
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.758499 37.696106 25.753498]...
+  pdb_id: 3g0w
+
+--- Target 575 ---
+  id: 91858
+  idx: 91858
+  concavity: 465.4219918934342
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 5.2916503 36.581028  25.809124 ]...
+  pdb_id: 3b67
+
+--- Target 576 ---
+  id: 91869
+  idx: 91869
+  concavity: 468.26614392282005
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.71079  37.704163 26.01566 ]...
+  pdb_id: 1gs4
+
+--- Target 577 ---
+  id: 91880
+  idx: 91880
+  concavity: 473.04326434882023
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.472477 36.697834 25.107925]...
+  pdb_id: 3v49
+
+--- Target 578 ---
+  id: 91902
+  idx: 91902
+  concavity: 484.8964611450406
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.3881674 36.783035  24.886858 ]...
+  pdb_id: 2ihq
+
+--- Target 579 ---
+  id: 91947
+  idx: 91947
+  concavity: 492.4996132270627
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.3216577 37.415047  26.260792 ]...
+  pdb_id: 3g0w
+
+--- Target 580 ---
+  id: 91980
+  idx: 91980
+  concavity: 443.8695488067414
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.440208 37.02371  25.386942]...
+  pdb_id: 4oha
+
+--- Target 581 ---
+  id: 92013
+  idx: 92013
+  concavity: 464.7017885525265
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.246166 36.643784 24.850525]...
+  pdb_id: 1xnn
+
+--- Target 582 ---
+  id: 92680
+  idx: 92680
+  concavity: 461.0115864426181
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[-0.44272727  8.753909   19.941637  ]...
+  pdb_id: 2ihq
+
+--- Target 583 ---
+  id: 93569
+  idx: 93569
+  concavity: 486.0650805032084
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[-39.337845     0.26523077  14.464654  ]...
+  pdb_id: 3rll
+
+--- Target 584 ---
+  id: 93658
+  idx: 93658
+  concavity: 230.4051480222052
+  surface_area: 176.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 34.61842   -28.206062    1.0456461]...
+  pdb_id: 1xow
+
+--- Target 585 ---
+  id: 93669
+  idx: 93669
+  concavity: 411.47750480884156
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 33.96695    -26.757227    -0.44907004]...
+  pdb_id: 3rll
+
+--- Target 586 ---
+  id: 93713
+  idx: 93713
+  concavity: 399.3776472894912
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 33.81975   -26.560421   -0.7844561]...
+  pdb_id: 3rll
+
+--- Target 587 ---
+  id: 93747
+  idx: 93747
+  concavity: 269.4369173478284
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 34.015705   -26.659338    -0.48154375]...
+  pdb_id: 1xow
+
+--- Target 588 ---
+  id: 93780
+  idx: 93780
+  concavity: 444.9607148645689
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 33.938347  -26.615578   -0.4575087]...
+  pdb_id: 1xow
+
+--- Target 589 ---
+  id: 94813
+  idx: 94813
+  concavity: 374.69337193743416
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.4850006 21.97314   68.12043  ]...
+  pdb_id: 3v49
+
+--- Target 590 ---
+  id: 94880
+  idx: 94880
+  concavity: 382.2832649266085
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 18.858715 -14.234786  67.31385 ]...
+  pdb_id: 2ax7
+
+--- Target 591 ---
+  id: 95614
+  idx: 95614
+  concavity: 423.88739554575926
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 33.93318   11.57009  -31.613634]...
+  pdb_id: 2pip
+
+--- Target 592 ---
+  id: 29015
+  idx: 29015
+  concavity: 462.51921215183137
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.196485  -22.556484   -3.2040002]...
+  pdb_id: 5p9q
+
+--- Target 593 ---
+  id: 131352
+  idx: 131352
+  concavity: 487.2092604577459
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 54.89919  111.216866  39.30458 ]...
+  pdb_id: 5j25
+
+--- Target 594 ---
+  id: 131450
+  idx: 131450
+  concavity: 484.84631032518644
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 54.397896 110.96681   38.354256]...
+  pdb_id: 4ycy
+
+--- Target 595 ---
+  id: 131599
+  idx: 131599
+  concavity: 423.9963214628997
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 54.913292 111.732185  39.069355]...
+  pdb_id: 4y3x
+
+--- Target 596 ---
+  id: 131809
+  idx: 131809
+  concavity: 483.91091011546393
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 54.887993 111.26401   38.98487 ]...
+  pdb_id: 3t7q
+
+--- Target 597 ---
+  id: 52288
+  idx: 52288
+  concavity: 384.1921925443444
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[-38.340366  -32.98579    -7.0722632]...
+  pdb_id: 4b2i
+
+--- Target 598 ---
+  id: 61537
+  idx: 61537
+  concavity: 347.3979590881515
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[-7.6128674 -1.4371333 22.2054   ]...
+  pdb_id: 2riv
+
+--- Target 599 ---
+  id: 61545
+  idx: 61545
+  concavity: 461.5535524684795
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[-7.9211335 -1.4461999 21.6068   ]...
+  pdb_id: 2xn5
+
+--- Target 600 ---
+  id: 61551
+  idx: 61551
+  concavity: 408.6202137310586
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[-37.340855   7.575714  12.130713]...
+  pdb_id: 2ceo
+
+--- Target 601 ---
+  id: 61557
+  idx: 61557
+  concavity: 263.01606253147384
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[-6.7764664  0.8702    23.3328   ]...
+  pdb_id: 2ceo
+
+--- Target 602 ---
+  id: 18404
+  idx: 18404
+  concavity: 344.45440756411955
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[113.95207     -0.89953846 139.62001   ]...
+  pdb_id: 3saz
+
+--- Target 603 ---
+  id: 18542
+  idx: 18542
+  concavity: 263.00833895935716
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.079536 20.49473  27.586845]...
+  pdb_id: 5dri
+
+--- Target 604 ---
+  id: 18553
+  idx: 18553
+  concavity: 485.1166666374344
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[39.024384 20.714733 27.409115]...
+  pdb_id: 5cbj
+
+--- Target 605 ---
+  id: 150132
+  idx: 150132
+  concavity: 433.64979728472616
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.502904  12.6562605 23.640429 ]...
+  pdb_id: 5h4j
+
+--- Target 606 ---
+  id: 150136
+  idx: 150136
+  concavity: 411.26582428009243
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.89525  12.745437 21.763811]...
+  pdb_id: 5h4j
+
+--- Target 607 ---
+  id: 150137
+  idx: 150137
+  concavity: 410.99292614029326
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[15.475624 12.46775  21.552248]...
+  pdb_id: 1q5h
+
+--- Target 608 ---
+  id: 11653
+  idx: 11653
+  concavity: 495.43235282681155
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[11.27995   -6.8949494  1.3350499]...
+  pdb_id: 4l7c
+
+--- Target 609 ---
+  id: 11695
+  idx: 11695
+  concavity: 463.63802927018844
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[26.70028   -2.4776876 10.433532 ]...
+  pdb_id: 4l7c
+
+--- Target 610 ---
+  id: 11719
+  idx: 11719
+  concavity: 462.7198903240318
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[26.388094  -2.0959063 10.643312 ]...
+  pdb_id: 4l7c
+
+--- Target 611 ---
+  id: 11777
+  idx: 11777
+  concavity: 145.04969715957486
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[63.260223 98.88884   9.940825]...
+  pdb_id: 4n1b
+
+--- Target 612 ---
+  id: 11778
+  idx: 11778
+  concavity: 193.02804985470837
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[66.59526  99.92074  10.965567]...
+  pdb_id: 4n1b
+
+--- Target 613 ---
+  id: 11780
+  idx: 11780
+  concavity: 221.0008150641582
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[65.61656  99.372536 10.162566]...
+  pdb_id: 4l7d
+
+--- Target 614 ---
+  id: 11783
+  idx: 11783
+  concavity: 203.3887586277921
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 65.26748  100.218094   9.873217]...
+  pdb_id: 4l7d
+
+--- Target 615 ---
+  id: 11784
+  idx: 11784
+  concavity: 197.35270290414564
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 64.220955 100.17127   10.305175]...
+  pdb_id: 4l7d
+
+--- Target 616 ---
+  id: 11785
+  idx: 11785
+  concavity: 226.10492746958244
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 64.78825  100.59652   10.308478]...
+  pdb_id: 4l7d
+
+--- Target 617 ---
+  id: 11786
+  idx: 11786
+  concavity: 211.35116523174685
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[64.23921  99.696     9.956913]...
+  pdb_id: 4l7d
+
+--- Target 618 ---
+  id: 11787
+  idx: 11787
+  concavity: 219.19010041069004
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 65.48309  100.08927   10.492869]...
+  pdb_id: 4l7c
+
+--- Target 619 ---
+  id: 11788
+  idx: 11788
+  concavity: 467.9365130955065
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[72.40987  85.48939  56.193653]...
+  pdb_id: 4l7c
+
+--- Target 620 ---
+  id: 83308
+  idx: 83308
+  concavity: 439.40553561170526
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 14.385332    1.4913332 116.02033  ]...
+  pdb_id: 3e9y
+
+--- Target 621 ---
+  id: 52353
+  idx: 52353
+  concavity: 424.5678735434324
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-15.078    -25.448624 -16.967438]...
+  pdb_id: 3gjx
+
+--- Target 622 ---
+  id: 82149
+  idx: 82149
+  concavity: 92.77808586002281
+  surface_area: 128.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 23.549286   7.805239 111.697136]...
+  pdb_id: 1vf2
+
+--- Target 623 ---
+  id: 21481
+  idx: 21481
+  concavity: 235.53806818490648
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[-68.93584   -10.890611    7.8168063]...
+  pdb_id: 1coy
+
+--- Target 624 ---
+  id: 160819
+  idx: 160819
+  concavity: 374.4723368586112
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-21.63143     0.5661904  -5.6683807]...
+  pdb_id: 2gc0
+
+--- Target 625 ---
+  id: 160821
+  idx: 160821
+  concavity: 357.76715142839345
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[-22.682426    1.0286666  -4.6687613]...
+  pdb_id: 2gc0
+
+--- Target 626 ---
+  id: 141474
+  idx: 141474
+  concavity: 332.00548550556914
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[ -9.003772 -55.11627  -40.89236 ]...
+  pdb_id: 3u9c
+
+--- Target 627 ---
+  id: 27041
+  idx: 27041
+  concavity: 389.88923556130266
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.540384 55.956608 33.421688]...
+  pdb_id: 1vcu
+
+--- Target 628 ---
+  id: 161367
+  idx: 161367
+  concavity: 437.92784198085565
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[-22.073856    0.7095238  -6.666619 ]...
+  pdb_id: 2j6h
+
+--- Target 629 ---
+  id: 6111
+  idx: 6111
+  concavity: 438.8362856554315
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[18.565426  -9.701193   6.6072307]...
+  pdb_id: 1z2o
+
+--- Target 630 ---
+  id: 6113
+  idx: 6113
+  concavity: 446.58286163235994
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.736921 -20.745918   6.73928 ]...
+  pdb_id: 1z2n
+
+--- Target 631 ---
+  id: 6119
+  idx: 6119
+  concavity: 430.091988131769
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.432956  -21.496271    6.6271367]...
+  pdb_id: 1z2o
+
+--- Target 632 ---
+  id: 6120
+  idx: 6120
+  concavity: 291.30462083557944
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 11.15016   -20.906317    6.8190403]...
+  pdb_id: 1z2p
+
+--- Target 633 ---
+  id: 21126
+  idx: 21126
+  concavity: 485.8967356280775
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[-63.470615 -42.460857 -28.172714]...
+  pdb_id: 4da5
+
+--- Target 634 ---
+  id: 21425
+  idx: 21425
+  concavity: 412.59385155904897
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[  4.88814   -39.22262     2.7971933]...
+  pdb_id: 4da5
+
+--- Target 635 ---
+  id: 63563
+  idx: 63563
+  concavity: 448.81337945552656
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[21.736307 10.338456 21.809275]...
+  pdb_id: 1rrj
+
+--- Target 636 ---
+  id: 10002
+  idx: 10002
+  concavity: 437.14668028710383
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[-29.517189  29.426706  21.009169]...
+  pdb_id: 5ilj
+
+--- Target 637 ---
+  id: 15558
+  idx: 15558
+  concavity: 67.64972021211872
+  surface_area: 152.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 24.602554 -17.051334  -4.181   ]...
+  pdb_id: 5ik9
+
+--- Target 638 ---
+  id: 21113
+  idx: 21113
+  concavity: 359.2527965355768
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[-58.09689   -23.925333   -5.5273333]...
+  pdb_id: 3m00
+
+--- Target 639 ---
+  id: 135830
+  idx: 135830
+  concavity: 356.805106953575
+  surface_area: 192.0
+  ligand_com: shape=(3,), dtype=float32, values=[28.042082  27.31736   -3.9594722]...
+  pdb_id: 2e9p
+
+--- Target 640 ---
+  id: 135831
+  idx: 135831
+  concavity: 374.27351901422776
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[28.069138  27.189865  -4.2203617]...
+  pdb_id: 3nlb
+
+--- Target 641 ---
+  id: 135853
+  idx: 135853
+  concavity: 77.52230430542
+  surface_area: 96.0
+  ligand_com: shape=(3,), dtype=float32, values=[  4.8024173 -35.594334   77.21834  ]...
+  pdb_id: 4qyg
+
+--- Target 642 ---
+  id: 135856
+  idx: 135856
+  concavity: 89.48983060440291
+  surface_area: 112.0
+  ligand_com: shape=(3,), dtype=float32, values=[  4.511083 -34.40558   78.80542 ]...
+  pdb_id: 2brb
+
+--- Target 643 ---
+  id: 135857
+  idx: 135857
+  concavity: 160.9243797388667
+  surface_area: 160.0
+  ligand_com: shape=(3,), dtype=float32, values=[  3.8551247 -32.037792   79.87654  ]...
+  pdb_id: 4ft0
+
+--- Target 644 ---
+  id: 136521
+  idx: 136521
+  concavity: 390.29855258239445
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[25.135155  44.412388  -5.2686534]...
+  pdb_id: 2e9n
+
+--- Target 645 ---
+  id: 42527
+  idx: 42527
+  concavity: 469.57243611693036
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.810933 43.175434 16.550467]...
+  pdb_id: 2opb
+
+--- Target 646 ---
+  id: 42541
+  idx: 42541
+  concavity: 484.3423220403686
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.1558785 42.792942  17.283638 ]...
+  pdb_id: 3kqs
+
+--- Target 647 ---
+  id: 42546
+  idx: 42546
+  concavity: 478.24024079847254
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.360223 42.852173 17.904444]...
+  pdb_id: 3kqv
+
+--- Target 648 ---
+  id: 42569
+  idx: 42569
+  concavity: 448.4266352090595
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.536389 42.572998 18.000141]...
+  pdb_id: 4dm3
+
+--- Target 649 ---
+  id: 42580
+  idx: 42580
+  concavity: 477.19282042470627
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.246343 43.531715 17.318369]...
+  pdb_id: 3kpv
+
+--- Target 650 ---
+  id: 42583
+  idx: 42583
+  concavity: 440.11621849444174
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.390576 42.911488 17.301271]...
+  pdb_id: 2g72
+
+--- Target 651 ---
+  id: 42584
+  idx: 42584
+  concavity: 484.5260178665636
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.550138 42.956642 17.98128 ]...
+  pdb_id: 3kqw
+
+--- Target 652 ---
+  id: 42618
+  idx: 42618
+  concavity: 349.7247197151682
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.010885 -19.052998 -16.96581 ]...
+  pdb_id: 3kr0
+
+--- Target 653 ---
+  id: 42619
+  idx: 42619
+  concavity: 368.3708971798208
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[  9.9175005 -18.778654  -17.236654 ]...
+  pdb_id: 2an5
+
+--- Target 654 ---
+  id: 42620
+  idx: 42620
+  concavity: 325.5486269343301
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[  9.6945   -18.924078 -17.196808]...
+  pdb_id: 2an4
+
+--- Target 655 ---
+  id: 42624
+  idx: 42624
+  concavity: 439.4484664577051
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 10.15173 -19.174   -16.77969]...
+  pdb_id: 3kpu
+
+--- Target 656 ---
+  id: 42628
+  idx: 42628
+  concavity: 258.8602508165264
+  surface_area: 200.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 12.81422    9.342834 106.43342 ]...
+  pdb_id: 2g72
+
+--- Target 657 ---
+  id: 42630
+  idx: 42630
+  concavity: 485.7880330872316
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[-24.13789     1.9553514  -5.978514 ]...
+  pdb_id: 3hcd
+
+--- Target 658 ---
+  id: 42633
+  idx: 42633
+  concavity: 346.7632311954055
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[74.16328 69.75143 58.29986]...
+  pdb_id: 1hnn
+
+--- Target 659 ---
+  id: 42634
+  idx: 42634
+  concavity: 316.22757182145847
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[74.64424 69.63408 58.21069]...
+  pdb_id: 2onz
+
+--- Target 660 ---
+  id: 42697
+  idx: 42697
+  concavity: 464.94596761571074
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 27.057518  -9.98006  -18.402214]...
+  pdb_id: 2obf
+
+--- Target 661 ---
+  id: 42727
+  idx: 42727
+  concavity: 437.500793733087
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 27.070911  -9.994304 -18.592363]...
+  pdb_id: 1n7i
+
+--- Target 662 ---
+  id: 42737
+  idx: 42737
+  concavity: 469.70101442947725
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 27.133427  -9.926819 -18.465183]...
+  pdb_id: 1yz3
+
+--- Target 663 ---
+  id: 42778
+  idx: 42778
+  concavity: 460.13096960062785
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 27.093939 -10.411514 -18.630665]...
+  pdb_id: 2g70
+
+--- Target 664 ---
+  id: 42779
+  idx: 42779
+  concavity: 448.75749714988996
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 26.963272 -10.306819 -18.64791 ]...
+  pdb_id: 3kpu
+
+--- Target 665 ---
+  id: 42826
+  idx: 42826
+  concavity: 405.4589011484313
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 27.037727 -10.254727 -18.489758]...
+  pdb_id: 1n7i
+
+--- Target 666 ---
+  id: 42834
+  idx: 42834
+  concavity: 474.55279048559123
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 19.475168  18.697668 -12.434583]...
+  pdb_id: 3kqw
+
+--- Target 667 ---
+  id: 42835
+  idx: 42835
+  concavity: 417.5358892168303
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 20.394419  18.977999 -13.521999]...
+  pdb_id: 2g71
+
+--- Target 668 ---
+  id: 43088
+  idx: 43088
+  concavity: 264.45633451788507
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[31.646126   46.051876   -0.11937501]...
+  pdb_id: 3kqp
+
+--- Target 669 ---
+  id: 43093
+  idx: 43093
+  concavity: 469.13858836779036
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[32.989624 45.78937   3.0035  ]...
+  pdb_id: 3kqp
+
+--- Target 670 ---
+  id: 43098
+  idx: 43098
+  concavity: 321.42155789495837
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[30.993126 45.746494  1.14525 ]...
+  pdb_id: 1n7i
+
+--- Target 671 ---
+  id: 43133
+  idx: 43133
+  concavity: 175.78371371009862
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[28.096874 46.16075   4.516375]...
+  pdb_id: 2onz
+
+--- Target 672 ---
+  id: 43141
+  idx: 43141
+  concavity: 368.71523249204137
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[32.359623 46.747746  2.34425 ]...
+  pdb_id: 1n7j
+
+--- Target 673 ---
+  id: 43163
+  idx: 43163
+  concavity: 314.91707079286033
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[28.038124 44.281754  3.864375]...
+  pdb_id: 1n7j
+
+--- Target 674 ---
+  id: 43179
+  idx: 43179
+  concavity: 309.5616690578923
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.499376 46.530003  3.66875 ]...
+  pdb_id: 3hcf
+
+--- Target 675 ---
+  id: 43182
+  idx: 43182
+  concavity: 185.1859710412517
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.42175  46.379875  2.952375]...
+  pdb_id: 3hcf
+
+--- Target 676 ---
+  id: 43186
+  idx: 43186
+  concavity: 299.2324393295983
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[30.49825   45.771378   1.6033748]...
+  pdb_id: 2g70
+
+--- Target 677 ---
+  id: 42467
+  idx: 42467
+  concavity: 438.2642379404494
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 9.166721 42.94213  17.801361]...
+  pdb_id: 1cea
+
+--- Target 678 ---
+  id: 82276
+  idx: 82276
+  concavity: 301.2803207899749
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 18.794222   7.852112 116.00917 ]...
+  pdb_id: 2qj2
+
+--- Target 679 ---
+  id: 97169
+  idx: 97169
+  concavity: 384.15979635293934
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[44.721275  2.11125  32.82855 ]...
+  pdb_id: 4bvd
+
+--- Target 680 ---
+  id: 42330
+  idx: 42330
+  concavity: 479.15289637898366
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.089217 41.42894  18.34576 ]...
+  pdb_id: 3orm
+
+--- Target 681 ---
+  id: 90241
+  idx: 90241
+  concavity: 433.95085560663875
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.3983436  4.714844  20.64347  ]...
+  pdb_id: 4a4x
+
+--- Target 682 ---
+  id: 90250
+  idx: 90250
+  concavity: 475.62220703613707
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.918306  5.534611 21.030615]...
+  pdb_id: 2xkf
+
+--- Target 683 ---
+  id: 90255
+  idx: 90255
+  concavity: 404.10767820035375
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.0964003  5.1212854 21.214348 ]...
+  pdb_id: 4a4x
+
+--- Target 684 ---
+  id: 90261
+  idx: 90261
+  concavity: 491.79248442271376
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.187773   5.0338387 20.144032 ]...
+  pdb_id: 2xk4
+
+--- Target 685 ---
+  id: 90267
+  idx: 90267
+  concavity: 450.74252719242594
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.521412  5.450471 20.437647]...
+  pdb_id: 2wqo
+
+--- Target 686 ---
+  id: 90274
+  idx: 90274
+  concavity: 487.0441990491071
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.3438125  5.829656  20.987812 ]...
+  pdb_id: 4afe
+
+--- Target 687 ---
+  id: 90286
+  idx: 90286
+  concavity: 491.90315128166094
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.298883  5.780677 20.773237]...
+  pdb_id: 2wqo
+
+--- Target 688 ---
+  id: 90291
+  idx: 90291
+  concavity: 476.07452315049295
+  surface_area: 360.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.357967  4.754678 20.01371 ]...
+  pdb_id: 2xk3
+
+--- Target 689 ---
+  id: 90318
+  idx: 90318
+  concavity: 484.2242092949847
+  surface_area: 352.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.255852  4.709795 19.884441]...
+  pdb_id: 2xk3
+
+--- Target 690 ---
+  id: 90342
+  idx: 90342
+  concavity: 474.4013587735833
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.7635174  4.396207  20.156101 ]...
+  pdb_id: 2xnp
+
+--- Target 691 ---
+  id: 90359
+  idx: 90359
+  concavity: 486.36759376717555
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.111195  4.678832 20.335861]...
+  pdb_id: 4afe
+
+--- Target 692 ---
+  id: 90440
+  idx: 90440
+  concavity: 477.117891279545
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.019765  4.707441 19.774939]...
+  pdb_id: 2xkf
+
+--- Target 693 ---
+  id: 90444
+  idx: 90444
+  concavity: 430.9886300336275
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.85285   5.469727 20.303457]...
+  pdb_id: 2xk4
+
+--- Target 694 ---
+  id: 90445
+  idx: 90445
+  concavity: 490.90405917313626
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 6.911861  5.528    21.10392 ]...
+  pdb_id: 2xk4
+
+--- Target 695 ---
+  id: 90457
+  idx: 90457
+  concavity: 497.8886545765748
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.3992496  6.174583  20.574696 ]...
+  pdb_id: 2xkd
+
+--- Target 696 ---
+  id: 90483
+  idx: 90483
+  concavity: 471.9843206104134
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.6309123  4.9465303 20.88706  ]...
+  pdb_id: 2xk7
+
+--- Target 697 ---
+  id: 90486
+  idx: 90486
+  concavity: 493.559575040371
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.9900284  4.5059714 19.911713 ]...
+  pdb_id: 2xke
+
+--- Target 698 ---
+  id: 90487
+  idx: 90487
+  concavity: 448.4254851283879
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 7.4745445  4.8841815 20.959026 ]...
+  pdb_id: 2xkd
+
+--- Target 699 ---
+  id: 139751
+  idx: 139751
+  concavity: 391.38738752741205
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 26.302769 171.41568   19.767693]...
+  pdb_id: 5esf
+
+--- Target 700 ---
+  id: 139769
+  idx: 139769
+  concavity: 408.9163509615931
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.9214115 28.959057  20.877705 ]...
+  pdb_id: 4zdy
+
+--- Target 701 ---
+  id: 139771
+  idx: 139771
+  concavity: 457.6865895360651
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 8.848119 28.861292 20.895117]...
+  pdb_id: 4ze1
+
+--- Target 702 ---
+  id: 5035
+  idx: 5035
+  concavity: 412.7488856511336
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[  9.711583  12.591334 -10.931167]...
+  pdb_id: 1pvf
+
+--- Target 703 ---
+  id: 5039
+  idx: 5039
+  concavity: 419.4644534197943
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[  9.493167  12.313999 -11.0985  ]...
+  pdb_id: 1x84
+
+--- Target 704 ---
+  id: 16512
+  idx: 16512
+  concavity: 391.98422741228325
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[32.666424  40.929836   3.9606311]...
+  pdb_id: 4fw6
+
+--- Target 705 ---
+  id: 16573
+  idx: 16573
+  concavity: 487.52802441132803
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[32.428787 41.151894  4.136369]...
+  pdb_id: 5u39
+
+--- Target 706 ---
+  id: 146385
+  idx: 146385
+  concavity: 359.9663110099882
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[18.576708 12.035459 55.77588 ]...
+  pdb_id: 8icu
+
+--- Target 707 ---
+  id: 146419
+  idx: 146419
+  concavity: 249.59426175313018
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[19.826792 17.326292 56.077168]...
+  pdb_id: 5wo0
+
+--- Target 708 ---
+  id: 146426
+  idx: 146426
+  concavity: 445.132608255122
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[17.894827 11.997783 55.338654]...
+  pdb_id: 4rq3
+
+--- Target 709 ---
+  id: 146429
+  idx: 146429
+  concavity: 346.9450992137163
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[18.334766 12.722808 55.41935 ]...
+  pdb_id: 4m9h
+
+--- Target 710 ---
+  id: 146432
+  idx: 146432
+  concavity: 443.77213225798346
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[19.943333 16.288502 56.91754 ]...
+  pdb_id: 5wnz
+
+--- Target 711 ---
+  id: 146436
+  idx: 146436
+  concavity: 209.78841099631015
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[19.090124 18.638165 56.30837 ]...
+  pdb_id: 3c2l
+
+--- Target 712 ---
+  id: 146458
+  idx: 146458
+  concavity: 331.69232434324084
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[18.427383 12.060847 55.532387]...
+  pdb_id: 1mq3
+
+--- Target 713 ---
+  id: 146465
+  idx: 146465
+  concavity: 364.2823396755404
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[18.413958 14.223    54.54417 ]...
+  pdb_id: 1huo
+
+--- Target 714 ---
+  id: 146466
+  idx: 146466
+  concavity: 328.234489524267
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[18.582624 17.124374 55.80141 ]...
+  pdb_id: 1zjn
+
+--- Target 715 ---
+  id: 146470
+  idx: 146470
+  concavity: 316.449022816428
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[18.390844 12.303924 55.5023  ]...
+  pdb_id: 5vrw
+
+--- Target 716 ---
+  id: 146579
+  idx: 146579
+  concavity: 283.65123560296837
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[17.843864  12.1506815 55.795864 ]...
+  pdb_id: 4o9m
+
+--- Target 717 ---
+  id: 146699
+  idx: 146699
+  concavity: 370.0761284095608
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.770932 79.6355   26.600649]...
+  pdb_id: 3rh4
+
+--- Target 718 ---
+  id: 146700
+  idx: 146700
+  concavity: 385.4825537217063
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[10.814966 79.59852  26.660755]...
+  pdb_id: 9ica
+
+--- Target 719 ---
+  id: 146875
+  idx: 146875
+  concavity: 461.4410015243393
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 50.051136 -59.3745   -39.711452]...
+  pdb_id: 2isp
+
+--- Target 720 ---
+  id: 146886
+  idx: 146886
+  concavity: 453.0594817569604
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[ 50.00447  -59.094822 -39.456406]...
+  pdb_id: 2i9g
+
+--- Target 721 ---
+  id: 146996
+  idx: 146996
+  concavity: 497.98615646207486
+  surface_area: 464.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.185556  -3.6244447 41.71811  ]...
+  pdb_id: 4o5k
+
+--- Target 722 ---
+  id: 147001
+  idx: 147001
+  concavity: 373.96217842447095
+  surface_area: 464.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.3824   -3.6452   42.366497]...
+  pdb_id: 4o5k
+
+--- Target 723 ---
+  id: 147003
+  idx: 147003
+  concavity: 423.5783460787249
+  surface_area: 416.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.296585 -4.403583 43.037003]...
+  pdb_id: 4o5k
+
+--- Target 724 ---
+  id: 147004
+  idx: 147004
+  concavity: 431.68920413380226
+  surface_area: 464.0
+  ligand_com: shape=(3,), dtype=float32, values=[30.445751  -3.3418756 40.198563 ]...
+  pdb_id: 4o5k
+
+--- Target 725 ---
+  id: 147008
+  idx: 147008
+  concavity: 400.90821331180683
+  surface_area: 464.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.457602 -4.086    41.6854  ]...
+  pdb_id: 4o5k
+
+--- Target 726 ---
+  id: 147015
+  idx: 147015
+  concavity: 454.27524092545946
+  surface_area: 456.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.035725  -3.9538178 42.33109  ]...
+  pdb_id: 4uaz
+
+--- Target 727 ---
+  id: 147025
+  idx: 147025
+  concavity: 492.84773117215707
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[28.8199    -4.6123004 41.496403 ]...
+  pdb_id: 4uaz
+
+--- Target 728 ---
+  id: 147028
+  idx: 147028
+  concavity: 497.0759932688634
+  surface_area: 528.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.410822 -4.370091 40.772274]...
+  pdb_id: 4uaz
+
+--- Target 729 ---
+  id: 147032
+  idx: 147032
+  concavity: 376.0454028508384
+  surface_area: 464.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.605228  -3.6703846 41.860466 ]...
+  pdb_id: 4uaz
+
+--- Target 730 ---
+  id: 147036
+  idx: 147036
+  concavity: 410.7561097910486
+  surface_area: 416.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.183401  -2.6381998 42.8166   ]...
+  pdb_id: 4uaz
+
+--- Target 731 ---
+  id: 147039
+  idx: 147039
+  concavity: 429.4903224539525
+  surface_area: 368.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.816639 -2.591    41.395092]...
+  pdb_id: 4uaz
+
+--- Target 732 ---
+  id: 147040
+  idx: 147040
+  concavity: 361.1434650562855
+  surface_area: 408.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.749    -3.93975  42.750416]...
+  pdb_id: 4uaz
+
+--- Target 733 ---
+  id: 147041
+  idx: 147041
+  concavity: 315.013298074301
+  surface_area: 400.0
+  ligand_com: shape=(3,), dtype=float32, values=[30.177332  -3.1690829 42.09075  ]...
+  pdb_id: 3tfs
+
+--- Target 734 ---
+  id: 147049
+  idx: 147049
+  concavity: 460.2442864476193
+  surface_area: 504.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.745544 -3.142909 40.78836 ]...
+  pdb_id: 3tfs
+
+--- Target 735 ---
+  id: 147051
+  idx: 147051
+  concavity: 385.7269932097816
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[28.079153  -3.3927693 45.19961  ]...
+  pdb_id: 3tfs
+
+--- Target 736 ---
+  id: 147054
+  idx: 147054
+  concavity: 300.42330446937166
+  surface_area: 376.0
+  ligand_com: shape=(3,), dtype=float32, values=[31.102686  -3.8995626 40.317688 ]...
+  pdb_id: 3tfs
+
+--- Target 737 ---
+  id: 147061
+  idx: 147061
+  concavity: 483.90762721968315
+  surface_area: 520.0
+  ligand_com: shape=(3,), dtype=float32, values=[29.5427   -4.2231   40.481102]...
+  pdb_id: 3tfs
+
+--- Target 738 ---
+  id: 147361
+  idx: 147361
+  concavity: 428.4151889058151
+  surface_area: 344.0
+  ligand_com: shape=(3,), dtype=float32, values=[14.9722595 -8.61489    3.1972218]...
+  pdb_id: 5wny
+
+--- Target 739 ---
+  id: 147519
+  idx: 147519
+  concavity: 442.1768962638601
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.644684   16.981188    0.06312503]...
+  pdb_id: 5tba
+
+--- Target 740 ---
+  id: 147522
+  idx: 147522
+  concavity: 441.73158775027065
+  surface_area: 336.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.14527   10.280895  -1.4473157]...
+  pdb_id: 3tfr
+
+--- Target 741 ---
+  id: 147541
+  idx: 147541
+  concavity: 441.21161581893784
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[48.91388    13.270416   -0.17645837]...
+  pdb_id: 3rh4
+
+--- Target 742 ---
+  id: 147545
+  idx: 147545
+  concavity: 484.6575449978153
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.858963  14.224709  -0.5735833]...
+  pdb_id: 3rh4
+
+--- Target 743 ---
+  id: 147548
+  idx: 147548
+  concavity: 498.4850566704781
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.368084  14.442585  -1.5197083]...
+  pdb_id: 3rh4
+
+--- Target 744 ---
+  id: 147549
+  idx: 147549
+  concavity: 483.5248300350354
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.374043 15.711624 -1.1475  ]...
+  pdb_id: 3rh4
+
+--- Target 745 ---
+  id: 147550
+  idx: 147550
+  concavity: 297.780041468425
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[48.220417  13.598918  -1.6354584]...
+  pdb_id: 3rh4
+
+--- Target 746 ---
+  id: 147560
+  idx: 147560
+  concavity: 321.1455071224871
+  surface_area: 232.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.243603  17.619913  -0.6253476]...
+  pdb_id: 3rh4
+
+--- Target 747 ---
+  id: 147567
+  idx: 147567
+  concavity: 405.9162943576602
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[44.148514  16.686586  -1.7353451]...
+  pdb_id: 3rh4
+
+--- Target 748 ---
+  id: 147569
+  idx: 147569
+  concavity: 486.3761657188887
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[47.460033  14.68817   -0.1854138]...
+  pdb_id: 3rh4
+
+--- Target 749 ---
+  id: 147570
+  idx: 147570
+  concavity: 492.9842733581836
+  surface_area: 328.0
+  ligand_com: shape=(3,), dtype=float32, values=[48.564594   13.884651    0.19474998]...
+  pdb_id: 3rh4
+
+--- Target 750 ---
+  id: 147572
+  idx: 147572
+  concavity: 461.19954699335864
+  surface_area: 312.0
+  ligand_com: shape=(3,), dtype=float32, values=[50.04165  13.156851 -0.1726  ]...
+  pdb_id: 3rh4
+
+--- Target 751 ---
+  id: 147573
+  idx: 147573
+  concavity: 443.1457658681349
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[47.678295  13.71815   -0.7992499]...
+  pdb_id: 4phe
+
+--- Target 752 ---
+  id: 147574
+  idx: 147574
+  concavity: 388.6182514939845
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[48.675255 13.18585  -1.00645 ]...
+  pdb_id: 3rh4
+
+--- Target 753 ---
+  id: 147596
+  idx: 147596
+  concavity: 333.59741988761056
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[47.368874 13.064868 -1.106174]...
+  pdb_id: 3jpo
+
+--- Target 754 ---
+  id: 147598
+  idx: 147598
+  concavity: 353.9714910834425
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[49.41348    16.587957   -0.07630434]...
+  pdb_id: 4phe
+
+--- Target 755 ---
+  id: 147599
+  idx: 147599
+  concavity: 310.1640597347435
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[50.314346   17.123217   -0.22247827]...
+  pdb_id: 3jpo
+
+--- Target 756 ---
+  id: 147604
+  idx: 147604
+  concavity: 339.33779738115555
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[49.769573   16.379143    0.05600001]...
+  pdb_id: 3jpo
+
+--- Target 757 ---
+  id: 147606
+  idx: 147606
+  concavity: 486.82981443548
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.84715   15.430669  -1.1300001]...
+  pdb_id: 3jpo
+
+--- Target 758 ---
+  id: 147608
+  idx: 147608
+  concavity: 461.8276920044461
+  surface_area: 320.0
+  ligand_com: shape=(3,), dtype=float32, values=[50.579292   12.626572    0.19992857]...
+  pdb_id: 3jpo
+
+--- Target 759 ---
+  id: 147639
+  idx: 147639
+  concavity: 418.77046630762084
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.36256    16.145313   -0.51374996]...
+  pdb_id: 4nlk
+
+--- Target 760 ---
+  id: 147645
+  idx: 147645
+  concavity: 498.34008556339495
+  surface_area: 288.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.777435   15.659174   -0.14134783]...
+  pdb_id: 5bol
+
+--- Target 761 ---
+  id: 147666
+  idx: 147666
+  concavity: 467.37794302900033
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.812836   15.938416   -0.38687506]...
+  pdb_id: 5bol
+
+--- Target 762 ---
+  id: 147667
+  idx: 147667
+  concavity: 491.7365018722095
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.96358    15.016999   -0.83279175]...
+  pdb_id: 1huo
+
+--- Target 763 ---
+  id: 147668
+  idx: 147668
+  concavity: 339.338781377488
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[47.80783   16.297207  -0.6859999]...
+  pdb_id: 1huo
+
+--- Target 764 ---
+  id: 147671
+  idx: 147671
+  concavity: 418.4819484031864
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[47.202213  15.584582  -1.0815834]...
+  pdb_id: 1huo
+
+--- Target 765 ---
+  id: 147672
+  idx: 147672
+  concavity: 320.867823095786
+  surface_area: 208.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.292294  16.440378  -1.1114584]...
+  pdb_id: 1huo
+
+--- Target 766 ---
+  id: 147673
+  idx: 147673
+  concavity: 463.3688282915191
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.13821    16.384459   -0.66712505]...
+  pdb_id: 1huo
+
+--- Target 767 ---
+  id: 147685
+  idx: 147685
+  concavity: 478.2652458565009
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.95596    15.8411255  -0.20237501]...
+  pdb_id: 1huo
+
+--- Target 768 ---
+  id: 147687
+  idx: 147687
+  concavity: 444.0578692532299
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.43128  15.881222 -0.648   ]...
+  pdb_id: 1huo
+
+--- Target 769 ---
+  id: 147690
+  idx: 147690
+  concavity: 413.04530128004484
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.334522   15.998738   -0.80930436]...
+  pdb_id: 1huo
+
+--- Target 770 ---
+  id: 147692
+  idx: 147692
+  concavity: 474.94368039612345
+  surface_area: 272.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.934498   16.128332   -0.27595833]...
+  pdb_id: 1huo
+
+--- Target 771 ---
+  id: 147693
+  idx: 147693
+  concavity: 314.05723564134433
+  surface_area: 216.0
+  ligand_com: shape=(3,), dtype=float32, values=[43.668175  16.239477  -1.3479564]...
+  pdb_id: 1huo
+
+--- Target 772 ---
+  id: 147696
+  idx: 147696
+  concavity: 373.49977276549686
+  surface_area: 224.0
+  ligand_com: shape=(3,), dtype=float32, values=[44.215347   16.649895   -0.87317234]...
+  pdb_id: 1bpy
+
+--- Target 773 ---
+  id: 147697
+  idx: 147697
+  concavity: 278.54068821249376
+  surface_area: 184.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.87138   17.243275  -1.1440345]...
+  pdb_id: 1huo
+
+--- Target 774 ---
+  id: 147698
+  idx: 147698
+  concavity: 452.3858852609215
+  surface_area: 264.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.70841   15.961277  -0.8976206]...
+  pdb_id: 1bpy
+
+--- Target 775 ---
+  id: 147708
+  idx: 147708
+  concavity: 493.18467758874783
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.12693   14.754759  -0.5203793]...
+  pdb_id: 1bpy
+
+--- Target 776 ---
+  id: 147712
+  idx: 147712
+  concavity: 478.77772203909353
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[47.817623 15.242827 -1.070138]...
+  pdb_id: 1bpy
+
+--- Target 777 ---
+  id: 147730
+  idx: 147730
+  concavity: 376.9564308622328
+  surface_area: 296.0
+  ligand_com: shape=(3,), dtype=float32, values=[50.295696  12.840176  -1.2151304]...
+  pdb_id: 1bpy
+
+--- Target 778 ---
+  id: 147738
+  idx: 147738
+  concavity: 366.75675836803174
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[47.893147   15.88205    -0.58242863]...
+  pdb_id: 1bpy
+
+--- Target 779 ---
+  id: 147744
+  idx: 147744
+  concavity: 426.09984072432763
+  surface_area: 280.0
+  ligand_com: shape=(3,), dtype=float32, values=[46.032143   16.592285    0.42014286]...
+  pdb_id: 4kld
+
+--- Target 780 ---
+  id: 147757
+  idx: 147757
+  concavity: 425.38035269086004
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[45.60558    16.935787   -0.09084214]...
+  pdb_id: 4kld
+
+--- Target 781 ---
+  id: 147760
+  idx: 147760
+  concavity: 408.5531797192296
+  surface_area: 256.0
+  ligand_com: shape=(3,), dtype=float32, values=[4.636352e+01 1.687947e+01 8.052644e-03]...
+  pdb_id: 4kld
+
+--- Target 782 ---
+  id: 147973
+  idx: 147973
+  concavity: 498.2826699146477
+  surface_area: 304.0
+  ligand_com: shape=(3,), dtype=float32, values=[-44.808605  -9.034685  13.041496]...
+  pdb_id: 3gdx
+
+--- Target 783 ---
+  id: 148123
+  idx: 148123
+  concavity: 413.0125584230289
+  surface_area: 240.0
+  ligand_com: shape=(3,), dtype=float32, values=[-45.058216  -8.993842  13.783687]...
+  pdb_id: 3jpr
+
+--- Target 784 ---
+  id: 148165
+  idx: 148165
+  concavity: 431.1079949471419
+  surface_area: 248.0
+  ligand_com: shape=(3,), dtype=float32, values=[-44.718998  -8.741078  12.687369]...
+  pdb_id: 4rq3
+
