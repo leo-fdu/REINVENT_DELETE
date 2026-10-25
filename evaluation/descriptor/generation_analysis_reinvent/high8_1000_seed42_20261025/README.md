@@ -8,7 +8,7 @@
 
 配置：`configs/manual_planet_rl/experiment_high8_1000.json`。
 精简数据：`results/reinvent-high8-1000-20261025/`。
-完整原始镜像：`results/server-evidence/high8_1000_seed42_20261025/run/`。
+完整原始镜像：`results/server-evidence/high8_1000_seed42_20261025/run-v2/`。
 
 ```bash
 python evaluation/descriptor/generation_analysis_reinvent/high8_1000_seed42_20261025/src/run_analysis.py
@@ -22,3 +22,14 @@ python evaluation/descriptor/generation_analysis_reinvent/high8_1000_seed42_2026
 
 high 不是原始分数的截断上限。不同 sigmoid 的奖励均值不能直接用来比较亲和力。
 这是同预算、同种子的对照；单次结果不替代多种子验证和独立结合评估。
+
+## 显存问题与重跑记录
+
+首次运行在 CP3A4 LinkINVENT 第 3 轮更新时 CUDA OOM。实际样本重放显示 PLANET
+活跃张量约 25.83 MiB，而保留缓存达到 19,746 MiB；调用 empty_cache 后缓存降为 32 MiB。
+正式采用 `planet_python_nocache.sh` 仅为 PLANET 设置
+`PYTORCH_NO_CUDA_MEMORY_CACHING=1`，生成训练进程仍使用默认分配器。
+评分批量 32、RL 批量 100、模型及数学计算均不改动。`memory-probe.json` 保留实测。
+在 `run-v2/` 从 prior 完整重跑全部 30 任务，不拼接失败轨迹或续训失败 checkpoint。
+初次 `run/` 保留作为失败证据，不计入最终 30,000 次采样统计。
+实际重跑脚本为 `run_high8_cloud_v2.sh`；原启动脚本仍保留。
