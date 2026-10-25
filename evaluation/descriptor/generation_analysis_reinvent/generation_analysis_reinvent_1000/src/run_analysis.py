@@ -2,7 +2,7 @@
 """Summarize REINVENT generation runs and draw batch-wise curves.
 
 Reads : <repo>/results/reinvent-20260927/all_generated.csv.gz
-        (30 tasks = 15 targets x {libinvent, linkinvent}, 100 batches x 100 molecules)
+        (30 tasks = 15 targets x {libinvent, linkinvent}, first 10 batches x 100 molecules per task)
 Writes: analysis/summary_table.csv
         analysis/<metric>/figure/*.png and analysis/<metric>/table/*.csv
         analysis/{summary,linkinvent,libinvent}/{figure,table}/*  (copies of the
@@ -28,14 +28,15 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.ticker import MaxNLocator
 from rdkit import Chem, RDLogger
 from rdkit.Chem import Descriptors
 
 RDLogger.DisableLog("rdApp.*")
 
 HERE = Path(__file__).resolve().parent
-PKG_ROOT = HERE.parent  # generation_analysis_reinvent/
-REPO_ROOT = PKG_ROOT.parents[2]  # repository root
+PKG_ROOT = HERE.parent  # generation_analysis_reinvent_1000/
+REPO_ROOT = PKG_ROOT.parents[3]  # repository root
 DATA_PATH = REPO_ROOT / "results" / "reinvent-20260927" / "all_generated.csv.gz"
 CRYSTAL_DIR = REPO_ROOT / "real-world_dataset"
 ANALYSIS_ROOT = PKG_ROOT / "analysis"
@@ -45,7 +46,8 @@ ANALYSIS_ROOT = PKG_ROOT / "analysis"
 sys.path.insert(0, str(REPO_ROOT / "evaluation" / "descriptor" / "similarity_test" / "src"))
 from crystal_actives_similarity import load_crystal_ligand  # noqa: E402
 
-N_STEPS = 100
+N_STEPS = 10
+N_MOLECULES = 1000
 MODES = ("libinvent", "linkinvent")
 
 # Exactly the six requested per-batch metrics; order defines plot/table order.
@@ -120,6 +122,24 @@ def load_leads(targets):
     return leads
 
 
+def first_molecules(rows_reader):
+    """Keep the first 1,000 sampled rows per task, including invalids/duplicates.
+
+    Source order is generation order; verify the expected ten complete batches.
+    """
+    counts = Counter()
+    selected_batches = defaultdict(Counter)
+    for row in rows_reader:
+        task = (row["target"], row["mode"])
+        if counts[task] < N_MOLECULES:
+            counts[task] += 1
+            selected_batches[task][int(row["step"])] += 1
+            yield row
+    expected = Counter({step: 100 for step in range(1, N_STEPS + 1)})
+    if len(counts) != 30 or any(b != expected for b in selected_batches.values()):
+        raise ValueError("Expected 30 tasks with 100 rows in each of batches 1–10")
+
+
 def accumulate(rows_reader, leads):
     """Single pass over all generated molecules."""
     batches = defaultdict(Batch)  # (task, step) -> Batch
@@ -175,7 +195,7 @@ def repetition_count(counter: Counter) -> int:
 
 
 def batch_series(batches, task):
-    """Return {metric: [value_batch1 .. value_batch100]} for one task."""
+    """Return {metric: [value_batch1 .. value_last_batch]} for one task."""
     series = {m: [None] * N_STEPS for m in METRICS}
     for step in range(1, N_STEPS + 1):
         batch = batches.get((task, step))
@@ -266,6 +286,8 @@ def plot_single(xs, ys, metric, task, path):
     ax.plot(xs, ys, color="#1f77b4", linewidth=1.8)
     ax.set_title(f"{task} - {metric}", fontsize=13)
     ax.set_xlabel("Batch", fontsize=11)
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    ax.set_xlim(1, N_STEPS)
     ax.set_ylabel(METRIC_LABELS[metric], fontsize=11)
     ax.grid(True, alpha=0.3)
     fig.tight_layout()
@@ -281,6 +303,8 @@ def plot_multi(xs, series_map, metric, names, title, path, legend_ncol):
                 alpha=0.85, label=name)
     ax.set_title(f"{title} - {metric}", fontsize=13)
     ax.set_xlabel("Batch", fontsize=11)
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    ax.set_xlim(1, N_STEPS)
     ax.set_ylabel(METRIC_LABELS[metric], fontsize=11)
     ax.grid(True, alpha=0.3)
     ax.legend(loc="center left", bbox_to_anchor=(1.02, 0.5),
@@ -304,7 +328,7 @@ def main():
 
     print("computing metrics ...")
     with gzip.open(DATA_PATH, "rt") as handle:
-        batches, global_smiles, recall, _ = accumulate(csv.DictReader(handle), leads)
+        batches, global_smiles, recall, _ = accumulate(first_molecules(csv.DictReader(handle)), leads)
 
     series_map = {task: batch_series(batches, task) for task in task_order}
     rows = [(task, summary_row(task, batches, global_smiles, recall)) for task in task_order]
