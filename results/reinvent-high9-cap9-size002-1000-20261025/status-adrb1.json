@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "targets": [
+    "adrb1"
+  ],
+  "tasks": {
+    "adrb1/libinvent": "complete",
+    "adrb1/linkinvent": "complete"
+  }
+}

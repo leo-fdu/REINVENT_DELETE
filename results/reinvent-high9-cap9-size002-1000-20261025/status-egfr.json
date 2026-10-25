@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "targets": [
+    "egfr"
+  ],
+  "tasks": {
+    "egfr/libinvent": "complete",
+    "egfr/linkinvent": "complete"
+  }
+}

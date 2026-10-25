@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "targets": [
+    "akt1"
+  ],
+  "tasks": {
+    "akt1/libinvent": "complete",
+    "akt1/linkinvent": "complete"
+  }
+}

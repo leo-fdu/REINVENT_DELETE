@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "targets": [
+    "kif11"
+  ],
+  "tasks": {
+    "kif11/libinvent": "complete",
+    "kif11/linkinvent": "complete"
+  }
+}

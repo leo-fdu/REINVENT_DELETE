@@ -1,0 +1,820 @@
+{
+  "schema_version": 1,
+  "project": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project",
+  "run_dir": "/home/ubuntu/experiments/size_penalty_sweep_20261025/size0015/run",
+  "reinvent_python": "/home/ubuntu/experiments/high9_1000_seed42_20261025/project/REINVENT4/.venv/bin/python",
+  "planet_python": "/home/ubuntu/experiments/size_penalty_sweep_20261025/planet_python_nocache.sh",
+  "experiment": {
+    "schema_version": 1,
+    "seed": 42,
+    "batch_size": 100,
+    "steps": 10,
+    "sample_strategy": "multinomial",
+    "temperature": 1.0,
+    "learning_strategy": {
+      "type": "dap",
+      "sigma": 128,
+      "rate": 0.0001
+    },
+    "sigmoid": {
+      "low": 4.0,
+      "high": 9.0,
+      "k": 0.25
+    },
+    "penalty_multiplier": 0.5,
+    "planet_batch_size": 32,
+    "request_timeout": 120,
+    "startup_timeout": 600,
+    "reward_adjustment": {
+      "affinity_cap": 9.0,
+      "generated_heavy_atom_penalty": 0.015
+    }
+  },
+  "model_ids": {
+    "libinvent": "7c8e104e81124bafb5f62d14c64ec9f9",
+    "linkinvent": "9ef8cd169df24d58a16ee58b882d20af"
+  },
+  "input_hashes": {
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/configs/manual_design/manifest.json": "060d210a9066b276bd1d58ce487388aec8e0c70458b157c3af82a15aa2b7978c",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/REINVENT4/priors/libinvent_transformer_pubchem.prior": "4876dc45f1362d434b03ff4df2ad43f59f7721b93d6bd16f51374c93975bf3f2",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/REINVENT4/priors/linkinvent_transformer_pubchem.prior": "3c79ee1b5e7d48d381d1e24b0ef77cc318b091abd100963cb334ecca63384320",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/PLANET/PLANET.param": "77bd63055893d474d6b6386bbb22d615b0db7e5e450c52ee76b6c81c91ac6be3",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/configs/manual_planet_rl/target_inputs.json": "0e63b862e0f222f125fe503cf0b3db134b5e395376002b43cbaa15cb7dd61282",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3LPB.pdb": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/drd3/receptor_out.pdb": "7102faabd3c23241b304197a1ae835fde0b8eb26885fe7fd783264fdb442a4f2",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3PBL.pdb": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/aa2ar/receptor_out.pdb": "141569eff51ade761c7b3258ff9bbcaab2bd417c6dfb93d2ceca454302876862",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/aa2ar/crystal.mol2": "fb4f772045e80d15e919fb0cc748f4e13429e73d9b6d284ab203f51233042cc7",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/abl1/receptor_out.pdb": "991d53308c900c7cf4e43faa9b8920482afc9e246a0a130858cdfa955666e5aa",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/abl1/crystal.mol2": "351685615a31721c552492a3af427e4e5ac55f50061a67a41917457403efc0e6",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/adrb1/receptor_out.pdb": "6eb7dae1b6c48e112667b66609f7832a7a531a51e6c29bb3f71b9f83f531351d",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/adrb1/crystal.mol2": "cf21c52fd56a44a837fc25989a185f07d3880e3e158e6a9e08a80c622ad0d0c7",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/akt1/receptor_out.pdb": "0bc74983a29c4c3deb78e93ebb7d38174544727d47efecf62fce22025c4d7967",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/akt1/crystal.mol2": "4ad33e8a4308897c232f5b08213a1917a17b29a307c5e7fa6827338a9e6098ae",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cdk2/receptor_out.pdb": "c7de36182ea309360a7ae0c90da9ee54741eaa7a8b921c7882ae7b1b283f93d4",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cdk2/crystal.mol2": "721c460ebf2db564aae3b85953a5548971b476fa8e0c0863adfe1c2c67c57c6a",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cp3a4/receptor_out.pdb": "c4cff89a94b31a5e21cd728eb397e9b63e6996a5b9c96bffdc102d50e5856edf",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cp3a4/crystal.mol2": "af38b4da66f376d216054a89849690ad6d90d6150d6e05ee99b7c65f11099bdb",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dpp4/receptor_out.pdb": "d154466762bdced04f08a0ef15cf1970845f2443397a8ec95f1d58a466f08bee",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dpp4/crystal.mol2": "c66e797c433aa245a2ac2af30527e0f12178f38c08dcbe1aecf247d564b0a843",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/drd3/crystal.mol2": "d6168ae6539f9de16c471c1dc2696757d6dd5269c65bfd122650aa93f80e2594",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dyr/receptor_out.pdb": "561d7367e78b1a761eb930ede7da7b529255aecd332bc08ffdfcbd58bd5f8ff1",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dyr/crystal.mol2": "16136044517330b22775c8c859d1a39ecf431d97b5bb2f5173ab99d9eb68a142",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/egfr/receptor_out.pdb": "3fabf2927a166940c8409cb1b9e7a7e4d1c209ee36756c8a87f76726d18b0ed7",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/egfr/crystal.mol2": "c19cce10b32333f6a4a03b7e072865adc1c40ab5c83f8ad8bdc27882c3863bf8",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/gria2/receptor_out.pdb": "657de8348788aacb507182ef1fd6985bed5ea29908dc0a130c763ab5f72a62a2",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/gria2/crystal.mol2": "1ef46e9db70370659bad4a1a32c36ca6f14594cc719653791534f54837a2cea1",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/jak2/crystal.mol2": "cf672194d8e746a28a01968b8b30124b89423340d3b9c61e7ddfdad9dc3a80a6",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/kif11/receptor_out.pdb": "b9e736589e80b733d29b55dd06adb5d64cc8fb6239a91705044e51ae35fd2272",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/kif11/crystal.mol2": "70a9d35ee57ce2752f7e707d63102b5eefc9fb916ce59a871b5d2ddcd316b8fa",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/parp1/receptor_out.pdb": "2427ea04d7a53661403f2896b012775411ea9af88b8fcfa8d648f78ac6bb779a",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/parp1/crystal.mol2": "495f20545fafcd06d76c0edf88aec52d0ec85337ab6806ea54ee5e9d57143e8a",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/ppara/receptor_out.pdb": "9c369ac92278289b41eceac5da6f0e6a53ca4c63f5589d0895486b6d81901468",
+    "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/ppara/crystal.mol2": "35db7f1d001b3d5723e2817f576394ac8436044a6890708689d2ebaedc29fd7a"
+  },
+  "prepared_hashes": {
+    "aa2ar/client.json": "3a539e85a83b73514fcc904a80cf2f3f862037813e6f8d098baf2a9f4297bfaa",
+    "aa2ar/libinvent/input.smi": "5e79b345afcf248690e0e518d2027172acac5d4d8770bcf926f2ddbae45efe05",
+    "aa2ar/libinvent/rl.toml": "918c6aa28c8eaebf872bb00fa8f54f24c2dcabc217ad2a1f1c6aa01818c0d95a",
+    "aa2ar/linkinvent/input.smi": "e896a5bf7891202f045ff38a4923a9f69337147d847506cc504fe942acf5b3ba",
+    "aa2ar/linkinvent/rl.toml": "7f00ffa8b5b97acf26adfa464e68ee39a74128aca9e774ba9dc7365dd66cf2d5",
+    "aa2ar/server.json": "c5c4dd5cd2136b02cda815319ee7466e7a83b26e251d38eba99c2348748038e1",
+    "abl1/client.json": "68cf7c1a30c228945929c42d6a0236bd7c5aaabe7d28240b39713f1b3498f3f5",
+    "abl1/libinvent/input.smi": "dbfb93b80f4dda1c2d44d109eb0d8ab3a5a5c721a95f40b7502fd8d9010d1203",
+    "abl1/libinvent/rl.toml": "84ab294bc3cdd612baf69ac2794b0685fd66b592339dbe63f82f9900390734f0",
+    "abl1/linkinvent/input.smi": "7a1d7b63e7d1170d07f07a9e19e15602c14d7c852eb8292e9ce1d4837ad1bb81",
+    "abl1/linkinvent/rl.toml": "06cc5e777fcf50792230e599385c833eb7d9baf9bc6c9957e85ca4afdedacc40",
+    "abl1/server.json": "21fa3225de81fde44c720aa1c4b6ec99e89d52bd6ef2b1401dee3b34b562a149",
+    "adrb1/client.json": "ba2a9912d157682e16921a5ef96ad890550ad7bf695c5a279ab473f15a8ef3f9",
+    "adrb1/libinvent/input.smi": "2e1085de5d0f9466fa8cf9a51eaee04a37bf9faf9e665732b140a3e658e83e5b",
+    "adrb1/libinvent/rl.toml": "6eff98c2e107b63b2206aab0407ef7e5fecd09e7fbdf4552266a8b00011e1f4e",
+    "adrb1/linkinvent/input.smi": "2019a916a25d318edbf7bb0ca8e07b4cfaa6dc4105d084106d8fff8321804b0a",
+    "adrb1/linkinvent/rl.toml": "53305ba071b43f1b5a5118237c93b6d2c97621d5d469092a4e560b80b3acf5c0",
+    "adrb1/server.json": "58f61c8138d14a26f7b8292fc66cae00d1fb8fd28212a3a5d8e6b6375a5607e2",
+    "akt1/client.json": "47af02d81078d5fd52a5013660430ead5635ae0311581390f9ea2a7e9c47c1b3",
+    "akt1/libinvent/input.smi": "391e110ae84344d00c3f876350bc3163106552265d3fee7403d47833d4d70884",
+    "akt1/libinvent/rl.toml": "7520ac6b62e1f7ff9e708783d6bf1a51efd9ce41e6f0565608598756ad589ed7",
+    "akt1/linkinvent/input.smi": "af0fad638b211caaa45e15433fd7d07add22dba3b26d8c7b750d96c3fde42f6b",
+    "akt1/linkinvent/rl.toml": "ebb1226c5e069d0f1f71cd212447cc8fdbd3ce5df38db440df719bedecf9bf1f",
+    "akt1/server.json": "7d37bc170a1d83b8f3daae33d3ae16356602df7c9744af4fff2a670deee00f25",
+    "cdk2/client.json": "cb32309df4621b27cdfb4abbaab48b4efd67685c2381c707eb848b0a20ff58fd",
+    "cdk2/libinvent/input.smi": "e0992afdf6efefe46b7b9d71c417b099b99d215245b067694b31a2c07cb86dfa",
+    "cdk2/libinvent/rl.toml": "bdc28439a4854299e010b4a55cdc0b744d905226bec6e0aa183d762c372f4ad1",
+    "cdk2/linkinvent/input.smi": "8b6def6a60d052a1066bae0c1f8c2a3ccb072ee6afbedc470bd390111a654b10",
+    "cdk2/linkinvent/rl.toml": "4a0bbb42987769b80a12dcec5a16cdc0f4974d49df3efb0daabfcfb25507698b",
+    "cdk2/server.json": "8b20c306a382d7504cfd78ed92961d267e28f60e85c0d933765ec8feedc67b95",
+    "cp3a4/client.json": "244186dac18072776519811522926d38d93be89375405517b8fb95aeed2d3113",
+    "cp3a4/libinvent/input.smi": "1444388291543cc82bee5574e0f382bd3dd45977aec24297b7e6c301013dabe1",
+    "cp3a4/libinvent/rl.toml": "763af544f383d2dbdf8c1cd93cc1984245add74da44135f328ea477875070356",
+    "cp3a4/linkinvent/input.smi": "051963f88b8c81d4f22f490648789723d9a78ca962e49fdeab9899e49fa93965",
+    "cp3a4/linkinvent/rl.toml": "fcdb268d885f854503f56b536da3d6a59c094d1bfeefb2dbbee47b3541b77b0d",
+    "cp3a4/server.json": "1ea3f8636aa50240d9eeaa9b3117829d5fa666ac2e9f48c40a36e8d8e525b722",
+    "dpp4/client.json": "343fcebf5505dd8a8e3ef44220fff1da6b7b52d30915f6834ee4667651641f58",
+    "dpp4/libinvent/input.smi": "5e6af4e5ceca67ac2a3149d5688d2f07976ce077741b9844a9eabb01f8706879",
+    "dpp4/libinvent/rl.toml": "206d7dafc793ecf96f8dc48e3083d65403dbc35a2988e5acd62e4ba80e5ab257",
+    "dpp4/linkinvent/input.smi": "5543a511425b13f5479d7824d4138144e024d0123afd66f7da61fe2fc71ce4ca",
+    "dpp4/linkinvent/rl.toml": "f2ac5101ef0897c2f6cbf8967061089512288182a7c77589b961fc1d1a192648",
+    "dpp4/server.json": "fe2724c3a042fa12141d8606c041b8893f10ac1671ac50604b27213c721c9660",
+    "drd3/client.json": "5c4420b43c6e686ba16a1095bcb21cbc8b3fc4355327d21e5f16224d3db28dd3",
+    "drd3/libinvent/input.smi": "fb89d6742b78d05fa3986a3e5d4e7535d7f16d898ca042d50e8341acceaf765e",
+    "drd3/libinvent/rl.toml": "de22f28f64db813e84ad7b452eb846f592e7436cd658af89dd5e81457bf06624",
+    "drd3/linkinvent/input.smi": "ca3a3f87cbd681153f51eb8ad6fdd50dc64d5af7ccdacb9bdb32b1cec0d59c1a",
+    "drd3/linkinvent/rl.toml": "41694acbb8161d83cb1f8e1e32e32c388bbaa0e739dc1fbb2d349eba76e422c0",
+    "drd3/receptor.pdb": "cb44526bc4f09db36115083349d48f7b166f77f7f0935726702f9be1e5c35db8",
+    "drd3/server.json": "0b4d812f25ecbc3280d08fdec7e7dadab097c9eba2353a50bc84379bed97ebf3",
+    "dyr/client.json": "604bd81e0a4e574a80d2a16084d2b6aa1ade95d7dc0906b03b885a00cabea37c",
+    "dyr/libinvent/input.smi": "8113729938d01cf71ed279b538c1471307eacea31ca6a1bde3bdd361c28bbef0",
+    "dyr/libinvent/rl.toml": "d515adec7e031832a1635e79e38084464e08df2c0a150175660dc3ecd923b1af",
+    "dyr/linkinvent/input.smi": "cd2d3866f618641c8a52695fa822effc27576fc5c12b1b482e8cf089b6125d22",
+    "dyr/linkinvent/rl.toml": "72bb071d85b7f0993e6fdc8e848de16a4e0662779fa808b93eb3b26fd3d49499",
+    "dyr/server.json": "6a1337cc65ba8d582025f68b466a11aecde14a0b828b585bdd9e2e42ca02f625",
+    "egfr/client.json": "e13f830c7edb0ea7417505403130fd8b949fde964fe1c50eae9d274bd34741e5",
+    "egfr/libinvent/input.smi": "9c155ac1ea2318dd3cd5bb27230f6ea05b097ca66d800eccc46e7294d722c03f",
+    "egfr/libinvent/rl.toml": "c9b60ba042ffd007da707a1e60f6d5fec488e4ab14a05f97909374458b523a77",
+    "egfr/linkinvent/input.smi": "a0bbfd4260983d338bdb5774b9b835c4254c9d35aba08b2c31d371cad3f887aa",
+    "egfr/linkinvent/rl.toml": "87d3068fe38ce073b47ac0f0e1b204f928531a8e03797e50e5abb5f187d2accf",
+    "egfr/server.json": "636aca6c6142d5491a1ac4c8c47a2bd462f2a9ccdcdfb98e04c50e72b0318566",
+    "experiment.json": "d062299ca313a839138f17cda24b060dfaa961882576d1ae369a6251a5769057",
+    "gria2/client.json": "2d0c3c3e2b2546ef981b42dfebb25b61c8702b132fb440145ac643d973b69bd8",
+    "gria2/libinvent/input.smi": "1841ab1ba574a9caa245259a18b1d39dd54f255e2348639088b67cb9043eb899",
+    "gria2/libinvent/rl.toml": "3a4716726a2af889d6481398c1c8d1998cf04ed8ee9c7c92c815c2ed04caf81e",
+    "gria2/linkinvent/input.smi": "88e6390750d7d8856872cbb349fb639d00cf09fcd2700de0f1a168135b0feb20",
+    "gria2/linkinvent/rl.toml": "5cf56dd92d8214cfd4cbbe9c76d9c7970a87bbe8ebf382b9d1607c91fe36a008",
+    "gria2/server.json": "30f2b8f5f4ddbd09cadf7e906eeb3e902a39b89ea8ad92b8f5c69fd61312c0d4",
+    "jak2/client.json": "882bc6b09b5f48e5830600d44cfc8c2f72a1cb9d45e724416bd3d03e15dc6b90",
+    "jak2/libinvent/input.smi": "fe166c3c0c922fef890c3d42c4b144a72291f21145f6bb86898a0349e166fc6f",
+    "jak2/libinvent/rl.toml": "798a003e8a7fdc2a27a1528624412775440c83242b908c24d2652c70ee9080ae",
+    "jak2/linkinvent/input.smi": "1e435336054faf3ff23b26949b9f75578c746bd1ec3c3b52ebba88564ab73223",
+    "jak2/linkinvent/rl.toml": "cdd55c37979cf3f0648dfe046bd632e6aec79d62e66b8edf5e0782059fc8e988",
+    "jak2/receptor.pdb": "0ce22ecb72dc66951026d7f0c50a9885698a27ddb0a9307d4b4a06f6703ce86b",
+    "jak2/server.json": "e894dc244b0342c913cc13afa0b6e55d177dc852d0c9d94dbf3aa8f576bc376f",
+    "kif11/client.json": "853db313c68b31acbf112ff1f40e6b25cdbb446d835dbb168760a1a16e6980ae",
+    "kif11/libinvent/input.smi": "1491efa8d8ad34558c4bc502aa41ef6dee0bcb0466799295afa71b0b7194d1d4",
+    "kif11/libinvent/rl.toml": "7456e5a788b3e2c4629397802f2d867ce13d35370b65d356bc554a2dcc511132",
+    "kif11/linkinvent/input.smi": "2ade33e0882f41c645a05d3b2cc5f17892c9c792f963442e77b50a6d4422a28c",
+    "kif11/linkinvent/rl.toml": "88028a8c5459995fb3d01f311aff56e8e52d9281738764d9df59892dff7e6a78",
+    "kif11/server.json": "54a1ce83f3d4714ec03cbe0ebb01d2bdeaa345955b76b7e582dff08b9f8b027d",
+    "parp1/client.json": "295365dce72dfb466f2f5cb9904023567641cb463a8f17a2d238ee430e7530f6",
+    "parp1/libinvent/input.smi": "6e0fd7b15d7367991bdaa3d54090175fd753b3e6981cb9e92d71d88b122abbb9",
+    "parp1/libinvent/rl.toml": "4d3c514a90dd14ca8b4354b5ad36ba0d819cdb577ea00a5d7a74edf9b52bcac6",
+    "parp1/linkinvent/input.smi": "c5160a497de7eda3d6ace328339b24ab5f552c9da450d61fdf177778f2bba8af",
+    "parp1/linkinvent/rl.toml": "f53fab23d5035bef9ca44c7a824447b60e7da5e4fdca3e8140c2d506168e899f",
+    "parp1/server.json": "ed36f985a6f11a69ada0a4ec7ee1de79f333d1063f25e16dd33f9f4c925ff485",
+    "ppara/client.json": "fc5dd975f97ff5634cf9750366c50b22f7466db256282f7b73ffd2bd1f8a002b",
+    "ppara/libinvent/input.smi": "c816cf27daa0a8bf9e006363502fd9c572137f17e6434e6dd21fda44bb6ffa6e",
+    "ppara/libinvent/rl.toml": "6e3308e366a68286a616092981291f9380d27032670336f0d6b7c3ef6c615dfc",
+    "ppara/linkinvent/input.smi": "312430ad7142a3ec8ca7aec7e1c690547f81458872d608ccd7753a1c8a089523",
+    "ppara/linkinvent/rl.toml": "db42539547c4172be4841ef611ed4504f18aac26f069f221628adf731b7f82db",
+    "ppara/server.json": "b2864a066601790977c15683754307be92ba0a31ea18960c7d9943c485fd26f8"
+  },
+  "targets": [
+    {
+      "target": "aa2ar",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/aa2ar/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/aa2ar/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/aa2ar/receptor_out.pdb",
+      "center": [
+        -9.06364,
+        -7.1446000000000005,
+        55.8626
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/aa2ar/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "aa2ar/server.json",
+      "client_config": "aa2ar/client.json",
+      "oracle_manifest": "aa2ar/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "aa2ar/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1nc(N)n2nc(-c3ccco3)nc2n1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "aa2ar/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(O)cc1|*c1nc(N)n2nc(-c3ccco3)nc2n1"
+        }
+      ]
+    },
+    {
+      "target": "abl1",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/abl1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/abl1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/abl1/receptor_out.pdb",
+      "center": [
+        16.19551724137931,
+        14.587206896551724,
+        3.938137931034483
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/abl1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "abl1/server.json",
+      "client_config": "abl1/client.json",
+      "oracle_manifest": "abl1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "abl1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*Nc1ncc2cc(-c3c(Cl)cccc3Cl)c(=O)n(C)c2n1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "abl1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1c(Cl)cccc1Cl|*c1ccc(F)c(C)c1"
+        }
+      ]
+    },
+    {
+      "target": "adrb1",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/adrb1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/adrb1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/adrb1/receptor_out.pdb",
+      "center": [
+        26.376285714285718,
+        5.1030476190476195,
+        1.8988095238095237
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/adrb1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "adrb1/server.json",
+      "client_config": "adrb1/client.json",
+      "oracle_manifest": "adrb1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "adrb1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cccc2c1CC(C#N)=N2"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "adrb1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*C(C)(C)C|*c1cccc2c1CC(C#N)=N2"
+        }
+      ]
+    },
+    {
+      "target": "akt1",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/akt1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/akt1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/akt1/receptor_out.pdb",
+      "center": [
+        -20.0053,
+        4.3438,
+        10.7399
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/akt1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "akt1/server.json",
+      "client_config": "akt1/client.json",
+      "oracle_manifest": "akt1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "akt1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*C1(N)CCN(c2ncnc3[nH]ccc23)CC1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "akt1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H](CCO)c1ccc(Cl)cc1|*c1ncnc2[nH]ccc12"
+        }
+      ]
+    },
+    {
+      "target": "cdk2",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cdk2/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cdk2/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cdk2/receptor_out.pdb",
+      "center": [
+        1.9698666666666669,
+        27.5588,
+        8.824866666666667
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cdk2/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "cdk2/server.json",
+      "client_config": "cdk2/client.json",
+      "oracle_manifest": "cdk2/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "cdk2/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*Nc1cc(Nc2c(F)cccc2F)ncn1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "cdk2/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*OC[C@@H](O)CN(C)C|*c1c(F)cccc1F"
+        }
+      ]
+    },
+    {
+      "target": "cp3a4",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cp3a4/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cp3a4/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cp3a4/receptor_out.pdb",
+      "center": [
+        36.68594,
+        -15.693620000000001,
+        29.690540000000002
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/cp3a4/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "cp3a4/server.json",
+      "client_config": "cp3a4/client.json",
+      "oracle_manifest": "cp3a4/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "cp3a4/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H](Cc1ccccc1)C[C@H](O)[C@H](Cc1ccccc1)NC(=O)OCc1cncs1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "cp3a4/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1csc(C(C)C)n1|*C[C@H](O)[C@H](Cc1ccccc1)NC(=O)OCc1cncs1"
+        }
+      ]
+    },
+    {
+      "target": "dpp4",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dpp4/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dpp4/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dpp4/receptor_out.pdb",
+      "center": [
+        -18.448096774193548,
+        -5.489,
+        60.05896774193548
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dpp4/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "dpp4/server.json",
+      "client_config": "dpp4/client.json",
+      "oracle_manifest": "dpp4/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "dpp4/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@H]1CC=C(C(=O)N2CCn3c(nnc3C(F)(F)F)C2)C[C@@H]1N"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "dpp4/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*C(F)(F)F|*c1cc(F)c(F)cc1F"
+        }
+      ]
+    },
+    {
+      "target": "drd3",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/size0015/run/drd3/receptor.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/drd3/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/drd3/receptor_out.pdb",
+      "center": [
+        0.08530434782608695,
+        -14.828347826086958,
+        10.43204347826087
+      ],
+      "pocket_reference": {
+        "source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3PBL.pdb",
+        "source_sha256": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+        "chain": "A",
+        "origin": "https://files.rcsb.org/download/3PBL.pdb",
+        "resname": "ETQ",
+        "residue_id": "1200"
+      },
+      "input_correction": {
+        "receptor": {
+          "source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/drd3/receptor_out.pdb",
+          "source_sha256": "7102faabd3c23241b304197a1ae835fde0b8eb26885fe7fd783264fdb442a4f2",
+          "chain": "A",
+          "origin": "DURIAN original receptor (user-verified byte identity); author chain A of 3PBL"
+        },
+        "pocket_reference": {
+          "source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3PBL.pdb",
+          "source_sha256": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+          "chain": "A",
+          "origin": "https://files.rcsb.org/download/3PBL.pdb",
+          "resname": "ETQ",
+          "residue_id": "1200"
+        },
+        "reason": "The design MOL2 centroid selects a different non-overlapping region. Choose the first author monomer A and its crystallographic ETQ 1200 orthosteric pocket; retain the original design ligand and all LibINVENT/LinkINVENT SMILES."
+      },
+      "server_config": "drd3/server.json",
+      "client_config": "drd3/client.json",
+      "oracle_manifest": "drd3/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "drd3/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*NC(=O)c1c(O)c(CC)cc(C)c1OC"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "drd3/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H]1CCCN1CC|*c1c(O)c(CC)cc(C)c1OC"
+        }
+      ]
+    },
+    {
+      "target": "dyr",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dyr/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dyr/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dyr/receptor_out.pdb",
+      "center": [
+        15.243583333333333,
+        5.837541666666667,
+        -0.19933333333333333
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/dyr/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "dyr/server.json",
+      "client_config": "dyr/client.json",
+      "oracle_manifest": "dyr/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "dyr/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*c1coc2nc(N)nc(N)c12"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "dyr/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*c1coc2nc(N)nc(N)c12|*c1ccccc1OC"
+        }
+      ]
+    },
+    {
+      "target": "egfr",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/egfr/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/egfr/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/egfr/receptor_out.pdb",
+      "center": [
+        16.292121212121213,
+        34.87081818181819,
+        92.03530303030303
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/egfr/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "egfr/server.json",
+      "client_config": "egfr/client.json",
+      "oracle_manifest": "egfr/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "egfr/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*n1ncc2cc(Nc3ncnc(N)c3CNN3CCCCC3)ccc21"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "egfr/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cccc(F)c1|*c1ncnc(N)c1CNN1CCCCC1"
+        }
+      ]
+    },
+    {
+      "target": "gria2",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/gria2/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/gria2/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/gria2/receptor_out.pdb",
+      "center": [
+        7.531259259259259,
+        32.66985185185185,
+        -0.7351111111111112
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/gria2/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "gria2/server.json",
+      "client_config": "gria2/client.json",
+      "oracle_manifest": "gria2/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "gria2/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cc2c(cc1C(F)(F)F)[nH]c(=O)c(=O)n2CP(=O)(O)O"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "gria2/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*N1CCOCC1|*CP(=O)(O)O"
+        }
+      ]
+    },
+    {
+      "target": "jak2",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/size0015/run/jak2/receptor.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/jak2/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+      "center": [
+        114.671,
+        66.11351515151516,
+        10.554818181818183
+      ],
+      "pocket_reference": {
+        "source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+        "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+        "chain": "A",
+        "origin": "https://files.rcsb.org/download/3LPB.pdb",
+        "resname": "NVB",
+        "residue_id": "1133"
+      },
+      "input_correction": {
+        "receptor": {
+          "source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+          "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+          "chain": "A",
+          "origin": "https://files.rcsb.org/download/3LPB.pdb"
+        },
+        "pocket_reference": {
+          "source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/planet_reference_sources/3LPB.pdb",
+          "source_sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+          "chain": "A",
+          "origin": "https://files.rcsb.org/download/3LPB.pdb",
+          "resname": "NVB",
+          "residue_id": "1133"
+        },
+        "reason": "DURIAN receptor_out.pdb is an upstream JNK3/mixed/truncated input; retain original data. 3LPB/A NVB coordinates exactly match the existing design crystal.mol2. Extract the JAK2 author chain A without coordinate or chemistry changes."
+      },
+      "server_config": "jak2/server.json",
+      "client_config": "jak2/client.json",
+      "oracle_manifest": "jak2/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "jak2/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1cnc2cccc(-c3ccc(S(=O)(=O)NC)cc3)c2n1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "jak2/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(S(=O)(=O)NC)cc1|*c1cc(OC)c(OC)c(OC)c1"
+        }
+      ]
+    },
+    {
+      "target": "kif11",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/kif11/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/kif11/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/kif11/receptor_out.pdb",
+      "center": [
+        17.808030303030304,
+        16.11821212121212,
+        109.26678787878788
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/kif11/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "kif11/server.json",
+      "client_config": "kif11/client.json",
+      "oracle_manifest": "kif11/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "kif11/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*N(C)C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "kif11/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": false
+          },
+          "input_smiles": "*c1ccccc1|*[C@H]1CCN(C)C[C@H]1F"
+        }
+      ]
+    },
+    {
+      "target": "parp1",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/parp1/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/parp1/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/parp1/receptor_out.pdb",
+      "center": [
+        26.36508,
+        11.22196,
+        27.02348
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/parp1/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "parp1/server.json",
+      "client_config": "parp1/client.json",
+      "oracle_manifest": "parp1/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "parp1/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(-c2nc3cccc(C(N)=O)c3[nH]2)c(F)c1"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "parp1/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*[C@@H]1CCCCN1|*c1nc2cccc(C(N)=O)c2[nH]1"
+        }
+      ]
+    },
+    {
+      "target": "ppara",
+      "protein_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/ppara/receptor_out.pdb",
+      "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/ppara/crystal.mol2",
+      "protein_source_pdb": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/ppara/receptor_out.pdb",
+      "center": [
+        13.756636363636364,
+        39.44990909090909,
+        28.01230303030303
+      ],
+      "pocket_reference": {
+        "kind": "design_mol2_centroid",
+        "source_mol2": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/real-world_dataset/ppara/crystal.mol2"
+      },
+      "input_correction": null,
+      "server_config": "ppara/server.json",
+      "client_config": "ppara/client.json",
+      "oracle_manifest": "ppara/oracle-manifest.json",
+      "tasks": [
+        {
+          "mode": "libinvent",
+          "directory": "ppara/libinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*NC(=O)c1sc(-c2ccc(C(F)(F)F)cc2)nc1C"
+        },
+        {
+          "mode": "linkinvent",
+          "directory": "ppara/linkinvent",
+          "validation": {
+            "connectivity_match": true,
+            "stereochemistry_match": true
+          },
+          "input_smiles": "*c1ccc(C(F)(F)F)cc1|*c1ccc(OC(C)(C)C(=O)O)cc1"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "target": "aces",
+      "mode": "libinvent",
+      "status": "skipped",
+      "smiles_file": null,
+      "source_mol2": "real-world_dataset/aces/crystal.mol2",
+      "source_sha256": "1703c50c57a2c24592b2e6fb571be4b7aa3bf1604e8d1ebd591b231cbfb2631e",
+      "note": ""
+    },
+    {
+      "target": "aces",
+      "mode": "linkinvent",
+      "status": "skipped",
+      "smiles_file": null,
+      "source_mol2": "real-world_dataset/aces/crystal.mol2",
+      "source_sha256": "1703c50c57a2c24592b2e6fb571be4b7aa3bf1604e8d1ebd591b231cbfb2631e",
+      "note": ""
+    }
+  ],
+  "attempts_per_task": 1000,
+  "total_tasks": 30,
+  "target_inputs_file": "/home/ubuntu/experiments/size_penalty_sweep_20261025/project/configs/manual_planet_rl/target_inputs.json"
+}

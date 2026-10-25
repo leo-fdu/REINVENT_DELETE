@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "targets": [
+    "gria2"
+  ],
+  "tasks": {
+    "gria2/libinvent": "complete",
+    "gria2/linkinvent": "complete"
+  }
+}

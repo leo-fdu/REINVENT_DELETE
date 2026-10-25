@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "targets": [
+    "jak2"
+  ],
+  "tasks": {
+    "jak2/libinvent": "complete",
+    "jak2/linkinvent": "complete"
+  }
+}

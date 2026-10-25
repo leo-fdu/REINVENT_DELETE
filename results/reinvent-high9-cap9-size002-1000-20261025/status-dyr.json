@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "targets": [
+    "dyr"
+  ],
+  "tasks": {
+    "dyr/libinvent": "complete",
+    "dyr/linkinvent": "complete"
+  }
+}
