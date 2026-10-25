@@ -8,6 +8,47 @@ aces 两个模式已 skipped）批量运行为只用 PLANET 奖励的 RL 生成�
 评分链路复用 `configs/planet_oracle/README.md` 的常驻服务：REINVENT `ExternalProcess`
 经 `planet_oracle.client` 请求同机 `planet_oracle.server`，模型和口袋每个靶点只初始化一次。
 
+## 新协议：cap=9、生成重原子扣分 0.01（2026-10-25）
+
+使用独立配置 `experiment_high9_cap9_size001_1000.json`：low=4、high=9、k=0.25，
+每任务 batch=100 × 10 轮，seed=42。旧配置及历史结果保持原样；不带 `--experiment`
+仍选择下文的旧默认配置，运行新协议时必须显式指定新配置。
+
+对有效且 PLANET 评分成功的分子：
+
+```text
+capped_planet_affinity = min(planet_affinity, 9)
+sigmoid_reward = sigmoid(capped_planet_affinity; low=4, high=9, k=0.25)
+generated_heavy_atoms = heavy_atoms(product) - heavy_atoms(retained_input_fragments)
+size_penalty = 0.01 * generated_heavy_atoms
+base_reward = sigmoid_reward - size_penalty
+training_reward = base_reward * (0.5 if repeated else 1.0)
+```
+
+重原子仅统计 atomic number > 1，排除显式氢和连接标记 `*`；LinkINVENT 两个固定
+输入片段均扣除，LibINVENT 扣除保留骨架。依赖这两个生成模式保持固定输入片段的设计。
+尺寸扣分不设免费额度；允许负奖励，不截零。重复系数乘在整个 signed base_reward 上，
+包括负数，这正是本轮指定语义。无效或 PLANET `invalid_input` 样本沿用零奖励，
+其截断分数和生成原子数留空，不用亲和力占位值计算尺寸奖励。
+
+新字段作为额外列写入原始 RL CSV 和合并 CSV，旧 `planet_affinity` 保留未截断真值，
+`sigmoid_reward` 仍指扣尺寸前的 sigmoid，`training_reward` 是实际进入 DAP 的奖励。
+`validate_manual_planet_results.py` 独立重算分子图原子数、截断、sigmoid、尺寸扣分与
+重复系数；新协议的验收需要 RDKit。旧配置的验收与原奖励公式保持兼容。
+
+先 prepare，再用本仓库 runner 启动，例如：
+
+```bash
+"$REINVENT_PY" "$PROJECT/src/prepare_manual_planet_rl.py" --project "$PROJECT" \
+  --experiment "$PROJECT/configs/manual_planet_rl/experiment_high9_cap9_size001_1000.json" \
+  --run-dir "$RUN" --reinvent-python "$REINVENT_PY" --planet-python "$PLANET_PY" --device cuda:0
+"$REINVENT_PY" "$PROJECT/src/run_manual_planet_rl.py" --run-dir "$RUN"
+```
+
+runner 自动向 `manual_planet_rl` 传入冻结的 `--reward-config "$RUN/experiment.json"`。
+该入口在 PLANET 评分后、重复过滤之前执行新公式，保持 DAP 和上游源码不变。
+不要绕过该入口直接用上游 REINVENT 执行生成的 TOML，否则不会启用尺寸奖励。
+
 ## 固定实验协议
 
 与 `configs/manual_planet_rl/experiment.json` 一致，正式批量不得逐项改动：

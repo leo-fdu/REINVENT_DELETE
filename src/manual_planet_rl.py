@@ -5,7 +5,9 @@ Transformer learning classes used by this experiment are replaced, in this
 process; the upstream source and all other generation modes are untouched.
 """
 
+import argparse
 import logging
+import sys
 
 import numpy as np
 
@@ -14,6 +16,7 @@ from reinvent.runmodes import RL
 from reinvent.runmodes.RL.libinvent import LibinventLearning
 from reinvent.runmodes.RL.linkinvent import LinkinventLearning
 from reinvent.runmodes.RL.reports.csv_summmary import RLCSVReporter
+from planet_size_reward import reward_terms
 
 
 class StableCSVReporter:
@@ -34,6 +37,10 @@ class StableCSVReporter:
         header = ["Agent", "Prior", "Target", "Score", "SMILES", "SMILES_state",
                   "Input_SMILES", "Generated_SMILES", "PLANET reward", "PLANET reward (raw)"]
         header += [f"{key} (PLANET reward)" for key in keys] + ["step"]
+        details = getattr(data.score_results, "size_reward_details", None)
+        extra = ["capped_planet_affinity", "generated_heavy_atoms", "size_penalty", "base_reward"]
+        if details is not None:
+            header += extra
         csv_logger = logging.getLogger("csv")
         if not self.header_written:
             csv_logger.info(header)
@@ -44,6 +51,8 @@ class StableCSVReporter:
                    data.sampled.items1[index], data.sampled.items2[index],
                    component.transformed_scores[0][index], raw[index]]
             row += [columns[key][index] for key in keys] + [data.step]
+            if details is not None:
+                row += [details[index][key] for key in extra]
             csv_logger.info(row)
         logging.getLogger("reinvent").info(
             "Step %s: reward %.4f, valid %.1f%%, batch duplicates %.1f%%",
@@ -53,6 +62,8 @@ class StableCSVReporter:
 
 
 class RepeatRewards:
+    reward_experiment = None
+
     def _setup_reporters(self, tb_logdir):
         super()._setup_reporters(tb_logdir)
         self.reporters = [StableCSVReporter() if isinstance(reporter, RLCSVReporter) else reporter
@@ -61,7 +72,27 @@ class RepeatRewards:
     def score(self):
         # Keep invalid masking, but let the diversity filter handle every repeat.
         self.duplicate_mask = np.ones(len(self.sampled.states), dtype=bool)
-        return super().score()
+        results = super().score()
+        if self.reward_experiment is not None:
+            components = results.completed_components
+            if len(components) != 1 or components[0].component_names != ["PLANET reward"]:
+                raise ValueError("Size reward requires the single PLANET reward component")
+            component = components[0]
+            metadata = component.component_result.fetch_metadata(results.smilies)
+            statuses = metadata.get("planet_status", [None] * len(results.smilies))
+            details = []
+            for index, smiles in enumerate(results.smilies):
+                terms = {"capped_planet_affinity": "", "generated_heavy_atoms": "",
+                         "size_penalty": 0.0, "base_reward": 0.0, "sigmoid_reward": 0.0}
+                if self.invalid_mask[index] and statuses[index] == "ok":
+                    terms = reward_terms(metadata["planet_affinity"][index], smiles,
+                                         self.sampled.items1[index], self.reward_experiment)
+                details.append(terms)
+                component.transformed_scores[0][index] = terms["sigmoid_reward"]
+                results.total_scores[index] = terms["base_reward"]
+            # DiversityFilter runs next and multiplies the entire signed reward.
+            results.size_reward_details = details
+        return results
 
     def _update_common(self, results, orig_smilies):
         agent_nlls = self._state.agent.likelihood_smiles(self.sampled).likelihood
@@ -87,6 +118,15 @@ class LinkinventRepeatLearning(RepeatRewards, LinkinventLearning):
 
 
 def main():
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument("--reward-config")
+    args, remaining = parser.parse_known_args()
+    sys.argv = [sys.argv[0], *remaining]
+    if args.reward_config:
+        from prepare_manual_planet_rl import read_experiment
+        RepeatRewards.reward_experiment = read_experiment(args.reward_config)
+        if "reward_adjustment" not in RepeatRewards.reward_experiment:
+            raise ValueError("--reward-config requires reward_adjustment")
     RL.LibinventTransformerLearning = LibinventRepeatLearning
     RL.LinkinventTransformerLearning = LinkinventRepeatLearning
     from reinvent.Reinvent import main_script

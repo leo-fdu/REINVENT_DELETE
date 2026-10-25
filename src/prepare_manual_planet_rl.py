@@ -34,7 +34,7 @@ def read_experiment(path):
     keys = {"schema_version", "seed", "batch_size", "steps", "sample_strategy",
             "temperature", "learning_strategy", "sigmoid", "penalty_multiplier",
             "planet_batch_size", "request_timeout", "startup_timeout"}
-    if set(cfg) != keys or cfg["schema_version"] != 1:
+    if set(cfg) - {"reward_adjustment"} != keys or cfg["schema_version"] != 1:
         raise ValueError("Unexpected experiment configuration fields or schema")
     for key in ("seed", "batch_size", "steps", "planet_batch_size"):
         low = 0 if key == "seed" else 1
@@ -60,6 +60,16 @@ def read_experiment(path):
         raise ValueError("Invalid increasing sigmoid")
     if cfg["sample_strategy"] != "multinomial":
         raise ValueError("Fixed attempt budgets require multinomial sampling")
+    if "reward_adjustment" in cfg:
+        adjustment = cfg["reward_adjustment"]
+        if not isinstance(adjustment, dict) or set(adjustment) != {
+                "affinity_cap", "generated_heavy_atom_penalty"}:
+            raise ValueError("Invalid reward_adjustment fields")
+        if any(type(v) not in (int, float) or not math.isfinite(v)
+               for v in adjustment.values()):
+            raise ValueError("Reward adjustment values must be finite numbers")
+        if adjustment["generated_heavy_atom_penalty"] < 0:
+            raise ValueError("Size penalty must be nonnegative")
     return cfg
 
 

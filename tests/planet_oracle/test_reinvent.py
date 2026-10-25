@@ -25,6 +25,43 @@ PROJECT = Path(__file__).resolve().parents[2]
 CONFIGS = PROJECT / "configs/planet_oracle"
 
 
+@pytest.mark.parametrize("mode", ["libinvent", "linkinvent"])
+def test_capped_size_reward_real_scoring_and_fragment_assembly(mode, running_oracle, tmp_path):
+    from manual_planet_rl import LibinventRepeatLearning, LinkinventRepeatLearning
+    from prepare_manual_planet_rl import read_experiment
+    from reinvent.runmodes.samplers.libinvent import LibinventSampler
+    from reinvent.runmodes.samplers.linkinvent import LinkinventSampler
+
+    _, client = running_oracle
+    scoring, _ = scoring_config(mode, tmp_path, client)
+    cfg = read_experiment(PROJECT / "configs/manual_planet_rl/experiment_high9_cap9_size001_1000.json")
+    scoring["component"][0]["ExternalProcess"]["endpoint"][0]["transform"] = {
+        "type": "sigmoid", **cfg["sigmoid"]}
+    inputs = (CONFIGS / f"{mode}.smi").read_text().splitlines()
+    generated = ["*C", "*CC", "*C"] if mode == "libinvent" else ["*C*", "*CC*", "*C*"]
+    batch = SampleBatch(inputs * 3, generated, torch.zeros(3))
+    sampler_cls = LibinventSampler if mode == "libinvent" else LinkinventSampler
+    sampler = object.__new__(sampler_cls)
+    molecules = sampler._join_fragments(batch)
+    batch.smilies = [Chem.MolToSmiles(m) for m in molecules]
+    batch.states = np.array([SmilesState.VALID, SmilesState.VALID, SmilesState.DUPLICATE])
+    cls = LibinventRepeatLearning if mode == "libinvent" else LinkinventRepeatLearning
+    learning = object.__new__(cls)
+    learning.reward_experiment = cfg
+    learning.sampled = batch
+    learning.invalid_mask = np.ones(3, dtype=bool)
+    learning.duplicate_mask = np.array([True, True, False])
+    learning.scoring_function = Scorer(scoring)
+    for _ in range(2):  # Cached re-scoring must not accumulate size penalties.
+        result = learning.score()
+        assert [r["generated_heavy_atoms"] for r in result.size_reward_details] == [1, 2, 1]
+        raw = result.completed_components[0].component_result.fetch_metadata(result.smilies)["planet_affinity"]
+        assert all(float(value) > 9 for value in raw)
+        sigmoid9 = 1 / (1 + 10 ** -1.25)
+        np.testing.assert_allclose(result.total_scores, sigmoid9 - np.array([.01, .02, .01]), atol=1e-6)
+        assert all(r["capped_planet_affinity"] == 9 for r in result.size_reward_details)
+
+
 def scoring_config(mode, tmp_path, cfg):
     config = config_parse.read_config(CONFIGS / f"{mode}_rl.toml", "toml")
     ReinventConfig(**config)

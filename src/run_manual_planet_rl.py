@@ -21,6 +21,8 @@ FIELDS = ["target", "mode", "seed", "step", "sample_index", "input_smiles",
           "generated_smiles", "smiles", "smiles_state", "is_repeat",
           "planet_affinity", "planet_status", "planet_error", "sigmoid_reward",
           "training_reward", "planet_target_id", "oracle_id"]
+SIZE_FIELDS = ["capped_planet_affinity", "generated_heavy_atoms", "size_penalty", "base_reward"]
+FIELDS += SIZE_FIELDS
 
 
 def local_path(root, relative):
@@ -107,6 +109,8 @@ def collect_task(root, manifest, entry, task):
                     "PLANET reward", "planet_affinity (PLANET reward)",
                     "planet_status (PLANET reward)", "planet_error (PLANET reward)",
                     "planet_target_id (PLANET reward)", "planet_oracle_id (PLANET reward)"}
+        if "reward_adjustment" in cfg:
+            required.update(SIZE_FIELDS)
         if not required.issubset(reader.fieldnames or []):
             raise ValueError("Expected CSV produced by the manual_planet_rl entry point")
         for row in reader:
@@ -139,9 +143,11 @@ def collect_task(root, manifest, entry, task):
                 raise ValueError(f"Unknown PLANET status: {status}")
             reward = numeric(row["PLANET reward"], "sigmoid reward")
             final_reward = numeric(row["Score"], "training reward")
-            if not 0 <= reward <= 1 or not 0 <= final_reward <= 1:
+            adjusted = "reward_adjustment" in cfg
+            if not 0 <= reward <= 1 or (not adjusted and not 0 <= final_reward <= 1):
                 raise ValueError("Reward outside [0, 1]")
-            expected_reward = reward * (cfg["penalty_multiplier"] if repeat else 1)
+            base_reward = numeric(row["base_reward"], "base reward") if adjusted else reward
+            expected_reward = base_reward * (cfg["penalty_multiplier"] if repeat else 1)
             if not math.isclose(final_reward, expected_reward, rel_tol=1e-5, abs_tol=1e-7):
                 raise ValueError("Repeat reward does not match the configured multiplier")
             if state == 0 and (status == "ok" or final_reward != 0):
@@ -150,6 +156,7 @@ def collect_task(root, manifest, entry, task):
                 entry["target"], task["mode"], cfg["seed"], step, counts[step],
                 row["Input_SMILES"], row["Generated_SMILES"], smiles, state, int(repeat),
                 affinity, status, error, reward, final_reward, target_id, oracle_id,
+                *[row[key] if adjusted else "" for key in SIZE_FIELDS],
             ])))
     expected_counts = Counter({step: cfg["batch_size"] for step in range(1, cfg["steps"] + 1)})
     if counts != expected_counts:
@@ -232,6 +239,8 @@ def run(root, targets=None):
                         print(f"Starting {name}: {manifest['attempts_per_task']} attempts", flush=True)
                         command = [manifest["reinvent_python"], "-m", "manual_planet_rl",
                                    "-l", str(task_dir / "run.log"), str(task_dir / "rl.toml")]
+                        if "reward_adjustment" in cfg:
+                            command[3:3] = ["--reward-config", str(root / "experiment.json")]
                         with (task_dir / "process.log").open("x") as process_log:
                             rl_process = subprocess.Popen(
                                 command, cwd=project, env=env, stdout=process_log,

@@ -42,6 +42,7 @@ def validate(root, experiment_path, report_path):
         raise ValueError("Missing task outputs")
     results = {}
     low, high, k = (cfg["sigmoid"][name] for name in ("low", "high", "k"))
+    adjustment = cfg.get("reward_adjustment")
     for key, (entry, task) in expected.items():
         rows = records[key]
         folder = root / task["directory"]
@@ -72,9 +73,13 @@ def validate(root, experiment_path, report_path):
                 seen.add(row["smiles"])
             reward = float(row["sigmoid_reward"])
             training = float(row["training_reward"])
-            if not (math.isfinite(reward) and math.isfinite(training) and 0 <= reward <= 1 and 0 <= training <= 1):
+            if not (math.isfinite(reward) and math.isfinite(training) and 0 <= reward <= 1
+                    and (adjustment is not None or 0 <= training <= 1)):
                 raise ValueError(f"Non-finite/out-of-range reward: {key}")
-            if not math.isclose(training, reward * (cfg["penalty_multiplier"] if duplicate else 1), abs_tol=1e-6):
+            base_reward = float(row["base_reward"]) if adjustment is not None else reward
+            if not math.isfinite(base_reward):
+                raise ValueError(f"Non-finite base reward: {key}")
+            if not math.isclose(training, base_reward * (cfg["penalty_multiplier"] if duplicate else 1), abs_tol=1e-6):
                 raise ValueError(f"Incorrect training reward: {key}")
             if row["planet_status"] == "ok":
                 score = float(row["planet_affinity"])
@@ -82,15 +87,36 @@ def validate(root, experiment_path, report_path):
                     raise ValueError(f"Invalid successful oracle score: {key}")
                 if row["oracle_id"] != oracle["oracle_id"] or row["planet_target_id"] != key[0]:
                     raise ValueError(f"Oracle identity mismatch: {key}")
-                z = math.log(10) * 10 * k / (high - low) * (score - (high + low) / 2)
+                scoring_value = min(score, adjustment["affinity_cap"]) if adjustment else score
+                z = math.log(10) * 10 * k / (high - low) * (scoring_value - (high + low) / 2)
                 sigmoid = 1 / (1 + math.exp(-z)) if z >= 0 else math.exp(z) / (1 + math.exp(z))
                 if not math.isclose(reward, sigmoid, abs_tol=2e-6):
                     raise ValueError(f"Sigmoid disagrees with requested parameters: {key}")
+                if adjustment:
+                    # Recompute from the two molecular graphs, not from reported counts.
+                    from rdkit import Chem
+                    product = Chem.MolFromSmiles(row["smiles"])
+                    fixed = Chem.MolFromSmiles(task["input_smiles"].replace("|", "."))
+                    if product is None or fixed is None:
+                        raise ValueError(f"Cannot audit generated atoms: {key}")
+                    added = (sum(a.GetAtomicNum() > 1 for a in product.GetAtoms())
+                             - sum(a.GetAtomicNum() > 1 for a in fixed.GetAtoms()))
+                    penalty = added * adjustment["generated_heavy_atom_penalty"]
+                    if (added < 0 or int(row["generated_heavy_atoms"]) != added
+                            or not math.isclose(float(row["capped_planet_affinity"]), scoring_value, abs_tol=1e-6)
+                            or not math.isclose(float(row["size_penalty"]), penalty, abs_tol=1e-6)
+                            or not math.isclose(base_reward, sigmoid - penalty, abs_tol=2e-6)):
+                        raise ValueError(f"Size-adjusted reward disagrees with formula: {key}")
                 affinities.append(score)
             elif row["planet_status"] not in ("not_scored", "invalid_input") or row["planet_affinity"]:
                 raise ValueError(f"Unexpected failed scoring record: {key}")
             if state == 0 and training != 0:
                 raise ValueError(f"Invalid molecule has nonzero reward: {key}")
+            if adjustment and row["planet_status"] != "ok":
+                if (reward != 0 or base_reward != 0 or training != 0
+                        or row["generated_heavy_atoms"] != "" or row["capped_planet_affinity"] != ""
+                        or float(row["size_penalty"]) != 0):
+                    raise ValueError(f"Unscored molecule has fabricated reward terms: {key}")
         checkpoint = folder / "agent.chkpt"
         if not checkpoint.is_file() or checkpoint.stat().st_size == 0:
             raise ValueError(f"Missing final checkpoint: {key}")
