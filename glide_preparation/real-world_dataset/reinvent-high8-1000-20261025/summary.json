@@ -1,0 +1,353 @@
+{
+  "source_file": "results/reinvent-high8-1000-20261025/all_generated.csv.gz",
+  "source_sha256": "3ec5e617fa0d69231049e71ad66c35e6f94df1f017d91f559be5f26336cd85d8",
+  "rdkit_version": "2026.03.5",
+  "tasks": [
+    {
+      "target": "aa2ar",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 999,
+      "rejected": 1,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 1
+      }
+    },
+    {
+      "target": "aa2ar",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 994,
+      "rejected": 6,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 6
+      }
+    },
+    {
+      "target": "abl1",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 995,
+      "rejected": 5,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 5
+      }
+    },
+    {
+      "target": "abl1",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 990,
+      "rejected": 10,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 10
+      }
+    },
+    {
+      "target": "adrb1",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 992,
+      "rejected": 8,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 8
+      }
+    },
+    {
+      "target": "adrb1",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 985,
+      "rejected": 15,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 10,
+        "source_invalid;dummy_atom": 5
+      }
+    },
+    {
+      "target": "akt1",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 982,
+      "rejected": 18,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 18
+      }
+    },
+    {
+      "target": "akt1",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 998,
+      "rejected": 2,
+      "rejection_reasons": {
+        "source_invalid;dummy_atom": 1,
+        "source_invalid;rdkit_parse_failed": 1
+      }
+    },
+    {
+      "target": "cdk2",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 986,
+      "rejected": 14,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 13,
+        "source_invalid;dummy_atom": 1
+      }
+    },
+    {
+      "target": "cdk2",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 937,
+      "rejected": 63,
+      "rejection_reasons": {
+        "source_invalid;dummy_atom": 18,
+        "source_invalid;rdkit_parse_failed": 45
+      }
+    },
+    {
+      "target": "cp3a4",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 988,
+      "rejected": 12,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 12
+      }
+    },
+    {
+      "target": "cp3a4",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 996,
+      "rejected": 4,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 4
+      }
+    },
+    {
+      "target": "dpp4",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 989,
+      "rejected": 11,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 11
+      }
+    },
+    {
+      "target": "dpp4",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 975,
+      "rejected": 25,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 20,
+        "source_invalid;dummy_atom": 5
+      }
+    },
+    {
+      "target": "drd3",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 995,
+      "rejected": 5,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 5
+      }
+    },
+    {
+      "target": "drd3",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 991,
+      "rejected": 9,
+      "rejection_reasons": {
+        "source_invalid;dummy_atom": 2,
+        "source_invalid;rdkit_parse_failed": 7
+      }
+    },
+    {
+      "target": "dyr",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 952,
+      "rejected": 48,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 48
+      }
+    },
+    {
+      "target": "dyr",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 995,
+      "rejected": 5,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 4,
+        "source_invalid;dummy_atom": 1
+      }
+    },
+    {
+      "target": "egfr",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 993,
+      "rejected": 7,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 7
+      }
+    },
+    {
+      "target": "egfr",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 998,
+      "rejected": 2,
+      "rejection_reasons": {
+        "source_invalid;dummy_atom": 1,
+        "source_invalid;rdkit_parse_failed": 1
+      }
+    },
+    {
+      "target": "gria2",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 984,
+      "rejected": 16,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 16
+      }
+    },
+    {
+      "target": "gria2",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 982,
+      "rejected": 18,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 14,
+        "source_invalid;dummy_atom": 4
+      }
+    },
+    {
+      "target": "jak2",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 996,
+      "rejected": 4,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 4
+      }
+    },
+    {
+      "target": "jak2",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 990,
+      "rejected": 10,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 8,
+        "source_invalid;dummy_atom": 2
+      }
+    },
+    {
+      "target": "kif11",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 997,
+      "rejected": 3,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 3
+      }
+    },
+    {
+      "target": "kif11",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 981,
+      "rejected": 19,
+      "rejection_reasons": {
+        "source_invalid;dummy_atom": 4,
+        "source_invalid;rdkit_parse_failed": 15
+      }
+    },
+    {
+      "target": "parp1",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 993,
+      "rejected": 7,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 7
+      }
+    },
+    {
+      "target": "parp1",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 992,
+      "rejected": 8,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 7,
+        "source_invalid;dummy_atom": 1
+      }
+    },
+    {
+      "target": "ppara",
+      "mode": "libinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 996,
+      "rejected": 4,
+      "rejection_reasons": {
+        "source_invalid;rdkit_parse_failed": 4
+      }
+    },
+    {
+      "target": "ppara",
+      "mode": "linkinvent",
+      "source_records": 1000,
+      "selected": 1000,
+      "exported": 996,
+      "rejected": 4,
+      "rejection_reasons": {
+        "source_invalid;dummy_atom": 1,
+        "source_invalid;rdkit_parse_failed": 3
+      }
+    }
+  ],
+  "selected": 30000,
+  "exported": 29637,
+  "rejected": 363
+}
