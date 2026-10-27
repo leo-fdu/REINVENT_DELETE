@@ -1,0 +1,1479 @@
+{
+  "schema_version": 1,
+  "description": "Unmodified RCSB PDB entry files (deposited crystallographic coordinates, not prepared Glide receptors or generated biological assemblies). Counts are PDB record inventories, not chemical validation.",
+  "structures": [
+    {
+      "target": "aa2ar",
+      "pdb_id": "3EML",
+      "file": "aa2ar_3EML.pdb",
+      "url": "https://files.rcsb.org/download/3EML.pdb",
+      "downloaded_utc": "2026-10-27T02:28:32.953255+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:16:01 GMT",
+      "bytes": 358344,
+      "sha256": "1afb276c403b3e9290dacad581c85df826a13ccd0658afde729d747abad58a32",
+      "atom_records_by_chain": {
+        "A": 3521
+      },
+      "hetatm_records": 236,
+      "nonwater_het_residues": [
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "407",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "408",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "409",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "410",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "411",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "412",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "413",
+          "insertion_code": ""
+        },
+        {
+          "resname": "STE",
+          "author_chain": "A",
+          "author_residue_number": "402",
+          "insertion_code": ""
+        },
+        {
+          "resname": "STE",
+          "author_chain": "A",
+          "author_residue_number": "403",
+          "insertion_code": ""
+        },
+        {
+          "resname": "STE",
+          "author_chain": "A",
+          "author_residue_number": "404",
+          "insertion_code": ""
+        },
+        {
+          "resname": "STE",
+          "author_chain": "A",
+          "author_residue_number": "405",
+          "insertion_code": ""
+        },
+        {
+          "resname": "STE",
+          "author_chain": "A",
+          "author_residue_number": "406",
+          "insertion_code": ""
+        },
+        {
+          "resname": "ZMA",
+          "author_chain": "A",
+          "author_residue_number": "401",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 76,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": [
+        "REMARK 465     ASP A   -14                                                      ",
+        "REMARK 465     TYR A   -13                                                      ",
+        "REMARK 465     LYS A   -12                                                      ",
+        "REMARK 465     ASP A   -11                                                      ",
+        "REMARK 465     ASP A   -10                                                      ",
+        "REMARK 465     ASP A    -9                                                      ",
+        "REMARK 465     ASP A    -8                                                      ",
+        "REMARK 465     ALA A    -7                                                      ",
+        "REMARK 465     MET A    -6                                                      ",
+        "REMARK 465     GLY A    -5                                                      ",
+        "REMARK 465     GLN A    -4                                                      ",
+        "REMARK 465     PRO A    -3                                                      ",
+        "REMARK 465     VAL A    -2                                                      ",
+        "REMARK 465     GLY A    -1                                                      ",
+        "REMARK 465     ALA A     0                                                      ",
+        "REMARK 465     PRO A     1                                                      ",
+        "REMARK 465     PRO A     2                                                      ",
+        "REMARK 465     PRO A   149                                                      ",
+        "REMARK 465     LYS A   150                                                      ",
+        "REMARK 465     GLU A   151                                                      ",
+        "REMARK 465     GLY A   152                                                      ",
+        "REMARK 465     LYS A   153                                                      ",
+        "REMARK 465     ASN A   154                                                      ",
+        "REMARK 465     HIS A   155                                                      ",
+        "REMARK 465     GLN A   311                                                      ",
+        "REMARK 465     GLU A   312                                                      ",
+        "REMARK 465     PRO A   313                                                      ",
+        "REMARK 465     PHE A   314                                                      ",
+        "REMARK 465     LYS A   315                                                      ",
+        "REMARK 465     ALA A   316                                                      ",
+        "REMARK 465     HIS A   317                                                      ",
+        "REMARK 465     HIS A   318                                                      ",
+        "REMARK 465     HIS A   319                                                      ",
+        "REMARK 465     HIS A   320                                                      ",
+        "REMARK 465     HIS A   321                                                      ",
+        "REMARK 465     HIS A   322                                                      ",
+        "REMARK 465     HIS A   323                                                      ",
+        "REMARK 465     HIS A   324                                                      ",
+        "REMARK 465     HIS A   325                                                      ",
+        "REMARK 465     HIS A   326                                                      "
+      ]
+    },
+    {
+      "target": "abl1",
+      "pdb_id": "2HZI",
+      "file": "abl1_2HZI.pdb",
+      "url": "https://files.rcsb.org/download/2HZI.pdb",
+      "downloaded_utc": "2026-10-27T02:28:42.797279+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:24:28 GMT",
+      "bytes": 447606,
+      "sha256": "cbbb59ef5cf77787de94950260b2ee6fd007347981af4d4ddd50e0d671c85da7",
+      "atom_records_by_chain": {
+        "A": 2210,
+        "B": 2117
+      },
+      "hetatm_records": 598,
+      "nonwater_het_residues": [
+        {
+          "resname": "JIN",
+          "author_chain": "A",
+          "author_residue_number": "600",
+          "insertion_code": ""
+        },
+        {
+          "resname": "JIN",
+          "author_chain": "B",
+          "author_residue_number": "600",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 540,
+      "altloc_atom_records": 108,
+      "unresolved_residue_records": [
+        "REMARK 465     GLY A   224                                                      ",
+        "REMARK 465     ALA A   225                                                      ",
+        "REMARK 465     MET A   226                                                      ",
+        "REMARK 465     ASP A   227                                                      ",
+        "REMARK 465     PRO A   228                                                      ",
+        "REMARK 465     SER A   229                                                      ",
+        "REMARK 465     PRO A   230                                                      ",
+        "REMARK 465     ASN A   231                                                      ",
+        "REMARK 465     TYR A   232                                                      ",
+        "REMARK 465     GLY B   224                                                      ",
+        "REMARK 465     ALA B   225                                                      ",
+        "REMARK 465     MET B   226                                                      ",
+        "REMARK 465     ASP B   227                                                      ",
+        "REMARK 465     PRO B   228                                                      ",
+        "REMARK 465     SER B   229                                                      ",
+        "REMARK 465     PRO B   230                                                      ",
+        "REMARK 465     ASN B   231                                                      ",
+        "REMARK 465     TYR B   232                                                      ",
+        "REMARK 465     LYS B   274                                                      ",
+        "REMARK 465     GLU B   275                                                      ",
+        "REMARK 465     ASP B   276                                                      ",
+        "REMARK 465     THR B   277                                                      "
+      ]
+    },
+    {
+      "target": "aces",
+      "pdb_id": "1E66",
+      "file": "aces_1E66.pdb",
+      "url": "https://files.rcsb.org/download/1E66.pdb",
+      "downloaded_utc": "2026-10-27T02:28:42.301739+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:14:49 GMT",
+      "bytes": 452223,
+      "sha256": "591ee697172bddc96d9a3f979dc620ecf2a3e962e38b65eb08b53f48c2d210f7",
+      "atom_records_by_chain": {
+        "A": 4272
+      },
+      "hetatm_records": 546,
+      "nonwater_het_residues": [
+        {
+          "resname": "HUX",
+          "author_chain": "A",
+          "author_residue_number": "803",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NAG",
+          "author_chain": "A",
+          "author_residue_number": "801",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NAG",
+          "author_chain": "A",
+          "author_residue_number": "802",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 497,
+      "altloc_atom_records": 230,
+      "unresolved_residue_records": [
+        "REMARK 465     ASP A     1                                                      ",
+        "REMARK 465     ASP A     2                                                      ",
+        "REMARK 465     HIS A     3                                                      ",
+        "REMARK 465     CYS A   537                                                      ",
+        "REMARK 465     ASP A   538                                                      ",
+        "REMARK 465     GLY A   539                                                      ",
+        "REMARK 465     GLU A   540                                                      ",
+        "REMARK 465     LEU A   541                                                      ",
+        "REMARK 465     SER A   542                                                      ",
+        "REMARK 465     SER A   543                                                      "
+      ]
+    },
+    {
+      "target": "adrb1",
+      "pdb_id": "2VT4",
+      "file": "adrb1_2VT4.pdb",
+      "url": "https://files.rcsb.org/download/2VT4.pdb",
+      "downloaded_utc": "2026-10-27T02:28:44.672656+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:54:16 GMT",
+      "bytes": 828954,
+      "sha256": "fbb3bf1f65d72ea52999c9cb4f7c4c24c05940e214831126d32e046b2d341ff7",
+      "atom_records_by_chain": {
+        "A": 2175,
+        "B": 2195,
+        "C": 2081,
+        "D": 2156
+      },
+      "hetatm_records": 369,
+      "nonwater_het_residues": [
+        {
+          "resname": "D10",
+          "author_chain": "A",
+          "author_residue_number": "406",
+          "insertion_code": ""
+        },
+        {
+          "resname": "D10",
+          "author_chain": "C",
+          "author_residue_number": "406",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NA",
+          "author_chain": "A",
+          "author_residue_number": "401",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NA",
+          "author_chain": "B",
+          "author_residue_number": "401",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NA",
+          "author_chain": "C",
+          "author_residue_number": "401",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NA",
+          "author_chain": "D",
+          "author_residue_number": "401",
+          "insertion_code": ""
+        },
+        {
+          "resname": "P32",
+          "author_chain": "A",
+          "author_residue_number": "400",
+          "insertion_code": ""
+        },
+        {
+          "resname": "P32",
+          "author_chain": "B",
+          "author_residue_number": "400",
+          "insertion_code": ""
+        },
+        {
+          "resname": "P32",
+          "author_chain": "C",
+          "author_residue_number": "400",
+          "insertion_code": ""
+        },
+        {
+          "resname": "P32",
+          "author_chain": "D",
+          "author_residue_number": "400",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "A",
+          "author_residue_number": "402",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "A",
+          "author_residue_number": "403",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "A",
+          "author_residue_number": "405",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "B",
+          "author_residue_number": "402",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "B",
+          "author_residue_number": "404",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "B",
+          "author_residue_number": "405",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "C",
+          "author_residue_number": "402",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "C",
+          "author_residue_number": "404",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "C",
+          "author_residue_number": "405",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "D",
+          "author_residue_number": "402",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "D",
+          "author_residue_number": "403",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SOG",
+          "author_chain": "D",
+          "author_residue_number": "405",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 31,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": [
+        "REMARK 465     MET A    31                                                      ",
+        "REMARK 465     GLY A    32                                                      ",
+        "REMARK 465     ALA A    33                                                      ",
+        "REMARK 465     GLU A    34                                                      ",
+        "REMARK 465     LEU A    35                                                      ",
+        "REMARK 465     LEU A    36                                                      ",
+        "REMARK 465     SER A    37                                                      ",
+        "REMARK 465     GLN A    38                                                      ",
+        "REMARK 465     GLN A    39                                                      ",
+        "REMARK 465     ARG A   239                                                      ",
+        "REMARK 465     LYS A   240                                                      ",
+        "REMARK 465     ILE A   241                                                      ",
+        "REMARK 465     ASP A   242                                                      ",
+        "REMARK 465     ARG A   243                                                      ",
+        "REMARK 465     ALA A   272                                                      ",
+        "REMARK 465     SER A   273                                                      ",
+        "REMARK 465     LYS A   274                                                      ",
+        "REMARK 465     ARG A   275                                                      ",
+        "REMARK 465     LYS A   276                                                      ",
+        "REMARK 465     ARG A   279                                                      ",
+        "REMARK 465     VAL A   280                                                      ",
+        "REMARK 465     MET A   281                                                      ",
+        "REMARK 465     LEU A   282                                                      ",
+        "REMARK 465     MET A   283                                                      ",
+        "REMARK 465     PHE A   359                                                      ",
+        "REMARK 465     PRO A   360                                                      ",
+        "REMARK 465     ARG A   361                                                      ",
+        "REMARK 465     LYS A   362                                                      ",
+        "REMARK 465     ALA A   363                                                      ",
+        "REMARK 465     ASP A   364                                                      ",
+        "REMARK 465     ARG A   365                                                      ",
+        "REMARK 465     ARG A   366                                                      ",
+        "REMARK 465     LEU A   367                                                      ",
+        "REMARK 465     HIS A   368                                                      ",
+        "REMARK 465     HIS A   369                                                      ",
+        "REMARK 465     HIS A   370                                                      ",
+        "REMARK 465     HIS A   371                                                      ",
+        "REMARK 465     HIS A   372                                                      ",
+        "REMARK 465     HIS A   373                                                      ",
+        "REMARK 465     MET B    31                                                      ",
+        "REMARK 465     GLY B    32                                                      ",
+        "REMARK 465     ALA B    33                                                      ",
+        "REMARK 465     GLU B    34                                                      ",
+        "REMARK 465     LEU B    35                                                      ",
+        "REMARK 465     LEU B    36                                                      ",
+        "REMARK 465     SER B    37                                                      ",
+        "REMARK 465     GLN B    38                                                      ",
+        "REMARK 465     ARG B   239                                                      ",
+        "REMARK 465     LYS B   240                                                      ",
+        "REMARK 465     ILE B   241                                                      ",
+        "REMARK 465     ASP B   242                                                      ",
+        "REMARK 465     ARG B   243                                                      ",
+        "REMARK 465     ALA B   272                                                      ",
+        "REMARK 465     SER B   273                                                      ",
+        "REMARK 465     LYS B   274                                                      ",
+        "REMARK 465     ARG B   275                                                      ",
+        "REMARK 465     LYS B   276                                                      ",
+        "REMARK 465     ARG B   279                                                      ",
+        "REMARK 465     VAL B   280                                                      ",
+        "REMARK 465     MET B   281                                                      ",
+        "REMARK 465     LEU B   282                                                      ",
+        "REMARK 465     MET B   283                                                      ",
+        "REMARK 465     PRO B   360                                                      ",
+        "REMARK 465     ARG B   361                                                      ",
+        "REMARK 465     LYS B   362                                                      ",
+        "REMARK 465     ALA B   363                                                      ",
+        "REMARK 465     ASP B   364                                                      ",
+        "REMARK 465     ARG B   365                                                      ",
+        "REMARK 465     ARG B   366                                                      ",
+        "REMARK 465     LEU B   367                                                      ",
+        "REMARK 465     HIS B   368                                                      ",
+        "REMARK 465     HIS B   369                                                      ",
+        "REMARK 465     HIS B   370                                                      ",
+        "REMARK 465     HIS B   371                                                      ",
+        "REMARK 465     HIS B   372                                                      ",
+        "REMARK 465     HIS B   373                                                      ",
+        "REMARK 465     MET C    31                                                      ",
+        "REMARK 465     GLY C    32                                                      ",
+        "REMARK 465     ALA C    33                                                      ",
+        "REMARK 465     GLU C    34                                                      ",
+        "REMARK 465     LEU C    35                                                      ",
+        "REMARK 465     LEU C    36                                                      ",
+        "REMARK 465     SER C    37                                                      ",
+        "REMARK 465     GLN C    38                                                      ",
+        "REMARK 465     ARG C   239                                                      ",
+        "REMARK 465     LYS C   240                                                      ",
+        "REMARK 465     ILE C   241                                                      ",
+        "REMARK 465     ASP C   242                                                      ",
+        "REMARK 465     ARG C   243                                                      ",
+        "REMARK 465     ALA C   272                                                      ",
+        "REMARK 465     SER C   273                                                      ",
+        "REMARK 465     LYS C   274                                                      ",
+        "REMARK 465     ARG C   275                                                      ",
+        "REMARK 465     LYS C   276                                                      ",
+        "REMARK 465     ARG C   279                                                      ",
+        "REMARK 465     VAL C   280                                                      ",
+        "REMARK 465     MET C   281                                                      ",
+        "REMARK 465     LEU C   282                                                      ",
+        "REMARK 465     MET C   283                                                      ",
+        "REMARK 465     PRO C   347                                                      ",
+        "REMARK 465     ASP C   348                                                      ",
+        "REMARK 465     PHE C   349                                                      ",
+        "REMARK 465     ARG C   350                                                      ",
+        "REMARK 465     LYS C   351                                                      ",
+        "REMARK 465     ALA C   352                                                      ",
+        "REMARK 465     PHE C   353                                                      ",
+        "REMARK 465     LYS C   354                                                      ",
+        "REMARK 465     ARG C   355                                                      ",
+        "REMARK 465     LEU C   356                                                      ",
+        "REMARK 465     LEU C   357                                                      ",
+        "REMARK 465     ALA C   358                                                      ",
+        "REMARK 465     PHE C   359                                                      ",
+        "REMARK 465     PRO C   360                                                      ",
+        "REMARK 465     ARG C   361                                                      ",
+        "REMARK 465     LYS C   362                                                      ",
+        "REMARK 465     ALA C   363                                                      ",
+        "REMARK 465     ASP C   364                                                      ",
+        "REMARK 465     ARG C   365                                                      ",
+        "REMARK 465     ARG C   366                                                      ",
+        "REMARK 465     LEU C   367                                                      ",
+        "REMARK 465     HIS C   368                                                      ",
+        "REMARK 465     HIS C   369                                                      ",
+        "REMARK 465     HIS C   370                                                      ",
+        "REMARK 465     HIS C   371                                                      ",
+        "REMARK 465     HIS C   372                                                      ",
+        "REMARK 465     HIS C   373                                                      ",
+        "REMARK 465     MET D    31                                                      ",
+        "REMARK 465     GLY D    32                                                      ",
+        "REMARK 465     ALA D    33                                                      ",
+        "REMARK 465     GLU D    34                                                      ",
+        "REMARK 465     LEU D    35                                                      ",
+        "REMARK 465     LEU D    36                                                      ",
+        "REMARK 465     SER D    37                                                      ",
+        "REMARK 465     GLN D    38                                                      ",
+        "REMARK 465     GLN D    39                                                      ",
+        "REMARK 465     TRP D    40                                                      ",
+        "REMARK 465     ARG D   239                                                      ",
+        "REMARK 465     LYS D   240                                                      ",
+        "REMARK 465     ILE D   241                                                      ",
+        "REMARK 465     ASP D   242                                                      ",
+        "REMARK 465     ARG D   243                                                      ",
+        "REMARK 465     ALA D   272                                                      ",
+        "REMARK 465     SER D   273                                                      ",
+        "REMARK 465     LYS D   274                                                      ",
+        "REMARK 465     ARG D   275                                                      ",
+        "REMARK 465     LYS D   276                                                      ",
+        "REMARK 465     ARG D   279                                                      ",
+        "REMARK 465     VAL D   280                                                      ",
+        "REMARK 465     MET D   281                                                      ",
+        "REMARK 465     LEU D   282                                                      ",
+        "REMARK 465     MET D   283                                                      ",
+        "REMARK 465     ALA D   358                                                      ",
+        "REMARK 465     PHE D   359                                                      ",
+        "REMARK 465     PRO D   360                                                      ",
+        "REMARK 465     ARG D   361                                                      ",
+        "REMARK 465     LYS D   362                                                      ",
+        "REMARK 465     ALA D   363                                                      ",
+        "REMARK 465     ASP D   364                                                      ",
+        "REMARK 465     ARG D   365                                                      ",
+        "REMARK 465     ARG D   366                                                      ",
+        "REMARK 465     LEU D   367                                                      ",
+        "REMARK 465     HIS D   368                                                      ",
+        "REMARK 465     HIS D   369                                                      ",
+        "REMARK 465     HIS D   370                                                      ",
+        "REMARK 465     HIS D   371                                                      ",
+        "REMARK 465     HIS D   372                                                      ",
+        "REMARK 465     HIS D   373                                                      "
+      ]
+    },
+    {
+      "target": "akt1",
+      "pdb_id": "4GV1",
+      "file": "akt1_4GV1.pdb",
+      "url": "https://files.rcsb.org/download/4GV1.pdb",
+      "downloaded_utc": "2026-10-27T02:28:38.196731+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:21:57 GMT",
+      "bytes": 305532,
+      "sha256": "b610ee8cf5c11d5fc9e0b7044b3202259e2084bc1b0c9be9321eb0857c8494e1",
+      "atom_records_by_chain": {
+        "A": 2774
+      },
+      "hetatm_records": 458,
+      "nonwater_het_residues": [
+        {
+          "resname": "0XZ",
+          "author_chain": "A",
+          "author_residue_number": "501",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GOL",
+          "author_chain": "A",
+          "author_residue_number": "502",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GOL",
+          "author_chain": "A",
+          "author_residue_number": "503",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GOL",
+          "author_chain": "A",
+          "author_residue_number": "504",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GOL",
+          "author_chain": "A",
+          "author_residue_number": "505",
+          "insertion_code": ""
+        },
+        {
+          "resname": "TPO",
+          "author_chain": "A",
+          "author_residue_number": "308",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 393,
+      "altloc_atom_records": 178,
+      "unresolved_residue_records": [
+        "REMARK 465     LEU A   141                                                      ",
+        "REMARK 465     GLY A   142                                                      ",
+        "REMARK 465     PRO A   452                                                      ",
+        "REMARK 465     ASP A   453                                                      ",
+        "REMARK 465     GLN A   454                                                      ",
+        "REMARK 465     ASP A   455                                                      ",
+        "REMARK 465     ASP A   456                                                      ",
+        "REMARK 465     SER A   478                                                      ",
+        "REMARK 465     THR A   479                                                      ",
+        "REMARK 465     ALA A   480                                                      "
+      ]
+    },
+    {
+      "target": "cdk2",
+      "pdb_id": "1H00",
+      "file": "cdk2_1H00.pdb",
+      "url": "https://files.rcsb.org/download/1H00.pdb",
+      "downloaded_utc": "2026-10-27T02:28:44.285682+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:22:13 GMT",
+      "bytes": 251991,
+      "sha256": "4327a6eec4f43720d3167fde1087243540a7acb113f914b8028b76606e1184b7",
+      "atom_records_by_chain": {
+        "A": 2245
+      },
+      "hetatm_records": 272,
+      "nonwater_het_residues": [
+        {
+          "resname": "ACE",
+          "author_chain": "A",
+          "author_residue_number": "0",
+          "insertion_code": ""
+        },
+        {
+          "resname": "FAP",
+          "author_chain": "A",
+          "author_residue_number": "1300",
+          "insertion_code": ""
+        },
+        {
+          "resname": "FCP",
+          "author_chain": "A",
+          "author_residue_number": "1400",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 209,
+      "altloc_atom_records": 212,
+      "unresolved_residue_records": [
+        "REMARK 465     GLY A    13                                                      ",
+        "REMARK 465     THR A    14                                                      ",
+        "REMARK 465     ARG A    36                                                      ",
+        "REMARK 465     LEU A    37                                                      ",
+        "REMARK 465     ASP A    38                                                      ",
+        "REMARK 465     THR A    39                                                      ",
+        "REMARK 465     GLU A    40                                                      ",
+        "REMARK 465     THR A    41                                                      ",
+        "REMARK 465     GLU A    42                                                      ",
+        "REMARK 465     GLY A    43                                                      ",
+        "REMARK 465     PHE A   152                                                      ",
+        "REMARK 465     GLY A   153                                                      ",
+        "REMARK 465     VAL A   154                                                      ",
+        "REMARK 465     PRO A   155                                                      ",
+        "REMARK 465     VAL A   156                                                      ",
+        "REMARK 465     ARG A   157                                                      ",
+        "REMARK 465     THR A   158                                                      ",
+        "REMARK 465     TYR A   159                                                      ",
+        "REMARK 465     THR A   160                                                      ",
+        "REMARK 465     HIS A   161                                                      "
+      ]
+    },
+    {
+      "target": "cp3a4",
+      "pdb_id": "3NXU",
+      "file": "cp3a4_3NXU.pdb",
+      "url": "https://files.rcsb.org/download/3NXU.pdb",
+      "downloaded_utc": "2026-10-27T02:28:54.605972+00:00",
+      "http_last_modified": "Sun, 09 Aug 2026 00:48:12 GMT",
+      "bytes": 718065,
+      "sha256": "a111c10411e051e84f58024aa765bd2451cd1d154382d22a93957e40e4d5e143",
+      "atom_records_by_chain": {
+        "A": 3678,
+        "B": 3678
+      },
+      "hetatm_records": 599,
+      "nonwater_het_residues": [
+        {
+          "resname": "DMS",
+          "author_chain": "A",
+          "author_residue_number": "700",
+          "insertion_code": ""
+        },
+        {
+          "resname": "DMS",
+          "author_chain": "A",
+          "author_residue_number": "701",
+          "insertion_code": ""
+        },
+        {
+          "resname": "DMS",
+          "author_chain": "A",
+          "author_residue_number": "702",
+          "insertion_code": ""
+        },
+        {
+          "resname": "DMS",
+          "author_chain": "A",
+          "author_residue_number": "703",
+          "insertion_code": ""
+        },
+        {
+          "resname": "DMS",
+          "author_chain": "B",
+          "author_residue_number": "704",
+          "insertion_code": ""
+        },
+        {
+          "resname": "DMS",
+          "author_chain": "B",
+          "author_residue_number": "705",
+          "insertion_code": ""
+        },
+        {
+          "resname": "HEM",
+          "author_chain": "A",
+          "author_residue_number": "508",
+          "insertion_code": ""
+        },
+        {
+          "resname": "HEM",
+          "author_chain": "B",
+          "author_residue_number": "508",
+          "insertion_code": ""
+        },
+        {
+          "resname": "RIT",
+          "author_chain": "A",
+          "author_residue_number": "600",
+          "insertion_code": ""
+        },
+        {
+          "resname": "RIT",
+          "author_chain": "B",
+          "author_residue_number": "600",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 389,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": [
+        "REMARK 465     MET A    23                                                      ",
+        "REMARK 465     ALA A    24                                                      ",
+        "REMARK 465     TYR A    25                                                      ",
+        "REMARK 465     GLY A    26                                                      ",
+        "REMARK 465     THR A    27                                                      ",
+        "REMARK 465     HIS A    28                                                      ",
+        "REMARK 465     GLN A   265                                                      ",
+        "REMARK 465     LYS A   266                                                      ",
+        "REMARK 465     HIS A   267                                                      ",
+        "REMARK 465     SER A   281                                                      ",
+        "REMARK 465     LYS A   282                                                      ",
+        "REMARK 465     GLU A   283                                                      ",
+        "REMARK 465     THR A   284                                                      ",
+        "REMARK 465     GLU A   285                                                      ",
+        "REMARK 465     SER A   286                                                      ",
+        "REMARK 465     HIS A   287                                                      ",
+        "REMARK 465     LYS A   288                                                      ",
+        "REMARK 465     ASP A   497                                                      ",
+        "REMARK 465     GLY A   498                                                      ",
+        "REMARK 465     THR A   499                                                      ",
+        "REMARK 465     VAL A   500                                                      ",
+        "REMARK 465     SER A   501                                                      ",
+        "REMARK 465     GLY A   502                                                      ",
+        "REMARK 465     ALA A   503                                                      ",
+        "REMARK 465     HIS A   504                                                      ",
+        "REMARK 465     HIS A   505                                                      ",
+        "REMARK 465     HIS A   506                                                      ",
+        "REMARK 465     HIS A   507                                                      ",
+        "REMARK 465     MET B    23                                                      ",
+        "REMARK 465     ALA B    24                                                      ",
+        "REMARK 465     TYR B    25                                                      ",
+        "REMARK 465     GLY B    26                                                      ",
+        "REMARK 465     THR B    27                                                      ",
+        "REMARK 465     HIS B    28                                                      ",
+        "REMARK 465     GLN B   265                                                      ",
+        "REMARK 465     LYS B   266                                                      ",
+        "REMARK 465     HIS B   267                                                      ",
+        "REMARK 465     SER B   281                                                      ",
+        "REMARK 465     LYS B   282                                                      ",
+        "REMARK 465     GLU B   283                                                      ",
+        "REMARK 465     THR B   284                                                      ",
+        "REMARK 465     GLU B   285                                                      ",
+        "REMARK 465     SER B   286                                                      ",
+        "REMARK 465     HIS B   287                                                      ",
+        "REMARK 465     LYS B   288                                                      ",
+        "REMARK 465     ASP B   497                                                      ",
+        "REMARK 465     GLY B   498                                                      ",
+        "REMARK 465     THR B   499                                                      ",
+        "REMARK 465     VAL B   500                                                      ",
+        "REMARK 465     SER B   501                                                      ",
+        "REMARK 465     GLY B   502                                                      ",
+        "REMARK 465     ALA B   503                                                      ",
+        "REMARK 465     HIS B   504                                                      ",
+        "REMARK 465     HIS B   505                                                      ",
+        "REMARK 465     HIS B   506                                                      ",
+        "REMARK 465     HIS B   507                                                      "
+      ]
+    },
+    {
+      "target": "dpp4",
+      "pdb_id": "2I78",
+      "file": "dpp4_2I78.pdb",
+      "url": "https://files.rcsb.org/download/2I78.pdb",
+      "downloaded_utc": "2026-10-27T02:29:37.202729+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:24:56 GMT",
+      "bytes": 2063394,
+      "sha256": "606c21f4e1adc67ba1b8b5ed6319094f0dab1893d05fb255aed9a19ae9b89931",
+      "atom_records_by_chain": {
+        "A": 5949,
+        "B": 5949,
+        "C": 5949,
+        "D": 5949
+      },
+      "hetatm_records": 653,
+      "nonwater_het_residues": [
+        {
+          "resname": "KIQ",
+          "author_chain": "B",
+          "author_residue_number": "901",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 622,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": []
+    },
+    {
+      "target": "drd3",
+      "pdb_id": "3PBL",
+      "file": "drd3_3PBL.pdb",
+      "url": "https://files.rcsb.org/download/3PBL.pdb",
+      "downloaded_utc": "2026-10-27T02:29:26.054167+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:41:04 GMT",
+      "bytes": 1161297,
+      "sha256": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586",
+      "atom_records_by_chain": {
+        "A": 3389,
+        "B": 3306
+      },
+      "hetatm_records": 92,
+      "nonwater_het_residues": [
+        {
+          "resname": "ETQ",
+          "author_chain": "A",
+          "author_residue_number": "1200",
+          "insertion_code": ""
+        },
+        {
+          "resname": "ETQ",
+          "author_chain": "B",
+          "author_residue_number": "1200",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GLC",
+          "author_chain": "C",
+          "author_residue_number": "1",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GLC",
+          "author_chain": "C",
+          "author_residue_number": "2",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GLC",
+          "author_chain": "D",
+          "author_residue_number": "1",
+          "insertion_code": ""
+        },
+        {
+          "resname": "GLC",
+          "author_chain": "D",
+          "author_residue_number": "2",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 0,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": [
+        "REMARK 465     ASP A    -8                                                      ",
+        "REMARK 465     TYR A    -7                                                      ",
+        "REMARK 465     LYS A    -6                                                      ",
+        "REMARK 465     ASP A    -5                                                      ",
+        "REMARK 465     ASP A    -4                                                      ",
+        "REMARK 465     ASP A    -3                                                      ",
+        "REMARK 465     ASP A    -2                                                      ",
+        "REMARK 465     GLY A    -1                                                      ",
+        "REMARK 465     ALA A     0                                                      ",
+        "REMARK 465     PRO A     1                                                      ",
+        "REMARK 465     ALA A     2                                                      ",
+        "REMARK 465     SER A     3                                                      ",
+        "REMARK 465     LEU A     4                                                      ",
+        "REMARK 465     SER A     5                                                      ",
+        "REMARK 465     GLN A     6                                                      ",
+        "REMARK 465     LEU A     7                                                      ",
+        "REMARK 465     SER A     8                                                      ",
+        "REMARK 465     SER A     9                                                      ",
+        "REMARK 465     HIS A    10                                                      ",
+        "REMARK 465     LEU A    11                                                      ",
+        "REMARK 465     ASN A    12                                                      ",
+        "REMARK 465     TYR A    13                                                      ",
+        "REMARK 465     THR A    14                                                      ",
+        "REMARK 465     CYS A    15                                                      ",
+        "REMARK 465     GLY A    16                                                      ",
+        "REMARK 465     ALA A    17                                                      ",
+        "REMARK 465     GLU A    18                                                      ",
+        "REMARK 465     ASN A    19                                                      ",
+        "REMARK 465     SER A    20                                                      ",
+        "REMARK 465     THR A    21                                                      ",
+        "REMARK 465     GLY A    22                                                      ",
+        "REMARK 465     ALA A    23                                                      ",
+        "REMARK 465     SER A    24                                                      ",
+        "REMARK 465     GLN A    25                                                      ",
+        "REMARK 465     ALA A    26                                                      ",
+        "REMARK 465     ARG A    27                                                      ",
+        "REMARK 465     PRO A    28                                                      ",
+        "REMARK 465     HIS A    29                                                      ",
+        "REMARK 465     ALA A    30                                                      ",
+        "REMARK 465     TYR A    31                                                      ",
+        "REMARK 465     GLY A   401                                                      ",
+        "REMARK 465     ARG A   402                                                      ",
+        "REMARK 465     PRO A   403                                                      ",
+        "REMARK 465     LEU A   404                                                      ",
+        "REMARK 465     GLU A   405                                                      ",
+        "REMARK 465     VAL A   406                                                      ",
+        "REMARK 465     LEU A   407                                                      ",
+        "REMARK 465     PHE A   408                                                      ",
+        "REMARK 465     GLN A   409                                                      ",
+        "REMARK 465     ASP B    -8                                                      ",
+        "REMARK 465     TYR B    -7                                                      ",
+        "REMARK 465     LYS B    -6                                                      ",
+        "REMARK 465     ASP B    -5                                                      ",
+        "REMARK 465     ASP B    -4                                                      ",
+        "REMARK 465     ASP B    -3                                                      ",
+        "REMARK 465     ASP B    -2                                                      ",
+        "REMARK 465     GLY B    -1                                                      ",
+        "REMARK 465     ALA B     0                                                      ",
+        "REMARK 465     PRO B     1                                                      ",
+        "REMARK 465     ALA B     2                                                      ",
+        "REMARK 465     SER B     3                                                      ",
+        "REMARK 465     LEU B     4                                                      ",
+        "REMARK 465     SER B     5                                                      ",
+        "REMARK 465     GLN B     6                                                      ",
+        "REMARK 465     LEU B     7                                                      ",
+        "REMARK 465     SER B     8                                                      ",
+        "REMARK 465     SER B     9                                                      ",
+        "REMARK 465     HIS B    10                                                      ",
+        "REMARK 465     LEU B    11                                                      ",
+        "REMARK 465     ASN B    12                                                      ",
+        "REMARK 465     TYR B    13                                                      ",
+        "REMARK 465     THR B    14                                                      ",
+        "REMARK 465     CYS B    15                                                      ",
+        "REMARK 465     GLY B    16                                                      ",
+        "REMARK 465     ALA B    17                                                      ",
+        "REMARK 465     GLU B    18                                                      ",
+        "REMARK 465     ASN B    19                                                      ",
+        "REMARK 465     SER B    20                                                      ",
+        "REMARK 465     THR B    21                                                      ",
+        "REMARK 465     GLY B    22                                                      ",
+        "REMARK 465     ALA B    23                                                      ",
+        "REMARK 465     SER B    24                                                      ",
+        "REMARK 465     GLN B    25                                                      ",
+        "REMARK 465     ALA B    26                                                      ",
+        "REMARK 465     ARG B    27                                                      ",
+        "REMARK 465     PRO B    28                                                      ",
+        "REMARK 465     HIS B    29                                                      ",
+        "REMARK 465     ALA B    30                                                      ",
+        "REMARK 465     TYR B    31                                                      ",
+        "REMARK 465     VAL B   136                                                      ",
+        "REMARK 465     HIS B   137                                                      ",
+        "REMARK 465     TYR B   138                                                      ",
+        "REMARK 465     GLN B   139                                                      ",
+        "REMARK 465     HIS B   140                                                      ",
+        "REMARK 465     GLY B   141                                                      ",
+        "REMARK 465     THR B   142                                                      ",
+        "REMARK 465     GLY B   143                                                      ",
+        "REMARK 465     GLN B   144                                                      ",
+        "REMARK 465     GLY B   401                                                      ",
+        "REMARK 465     ARG B   402                                                      ",
+        "REMARK 465     PRO B   403                                                      ",
+        "REMARK 465     LEU B   404                                                      ",
+        "REMARK 465     GLU B   405                                                      ",
+        "REMARK 465     VAL B   406                                                      ",
+        "REMARK 465     LEU B   407                                                      ",
+        "REMARK 465     PHE B   408                                                      ",
+        "REMARK 465     GLN B   409                                                      "
+      ]
+    },
+    {
+      "target": "dyr",
+      "pdb_id": "3NXO",
+      "file": "dyr_3NXO.pdb",
+      "url": "https://files.rcsb.org/download/3NXO.pdb",
+      "downloaded_utc": "2026-10-27T02:28:53.466789+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:37:57 GMT",
+      "bytes": 196182,
+      "sha256": "ddd237bd48163544554fc81e429fd736920fec25242a2ee92dd3b08c0f3f17e1",
+      "atom_records_by_chain": {
+        "A": 1541
+      },
+      "hetatm_records": 262,
+      "nonwater_het_residues": [
+        {
+          "resname": "D2B",
+          "author_chain": "A",
+          "author_residue_number": "187",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NDP",
+          "author_chain": "A",
+          "author_residue_number": "193",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "188",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "189",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "190",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "191",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "192",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 165,
+      "altloc_atom_records": 74,
+      "unresolved_residue_records": []
+    },
+    {
+      "target": "egfr",
+      "pdb_id": "2RGP",
+      "file": "egfr_2RGP.pdb",
+      "url": "https://files.rcsb.org/download/2RGP.pdb",
+      "downloaded_utc": "2026-10-27T02:29:01.826211+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:45:59 GMT",
+      "bytes": 232875,
+      "sha256": "6e15d44d1f9a515853ee2b1ec6c020c174683b2fdcf886c8597c5639da132aaa",
+      "atom_records_by_chain": {
+        "A": 2289
+      },
+      "hetatm_records": 128,
+      "nonwater_het_residues": [
+        {
+          "resname": "HYZ",
+          "author_chain": "A",
+          "author_residue_number": "1",
+          "insertion_code": ""
+        },
+        {
+          "resname": "PO4",
+          "author_chain": "A",
+          "author_residue_number": "81",
+          "insertion_code": ""
+        },
+        {
+          "resname": "PO4",
+          "author_chain": "A",
+          "author_residue_number": "82",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 85,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": [
+        "REMARK 465     GLU A   734                                                      ",
+        "REMARK 465     GLY A   735                                                      ",
+        "REMARK 465     GLU A   736                                                      ",
+        "REMARK 465     LYS A   737                                                      ",
+        "REMARK 465     GLU A   749                                                      ",
+        "REMARK 465     ALA A   750                                                      ",
+        "REMARK 465     THR A   751                                                      ",
+        "REMARK 465     SER A   752                                                      ",
+        "REMARK 465     PRO A   753                                                      ",
+        "REMARK 465     GLU A   868                                                      ",
+        "REMARK 465     TYR A   869                                                      ",
+        "REMARK 465     HIS A   870                                                      ",
+        "REMARK 465     ALA A   871                                                      ",
+        "REMARK 465     GLU A   872                                                      ",
+        "REMARK 465     GLY A   873                                                      ",
+        "REMARK 465     GLY A   874                                                      ",
+        "REMARK 465     LYS A   875                                                      ",
+        "REMARK 465     HIS A   988                                                      ",
+        "REMARK 465     LEU A   989                                                      ",
+        "REMARK 465     PRO A   990                                                      ",
+        "REMARK 465     SER A   991                                                      ",
+        "REMARK 465     PRO A   992                                                      ",
+        "REMARK 465     THR A   993                                                      ",
+        "REMARK 465     ASP A   994                                                      ",
+        "REMARK 465     SER A   995                                                      ",
+        "REMARK 465     GLU A  1004                                                      ",
+        "REMARK 465     GLU A  1005                                                      ",
+        "REMARK 465     ASP A  1006                                                      ",
+        "REMARK 465     MET A  1007                                                      ",
+        "REMARK 465     ASP A  1008                                                      ",
+        "REMARK 465     ASP A  1009                                                      "
+      ]
+    },
+    {
+      "target": "gria2",
+      "pdb_id": "3KGC",
+      "file": "gria2_3KGC.pdb",
+      "url": "https://files.rcsb.org/download/3KGC.pdb",
+      "downloaded_utc": "2026-10-27T02:29:07.469330+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:30:18 GMT",
+      "bytes": 412776,
+      "sha256": "5ae40ad6240792deaef00461ede67cf34b1283ed79b693a54f137d8173f01216",
+      "atom_records_by_chain": {
+        "A": 1912,
+        "B": 1955
+      },
+      "hetatm_records": 589,
+      "nonwater_het_residues": [
+        {
+          "resname": "GLU",
+          "author_chain": "A",
+          "author_residue_number": "263",
+          "insertion_code": ""
+        },
+        {
+          "resname": "LY7",
+          "author_chain": "A",
+          "author_residue_number": "264",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "A",
+          "author_residue_number": "265",
+          "insertion_code": ""
+        },
+        {
+          "resname": "SO4",
+          "author_chain": "B",
+          "author_residue_number": "264",
+          "insertion_code": ""
+        },
+        {
+          "resname": "ZK1",
+          "author_chain": "B",
+          "author_residue_number": "263",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 518,
+      "altloc_atom_records": 6,
+      "unresolved_residue_records": [
+        "REMARK 465     GLY A     1                                                      ",
+        "REMARK 465     ALA A     2                                                      ",
+        "REMARK 465     ASN A     3                                                      ",
+        "REMARK 465     LYS A     4                                                      ",
+        "REMARK 465     GLY A   262                                                      ",
+        "REMARK 465     SER A   263                                                      ",
+        "REMARK 465     GLY B     1                                                      ",
+        "REMARK 465     ALA B     2                                                      ",
+        "REMARK 465     ASN B     3                                                      ",
+        "REMARK 465     SER B   263                                                      "
+      ]
+    },
+    {
+      "target": "jak2",
+      "pdb_id": "3LPB",
+      "file": "jak2_3LPB.pdb",
+      "url": "https://files.rcsb.org/download/3LPB.pdb",
+      "downloaded_utc": "2026-10-27T02:29:18.085271+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:33:13 GMT",
+      "bytes": 456111,
+      "sha256": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f",
+      "atom_records_by_chain": {
+        "A": 2226,
+        "B": 2278
+      },
+      "hetatm_records": 440,
+      "nonwater_het_residues": [
+        {
+          "resname": "NVB",
+          "author_chain": "A",
+          "author_residue_number": "1133",
+          "insertion_code": ""
+        },
+        {
+          "resname": "NVB",
+          "author_chain": "B",
+          "author_residue_number": "1133",
+          "insertion_code": ""
+        },
+        {
+          "resname": "PTR",
+          "author_chain": "A",
+          "author_residue_number": "1007",
+          "insertion_code": ""
+        },
+        {
+          "resname": "PTR",
+          "author_chain": "A",
+          "author_residue_number": "1008",
+          "insertion_code": ""
+        },
+        {
+          "resname": "PTR",
+          "author_chain": "B",
+          "author_residue_number": "1007",
+          "insertion_code": ""
+        },
+        {
+          "resname": "PTR",
+          "author_chain": "B",
+          "author_residue_number": "1008",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 310,
+      "altloc_atom_records": 24,
+      "unresolved_residue_records": [
+        "REMARK 465     GLY A   838                                                      ",
+        "REMARK 465     SER A   839                                                      ",
+        "REMARK 465     ASP A   840                                                      ",
+        "REMARK 465     PRO A   841                                                      ",
+        "REMARK 465     SER A   919                                                      ",
+        "REMARK 465     ALA A   920                                                      ",
+        "REMARK 465     GLY A   921                                                      ",
+        "REMARK 465     ARG A   922                                                      ",
+        "REMARK 465     ARG A   923                                                      ",
+        "REMARK 465     ASN A  1067                                                      ",
+        "REMARK 465     ASP A  1068                                                      ",
+        "REMARK 465     LYS A  1069                                                      ",
+        "REMARK 465     GLN A  1070                                                      ",
+        "REMARK 465     GLY A  1071                                                      ",
+        "REMARK 465     GLY A  1132                                                      ",
+        "REMARK 465     GLY B   838                                                      ",
+        "REMARK 465     SER B   919                                                      ",
+        "REMARK 465     ALA B   920                                                      ",
+        "REMARK 465     GLY B   921                                                      ",
+        "REMARK 465     ARG B   922                                                      ",
+        "REMARK 465     ARG B   923                                                      ",
+        "REMARK 465     GLU B  1012                                                      ",
+        "REMARK 465     PRO B  1013                                                      ",
+        "REMARK 465     GLY B  1014                                                      "
+      ]
+    },
+    {
+      "target": "kif11",
+      "pdb_id": "3CJO",
+      "file": "kif11_3CJO.pdb",
+      "url": "https://files.rcsb.org/download/3CJO.pdb",
+      "downloaded_utc": "2026-10-27T02:29:23.190710+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:10:30 GMT",
+      "bytes": 517104,
+      "sha256": "e89c95361c11f8a9ce444164b6a61f16a43019482e5d079282b932bc5282a128",
+      "atom_records_by_chain": {
+        "A": 2594,
+        "B": 2594
+      },
+      "hetatm_records": 445,
+      "nonwater_het_residues": [
+        {
+          "resname": "ADP",
+          "author_chain": "A",
+          "author_residue_number": "601",
+          "insertion_code": ""
+        },
+        {
+          "resname": "ADP",
+          "author_chain": "B",
+          "author_residue_number": "600",
+          "insertion_code": ""
+        },
+        {
+          "resname": "K30",
+          "author_chain": "A",
+          "author_residue_number": "1",
+          "insertion_code": ""
+        },
+        {
+          "resname": "K30",
+          "author_chain": "B",
+          "author_residue_number": "603",
+          "insertion_code": ""
+        },
+        {
+          "resname": "MG",
+          "author_chain": "A",
+          "author_residue_number": "603",
+          "insertion_code": ""
+        },
+        {
+          "resname": "MG",
+          "author_chain": "B",
+          "author_residue_number": "602",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 323,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": [
+        "REMARK 465     ALA A     2                                                      ",
+        "REMARK 465     SER A     3                                                      ",
+        "REMARK 465     GLN A     4                                                      ",
+        "REMARK 465     PRO A     5                                                      ",
+        "REMARK 465     ASN A     6                                                      ",
+        "REMARK 465     SER A     7                                                      ",
+        "REMARK 465     SER A     8                                                      ",
+        "REMARK 465     ALA A     9                                                      ",
+        "REMARK 465     LYS A    10                                                      ",
+        "REMARK 465     LYS A    11                                                      ",
+        "REMARK 465     LYS A    12                                                      ",
+        "REMARK 465     GLU A    13                                                      ",
+        "REMARK 465     GLU A    14                                                      ",
+        "REMARK 465     LYS A    15                                                      ",
+        "REMARK 465     GLY A    16                                                      ",
+        "REMARK 465     LYS A    17                                                      ",
+        "REMARK 465     ILE A   272                                                      ",
+        "REMARK 465     GLY A   273                                                      ",
+        "REMARK 465     ARG A   274                                                      ",
+        "REMARK 465     SER A   275                                                      ",
+        "REMARK 465     GLY A   276                                                      ",
+        "REMARK 465     ALA A   277                                                      ",
+        "REMARK 465     VAL A   278                                                      ",
+        "REMARK 465     ASP A   279                                                      ",
+        "REMARK 465     LYS A   280                                                      ",
+        "REMARK 465     ARG A   281                                                      ",
+        "REMARK 465     ALA A   282                                                      ",
+        "REMARK 465     ARG A   283                                                      ",
+        "REMARK 465     GLU A   284                                                      ",
+        "REMARK 465     ALA A   285                                                      ",
+        "REMARK 465     GLY A   286                                                      ",
+        "REMARK 465     PRO A   363                                                      ",
+        "REMARK 465     GLU A   364                                                      ",
+        "REMARK 465     VAL A   365                                                      ",
+        "REMARK 465     ASN A   366                                                      ",
+        "REMARK 465     GLN A   367                                                      ",
+        "REMARK 465     LYS A   368                                                      ",
+        "REMARK 465     ALA B     2                                                      ",
+        "REMARK 465     SER B     3                                                      ",
+        "REMARK 465     GLN B     4                                                      ",
+        "REMARK 465     PRO B     5                                                      ",
+        "REMARK 465     ASN B     6                                                      ",
+        "REMARK 465     SER B     7                                                      ",
+        "REMARK 465     SER B     8                                                      ",
+        "REMARK 465     ALA B     9                                                      ",
+        "REMARK 465     LYS B    10                                                      ",
+        "REMARK 465     LYS B    11                                                      ",
+        "REMARK 465     LYS B    12                                                      ",
+        "REMARK 465     GLU B    13                                                      ",
+        "REMARK 465     GLU B    14                                                      ",
+        "REMARK 465     LYS B    15                                                      ",
+        "REMARK 465     GLY B    16                                                      ",
+        "REMARK 465     LYS B    17                                                      ",
+        "REMARK 465     ILE B   272                                                      ",
+        "REMARK 465     GLY B   273                                                      ",
+        "REMARK 465     ARG B   274                                                      ",
+        "REMARK 465     SER B   275                                                      ",
+        "REMARK 465     GLY B   276                                                      ",
+        "REMARK 465     ALA B   277                                                      ",
+        "REMARK 465     VAL B   278                                                      ",
+        "REMARK 465     ASP B   279                                                      ",
+        "REMARK 465     LYS B   280                                                      ",
+        "REMARK 465     ARG B   281                                                      ",
+        "REMARK 465     ALA B   282                                                      ",
+        "REMARK 465     ARG B   283                                                      ",
+        "REMARK 465     GLU B   284                                                      ",
+        "REMARK 465     ALA B   285                                                      ",
+        "REMARK 465     GLY B   286                                                      ",
+        "REMARK 465     PRO B   363                                                      ",
+        "REMARK 465     GLU B   364                                                      ",
+        "REMARK 465     VAL B   365                                                      ",
+        "REMARK 465     ASN B   366                                                      ",
+        "REMARK 465     GLN B   367                                                      ",
+        "REMARK 465     LYS B   368                                                      "
+      ]
+    },
+    {
+      "target": "parp1",
+      "pdb_id": "3L3M",
+      "file": "parp1_3L3M.pdb",
+      "url": "https://files.rcsb.org/download/3L3M.pdb",
+      "downloaded_utc": "2026-10-27T02:29:24.233484+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:31:55 GMT",
+      "bytes": 270459,
+      "sha256": "4fd341ec16c02177ea0c6cbb390dd6008c68ec26b26255ce985b703cd2cb116c",
+      "atom_records_by_chain": {
+        "A": 2735
+      },
+      "hetatm_records": 141,
+      "nonwater_het_residues": [
+        {
+          "resname": "A92",
+          "author_chain": "A",
+          "author_residue_number": "351",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 116,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": [
+        "REMARK 465     LYS A     1                                                      ",
+        "REMARK 465     THR A   350                                                      "
+      ]
+    },
+    {
+      "target": "ppara",
+      "pdb_id": "2P54",
+      "file": "ppara_2P54.pdb",
+      "url": "https://files.rcsb.org/download/2P54.pdb",
+      "downloaded_utc": "2026-10-27T02:29:30.625616+00:00",
+      "http_last_modified": "Mon, 22 Sep 2025 01:40:40 GMT",
+      "bytes": 237168,
+      "sha256": "ef512e8793f13159719520a7f9af9628e05c55fefff537e18a1e7fa46a1d7fc5",
+      "atom_records_by_chain": {
+        "A": 2099,
+        "B": 97
+      },
+      "hetatm_records": 321,
+      "nonwater_het_residues": [
+        {
+          "resname": "735",
+          "author_chain": "A",
+          "author_residue_number": "469",
+          "insertion_code": ""
+        }
+      ],
+      "water_residues": 268,
+      "altloc_atom_records": 0,
+      "unresolved_residue_records": []
+    }
+  ]
+}
