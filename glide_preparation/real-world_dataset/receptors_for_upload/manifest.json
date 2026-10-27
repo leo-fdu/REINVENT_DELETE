@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "structures": [
+    {
+      "target": "aa2ar",
+      "pdb_id": "3EML",
+      "output_file": "aa2ar.pdb",
+      "output_sha256": "44638b427e2d4c88e29befe936692c38a6fdb7165d9666fb9cdd41a41f02d0f1",
+      "protein_source": "real-world_dataset/aa2ar/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/aa2ar/receptor_out.pdb": "141569eff51ade761c7b3258ff9bbcaab2bd417c6dfb93d2ceca454302876862",
+        "glide_preparation/real-world_dataset/pdb_complexes/aa2ar_3EML.pdb": "1afb276c403b3e9290dacad581c85df826a13ccd0658afde729d747abad58a32"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/aa2ar_3EML.pdb",
+        "resname": "ZMA",
+        "author_chain": "A",
+        "residue_number": 401,
+        "heavy_atom_centroid": [
+          -9.06364,
+          -7.1446000000000005,
+          55.8626
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "ZMA",
+          "A",
+          401
+        ]
+      ],
+      "atom_records": 3546,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Retain original receptor and its side-chain adjustments; omit STE, SO4 and waters.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "abl1",
+      "pdb_id": "2HZI",
+      "output_file": "abl1.pdb",
+      "output_sha256": "3ce1fd5ca4ba9b225f2b47b8970aea8d1b4eaa13434cd848a8c8a424ec22c526",
+      "protein_source": "real-world_dataset/abl1/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/abl1/receptor_out.pdb": "991d53308c900c7cf4e43faa9b8920482afc9e246a0a130858cdfa955666e5aa",
+        "glide_preparation/real-world_dataset/pdb_complexes/abl1_2HZI.pdb": "cbbb59ef5cf77787de94950260b2ee6fd007347981af4d4ddd50e0d671c85da7"
+      },
+      "retained_protein_chains": [
+        "A",
+        "B"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/abl1_2HZI.pdb",
+        "resname": "JIN",
+        "author_chain": "A",
+        "residue_number": 600,
+        "heavy_atom_centroid": [
+          16.19551724137931,
+          14.587206896551724,
+          3.938137931034483
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "JIN",
+          "A",
+          600
+        ]
+      ],
+      "atom_records": 4270,
+      "hydrogen_records": 2106,
+      "altloc_atom_records": 126,
+      "reason": "Preserve original A/B pocket fragments; use the A-chain ligand site.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "aces",
+      "pdb_id": "1E66",
+      "output_file": "aces.pdb",
+      "output_sha256": "83836cf6e95300d09c092e7e7ce24b310c0e1b3f6234448885a6506f36669254",
+      "protein_source": "real-world_dataset/aces/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/aces/receptor_out.pdb": "ef5a5bb7c65c170032bf18839202b4b15cbe2ed5a6feaed0c96a6a7c8b13e494",
+        "glide_preparation/real-world_dataset/pdb_complexes/aces_1E66.pdb": "591ee697172bddc96d9a3f979dc620ecf2a3e962e38b65eb08b53f48c2d210f7"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/aces_1E66.pdb",
+        "resname": "HUX",
+        "author_chain": "A",
+        "residue_number": 803,
+        "heavy_atom_centroid": [
+          4.397380952380952,
+          68.63257142857144,
+          65.5042380952381
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "HUX",
+          "A",
+          803
+        ]
+      ],
+      "atom_records": 4381,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 230,
+      "reason": "Retain original receptor.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "adrb1",
+      "pdb_id": "2VT4",
+      "output_file": "adrb1.pdb",
+      "output_sha256": "784dd37d587da7ed07fffc82d73f4adeb564b19d73f477717c826f9e6f898ac0",
+      "protein_source": "real-world_dataset/adrb1/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/adrb1/receptor_out.pdb": "6eb7dae1b6c48e112667b66609f7832a7a531a51e6c29bb3f71b9f83f531351d",
+        "glide_preparation/real-world_dataset/pdb_complexes/adrb1_2VT4.pdb": "fbb3bf1f65d72ea52999c9cb4f7c4c24c05940e214831126d32e046b2d341ff7"
+      },
+      "retained_protein_chains": [
+        "B"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/adrb1_2VT4.pdb",
+        "resname": "P32",
+        "author_chain": "B",
+        "residue_number": 400,
+        "heavy_atom_centroid": [
+          26.376285714285718,
+          5.1030476190476195,
+          1.8988095238095237
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "P32",
+          "B",
+          400
+        ]
+      ],
+      "atom_records": 2216,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Select the B-chain monomer matching the original ligand coordinates; retain engineered construct.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "akt1",
+      "pdb_id": "4GV1",
+      "output_file": "akt1.pdb",
+      "output_sha256": "cd31944433db491171a98ccac4d9a886e490b9c665058a40109e1f8936e00519",
+      "protein_source": "glide_preparation/real-world_dataset/pdb_complexes/akt1_4GV1.pdb",
+      "protein_source_kind": "reference",
+      "source_sha256": {
+        "glide_preparation/real-world_dataset/pdb_complexes/akt1_4GV1.pdb": "b610ee8cf5c11d5fc9e0b7044b3202259e2084bc1b0c9be9321eb0857c8494e1"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/akt1_4GV1.pdb",
+        "resname": "0XZ",
+        "author_chain": "A",
+        "residue_number": 501,
+        "heavy_atom_centroid": [
+          -20.0053,
+          4.3438,
+          10.7399
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "0XZ",
+          "A",
+          501
+        ],
+        [
+          "TPO",
+          "A",
+          308
+        ]
+      ],
+      "atom_records": 2815,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 178,
+      "reason": "Use deposited A chain to restore TPO308; reference alternate conformations are retained for PrepWizard review.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "cdk2",
+      "pdb_id": "1H00",
+      "output_file": "cdk2.pdb",
+      "output_sha256": "bd3487183e4900f1b75e7ba035f173f30611a496618fa7c214974388609f48dd",
+      "protein_source": "glide_preparation/real-world_dataset/pdb_complexes/cdk2_1H00.pdb",
+      "protein_source_kind": "reference",
+      "source_sha256": {
+        "glide_preparation/real-world_dataset/pdb_complexes/cdk2_1H00.pdb": "4327a6eec4f43720d3167fde1087243540a7acb113f914b8028b76606e1184b7"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/cdk2_1H00.pdb",
+        "resname": "FAP",
+        "author_chain": "A",
+        "residue_number": 1300,
+        "heavy_atom_centroid": [
+          1.9698666666666669,
+          27.5588,
+          8.824866666666667
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "ACE",
+          "A",
+          0
+        ],
+        [
+          "FAP",
+          "A",
+          1300
+        ]
+      ],
+      "atom_records": 2278,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 182,
+      "reason": "Restore deposited protein context and existing ACE cap; no missing loops or side chains are modeled.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "cp3a4",
+      "pdb_id": "3NXU",
+      "output_file": "cp3a4.pdb",
+      "output_sha256": "2b508f61fd0d4a3b08c60a9eddfa458e5f672bf6b4d4157ac90dd20d86919318",
+      "protein_source": "glide_preparation/real-world_dataset/pdb_complexes/cp3a4_3NXU.pdb",
+      "protein_source_kind": "reference",
+      "source_sha256": {
+        "glide_preparation/real-world_dataset/pdb_complexes/cp3a4_3NXU.pdb": "a111c10411e051e84f58024aa765bd2451cd1d154382d22a93957e40e4d5e143"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/cp3a4_3NXU.pdb",
+        "resname": "RIT",
+        "author_chain": "A",
+        "residue_number": 600,
+        "heavy_atom_centroid": [
+          36.68594,
+          -15.693620000000001,
+          29.690540000000002
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "HEM",
+          "A",
+          508
+        ],
+        [
+          "RIT",
+          "A",
+          600
+        ]
+      ],
+      "atom_records": 3771,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Keep A-chain HEM/Fe; omit duplicate B monomer and DMS.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "dpp4",
+      "pdb_id": "2I78",
+      "output_file": "dpp4.pdb",
+      "output_sha256": "c0b5b1ef5e59ebabc79f0bb3db6717af37e3edb6bf536c24921882a59346453b",
+      "protein_source": "real-world_dataset/dpp4/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/dpp4/receptor_out.pdb": "d154466762bdced04f08a0ef15cf1970845f2443397a8ec95f1d58a466f08bee",
+        "glide_preparation/real-world_dataset/pdb_complexes/dpp4_2I78.pdb": "606c21f4e1adc67ba1b8b5ed6319094f0dab1893d05fb255aed9a19ae9b89931"
+      },
+      "retained_protein_chains": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/dpp4_2I78.pdb",
+        "resname": "KIQ",
+        "author_chain": "B",
+        "residue_number": 901,
+        "heavy_atom_centroid": [
+          -18.448096774193548,
+          -5.489,
+          60.05896774193548
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "KIQ",
+          "B",
+          901
+        ]
+      ],
+      "atom_records": 23827,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Preserve original multichain context; the selected pocket is on B, not A.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "drd3",
+      "pdb_id": "3PBL",
+      "output_file": "drd3.pdb",
+      "output_sha256": "e61362a4c892e96cb634028d9b59d5e6b49caf7116adfa1fe58c7d4ecf2b5550",
+      "protein_source": "real-world_dataset/drd3/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/drd3/receptor_out.pdb": "7102faabd3c23241b304197a1ae835fde0b8eb26885fe7fd783264fdb442a4f2",
+        "glide_preparation/real-world_dataset/pdb_complexes/drd3_3PBL.pdb": "ad01099584fe8ac8b1d8eb97cd8f10a810f5607c0902921e7749abd07a213586"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/drd3_3PBL.pdb",
+        "resname": "ETQ",
+        "author_chain": "A",
+        "residue_number": 1200,
+        "heavy_atom_centroid": [
+          0.08530434782608695,
+          -14.828347826086958,
+          10.43204347826087
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": false
+      },
+      "retained_het_residues": [
+        [
+          "ETQ",
+          "A",
+          1200
+        ]
+      ],
+      "atom_records": 3423,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Correct pocket reference only: ETQ A/1200. Original design ligand and generated molecules are not replaced.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "dyr",
+      "pdb_id": "3NXO",
+      "output_file": "dyr.pdb",
+      "output_sha256": "14af2905b2665d34aa99de7c324eb1f3385086f903c69d3a73d8c6d6c71f1329",
+      "protein_source": "glide_preparation/real-world_dataset/pdb_complexes/dyr_3NXO.pdb",
+      "protein_source_kind": "reference",
+      "source_sha256": {
+        "glide_preparation/real-world_dataset/pdb_complexes/dyr_3NXO.pdb": "ddd237bd48163544554fc81e429fd736920fec25242a2ee92dd3b08c0f3f17e1"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/dyr_3NXO.pdb",
+        "resname": "D2B",
+        "author_chain": "A",
+        "residue_number": 187,
+        "heavy_atom_centroid": [
+          15.243583333333333,
+          5.837541666666667,
+          -0.19933333333333333
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "D2B",
+          "A",
+          187
+        ],
+        [
+          "NDP",
+          "A",
+          193
+        ]
+      ],
+      "atom_records": 1613,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 74,
+      "reason": "Retain NADPH NDP A/193; omit sulfates and waters.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "egfr",
+      "pdb_id": "2RGP",
+      "output_file": "egfr.pdb",
+      "output_sha256": "7598ce79934ba30dcaa2ee5f103144a621757142ef7ae0a8470325a1cdf995f2",
+      "protein_source": "real-world_dataset/egfr/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/egfr/receptor_out.pdb": "3fabf2927a166940c8409cb1b9e7a7e4d1c209ee36756c8a87f76726d18b0ed7",
+        "glide_preparation/real-world_dataset/pdb_complexes/egfr_2RGP.pdb": "6e15d44d1f9a515853ee2b1ec6c020c174683b2fdcf886c8597c5639da132aaa"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/egfr_2RGP.pdb",
+        "resname": "HYZ",
+        "author_chain": "A",
+        "residue_number": 1,
+        "heavy_atom_centroid": [
+          16.292121212121213,
+          34.87081818181819,
+          92.03530303030303
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "HYZ",
+          "A",
+          1
+        ]
+      ],
+      "atom_records": 2326,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Retain original receptor; unresolved loops remain unresolved.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "gria2",
+      "pdb_id": "3KGC",
+      "output_file": "gria2.pdb",
+      "output_sha256": "2202f4431d3693b2b684087544e852b3a33e76fe29adafd52108b230c70772a4",
+      "protein_source": "real-world_dataset/gria2/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/gria2/receptor_out.pdb": "657de8348788aacb507182ef1fd6985bed5ea29908dc0a130c763ab5f72a62a2",
+        "glide_preparation/real-world_dataset/pdb_complexes/gria2_3KGC.pdb": "5ae40ad6240792deaef00461ede67cf34b1283ed79b693a54f137d8173f01216"
+      },
+      "retained_protein_chains": [
+        "B"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/gria2_3KGC.pdb",
+        "resname": "ZK1",
+        "author_chain": "B",
+        "residue_number": 263,
+        "heavy_atom_centroid": [
+          7.531259259259259,
+          32.66985185185185,
+          -0.7351111111111112
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "ZK1",
+          "B",
+          263
+        ]
+      ],
+      "atom_records": 2488,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Retain original B-chain numbering and adjusted coordinates; use ZK1 pocket, not GLU/LY7.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "jak2",
+      "pdb_id": "3LPB",
+      "output_file": "jak2.pdb",
+      "output_sha256": "d5f6ffcda5fa5ed4a531f0d48846260024957cbc2da269729f04262ea99ec86b",
+      "protein_source": "glide_preparation/real-world_dataset/pdb_complexes/jak2_3LPB.pdb",
+      "protein_source_kind": "reference",
+      "source_sha256": {
+        "glide_preparation/real-world_dataset/pdb_complexes/jak2_3LPB.pdb": "89cfb782bbed5c6113430b2c18d9a880d918bf48f2fcc6a4dec7cf0e4d1b945f"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/jak2_3LPB.pdb",
+        "resname": "NVB",
+        "author_chain": "A",
+        "residue_number": 1133,
+        "heavy_atom_centroid": [
+          114.671,
+          66.11351515151516,
+          10.554818181818183
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "NVB",
+          "A",
+          1133
+        ],
+        [
+          "PTR",
+          "A",
+          1007
+        ],
+        [
+          "PTR",
+          "A",
+          1008
+        ]
+      ],
+      "atom_records": 2291,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 12,
+      "reason": "Replace incorrect original JNK3 receptor with JAK2 A; retain PTR1007/PTR1008.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "kif11",
+      "pdb_id": "3CJO",
+      "output_file": "kif11.pdb",
+      "output_sha256": "ebbfb4b530773716e56d67d73e51d4801292a583ddc8c263309132bd336d5c89",
+      "protein_source": "glide_preparation/real-world_dataset/pdb_complexes/kif11_3CJO.pdb",
+      "protein_source_kind": "reference",
+      "source_sha256": {
+        "glide_preparation/real-world_dataset/pdb_complexes/kif11_3CJO.pdb": "e89c95361c11f8a9ce444164b6a61f16a43019482e5d079282b932bc5282a128"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/kif11_3CJO.pdb",
+        "resname": "K30",
+        "author_chain": "A",
+        "residue_number": 1,
+        "heavy_atom_centroid": [
+          17.808030303030304,
+          16.11821212121212,
+          109.26678787878788
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "ADP",
+          "A",
+          601
+        ],
+        [
+          "K30",
+          "A",
+          1
+        ],
+        [
+          "MG",
+          "A",
+          603
+        ]
+      ],
+      "atom_records": 2655,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Retain deposited A-chain ADP/Mg as receptor context; K30 is the pocket reference to exclude from the grid.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "parp1",
+      "pdb_id": "3L3M",
+      "output_file": "parp1.pdb",
+      "output_sha256": "08196dfaf8d67730ce75d012bb126a9fecf3279a523a4f0d4c3b5b16b8c8e7e7",
+      "protein_source": "real-world_dataset/parp1/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/parp1/receptor_out.pdb": "2427ea04d7a53661403f2896b012775411ea9af88b8fcfa8d648f78ac6bb779a",
+        "glide_preparation/real-world_dataset/pdb_complexes/parp1_3L3M.pdb": "4fd341ec16c02177ea0c6cbb390dd6008c68ec26b26255ce985b703cd2cb116c"
+      },
+      "retained_protein_chains": [
+        "A"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/parp1_3L3M.pdb",
+        "resname": "A92",
+        "author_chain": "A",
+        "residue_number": 351,
+        "heavy_atom_centroid": [
+          26.36508,
+          11.22196,
+          27.02348
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "A92",
+          "A",
+          351
+        ]
+      ],
+      "atom_records": 2760,
+      "hydrogen_records": 0,
+      "altloc_atom_records": 0,
+      "reason": "Retain original receptor and its engineered construct.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    },
+    {
+      "target": "ppara",
+      "pdb_id": "2P54",
+      "output_file": "ppara.pdb",
+      "output_sha256": "8aa259bace6e8c646ef5b4d55d61fc263c41a1c82d6ebc0bdd9b8495e4aadc12",
+      "protein_source": "real-world_dataset/ppara/receptor_out.pdb",
+      "protein_source_kind": "original",
+      "source_sha256": {
+        "real-world_dataset/ppara/receptor_out.pdb": "9c369ac92278289b41eceac5da6f0e6a53ca4c63f5589d0895486b6d81901468",
+        "glide_preparation/real-world_dataset/pdb_complexes/ppara_2P54.pdb": "ef512e8793f13159719520a7f9af9628e05c55fefff537e18a1e7fa46a1d7fc5"
+      },
+      "retained_protein_chains": [
+        "A",
+        "B"
+      ],
+      "pocket_reference": {
+        "source": "glide_preparation/real-world_dataset/pdb_complexes/ppara_2P54.pdb",
+        "resname": "735",
+        "author_chain": "A",
+        "residue_number": 469,
+        "heavy_atom_centroid": [
+          13.756636363636364,
+          39.44990909090909,
+          28.01230303030303
+        ],
+        "matches_original_design_heavy_atoms_and_coordinates": true
+      },
+      "retained_het_residues": [
+        [
+          "735",
+          "A",
+          469
+        ]
+      ],
+      "atom_records": 4562,
+      "hydrogen_records": 2304,
+      "altloc_atom_records": 0,
+      "reason": "Retain original receptor A and coactivator peptide B.",
+      "status": "curated_input_not_chemically_prepared_or_docking_validated"
+    }
+  ],
+  "policy": "No coordinate optimization, hydrogen changes, loop modeling, altloc choice or grid creation. No waters retained. Each PDB includes one pocket-reference ligand; exclude it from the grid."
+}
