@@ -1,0 +1,8 @@
+AMIDE_MODE   penal
+GRIDFILE   /home/public/dpp4_grid/dpp4_grid.zip
+LIGANDFILE   dpp4_lib-PRE_DOCK_SP_1-001-in.maegz
+MAXATOMS   300
+MAXROTBONDS   50
+NREPORT   985
+POSE_OUTTYPE   poseviewer
+PRECISION   SP

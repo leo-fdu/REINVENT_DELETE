@@ -1,0 +1,1 @@
+"${SCHRODINGER}/vsw" dyr_lib.inp -OVERWRITE -host_glide localhost:1 -adjust -NJOBS 1 -TMPLAUNCHDIR

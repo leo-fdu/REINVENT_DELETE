@@ -1,0 +1,34 @@
+Stage adrb1_link-PRE_DOCK_SP_1 initializing...
+
+Running stage: adrb1_link-PRE_DOCK_SP_1
+SCHRODINGER: /usr/local/schrodinger_2023
+PYTHONPATH: 
+Job ID: aquilalinux-0-6aeca9e6
+Time: Fri Nov  6 00:08:06 2026
+Stage started successfully
+
+Python version: 80128
+The number of output files will be derived from -NJOBS value
+Counting number of input structures
+[running at reduced cpu priority]
+Number of input structures: 972
+Will generate 1 subjobs
+  Will generate ligand compound and variant codes...
+    Each ligand will be treated as a unique compound.
+
+Processing ligand files...
+
+Number of input structures: 972
+Number of processed structures: 972
+Number of processed compounds: 972
+Number of output files: 1
+
+Number of (compounds, structures) for each output file:
+1:(972, 972)
+
+STAGE COMPLETED. Elapsed time: 1 second
+
+    Output #1 (adrb1_link-RECOMBINE_OUT_1) [structures(972)]:
+      adrb1_link-PRE_DOCK_SP_1-001-in.maegz
+Moving adrb1_link-PRE_DOCK_SP_1-001-in.maegz to /home/public/adrb1_link/adrb1_link-PRE_DOCK_SP_1-001-in.maegz
+Done.

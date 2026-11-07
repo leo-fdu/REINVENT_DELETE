@@ -1,0 +1,7 @@
+SMILES,title,"i_i_glide_lignum","docking_status","r_glide_cpu_time","r_i_docking_score","s_i_glide_gridfile","r_i_glide_gscore","r_i_glide_lipo","r_i_glide_hbond","r_i_glide_metal","r_i_glide_rewards","r_i_glide_evdw","r_i_glide_ecoul","r_i_glide_erotb","r_i_glide_esite","r_i_glide_emodel","r_i_glide_energy","r_i_glide_einternal"
+CNS(=O)(=O)c1ccc(-c2cccc3ncc(-c4ccc(S(C)(C)O)cc4)nc23)cc1,"79",79,"STRUCTURE INCOMPATIBLE WITH FORCE FIELD",0,,,,,,,,,,,,,,
+CNS(=O)(=O)c1ccc(-c2nc3c(-c4ccc(S(C)(=O)=O)cc4)cc(-c4ccc(C#N)cc4)nc3c(-c3ccc4cc[nH]c4c3)c2CN2CCN(S(C)(=O)=O)C[C@@H]2c2cc(-c3cnc4cccc(-c5ccc(S(=O)(=O)NC)cc5)c4n3)ccc2CO)cc1,"123",123,"GRID-ENERGY MIN FAILED",16.98,,,,,,,,,,,,,,
+CNS(=O)(=O)c1ccc(-c2cccc3ncc(-c4ccc([C@H](CN(CC(F)F)c5cccc6[nH]c(N)[nH+]c56)N(CC(F)F)c5ccc(-c6cnc7cnc(-c8ccc(S(C)(=O)=O)cc8)cc7c6)[nH+]c5-c5cnn6c(N)cc(C)nc56)cn4)nc23)cc1,"590",590,"GRID-ENERGY MIN FAILED",29.22,,,,,,,,,,,,,,
+CNS(=O)(=O)c1ccc(-c2cccc3ncc(-c4ccc([C@@H](C(=O)c5ccc(C(C)(C)[NH+]6CCN(CC[NH+](C)C)CC6)cc5F)N5CCN(CC[NH+](C)C)CC5)c([N+](=O)[O-])c4)nc23)cc1,"896",896,"NO POSES STORED FOR LIGAND",28,,,,,,,,,,,,,,
+CNS(=O)(=O)c1ccc(-c2cccc3ncc(-c4ccc(C(=O)N(C5COC5)[C@H]5CC[C@@H](NC=C(C)C)CC5)c(NC5CC[NH+](C)CC5)c4)nc23)cc1,"902",902,"NO POSES STORED FOR LIGAND",20.61,,,,,,,,,,,,,,
+CNS(=O)(=O)c1ccc(-c2cccc3ncc(-c4ccc(CN5CCN(C(C)=O)CC5)c([N+](=O)[O-])c4)nc23)cc1,"941",941,"PROBLEM IN CONFGEN",0.27,,,,,,,,,,,,,,

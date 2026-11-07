@@ -1,0 +1,52 @@
+########## Virtual Screening Workflow Input File ###############
+# Run as: $SCHRODINGER/vsw <inputfile> 
+
+[SET:ORIGINAL_LIGANDS]
+    VARCLASS   Structures
+    FILES   /home/public/parp1_linkinvent.sdf,
+
+[SET:GRID_1]
+    VARCLASS   Grid
+    FILE   /home/public/parp1_grid/parp1_grid.zip
+
+[STAGE:PRE_DOCK_SP_1]
+    STAGECLASS   gencodes.RecombineStage
+    INPUTS   ORIGINAL_LIGANDS,
+    OUTPUTS   RECOMBINE_OUT_1,
+    NUMOUT   njobs
+    OUTFORMAT   maegz
+    MIN_SUBJOB_STS   300
+    MAX_SUBJOB_STS   3000
+    GENCODES   YES
+    OUTCOMPOUNDFIELD   s_vsw_compound_code
+    OUTVARIANTFIELD   s_vsw_variant
+    UNIQUEFIELD   NONE
+
+[STAGE:DOCK_SP_1]
+    STAGECLASS   glide.DockingStage
+    INPUTS   RECOMBINE_OUT_1, GRID_1
+    OUTPUTS   SP_OUT_1,
+    RECOMBINE   NO
+    PRECISION   SP
+    UNIQUEFIELD   s_vsw_compound_code
+    PERCENT_TO_KEEP   100.0
+    DOCKING_METHOD   confgen
+    POSES_PER_LIG   1
+    WRITE_XP_DESC   NO
+    NENHANCED_SAMPLING   1
+    BEST_BY_TITLE   YES
+    LIG_VSCALE   0.8
+    LIG_CCUT   0.15
+    MAXATOMS   300
+    MAXROTBONDS   50
+    AMIDE_MODE   penal
+    POSE_OUTTYPE   PV
+    POSTDOCK   YES
+    POSTDOCKSTRAIN   NO
+    COMPRESS_POSES   YES
+    EPIK_PENALTIES   YES
+    FORCEPLANAR   NO
+
+[USEROUTS]
+    USEROUTS   SP_OUT_1,
+    STRUCTOUT   SP_OUT_1

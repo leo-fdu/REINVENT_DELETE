@@ -1,0 +1,11 @@
+SMILES,title,"i_i_glide_lignum","docking_status","r_glide_cpu_time","r_i_docking_score","s_i_glide_gridfile","r_i_glide_gscore","r_i_glide_lipo","r_i_glide_hbond","r_i_glide_metal","r_i_glide_rewards","r_i_glide_evdw","r_i_glide_ecoul","r_i_glide_erotb","r_i_glide_esite","r_i_glide_emodel","r_i_glide_energy","r_i_glide_einternal"
+CN(C(=O)NC1CCCC1)C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1,"82",82,"NO POSES STORED FOR LIGAND",20.7,,,,,,,,,,,,,,
+C/N=C(\OC)N(C(=O)N(C)C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1)c1ccccc1OC,"97",97,"NO POSES STORED FOR LIGAND",25.86,,,,,,,,,,,,,,
+Cc1ccc(S(=O)(=O)N(C)C(=O)N2CC(c3cc(F)ccc3F)=C[C@@]2(CO)c2ccccc2)c(-n2cnnn2)c1,"191",191,"NO POSES STORED FOR LIGAND",12.19,,,,,,,,,,,,,,
+Cc1ccc(OCC2=CC[N@H+](CCCc3ccc(S(=O)(=O)N(C)C(=O)N4CC(c5cc(F)ccc5F)=C[C@@]4(CO)c4ccccc4)cc3C)CC2)cc1,"448",448,"NO POSES STORED FOR LIGAND",25.36,,,,,,,,,,,,,,
+CN(C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1)S(=O)(=O)c1cc(C(F)(F)F)ccc1S(=O)(=O)c1cnc([S@](C)=O)cc1N1CCOCC1,"595",595,"NO POSES STORED FOR LIGAND",13.61,,,,,,,,,,,,,,
+CN(C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1)S(=O)(=O)c1ccc2c(c1)OC[C@H]2CCNc1ccc(N/C(N)=N/S(=O)(=O)c2cn(C)cn2)cc1F,"602",602,"NO POSES STORED FOR LIGAND",30.39,,,,,,,,,,,,,,
+COc1cc(N=[S@@](=O)([O-])c2ccc(O)c(N(C)C(=O)CO)c2)ccc1S(=O)(=O)N(C)C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1,"605",605,"NO POSES STORED FOR LIGAND",17.52,,,,,,,,,,,,,,
+CN(C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1)S(=O)(=O)c1ccc(CN2CC[C@@H](S(c3ccccc3)(c3ccccc3)c3ccccc3)C2)cc1,"643",643,"STRUCTURE INCOMPATIBLE WITH FORCE FIELD",0,,,,,,,,,,,,,,
+CN(C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1)S(=O)(=O)c1cccc2ccccc12,"932",932,"NO POSES STORED FOR LIGAND",3.29,,,,,,,,,,,,,,
+CN(C(=O)N1CC(c2cc(F)ccc2F)=C[C@@]1(CO)c1ccccc1)S(=O)(=O)c1cccc2ccccc12,"967",967,"NO POSES STORED FOR LIGAND",3.33,,,,,,,,,,,,,,

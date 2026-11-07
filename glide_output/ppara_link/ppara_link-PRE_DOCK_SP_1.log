@@ -1,0 +1,34 @@
+Stage ppara_link-PRE_DOCK_SP_1 initializing...
+
+Running stage: ppara_link-PRE_DOCK_SP_1
+SCHRODINGER: /usr/local/schrodinger_2023
+PYTHONPATH: 
+Job ID: aquilalinux-0-6aecb15c
+Time: Fri Nov  6 00:39:59 2026
+Stage started successfully
+
+Python version: 80128
+The number of output files will be derived from -NJOBS value
+Counting number of input structures
+[running at reduced cpu priority]
+Number of input structures: 995
+Will generate 1 subjobs
+  Will generate ligand compound and variant codes...
+    Each ligand will be treated as a unique compound.
+
+Processing ligand files...
+
+Number of input structures: 995
+Number of processed structures: 995
+Number of processed compounds: 995
+Number of output files: 1
+
+Number of (compounds, structures) for each output file:
+1:(995, 995)
+
+STAGE COMPLETED. Elapsed time: 4 seconds
+
+    Output #1 (ppara_link-RECOMBINE_OUT_1) [structures(995)]:
+      ppara_link-PRE_DOCK_SP_1-001-in.maegz
+Moving ppara_link-PRE_DOCK_SP_1-001-in.maegz to /home/public/ppara_link/ppara_link-PRE_DOCK_SP_1-001-in.maegz
+Done.

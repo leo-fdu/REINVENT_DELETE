@@ -1,0 +1,8 @@
+SMILES,title,"i_i_glide_lignum","docking_status","r_glide_cpu_time","r_i_docking_score","s_i_glide_gridfile","r_i_glide_gscore","r_i_glide_lipo","r_i_glide_hbond","r_i_glide_metal","r_i_glide_rewards","r_i_glide_evdw","r_i_glide_ecoul","r_i_glide_erotb","r_i_glide_esite","r_i_glide_emodel","r_i_glide_energy","r_i_glide_einternal"
+CC(C)(C)OC(=O)N[C@@H]1CCCN(c2nc(Nc3ccc4c(c3)[C@@H]3CN(C(=O)N5C[C@@H]6CCN(C(=O)OC(C)(C)C)CN6C[C@@]5(O)CCO[C@H]5CN(c6ncc(C#N)cn6)C[C@H]5N[C@H]5CC=C(C(=O)N6CCn7c(nnc7C(F)(F)F)C6)C[C@@H]5N)CC[C@H]3O4)ncc2F)C1,"335",335,"GRID-ENERGY MIN FAILED",74.5,,,,,,,,,,,,,,
+[NH3+][C@@H]1CC(C(=O)N2CCn3c(nnc3C(F)(F)F)C2)=CCC1c1cc(-c2n[nH]c(=O)[nH]2)ccc1F,"384",384,"Skipped",0,,,,,,,,,,,,,,
+CC(C)(C)O[C@@H](O)n1nc(-n2nc(-c3c(OC(F)F)cccc3OC(F)F)c(N(C(N)=O)[C@@H](O)OC(C)(C)C)c2[C@H]2CC[C@H](c3ccc(OC(F)(F)F)cc3)CC2)cc1[C@H]1CC=C(C(=O)N2CCn3c(nnc3C(F)(F)F)C2)C[C@@H]1N,"767",767,"NO POSES STORED FOR LIGAND",54.25,,,,,,,,,,,,,,
+COc1ncc(-c2ccc(N(c3cnc(-c4cnc(OCCOCCOCCOc5ccc6c(c5)n(C)c(=O)n6[C@@H]5CCC(=O)NC5=O)cc4OC)cn3)[C@H]3CC=C(C(=O)N4CCn5c(nnc5C(F)(F)F)C4)C[C@@H]3[NH3+])cc2OC)c(OC)n1,"828",828,"NO GOOD POSES FOUND",55.82,,,,,,,,,,,,,,
+[NH3+][C@H]1CC(C(=O)N2CCn3c(nnc3C(F)(F)F)C2)=CC[C@@H]1c1ccc(-c2cnc3cc(-c4cnn(S(=O)(=O)C5CC5)c4)ccc3n2)cn1,"862",862,"NO GOOD POSES FOUND",3.11,,,,,,,,,,,,,,
+[NH3+][C@H]1CC(C(=O)N2CCn3c(nnc3C(F)(F)F)C2)=CC[C@@H]1NC1=N[N-]/C(=C2\C=CC=CC2=[Se])C=C1,"936",936,"INVALID ATOM(S), ETC.",0.29,,,,,,,,,,,,,,
+CN(C)c1cc2c(cc1NN)CN(C(=O)N[C@@H]1c3ccc(-c4c(C#N)ccn(-c5cnc(-c6ccc(O[C@H]7CC=C(C(=O)N8CCn9c(nnc9C(F)(F)F)C8)C[C@@H]7[NH3+])c(C#N)c6)cn5)c4=O)cc3CC[C@H]1O[C@H]1C[C@@H]3C[C@@H]3C1)CC2,"944",944,"NO GOOD POSES FOUND",100.31,,,,,,,,,,,,,,

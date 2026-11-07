@@ -1,0 +1,13 @@
+SMILES,title,"i_i_glide_lignum","docking_status","r_glide_cpu_time","r_i_docking_score","s_i_glide_gridfile","r_i_glide_gscore","r_i_glide_lipo","r_i_glide_hbond","r_i_glide_metal","r_i_glide_rewards","r_i_glide_evdw","r_i_glide_ecoul","r_i_glide_erotb","r_i_glide_esite","r_i_glide_emodel","r_i_glide_energy","r_i_glide_einternal"
+Nc1ncnc(Nc2ccc3c(cnn3C(=O)c3ccc(C(=O)N4CC[NH+](CCCCCCOc5cccc6c5CN([C@@H]5CCC(=O)NC5=O)C6=O)CC4)cc3)c2)c1CN[NH+]1CCCCC1,"388",388,"GRID-ENERGY MIN FAILED",19.67,,,,,,,,,,,,,,
+CC[C@](Cc1ccc(Oc2ccc(C(=O)n3ncc4cc(Nc5ncnc(N)c5CN[NH+]5CCCCC5)ccc43)c(Cl)c2)cc1)(C(N)=O)N1CCCN(c2ncnc(Nc3ccc4nnsc4c3)c2[N+](=O)[O-])CC1,"544",544,"GRID-ENERGY MIN FAILED",24.59,,,,,,,,,,,,,,
+Nc1ncnc(Nc2ccc3c(cnn3C(=O)c3cc(-c4ccc(C(=O)NCCCN5CC[NH+](CCCCOc6cccc7c6C(=O)N([C@@H]6CCC(=O)NC6=O)C7=O)CC5)cc4)c[nH]3)c2)c1CN[NH+]1CCCCC1,"743",743,"GRID-ENERGY MIN FAILED",38.53,,,,,,,,,,,,,,
+CN(C)Sc1ccc(/C=C(\C(=O)N2CCN(c3cc[nH+]cc3)CC2)C(=O)n2ncc3cc(Nc4ncnc(N)c4CN[NH+]4CCCCC4)ccc32)cc1C1=NC(=O)O[C@@H]1c1ccccc1F,"812",812,"NO POSES STORED FOR LIGAND",66.53,,,,,,,,,,,,,,
+Cc1c(C(N)=O)sc2c1C(c1ccc(Cl)cc1)=[NH+][C@H](CCN(CCCNC(=O)CCC[NH+]1CCN(CC(=O)[O-])CC1)C(=O)c1ccc(Cn3cc(C(=O)n4ncc5cc(Nc6ncnc(N)c6CN[NH+]6CCCCC6)ccc54)nn3)cc1)c1nnc(C)n1-2,"844",844,"GRID-ENERGY MIN FAILED",104.94,,,,,,,,,,,,,,
+COc1cc(-n2ncc3cc(Nc4ncnc(N)c4CN[NH+]4CCCCC4)ccc32)sc1/C(C(=O)NS(=O)(=O)c1ccsc1C1CC1)=C1\N=C(C)CN1C1=C[C@@H]2C[C@@H]2C1,"914",914,"NO POSES STORED FOR LIGAND",18.78,,,,,,,,,,,,,,
+Nc1ncnc(Nc2ccc3c(cnn3C(=O)c3cc(N4CCN(N5C(=O)CCC5=O)CC4)cc(C(F)(F)F)c3)c2)c1CN[NH+]1CCCCC1,"926",926,"NO POSES STORED FOR LIGAND",13.08,,,,,,,,,,,,,,
+COc1ccc(C(=O)Nc2cc(-c3ccc(NC(=O)Cc4cccs4)cc3)n(C)n2)cc1Nc1ccc(C(=O)n2ncc3cc(Nc4ncnc(N)c4CN[NH+]4CCCCC4)ccc32)cc1,"929",929,"GRID-ENERGY MIN FAILED",18.14,,,,,,,,,,,,,,
+CN/C(C(=O)n1ncc2cc(Nc3ncnc(N)c3CN[NH+]3CCCCC3)ccc21)=C1/CCCC[C@@]1(C)O,"934",934,"NO POSES STORED FOR LIGAND",24.16,,,,,,,,,,,,,,
+C[NH+](C)C/C=C/C(=O)N1CCC(Oc2ccc(C(=O)Nc3cc(C(C)(C)C)on3)cc2Cc2sccc2S(=O)(=O)CCC(=O)n2ncc3cc(Nc4ncnc(N)c4CN[NH+]4CCCCC4)ccc32)CC1,"937",937,"GRID-ENERGY MIN FAILED",39.01,,,,,,,,,,,,,,
+CNC(=O)c1ccc(CNC(=O)n2nnc3ccc(N(N[C@H](N)[C@H](C(N)=O)c4ccc(CNC(=O)c5ccc(NC(=O)n6ncc7cc(Nc8ncnc(N)c8CN[NH+]8CCCCC8)ccc76)cc5)cc4)N4CCN(NC(=[NH2+])N5CCCCC5)CC4)cc32)cc1,"939",939,"ROUGH POSE REFINE FAILED",186.39,,,,,,,,,,,,,,
+Nc1ncnc(Nc2ccc3c(cnn3C(=O)/C(=C/[C@@H]3CCN(C(=O)COc4ccccc4C(F)(F)F)C3)NC(=O)COCC(=O)NCCCOCCO)c2)c1CN[NH+]1CCCCC1,"950",950,"GRID-ENERGY MIN FAILED",46.25,,,,,,,,,,,,,,

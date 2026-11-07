@@ -1,0 +1,99 @@
+Stage dyr_link-DOCK_SP_1 initializing...
+
+Running stage: dyr_link-DOCK_SP_1
+SCHRODINGER: /usr/local/schrodinger_2023
+PYTHONPATH: 
+Job ID: aquilalinux-0-6aecaea9
+Time: Fri Nov  6 00:28:28 2026
+Stage started successfully
+
+Python version: 80128
+Will NOT recombine or retitle input ligands
+There will be 1 subjobs.
+Will identify ligands based on unique field: s_vsw_compound_code
+Counting numbers of structures and compounds in input ligands...
+
+Number of input compounds: 992
+Number of input structures: 992
+
+Input number of poses for each subjob:
+{1: 992}
+
+NOTE: 1 jobs will be launched, as that's the number of input files. (The option to 'use input files directly for subjobs' was used.)
+
+Setting up Glide jobs...
+Running Glide jobs...
+
+Running subjobs on hosts:
+  Not available yet
+Number of jobs:       1
+Max retries per job:  2
+Max allowed failures: unlimited
+Verbosity:            normal
+
+Starting JobDJ...
+
+WARNING: Can't use smart distribution, as host list is empty
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+Waiting for available processors to use...
+0 1 0 | launched  aquilalinux-0-6aecaeb2 dyr_link-DOCK_SP_1-001 localhost [aquilalinux]
+1 0 0 | finished  aquilalinux-0-6aecaeb2 dyr_link-DOCK_SP_1-001 localhost [aquilalinux]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+  Keeping 100% of compounds.
+    Actually keeping 992 of 992 compounds.
+  Best by compound: True
+  Calculating CPU time and combining log files...
+    have not calculated CPU time or generated combined logfile
+Merging the Glide output files...
+/usr/local/schrodinger_2023/utilities/glide_merge -f dyr_link-DOCK_SP_1_files_to_merge.txt -m 992 -id_prop s_vsw_compound_code -o dyr_link-SP_OUT_1_pv.maegz -p 1
+For progress, see: /home/public/dyr_link/glide_merge.log
+           Last 20 lines of /home/public/dyr_link/glide_merge.log:
+******************************************************************************
+[running at reduced cpu priority]
+                                 Glide Merge                                  
+------------------------------------------------------------------------------
+REPORT OF BEST 763 POSES
+The receptor and sorted ligand structures were written to the Pose Viewer file:
+    dyr_link-SP_OUT_1_pv.maegz
+Final rankings based on original docking score.
+0 poses were rejected by the energy filters,
+    Coul+vdw Energy    <=     0.0
+    Hbond Interaction  <=     0.0
+    Metal Interaction  <=    10.0
+    GlideScore         <=   100.0
+    Docking Score      <=   100.0
+(If any of the above properties is not defined for a given pose,
+ the corresponding filter is not applied to that pose.)
+******************************************************************************
+
+glide_merge completed suffessfully
+Reading merged structures...
+WARNING: Number of Glide output compounds is less than the requested number of compounds to keep
+   Number of compounds expected to keep: 992
+   Number of compounds kept: 763
+   Number of structures kept: 763
+Generating csv report file...
+Properties CSV file: dyr_link-SP_OUT_1.csv
+
+Combined logfile: dyr_link-DOCK_SP_1_combined.log
+Cleaning up...
+  Archiving dyr_link-DOCK_SP_1-001.log...
+
+STAGE COMPLETED. Elapsed time: 5 hours 7 minutes 56 seconds
+
+    Output #1 (dyr_link-SP_OUT_1) [structures(764)]:
+      dyr_link-SP_OUT_1_pv.maegz
+Moving dyr_link-SP_OUT_1_pv.maegz to /home/public/dyr_link/dyr_link-SP_OUT_1_pv.maegz
+Done.
+[running at reduced cpu priority]

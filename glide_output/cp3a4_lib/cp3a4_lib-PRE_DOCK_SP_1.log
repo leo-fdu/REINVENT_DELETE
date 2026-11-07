@@ -1,0 +1,34 @@
+Stage cp3a4_lib-PRE_DOCK_SP_1 initializing...
+
+Running stage: cp3a4_lib-PRE_DOCK_SP_1
+SCHRODINGER: /usr/local/schrodinger_2023
+PYTHONPATH: 
+Job ID: aquilalinux-0-6aecab88
+Time: Fri Nov  6 00:15:05 2026
+Stage started successfully
+
+Python version: 80128
+The number of output files will be derived from -NJOBS value
+Counting number of input structures
+[running at reduced cpu priority]
+Number of input structures: 999
+Will generate 1 subjobs
+  Will generate ligand compound and variant codes...
+    Each ligand will be treated as a unique compound.
+
+Processing ligand files...
+
+Number of input structures: 999
+Number of processed structures: 999
+Number of processed compounds: 999
+Number of output files: 1
+
+Number of (compounds, structures) for each output file:
+1:(999, 999)
+
+STAGE COMPLETED. Elapsed time: 2 seconds
+
+    Output #1 (cp3a4_lib-RECOMBINE_OUT_1) [structures(999)]:
+      cp3a4_lib-PRE_DOCK_SP_1-001-in.maegz
+Moving cp3a4_lib-PRE_DOCK_SP_1-001-in.maegz to /home/public/cp3a4_lib/cp3a4_lib-PRE_DOCK_SP_1-001-in.maegz
+Done.

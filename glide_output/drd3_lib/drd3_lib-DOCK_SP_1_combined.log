@@ -1,0 +1,3489 @@
+Glide version 98128 (mmshare version 61128)
+mmshare         4006a1f061
+glide-src       5a2936bf79
+psp-src         f38ea8d73b
+macromodel-src  6316add16d
+epik-src        7026e3f65a
+
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : aquilalinux-0-6aecae21
+Name           : drd3_lib-DOCK_SP_1-001
+Program        : Glide
+Version        : 2023-1 build 128
+Host           : aquilalinux
+Dir            : /home/public/drd3_lib
+HostEntry      : localhost
+JobHost        : aquilalinux
+JobDir         : /scratch/schrodinger_scratch/public/drd3_lib-DOCK_SP_1-001
+JobSchrodinger : /usr/local/schrodinger_2023
+Commandline    : /usr/local/schrodinger_2023/glide -RESTART drd3_lib-DOCK_SP_1-001.in -HOST localhost
+StartTime      : 2026-11-06-00:26:10
+--------------------------------------------------------------------------------
+
+[running at reduced cpu priority]
+ VdW radii of ligand atoms scaled by   0.800000000000000     
+ Charge cutoff for polarity   0.150000000000000     
+ After readscreen, (nx, ny, nz) = (          25 ,           25 ,           25 ).
+  Receptor setup: (nsites, nx, ny, nz, bsize)=(         125 ,           25 , 
+          25 ,           25 ,    1.00000000000000      ).
+ Screening setup finished.
+ DOCKMAIN: getting receptor.
+  DOCKMAIN after grid: (nx, ny, nz) = (          64 ,           64 , 
+          64 ).
+ DOCKMAIN: Grid setup finished
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+  
+  Penalizing non-planar amide torsions 
+  
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+
+GlideScore version SP5.0 will be used
+
+  
+ Buried polar penalty      0.000
+ Coulomb vdW cutoff        0.000
+ H bond cutoff             0.000
+ Metal-ligand cutoff      10.000
+Assigning GlideScore SP5.0 parameters
+Postdocking minimization:   5 poses; CvdW cutoffs   100.0 kcal/mol for min,     0.0 kcal/mol for report.
+GlideScore(   -7.00)+Epik State Penalty(    0.00) =    -7.00 kcal/mol
+DOCKING RESULTS FOR LIGAND        1 (1)
+Best Emodel=   -72.69 E=   -52.11 Eint=     5.03 GlideScore=    -7.00
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.74)+Epik State Penalty(    0.00) =    -7.74 kcal/mol
+DOCKING RESULTS FOR LIGAND        2 (2)
+Best Emodel=   -77.02 E=   -54.50 Eint=     9.56 GlideScore=    -7.74
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.45)+Epik State Penalty(    0.00) =    -6.45 kcal/mol
+DOCKING RESULTS FOR LIGAND        3 (3)
+Best Emodel=   -56.74 E=   -43.51 Eint=     5.96 GlideScore=    -6.45
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.18)+Epik State Penalty(    0.00) =    -7.18 kcal/mol
+DOCKING RESULTS FOR LIGAND        4 (4)
+Best Emodel=   -73.39 E=   -52.18 Eint=     3.74 GlideScore=    -7.18
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.32)+Epik State Penalty(    0.00) =    -7.32 kcal/mol
+DOCKING RESULTS FOR LIGAND        5 (5)
+Best Emodel=   -70.91 E=   -50.36 Eint=     3.90 GlideScore=    -7.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.46)+Epik State Penalty(    0.00) =    -7.46 kcal/mol
+DOCKING RESULTS FOR LIGAND        6 (6)
+Best Emodel=   -82.42 E=   -57.72 Eint=     2.78 GlideScore=    -7.46
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.45)+Epik State Penalty(    0.00) =    -5.45 kcal/mol
+DOCKING RESULTS FOR LIGAND        7 (7)
+Best Emodel=   -34.08 E=   -38.73 Eint=    16.97 GlideScore=    -5.45
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.00)+Epik State Penalty(    0.00) =    -7.00 kcal/mol
+DOCKING RESULTS FOR LIGAND        8 (8)
+Best Emodel=   -61.14 E=   -43.53 Eint=     3.39 GlideScore=    -7.00
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.84)+Epik State Penalty(    0.00) =    -6.84 kcal/mol
+DOCKING RESULTS FOR LIGAND        9 (9)
+Best Emodel=   -63.42 E=   -44.75 Eint=     1.84 GlideScore=    -6.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       10 (10)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.08)+Epik State Penalty(    0.00) =    -6.08 kcal/mol
+DOCKING RESULTS FOR LIGAND       11 (11)
+Best Emodel=   -56.21 E=   -42.12 Eint=     2.45 GlideScore=    -6.08
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           15
+ Using templates for ring conformations.
+GlideScore(   -4.95)+Epik State Penalty(    0.00) =    -4.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       12 (12)
+Best Emodel=   -56.65 E=   -47.36 Eint=    16.88 GlideScore=    -4.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND       13 (13)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.14)+Epik State Penalty(    0.00) =    -6.14 kcal/mol
+DOCKING RESULTS FOR LIGAND       14 (14)
+Best Emodel=   -52.44 E=   -47.32 Eint=    14.76 GlideScore=    -6.14
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND       15 (15)
+Best Emodel=   -46.96 E=   -35.73 Eint=     2.29 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -5.41)+Epik State Penalty(    0.00) =    -5.41 kcal/mol
+DOCKING RESULTS FOR LIGAND       16 (16)
+Best Emodel=   -55.53 E=   -44.04 Eint=     3.84 GlideScore=    -5.41
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.96)+Epik State Penalty(    0.00) =    -8.96 kcal/mol
+DOCKING RESULTS FOR LIGAND       17 (17)
+Best Emodel=  -117.12 E=   -70.43 Eint=     5.24 GlideScore=    -8.96
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.55)+Epik State Penalty(    0.00) =    -6.55 kcal/mol
+DOCKING RESULTS FOR LIGAND       18 (18)
+Best Emodel=   -58.55 E=   -42.55 Eint=     2.32 GlideScore=    -6.55
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.84)+Epik State Penalty(    0.00) =    -6.84 kcal/mol
+DOCKING RESULTS FOR LIGAND       19 (19)
+Best Emodel=   -63.42 E=   -44.75 Eint=     1.84 GlideScore=    -6.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.10)+Epik State Penalty(    0.00) =    -6.10 kcal/mol
+DOCKING RESULTS FOR LIGAND       20 (20)
+Best Emodel=   -56.82 E=   -42.52 Eint=     3.71 GlideScore=    -6.10
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.75)+Epik State Penalty(    0.00) =    -6.75 kcal/mol
+DOCKING RESULTS FOR LIGAND       21 (21)
+Best Emodel=   -58.14 E=   -40.77 Eint=     1.68 GlideScore=    -6.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       22 (22)
+Best Emodel=   -66.67 E=   -51.48 Eint=     5.41 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.55)+Epik State Penalty(    0.00) =    -7.55 kcal/mol
+DOCKING RESULTS FOR LIGAND       23 (23)
+Best Emodel=   -74.99 E=   -53.91 Eint=     6.42 GlideScore=    -7.55
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       24 (24)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.16)+Epik State Penalty(    0.00) =    -6.16 kcal/mol
+DOCKING RESULTS FOR LIGAND       25 (25)
+Best Emodel=   -56.65 E=   -41.93 Eint=     1.78 GlideScore=    -6.16
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND       26 (26)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       27 (27)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND       28 (28)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       29 (29)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.82)+Epik State Penalty(    0.00) =    -6.82 kcal/mol
+DOCKING RESULTS FOR LIGAND       30 (30)
+Best Emodel=   -65.31 E=   -47.03 Eint=     2.82 GlideScore=    -6.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.23)+Epik State Penalty(    0.00) =    -6.23 kcal/mol
+DOCKING RESULTS FOR LIGAND       31 (31)
+Best Emodel=   -55.16 E=   -41.03 Eint=     2.97 GlideScore=    -6.23
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -5.63)+Epik State Penalty(    0.00) =    -5.63 kcal/mol
+DOCKING RESULTS FOR LIGAND       32 (32)
+Best Emodel=   -47.72 E=   -36.96 Eint=     3.38 GlideScore=    -5.63
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.32)+Epik State Penalty(    0.00) =    -7.32 kcal/mol
+DOCKING RESULTS FOR LIGAND       33 (33)
+Best Emodel=   -70.91 E=   -50.36 Eint=     3.90 GlideScore=    -7.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.05)+Epik State Penalty(    0.00) =    -7.05 kcal/mol
+DOCKING RESULTS FOR LIGAND       34 (34)
+Best Emodel=   -70.53 E=   -50.37 Eint=     3.16 GlideScore=    -7.05
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.00)+Epik State Penalty(    0.00) =    -7.00 kcal/mol
+DOCKING RESULTS FOR LIGAND       35 (35)
+Best Emodel=   -61.90 E=   -43.80 Eint=     0.60 GlideScore=    -7.00
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -7.60)+Epik State Penalty(    0.00) =    -7.60 kcal/mol
+DOCKING RESULTS FOR LIGAND       36 (36)
+Best Emodel=   -77.83 E=   -55.01 Eint=     5.88 GlideScore=    -7.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.03)+Epik State Penalty(    0.00) =    -7.03 kcal/mol
+DOCKING RESULTS FOR LIGAND       37 (37)
+Best Emodel=   -63.95 E=   -45.24 Eint=     4.67 GlideScore=    -7.03
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.11)+Epik State Penalty(    0.00) =    -7.11 kcal/mol
+DOCKING RESULTS FOR LIGAND       38 (38)
+Best Emodel=   -62.55 E=   -44.79 Eint=     3.81 GlideScore=    -7.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       39 (39)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.00)+Epik State Penalty(    0.00) =    -7.00 kcal/mol
+DOCKING RESULTS FOR LIGAND       40 (40)
+Best Emodel=   -61.90 E=   -43.80 Eint=     0.60 GlideScore=    -7.00
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       41 (41)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -6.55)+Epik State Penalty(    0.00) =    -6.55 kcal/mol
+DOCKING RESULTS FOR LIGAND       42 (42)
+Best Emodel=   -67.83 E=   -50.50 Eint=     7.59 GlideScore=    -6.55
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.19)+Epik State Penalty(    0.00) =    -7.19 kcal/mol
+DOCKING RESULTS FOR LIGAND       43 (43)
+Best Emodel=   -77.05 E=   -55.98 Eint=     3.56 GlideScore=    -7.19
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.92)+Epik State Penalty(    0.00) =    -6.92 kcal/mol
+DOCKING RESULTS FOR LIGAND       44 (44)
+Best Emodel=   -65.73 E=   -46.61 Eint=     1.58 GlideScore=    -6.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.75)+Epik State Penalty(    0.00) =    -6.75 kcal/mol
+DOCKING RESULTS FOR LIGAND       45 (45)
+Best Emodel=   -58.14 E=   -40.77 Eint=     1.68 GlideScore=    -6.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.23)+Epik State Penalty(    0.00) =    -6.23 kcal/mol
+DOCKING RESULTS FOR LIGAND       46 (46)
+Best Emodel=   -55.16 E=   -41.03 Eint=     2.97 GlideScore=    -6.23
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       47 (47)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.75)+Epik State Penalty(    0.00) =    -7.75 kcal/mol
+DOCKING RESULTS FOR LIGAND       48 (48)
+Best Emodel=   -84.11 E=   -58.09 Eint=     1.55 GlideScore=    -7.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.92)+Epik State Penalty(    0.00) =    -7.92 kcal/mol
+DOCKING RESULTS FOR LIGAND       49 (49)
+Best Emodel=   -78.12 E=   -54.42 Eint=     3.89 GlideScore=    -7.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -4.32)+Epik State Penalty(    0.00) =    -4.32 kcal/mol
+DOCKING RESULTS FOR LIGAND       50 (50)
+Best Emodel=   -50.63 E=   -44.26 Eint=     3.93 GlideScore=    -4.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.18)+Epik State Penalty(    0.00) =    -5.18 kcal/mol
+DOCKING RESULTS FOR LIGAND       51 (51)
+Best Emodel=   -74.63 E=   -58.14 Eint=     3.03 GlideScore=    -5.18
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -7.57)+Epik State Penalty(    0.00) =    -7.57 kcal/mol
+DOCKING RESULTS FOR LIGAND       52 (52)
+Best Emodel=   -92.46 E=   -65.09 Eint=     5.14 GlideScore=    -7.57
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.00)+Epik State Penalty(    0.00) =    -7.00 kcal/mol
+DOCKING RESULTS FOR LIGAND       53 (53)
+Best Emodel=   -69.98 E=   -49.56 Eint=     2.13 GlideScore=    -7.00
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.03)+Epik State Penalty(    0.00) =    -6.03 kcal/mol
+DOCKING RESULTS FOR LIGAND       54 (54)
+Best Emodel=   -64.93 E=   -52.76 Eint=    13.23 GlideScore=    -6.03
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND       55 (55)
+Best Emodel=   -64.26 E=   -50.10 Eint=     4.49 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND       56 (56)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND       57 (57)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.97)+Epik State Penalty(    0.00) =    -6.97 kcal/mol
+DOCKING RESULTS FOR LIGAND       58 (58)
+Best Emodel=   -63.71 E=   -46.22 Eint=     5.20 GlideScore=    -6.97
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.03)+Epik State Penalty(    0.00) =    -7.03 kcal/mol
+DOCKING RESULTS FOR LIGAND       59 (59)
+Best Emodel=   -68.48 E=   -50.95 Eint=     8.12 GlideScore=    -7.03
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       60 (60)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.16)+Epik State Penalty(    0.00) =    -6.16 kcal/mol
+DOCKING RESULTS FOR LIGAND       61 (61)
+Best Emodel=   -56.65 E=   -41.93 Eint=     1.78 GlideScore=    -6.16
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.63)+Epik State Penalty(    0.00) =    -7.63 kcal/mol
+DOCKING RESULTS FOR LIGAND       62 (62)
+Best Emodel=   -71.55 E=   -52.45 Eint=     6.86 GlideScore=    -7.63
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.81)+Epik State Penalty(    0.00) =    -6.81 kcal/mol
+DOCKING RESULTS FOR LIGAND       63 (63)
+Best Emodel=   -65.49 E=   -46.68 Eint=     2.07 GlideScore=    -6.81
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.91)+Epik State Penalty(    0.00) =    -7.91 kcal/mol
+DOCKING RESULTS FOR LIGAND       64 (64)
+Best Emodel=   -82.94 E=   -57.84 Eint=     5.38 GlideScore=    -7.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -5.41)+Epik State Penalty(    0.00) =    -5.41 kcal/mol
+DOCKING RESULTS FOR LIGAND       65 (65)
+Best Emodel=   -55.53 E=   -44.04 Eint=     3.84 GlideScore=    -5.41
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       66 (66)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.85)+Epik State Penalty(    0.00) =    -6.85 kcal/mol
+DOCKING RESULTS FOR LIGAND       67 (67)
+Best Emodel=   -65.34 E=   -46.77 Eint=     1.80 GlideScore=    -6.85
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.01)+Epik State Penalty(    0.00) =    -7.01 kcal/mol
+DOCKING RESULTS FOR LIGAND       68 (68)
+Best Emodel=   -64.90 E=   -47.18 Eint=     4.95 GlideScore=    -7.01
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       69 (69)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.56)+Epik State Penalty(    0.00) =    -6.56 kcal/mol
+DOCKING RESULTS FOR LIGAND       70 (70)
+Best Emodel=   -55.24 E=   -39.02 Eint=     0.66 GlideScore=    -6.56
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       71 (71)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.81)+Epik State Penalty(    0.00) =    -6.81 kcal/mol
+DOCKING RESULTS FOR LIGAND       72 (72)
+Best Emodel=   -65.49 E=   -46.68 Eint=     2.07 GlideScore=    -6.81
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       73 (73)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND       74 (74)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       75 (75)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       76 (76)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.85)+Epik State Penalty(    0.00) =    -6.85 kcal/mol
+DOCKING RESULTS FOR LIGAND       77 (77)
+Best Emodel=   -63.14 E=   -45.05 Eint=     2.12 GlideScore=    -6.85
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.90)+Epik State Penalty(    0.00) =    -6.90 kcal/mol
+DOCKING RESULTS FOR LIGAND       78 (78)
+Best Emodel=   -68.72 E=   -48.97 Eint=     3.02 GlideScore=    -6.90
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.78)+Epik State Penalty(    0.00) =    -6.78 kcal/mol
+DOCKING RESULTS FOR LIGAND       79 (79)
+Best Emodel=   -67.06 E=   -48.56 Eint=     5.86 GlideScore=    -6.78
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.23)+Epik State Penalty(    0.00) =    -6.23 kcal/mol
+DOCKING RESULTS FOR LIGAND       80 (80)
+Best Emodel=   -55.16 E=   -41.03 Eint=     2.97 GlideScore=    -6.23
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.84)+Epik State Penalty(    0.00) =    -6.84 kcal/mol
+DOCKING RESULTS FOR LIGAND       81 (81)
+Best Emodel=   -63.42 E=   -44.75 Eint=     1.84 GlideScore=    -6.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       82 (82)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       83 (83)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       84 (84)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.01)+Epik State Penalty(    0.00) =    -7.01 kcal/mol
+DOCKING RESULTS FOR LIGAND       85 (85)
+Best Emodel=   -65.58 E=   -46.37 Eint=     3.06 GlideScore=    -7.01
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.60)+Epik State Penalty(    0.00) =    -6.60 kcal/mol
+DOCKING RESULTS FOR LIGAND       86 (86)
+Best Emodel=   -63.02 E=   -44.58 Eint=     1.15 GlideScore=    -6.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.69)+Epik State Penalty(    0.00) =    -5.69 kcal/mol
+DOCKING RESULTS FOR LIGAND       87 (87)
+Best Emodel=   -79.40 E=   -62.23 Eint=     8.06 GlideScore=    -5.69
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       88 (88)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.91)+Epik State Penalty(    0.00) =    -6.91 kcal/mol
+DOCKING RESULTS FOR LIGAND       89 (89)
+Best Emodel=   -71.27 E=   -52.74 Eint=     6.71 GlideScore=    -6.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -4.99)+Epik State Penalty(    0.00) =    -4.99 kcal/mol
+DOCKING RESULTS FOR LIGAND       90 (90)
+Best Emodel=   -49.88 E=   -42.76 Eint=    11.30 GlideScore=    -4.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.56)+Epik State Penalty(    0.00) =    -5.56 kcal/mol
+DOCKING RESULTS FOR LIGAND       91 (91)
+Best Emodel=   -60.78 E=   -49.43 Eint=    11.09 GlideScore=    -5.56
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.66)+Epik State Penalty(    0.00) =    -6.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       92 (92)
+Best Emodel=   -67.63 E=   -48.67 Eint=     1.44 GlideScore=    -6.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       93 (93)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -8.25)+Epik State Penalty(    0.00) =    -8.25 kcal/mol
+DOCKING RESULTS FOR LIGAND       94 (94)
+Best Emodel=   -85.27 E=   -57.45 Eint=     1.73 GlideScore=    -8.25
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       95 (95)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND       96 (96)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.89)+Epik State Penalty(    0.00) =    -6.89 kcal/mol
+DOCKING RESULTS FOR LIGAND       97 (97)
+Best Emodel=   -68.12 E=   -48.93 Eint=     1.89 GlideScore=    -6.89
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.67)+Epik State Penalty(    0.00) =    -6.67 kcal/mol
+DOCKING RESULTS FOR LIGAND       98 (98)
+Best Emodel=   -68.25 E=   -48.86 Eint=     1.95 GlideScore=    -6.67
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND       99 (99)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      100 (100)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.94)+Epik State Penalty(    0.00) =    -7.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      101 (101)
+Best Emodel=   -70.37 E=   -53.95 Eint=    16.28 GlideScore=    -7.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.80)+Epik State Penalty(    0.00) =    -6.80 kcal/mol
+DOCKING RESULTS FOR LIGAND      102 (102)
+Best Emodel=   -61.92 E=   -44.37 Eint=     2.07 GlideScore=    -6.80
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      103 (103)
+Best Emodel=   -78.44 E=   -55.14 Eint=     4.89 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -5.79)+Epik State Penalty(    0.00) =    -5.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      104 (104)
+Best Emodel=   -57.23 E=   -42.74 Eint=     2.22 GlideScore=    -5.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.88)+Epik State Penalty(    0.00) =    -6.88 kcal/mol
+DOCKING RESULTS FOR LIGAND      105 (105)
+Best Emodel=   -71.04 E=   -50.29 Eint=     3.32 GlideScore=    -6.88
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.80)+Epik State Penalty(    0.00) =    -6.80 kcal/mol
+DOCKING RESULTS FOR LIGAND      106 (106)
+Best Emodel=   -61.92 E=   -44.37 Eint=     2.07 GlideScore=    -6.80
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.40)+Epik State Penalty(    0.00) =    -7.40 kcal/mol
+DOCKING RESULTS FOR LIGAND      107 (107)
+Best Emodel=   -76.45 E=   -54.15 Eint=     3.69 GlideScore=    -7.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.96)+Epik State Penalty(    0.00) =    -7.96 kcal/mol
+DOCKING RESULTS FOR LIGAND      108 (108)
+Best Emodel=   -79.43 E=   -55.92 Eint=     7.59 GlideScore=    -7.96
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      109 (109)
+Best Emodel=   -55.66 E=   -39.53 Eint=     1.60 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.72)+Epik State Penalty(    0.00) =    -7.72 kcal/mol
+DOCKING RESULTS FOR LIGAND      110 (110)
+Best Emodel=   -77.58 E=   -54.16 Eint=     3.81 GlideScore=    -7.72
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.06)+Epik State Penalty(    0.00) =    -7.06 kcal/mol
+DOCKING RESULTS FOR LIGAND      111 (111)
+Best Emodel=   -71.03 E=   -50.67 Eint=     2.34 GlideScore=    -7.06
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      112 (112)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      113 (113)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.44)+Epik State Penalty(    0.00) =    -7.44 kcal/mol
+DOCKING RESULTS FOR LIGAND      114 (114)
+Best Emodel=   -79.30 E=   -55.70 Eint=     3.68 GlideScore=    -7.44
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.78)+Epik State Penalty(    0.00) =    -6.78 kcal/mol
+DOCKING RESULTS FOR LIGAND      115 (115)
+Best Emodel=   -73.12 E=   -55.44 Eint=     8.98 GlideScore=    -6.78
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.81)+Epik State Penalty(    0.00) =    -5.81 kcal/mol
+DOCKING RESULTS FOR LIGAND      116 (116)
+Best Emodel=   -62.26 E=   -46.72 Eint=     2.71 GlideScore=    -5.81
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      117 (117)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.60)+Epik State Penalty(    0.00) =    -5.60 kcal/mol
+DOCKING RESULTS FOR LIGAND      118 (118)
+Best Emodel=   -59.52 E=   -44.97 Eint=     2.59 GlideScore=    -5.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      119 (119)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      120 (120)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -6.22)+Epik State Penalty(    0.00) =    -6.22 kcal/mol
+DOCKING RESULTS FOR LIGAND      121 (121)
+Best Emodel=   -58.73 E=   -47.43 Eint=     8.16 GlideScore=    -6.22
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.00)+Epik State Penalty(    0.00) =    -6.00 kcal/mol
+DOCKING RESULTS FOR LIGAND      122 (122)
+Best Emodel=   -62.56 E=   -46.58 Eint=     2.25 GlideScore=    -6.00
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.82)+Epik State Penalty(    0.00) =    -5.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      123 (123)
+Best Emodel=   -60.49 E=   -45.72 Eint=     2.53 GlideScore=    -5.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      124 (124)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.08)+Epik State Penalty(    0.00) =    -8.08 kcal/mol
+DOCKING RESULTS FOR LIGAND      125 (125)
+Best Emodel=   -90.33 E=   -63.62 Eint=     9.14 GlideScore=    -8.08
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -5.63)+Epik State Penalty(    0.00) =    -5.63 kcal/mol
+DOCKING RESULTS FOR LIGAND      126 (126)
+Best Emodel=   -47.72 E=   -36.96 Eint=     3.38 GlideScore=    -5.63
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      127 (127)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           18
+ Using templates for ring conformations.
+GlideScore(   -5.21)+Epik State Penalty(    0.00) =    -5.21 kcal/mol
+DOCKING RESULTS FOR LIGAND      128 (128)
+Best Emodel=   -39.24 E=   -41.49 Eint=     7.05 GlideScore=    -5.21
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.93)+Epik State Penalty(    0.00) =    -7.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      129 (129)
+Best Emodel=   -78.84 E=   -53.99 Eint=     4.22 GlideScore=    -7.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      130 (130)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.05)+Epik State Penalty(    0.00) =    -7.05 kcal/mol
+DOCKING RESULTS FOR LIGAND      131 (131)
+Best Emodel=   -66.01 E=   -46.35 Eint=     1.44 GlideScore=    -7.05
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      132 (132)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      133 (133)
+Best Emodel=   -46.96 E=   -35.73 Eint=     2.29 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.23)+Epik State Penalty(    0.00) =    -6.23 kcal/mol
+DOCKING RESULTS FOR LIGAND      134 (134)
+Best Emodel=   -55.16 E=   -41.03 Eint=     2.97 GlideScore=    -6.23
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      135 (135)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      136 (136)
+Best Emodel=   -55.66 E=   -39.53 Eint=     1.60 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      137 (137)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.57)+Epik State Penalty(    0.00) =    -6.57 kcal/mol
+DOCKING RESULTS FOR LIGAND      138 (138)
+Best Emodel=   -59.89 E=   -44.61 Eint=     2.97 GlideScore=    -6.57
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND      139 (139)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      140 (140)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.08)+Epik State Penalty(    0.00) =    -7.08 kcal/mol
+DOCKING RESULTS FOR LIGAND      141 (141)
+Best Emodel=   -80.22 E=   -56.93 Eint=     7.72 GlideScore=    -7.08
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.46)+Epik State Penalty(    0.00) =    -7.46 kcal/mol
+DOCKING RESULTS FOR LIGAND      142 (142)
+Best Emodel=   -74.47 E=   -53.49 Eint=     4.60 GlideScore=    -7.46
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      143 (143)
+Best Emodel=   -61.86 E=   -48.25 Eint=     9.82 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.91)+Epik State Penalty(    0.00) =    -8.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      144 (144)
+Best Emodel=  -104.30 E=   -69.75 Eint=     6.42 GlideScore=    -8.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.60)+Epik State Penalty(    0.00) =    -7.60 kcal/mol
+DOCKING RESULTS FOR LIGAND      145 (145)
+Best Emodel=   -72.22 E=   -57.15 Eint=    18.83 GlideScore=    -7.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.85)+Epik State Penalty(    0.00) =    -6.85 kcal/mol
+DOCKING RESULTS FOR LIGAND      146 (146)
+Best Emodel=   -46.66 E=   -41.29 Eint=    17.15 GlideScore=    -6.85
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND      147 (147)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.90)+Epik State Penalty(    0.00) =    -6.90 kcal/mol
+DOCKING RESULTS FOR LIGAND      148 (148)
+Best Emodel=   -68.72 E=   -48.97 Eint=     3.02 GlideScore=    -6.90
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND      149 (149)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.10)+Epik State Penalty(    0.00) =    -6.10 kcal/mol
+DOCKING RESULTS FOR LIGAND      150 (150)
+Best Emodel=   -56.82 E=   -42.52 Eint=     3.71 GlideScore=    -6.10
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.75)+Epik State Penalty(    0.00) =    -6.75 kcal/mol
+DOCKING RESULTS FOR LIGAND      151 (151)
+Best Emodel=   -58.14 E=   -40.77 Eint=     1.68 GlideScore=    -6.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -5.05)+Epik State Penalty(    0.00) =    -5.05 kcal/mol
+DOCKING RESULTS FOR LIGAND      152 (152)
+Best Emodel=   -67.51 E=   -53.78 Eint=     5.73 GlideScore=    -5.05
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.48)+Epik State Penalty(    0.00) =    -7.48 kcal/mol
+DOCKING RESULTS FOR LIGAND      153 (153)
+Best Emodel=   -76.45 E=   -54.32 Eint=     4.61 GlideScore=    -7.48
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+NO POSES STORED FOR LIGAND      154 (154)
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.91)+Epik State Penalty(    0.00) =    -4.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      155 (155)
+Best Emodel=   -54.98 E=   -42.38 Eint=     3.06 GlideScore=    -4.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      156 (156)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.75)+Epik State Penalty(    0.00) =    -7.75 kcal/mol
+DOCKING RESULTS FOR LIGAND      157 (157)
+Best Emodel=   -84.11 E=   -58.09 Eint=     1.55 GlideScore=    -7.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.70)+Epik State Penalty(    0.00) =    -7.70 kcal/mol
+DOCKING RESULTS FOR LIGAND      158 (158)
+Best Emodel=   -73.35 E=   -51.04 Eint=     3.46 GlideScore=    -7.70
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.49)+Epik State Penalty(    0.00) =    -7.49 kcal/mol
+DOCKING RESULTS FOR LIGAND      159 (159)
+Best Emodel=   -77.73 E=   -57.49 Eint=     7.49 GlideScore=    -7.49
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+2 out of 204056 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      160 (160)
+Best Emodel=   -64.26 E=   -50.10 Eint=     4.49 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      161 (161)
+Best Emodel=   -55.66 E=   -39.53 Eint=     1.60 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.32)+Epik State Penalty(    0.00) =    -7.32 kcal/mol
+DOCKING RESULTS FOR LIGAND      162 (162)
+Best Emodel=   -70.91 E=   -50.36 Eint=     3.90 GlideScore=    -7.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.11)+Epik State Penalty(    0.00) =    -6.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      163 (163)
+Best Emodel=   -61.43 E=   -48.63 Eint=     5.68 GlideScore=    -6.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.77)+Epik State Penalty(    0.00) =    -7.77 kcal/mol
+DOCKING RESULTS FOR LIGAND      164 (164)
+Best Emodel=   -87.12 E=   -59.93 Eint=     4.06 GlideScore=    -7.77
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -4.93)+Epik State Penalty(    0.00) =    -4.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      165 (165)
+Best Emodel=   -54.61 E=   -44.10 Eint=     3.34 GlideScore=    -4.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      166 (166)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.57)+Epik State Penalty(    0.00) =    -7.57 kcal/mol
+DOCKING RESULTS FOR LIGAND      167 (167)
+Best Emodel=   -73.97 E=   -53.70 Eint=     7.34 GlideScore=    -7.57
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      168 (168)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      169 (169)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.92)+Epik State Penalty(    0.00) =    -7.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      170 (170)
+Best Emodel=   -78.12 E=   -54.42 Eint=     3.89 GlideScore=    -7.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      171 (171)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.46)+Epik State Penalty(    0.00) =    -7.46 kcal/mol
+DOCKING RESULTS FOR LIGAND      172 (172)
+Best Emodel=   -74.16 E=   -53.45 Eint=     5.49 GlideScore=    -7.46
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      173 (173)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Failed to generate ring conformations.
+ Will use conformations from input structure.
+ set bad on ringconf
+  DO  NOTRINGCONF
+GlideScore(   -7.60)+Epik State Penalty(    0.00) =    -7.60 kcal/mol
+DOCKING RESULTS FOR LIGAND      174 (174)
+Best Emodel=   -75.00 E=   -52.68 Eint=     6.53 GlideScore=    -7.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -8.23)+Epik State Penalty(    0.00) =    -8.23 kcal/mol
+DOCKING RESULTS FOR LIGAND      175 (175)
+Best Emodel=   -81.55 E=   -56.20 Eint=     6.18 GlideScore=    -8.23
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND      176 (176)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.83)+Epik State Penalty(    0.00) =    -7.83 kcal/mol
+DOCKING RESULTS FOR LIGAND      177 (177)
+Best Emodel=   -83.47 E=   -58.65 Eint=     6.81 GlideScore=    -7.83
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.93)+Epik State Penalty(    0.00) =    -5.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      178 (178)
+Best Emodel=   -60.20 E=   -46.84 Eint=     5.73 GlideScore=    -5.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.11)+Epik State Penalty(    0.00) =    -6.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      179 (179)
+Best Emodel=   -61.43 E=   -48.63 Eint=     5.68 GlideScore=    -6.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.74)+Epik State Penalty(    0.00) =    -7.74 kcal/mol
+DOCKING RESULTS FOR LIGAND      180 (180)
+Best Emodel=   -78.70 E=   -54.82 Eint=     3.96 GlideScore=    -7.74
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      181 (181)
+Best Emodel=   -78.44 E=   -55.14 Eint=     4.89 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      182 (182)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.77)+Epik State Penalty(    0.00) =    -6.77 kcal/mol
+DOCKING RESULTS FOR LIGAND      183 (183)
+Best Emodel=   -66.76 E=   -48.89 Eint=     5.55 GlideScore=    -6.77
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.96)+Epik State Penalty(    0.00) =    -4.96 kcal/mol
+DOCKING RESULTS FOR LIGAND      184 (184)
+Best Emodel=   -59.07 E=   -48.43 Eint=     2.78 GlideScore=    -4.96
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.94)+Epik State Penalty(    0.00) =    -6.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      185 (185)
+Best Emodel=   -51.33 E=   -44.77 Eint=    12.64 GlideScore=    -6.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -4.59)+Epik State Penalty(    0.00) =    -4.59 kcal/mol
+DOCKING RESULTS FOR LIGAND      186 (186)
+Best Emodel=   -43.74 E=   -37.55 Eint=     1.73 GlideScore=    -4.59
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.40)+Epik State Penalty(    0.00) =    -7.40 kcal/mol
+DOCKING RESULTS FOR LIGAND      187 (187)
+Best Emodel=   -76.45 E=   -54.15 Eint=     3.69 GlideScore=    -7.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.70)+Epik State Penalty(    0.00) =    -7.70 kcal/mol
+DOCKING RESULTS FOR LIGAND      188 (188)
+Best Emodel=   -73.35 E=   -51.04 Eint=     3.46 GlideScore=    -7.70
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.85)+Epik State Penalty(    0.00) =    -6.85 kcal/mol
+DOCKING RESULTS FOR LIGAND      189 (189)
+Best Emodel=   -66.45 E=   -49.80 Eint=     3.37 GlideScore=    -6.85
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -6.32)+Epik State Penalty(    0.00) =    -6.32 kcal/mol
+DOCKING RESULTS FOR LIGAND      190 (190)
+Best Emodel=   -56.19 E=   -47.00 Eint=    12.47 GlideScore=    -6.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.21)+Epik State Penalty(    0.00) =    -7.21 kcal/mol
+DOCKING RESULTS FOR LIGAND      191 (191)
+Best Emodel=   -65.81 E=   -50.29 Eint=     9.28 GlideScore=    -7.21
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.11)+Epik State Penalty(    0.00) =    -6.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      192 (192)
+Best Emodel=   -61.43 E=   -48.63 Eint=     5.68 GlideScore=    -6.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.83)+Epik State Penalty(    0.00) =    -7.83 kcal/mol
+DOCKING RESULTS FOR LIGAND      193 (193)
+Best Emodel=   -86.37 E=   -55.40 Eint=     3.08 GlideScore=    -7.83
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -8.66)+Epik State Penalty(    0.00) =    -8.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      194 (194)
+Best Emodel=   -85.94 E=   -57.69 Eint=     6.01 GlideScore=    -8.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      195 (195)
+Best Emodel=   -72.91 E=   -54.86 Eint=     9.42 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      196 (196)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.90)+Epik State Penalty(    0.00) =    -6.90 kcal/mol
+DOCKING RESULTS FOR LIGAND      197 (197)
+Best Emodel=   -68.72 E=   -48.97 Eint=     3.02 GlideScore=    -6.90
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      198 (198)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      199 (199)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      200 (200)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -6.42)+Epik State Penalty(    0.00) =    -6.42 kcal/mol
+DOCKING RESULTS FOR LIGAND      201 (201)
+Best Emodel=   -67.98 E=   -53.17 Eint=    12.27 GlideScore=    -6.42
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      202 (202)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.33)+Epik State Penalty(    0.00) =    -7.33 kcal/mol
+DOCKING RESULTS FOR LIGAND      203 (203)
+Best Emodel=   -74.60 E=   -52.47 Eint=     2.84 GlideScore=    -7.33
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      204 (204)
+Best Emodel=   -64.26 E=   -50.10 Eint=     4.49 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.10)+Epik State Penalty(    0.00) =    -6.10 kcal/mol
+DOCKING RESULTS FOR LIGAND      205 (205)
+Best Emodel=   -59.99 E=   -49.01 Eint=     5.01 GlideScore=    -6.10
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.98)+Epik State Penalty(    0.00) =    -6.98 kcal/mol
+DOCKING RESULTS FOR LIGAND      206 (206)
+Best Emodel=   -69.82 E=   -51.86 Eint=     4.70 GlideScore=    -6.98
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -4.54)+Epik State Penalty(    0.00) =    -4.54 kcal/mol
+DOCKING RESULTS FOR LIGAND      207 (207)
+Best Emodel=   -58.78 E=   -50.18 Eint=     5.63 GlideScore=    -4.54
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.54)+Epik State Penalty(    0.00) =    -5.54 kcal/mol
+DOCKING RESULTS FOR LIGAND      208 (208)
+Best Emodel=   -53.51 E=   -44.46 Eint=     5.53 GlideScore=    -5.54
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           20
+ Using templates for ring conformations.
+GlideScore(   -5.63)+Epik State Penalty(    0.00) =    -5.63 kcal/mol
+DOCKING RESULTS FOR LIGAND      209 (209)
+Best Emodel=   -62.13 E=   -50.42 Eint=     8.88 GlideScore=    -5.63
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+15 out of 167715 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      210 (210)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -4.81)+Epik State Penalty(    0.00) =    -4.81 kcal/mol
+DOCKING RESULTS FOR LIGAND      211 (211)
+Best Emodel=   -61.25 E=   -48.08 Eint=     3.64 GlideScore=    -4.81
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      212 (212)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.80)+Epik State Penalty(    0.00) =    -6.80 kcal/mol
+DOCKING RESULTS FOR LIGAND      213 (213)
+Best Emodel=   -61.92 E=   -44.37 Eint=     2.07 GlideScore=    -6.80
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.70)+Epik State Penalty(    0.00) =    -7.70 kcal/mol
+DOCKING RESULTS FOR LIGAND      214 (214)
+Best Emodel=   -73.35 E=   -51.04 Eint=     3.46 GlideScore=    -7.70
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.99)+Epik State Penalty(    0.00) =    -5.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      215 (215)
+Best Emodel=   -60.55 E=   -47.40 Eint=     6.43 GlideScore=    -5.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.80)+Epik State Penalty(    0.00) =    -6.80 kcal/mol
+DOCKING RESULTS FOR LIGAND      216 (216)
+Best Emodel=   -61.92 E=   -44.37 Eint=     2.07 GlideScore=    -6.80
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      217 (217)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -8.08)+Epik State Penalty(    0.00) =    -8.08 kcal/mol
+DOCKING RESULTS FOR LIGAND      218 (218)
+Best Emodel=   -77.93 E=   -55.58 Eint=     7.41 GlideScore=    -8.08
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -4.93)+Epik State Penalty(    0.00) =    -4.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      219 (219)
+Best Emodel=   -48.44 E=   -39.50 Eint=     7.44 GlideScore=    -4.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      220 (220)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.70)+Epik State Penalty(    0.00) =    -7.70 kcal/mol
+DOCKING RESULTS FOR LIGAND      221 (221)
+Best Emodel=   -77.85 E=   -54.06 Eint=     3.63 GlideScore=    -7.70
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.40)+Epik State Penalty(    0.00) =    -7.40 kcal/mol
+DOCKING RESULTS FOR LIGAND      222 (222)
+Best Emodel=   -70.45 E=   -51.19 Eint=     7.99 GlideScore=    -7.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           23
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    223(223)
+SKIP LIG      223 (223): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      224 (224)
+Best Emodel=   -55.66 E=   -39.53 Eint=     1.60 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -8.09)+Epik State Penalty(    0.00) =    -8.09 kcal/mol
+DOCKING RESULTS FOR LIGAND      225 (225)
+Best Emodel=   -83.27 E=   -57.22 Eint=     4.65 GlideScore=    -8.09
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      226 (226)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.42)+Epik State Penalty(    0.00) =    -7.42 kcal/mol
+DOCKING RESULTS FOR LIGAND      227 (227)
+Best Emodel=   -82.50 E=   -58.57 Eint=     4.84 GlideScore=    -7.42
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -4.14)+Epik State Penalty(    0.00) =    -4.14 kcal/mol
+DOCKING RESULTS FOR LIGAND      228 (228)
+Best Emodel=   -53.03 E=   -42.89 Eint=     4.71 GlideScore=    -4.14
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           15
+ Using templates for ring conformations.
+GlideScore(   -4.52)+Epik State Penalty(    0.00) =    -4.52 kcal/mol
+DOCKING RESULTS FOR LIGAND      229 (229)
+Best Emodel=   -30.77 E=   -36.89 Eint=    16.17 GlideScore=    -4.52
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.37)+Epik State Penalty(    0.00) =    -7.37 kcal/mol
+DOCKING RESULTS FOR LIGAND      230 (230)
+Best Emodel=   -51.01 E=   -46.50 Eint=     6.82 GlideScore=    -7.37
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      231 (231)
+Best Emodel=   -72.64 E=   -51.50 Eint=     5.37 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.18)+Epik State Penalty(    0.00) =    -7.18 kcal/mol
+DOCKING RESULTS FOR LIGAND      232 (232)
+Best Emodel=   -56.18 E=   -47.61 Eint=    11.28 GlideScore=    -7.18
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      233 (233)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.14)+Epik State Penalty(    0.00) =    -7.14 kcal/mol
+DOCKING RESULTS FOR LIGAND      234 (234)
+Best Emodel=   -65.20 E=   -53.20 Eint=    14.07 GlideScore=    -7.14
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.52)+Epik State Penalty(    0.00) =    -7.52 kcal/mol
+DOCKING RESULTS FOR LIGAND      235 (235)
+Best Emodel=   -82.47 E=   -57.66 Eint=     3.59 GlideScore=    -7.52
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      236 (236)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.60)+Epik State Penalty(    0.00) =    -7.60 kcal/mol
+DOCKING RESULTS FOR LIGAND      237 (237)
+Best Emodel=   -77.62 E=   -56.70 Eint=     9.05 GlideScore=    -7.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      238 (238)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           17
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    239(239)
+SKIP LIG      239 (239): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.89)+Epik State Penalty(    0.00) =    -7.89 kcal/mol
+DOCKING RESULTS FOR LIGAND      240 (240)
+Best Emodel=   -74.77 E=   -52.64 Eint=     5.53 GlideScore=    -7.89
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.29)+Epik State Penalty(    0.00) =    -4.29 kcal/mol
+DOCKING RESULTS FOR LIGAND      241 (241)
+Best Emodel=   -57.27 E=   -48.47 Eint=     6.36 GlideScore=    -4.29
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -4.33)+Epik State Penalty(    0.00) =    -4.33 kcal/mol
+DOCKING RESULTS FOR LIGAND      242 (242)
+Best Emodel=   -47.48 E=   -44.65 Eint=    18.98 GlideScore=    -4.33
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -9.09)+Epik State Penalty(    0.00) =    -9.09 kcal/mol
+DOCKING RESULTS FOR LIGAND      243 (243)
+Best Emodel=  -117.61 E=   -77.59 Eint=     5.02 GlideScore=    -9.09
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.08)+Epik State Penalty(    0.00) =    -6.08 kcal/mol
+DOCKING RESULTS FOR LIGAND      244 (244)
+Best Emodel=   -61.86 E=   -47.71 Eint=     3.14 GlideScore=    -6.08
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.60)+Epik State Penalty(    0.00) =    -7.60 kcal/mol
+DOCKING RESULTS FOR LIGAND      245 (245)
+Best Emodel=   -72.22 E=   -57.15 Eint=    18.83 GlideScore=    -7.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.99)+Epik State Penalty(    0.00) =    -5.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      246 (246)
+Best Emodel=   -60.55 E=   -47.40 Eint=     6.43 GlideScore=    -5.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -5.38)+Epik State Penalty(    0.00) =    -5.38 kcal/mol
+DOCKING RESULTS FOR LIGAND      247 (247)
+Best Emodel=   -61.50 E=   -51.51 Eint=     7.65 GlideScore=    -5.38
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -8.17)+Epik State Penalty(    0.00) =    -8.17 kcal/mol
+DOCKING RESULTS FOR LIGAND      248 (248)
+Best Emodel=   -85.99 E=   -57.96 Eint=     1.68 GlideScore=    -8.17
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.60)+Epik State Penalty(    0.00) =    -6.60 kcal/mol
+DOCKING RESULTS FOR LIGAND      249 (249)
+Best Emodel=   -62.58 E=   -48.26 Eint=     8.09 GlideScore=    -6.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      250 (250)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.44)+Epik State Penalty(    0.00) =    -7.44 kcal/mol
+DOCKING RESULTS FOR LIGAND      251 (251)
+Best Emodel=   -74.07 E=   -53.51 Eint=     6.24 GlideScore=    -7.44
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      252 (252)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      253 (253)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.15)+Epik State Penalty(    0.00) =    -5.15 kcal/mol
+DOCKING RESULTS FOR LIGAND      254 (254)
+Best Emodel=   -52.58 E=   -44.74 Eint=    10.68 GlideScore=    -5.15
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.59)+Epik State Penalty(    0.00) =    -5.59 kcal/mol
+DOCKING RESULTS FOR LIGAND      255 (255)
+Best Emodel=   -55.64 E=   -43.89 Eint=     3.74 GlideScore=    -5.59
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -6.40)+Epik State Penalty(    0.00) =    -6.40 kcal/mol
+DOCKING RESULTS FOR LIGAND      256 (256)
+Best Emodel=   -71.87 E=   -57.72 Eint=    10.43 GlideScore=    -6.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.03)+Epik State Penalty(    0.00) =    -7.03 kcal/mol
+DOCKING RESULTS FOR LIGAND      257 (257)
+Best Emodel=   -67.63 E=   -48.29 Eint=     2.44 GlideScore=    -7.03
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      258 (258)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           17
+ Using templates for ring conformations.
+NO POSES STORED FOR LIGAND      259 (259)
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.50)+Epik State Penalty(    0.00) =    -7.50 kcal/mol
+DOCKING RESULTS FOR LIGAND      260 (260)
+Best Emodel=   -83.16 E=   -59.53 Eint=     7.35 GlideScore=    -7.50
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+1 out of 136546 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -4.99)+Epik State Penalty(    0.00) =    -4.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      261 (261)
+Best Emodel=   -45.71 E=   -43.49 Eint=     7.50 GlideScore=    -4.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -8.33)+Epik State Penalty(    0.00) =    -8.33 kcal/mol
+DOCKING RESULTS FOR LIGAND      262 (262)
+Best Emodel=   -81.06 E=   -56.84 Eint=     8.21 GlideScore=    -8.33
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.67)+Epik State Penalty(    0.00) =    -5.67 kcal/mol
+DOCKING RESULTS FOR LIGAND      263 (263)
+Best Emodel=   -54.43 E=   -44.28 Eint=     4.78 GlideScore=    -5.67
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      264 (264)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      265 (265)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.99)+Epik State Penalty(    0.00) =    -5.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      266 (266)
+Best Emodel=   -60.55 E=   -47.40 Eint=     6.43 GlideScore=    -5.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.57)+Epik State Penalty(    0.00) =    -7.57 kcal/mol
+DOCKING RESULTS FOR LIGAND      267 (267)
+Best Emodel=   -83.43 E=   -60.00 Eint=     7.09 GlideScore=    -7.57
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.59)+Epik State Penalty(    0.00) =    -4.59 kcal/mol
+DOCKING RESULTS FOR LIGAND      268 (268)
+Best Emodel=   -37.97 E=   -42.84 Eint=    13.10 GlideScore=    -4.59
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.77)+Epik State Penalty(    0.00) =    -7.77 kcal/mol
+DOCKING RESULTS FOR LIGAND      269 (269)
+Best Emodel=   -79.34 E=   -54.95 Eint=     3.70 GlideScore=    -7.77
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.82)+Epik State Penalty(    0.00) =    -6.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      270 (270)
+Best Emodel=   -68.90 E=   -50.70 Eint=     4.64 GlideScore=    -6.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.45)+Epik State Penalty(    0.00) =    -7.45 kcal/mol
+DOCKING RESULTS FOR LIGAND      271 (271)
+Best Emodel=   -87.27 E=   -62.33 Eint=    11.07 GlideScore=    -7.45
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      272 (272)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      273 (273)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.78)+Epik State Penalty(    0.00) =    -6.78 kcal/mol
+DOCKING RESULTS FOR LIGAND      274 (274)
+Best Emodel=   -69.20 E=   -52.70 Eint=     8.50 GlideScore=    -6.78
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.32)+Epik State Penalty(    0.00) =    -7.32 kcal/mol
+DOCKING RESULTS FOR LIGAND      275 (275)
+Best Emodel=   -70.91 E=   -50.36 Eint=     3.90 GlideScore=    -7.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.96)+Epik State Penalty(    0.00) =    -7.96 kcal/mol
+DOCKING RESULTS FOR LIGAND      276 (276)
+Best Emodel=   -76.22 E=   -52.58 Eint=     2.90 GlideScore=    -7.96
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      277 (277)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.37)+Epik State Penalty(    0.00) =    -6.37 kcal/mol
+DOCKING RESULTS FOR LIGAND      278 (278)
+Best Emodel=   -54.59 E=   -43.11 Eint=     6.93 GlideScore=    -6.37
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -8.12)+Epik State Penalty(    0.00) =    -8.12 kcal/mol
+DOCKING RESULTS FOR LIGAND      279 (279)
+Best Emodel=   -80.77 E=   -55.41 Eint=     5.43 GlideScore=    -8.12
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      280 (280)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.99)+Epik State Penalty(    0.00) =    -5.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      281 (281)
+Best Emodel=   -60.99 E=   -46.95 Eint=     4.23 GlideScore=    -5.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -8.01)+Epik State Penalty(    0.00) =    -8.01 kcal/mol
+DOCKING RESULTS FOR LIGAND      282 (282)
+Best Emodel=   -87.31 E=   -61.10 Eint=     6.91 GlideScore=    -8.01
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      283 (283)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.58)+Epik State Penalty(    0.00) =    -7.58 kcal/mol
+DOCKING RESULTS FOR LIGAND      284 (284)
+Best Emodel=   -82.80 E=   -58.05 Eint=     3.76 GlideScore=    -7.58
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      285 (285)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      286 (286)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -5.58)+Epik State Penalty(    0.00) =    -5.58 kcal/mol
+DOCKING RESULTS FOR LIGAND      287 (287)
+Best Emodel=   -55.38 E=   -42.50 Eint=     2.62 GlideScore=    -5.58
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.92)+Epik State Penalty(    0.00) =    -7.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      288 (288)
+Best Emodel=   -78.12 E=   -54.42 Eint=     3.89 GlideScore=    -7.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -8.11)+Epik State Penalty(    0.00) =    -8.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      289 (289)
+Best Emodel=   -78.90 E=   -54.96 Eint=     8.02 GlideScore=    -8.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.61)+Epik State Penalty(    0.00) =    -7.61 kcal/mol
+DOCKING RESULTS FOR LIGAND      290 (290)
+Best Emodel=   -81.55 E=   -57.04 Eint=     4.32 GlideScore=    -7.61
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      291 (291)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.61)+Epik State Penalty(    0.00) =    -5.61 kcal/mol
+DOCKING RESULTS FOR LIGAND      292 (292)
+Best Emodel=   -60.62 E=   -45.91 Eint=     3.17 GlideScore=    -5.61
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.67)+Epik State Penalty(    0.00) =    -6.67 kcal/mol
+DOCKING RESULTS FOR LIGAND      293 (293)
+Best Emodel=   -76.46 E=   -54.99 Eint=     1.09 GlideScore=    -6.67
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      294 (294)
+Best Emodel=   -72.64 E=   -51.50 Eint=     5.37 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.19)+Epik State Penalty(    0.00) =    -7.19 kcal/mol
+DOCKING RESULTS FOR LIGAND      295 (295)
+Best Emodel=   -61.06 E=   -46.34 Eint=     6.06 GlideScore=    -7.19
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.93)+Epik State Penalty(    0.00) =    -5.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      296 (296)
+Best Emodel=   -63.09 E=   -48.73 Eint=     2.91 GlideScore=    -5.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.06)+Epik State Penalty(    0.00) =    -7.06 kcal/mol
+DOCKING RESULTS FOR LIGAND      297 (297)
+Best Emodel=   -71.28 E=   -51.51 Eint=     3.80 GlideScore=    -7.06
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           20
+ Using templates for ring conformations.
+GlideScore(   -7.65)+Epik State Penalty(    0.00) =    -7.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      298 (298)
+Best Emodel=   -80.19 E=   -60.00 Eint=    15.52 GlideScore=    -7.65
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+13 out of 200065 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      299 (299)
+Best Emodel=   -72.64 E=   -51.50 Eint=     5.37 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.85)+Epik State Penalty(    0.00) =    -5.85 kcal/mol
+DOCKING RESULTS FOR LIGAND      300 (300)
+Best Emodel=   -61.06 E=   -46.83 Eint=     2.75 GlideScore=    -5.85
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      301 (301)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -5.09)+Epik State Penalty(    0.00) =    -5.09 kcal/mol
+DOCKING RESULTS FOR LIGAND      302 (302)
+Best Emodel=   -65.88 E=   -55.51 Eint=     3.51 GlideScore=    -5.09
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.40)+Epik State Penalty(    0.00) =    -5.40 kcal/mol
+DOCKING RESULTS FOR LIGAND      303 (303)
+Best Emodel=   -55.05 E=   -45.42 Eint=     5.92 GlideScore=    -5.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.63)+Epik State Penalty(    0.00) =    -7.63 kcal/mol
+DOCKING RESULTS FOR LIGAND      304 (304)
+Best Emodel=   -71.55 E=   -52.45 Eint=     6.86 GlideScore=    -7.63
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.93)+Epik State Penalty(    0.00) =    -7.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      305 (305)
+Best Emodel=   -79.51 E=   -54.54 Eint=     3.54 GlideScore=    -7.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.91)+Epik State Penalty(    0.00) =    -6.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      306 (306)
+Best Emodel=   -61.40 E=   -45.02 Eint=     5.43 GlideScore=    -6.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.29)+Epik State Penalty(    0.00) =    -7.29 kcal/mol
+DOCKING RESULTS FOR LIGAND      307 (307)
+Best Emodel=   -71.62 E=   -54.39 Eint=    11.16 GlideScore=    -7.29
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.43)+Epik State Penalty(    0.00) =    -6.43 kcal/mol
+DOCKING RESULTS FOR LIGAND      308 (308)
+Best Emodel=   -64.90 E=   -48.87 Eint=     4.80 GlideScore=    -6.43
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      309 (309)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(  -10.15)+Epik State Penalty(    0.00) =   -10.15 kcal/mol
+DOCKING RESULTS FOR LIGAND      310 (310)
+Best Emodel=  -128.33 E=   -78.55 Eint=    10.53 GlideScore=   -10.15
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+6 out of 129056 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -4.82)+Epik State Penalty(    0.00) =    -4.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      311 (311)
+Best Emodel=   -59.49 E=   -49.11 Eint=     6.82 GlideScore=    -4.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.67)+Epik State Penalty(    0.00) =    -7.67 kcal/mol
+DOCKING RESULTS FOR LIGAND      312 (312)
+Best Emodel=   -78.56 E=   -55.48 Eint=     5.66 GlideScore=    -7.67
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.32)+Epik State Penalty(    0.00) =    -7.32 kcal/mol
+DOCKING RESULTS FOR LIGAND      313 (313)
+Best Emodel=   -76.28 E=   -53.84 Eint=     4.31 GlideScore=    -7.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.57)+Epik State Penalty(    0.00) =    -5.57 kcal/mol
+DOCKING RESULTS FOR LIGAND      314 (314)
+Best Emodel=   -58.06 E=   -44.54 Eint=     2.52 GlideScore=    -5.57
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.64)+Epik State Penalty(    0.00) =    -7.64 kcal/mol
+DOCKING RESULTS FOR LIGAND      315 (315)
+Best Emodel=   -72.98 E=   -52.14 Eint=     6.29 GlideScore=    -7.64
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           15
+ Using templates for ring conformations.
+GlideScore(   -6.51)+Epik State Penalty(    0.00) =    -6.51 kcal/mol
+DOCKING RESULTS FOR LIGAND      316 (316)
+Best Emodel=   -62.86 E=   -56.02 Eint=    19.55 GlideScore=    -6.51
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           19
+ Using templates for ring conformations.
+GlideScore(   -7.99)+Epik State Penalty(    0.00) =    -7.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      317 (317)
+Best Emodel=   -87.74 E=   -64.82 Eint=    13.16 GlideScore=    -7.99
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+9 out of 162765 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.98)+Epik State Penalty(    0.00) =    -7.98 kcal/mol
+DOCKING RESULTS FOR LIGAND      318 (318)
+Best Emodel=   -84.11 E=   -58.09 Eint=     4.61 GlideScore=    -7.98
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.88)+Epik State Penalty(    0.00) =    -5.88 kcal/mol
+DOCKING RESULTS FOR LIGAND      319 (319)
+Best Emodel=   -63.32 E=   -48.49 Eint=     4.45 GlideScore=    -5.88
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.43)+Epik State Penalty(    0.00) =    -7.43 kcal/mol
+DOCKING RESULTS FOR LIGAND      320 (320)
+Best Emodel=   -67.54 E=   -50.87 Eint=     4.48 GlideScore=    -7.43
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      321 (321)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.91)+Epik State Penalty(    0.00) =    -6.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      322 (322)
+Best Emodel=   -61.30 E=   -46.29 Eint=     7.38 GlideScore=    -6.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           16
+ Using templates for ring conformations.
+GlideScore(   -7.77)+Epik State Penalty(    0.00) =    -7.77 kcal/mol
+DOCKING RESULTS FOR LIGAND      323 (323)
+Best Emodel=   -60.56 E=   -51.05 Eint=    18.00 GlideScore=    -7.77
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.11)+Epik State Penalty(    0.00) =    -6.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      324 (324)
+Best Emodel=   -61.43 E=   -48.63 Eint=     5.68 GlideScore=    -6.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      325 (325)
+Best Emodel=   -78.44 E=   -55.14 Eint=     4.89 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.82)+Epik State Penalty(    0.00) =    -5.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      326 (326)
+Best Emodel=   -60.49 E=   -45.72 Eint=     2.53 GlideScore=    -5.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      327 (327)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.49)+Epik State Penalty(    0.00) =    -7.49 kcal/mol
+DOCKING RESULTS FOR LIGAND      328 (328)
+Best Emodel=   -56.91 E=   -42.28 Eint=     9.30 GlideScore=    -7.49
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.30)+Epik State Penalty(    0.00) =    -7.30 kcal/mol
+DOCKING RESULTS FOR LIGAND      329 (329)
+Best Emodel=   -63.02 E=   -45.95 Eint=     5.42 GlideScore=    -7.30
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      330 (330)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.40)+Epik State Penalty(    0.00) =    -8.40 kcal/mol
+DOCKING RESULTS FOR LIGAND      331 (331)
+Best Emodel=   -83.80 E=   -57.67 Eint=     3.07 GlideScore=    -8.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.95)+Epik State Penalty(    0.00) =    -6.95 kcal/mol
+DOCKING RESULTS FOR LIGAND      332 (332)
+Best Emodel=   -62.19 E=   -43.92 Eint=     1.12 GlideScore=    -6.95
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.66)+Epik State Penalty(    0.00) =    -6.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      333 (333)
+Best Emodel=   -59.51 E=   -46.20 Eint=     8.12 GlideScore=    -6.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -4.68)+Epik State Penalty(    0.00) =    -4.68 kcal/mol
+DOCKING RESULTS FOR LIGAND      334 (334)
+Best Emodel=   -50.81 E=   -42.18 Eint=     3.94 GlideScore=    -4.68
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      335 (335)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.10)+Epik State Penalty(    0.00) =    -6.10 kcal/mol
+DOCKING RESULTS FOR LIGAND      336 (336)
+Best Emodel=   -59.99 E=   -49.01 Eint=     5.01 GlideScore=    -6.10
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.09)+Epik State Penalty(    0.00) =    -7.09 kcal/mol
+DOCKING RESULTS FOR LIGAND      337 (337)
+Best Emodel=   -80.02 E=   -59.71 Eint=     7.88 GlideScore=    -7.09
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+4 out of 148595 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -4.12)+Epik State Penalty(    0.00) =    -4.12 kcal/mol
+DOCKING RESULTS FOR LIGAND      338 (338)
+Best Emodel=   -51.54 E=   -43.93 Eint=     7.82 GlideScore=    -4.12
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      339 (339)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.78)+Epik State Penalty(    0.00) =    -6.78 kcal/mol
+DOCKING RESULTS FOR LIGAND      340 (340)
+Best Emodel=   -85.68 E=   -62.12 Eint=     3.63 GlideScore=    -6.78
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.76)+Epik State Penalty(    0.00) =    -7.76 kcal/mol
+DOCKING RESULTS FOR LIGAND      341 (341)
+Best Emodel=   -79.50 E=   -55.07 Eint=     3.97 GlideScore=    -7.76
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -4.40)+Epik State Penalty(    0.00) =    -4.40 kcal/mol
+DOCKING RESULTS FOR LIGAND      342 (342)
+Best Emodel=   -48.59 E=   -39.59 Eint=     3.89 GlideScore=    -4.40
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.61)+Epik State Penalty(    0.00) =    -5.61 kcal/mol
+DOCKING RESULTS FOR LIGAND      343 (343)
+Best Emodel=   -58.13 E=   -45.57 Eint=     1.36 GlideScore=    -5.61
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.82)+Epik State Penalty(    0.00) =    -7.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      344 (344)
+Best Emodel=   -78.70 E=   -54.04 Eint=     3.18 GlideScore=    -7.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      345 (345)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      346 (346)
+Best Emodel=   -55.66 E=   -39.53 Eint=     1.60 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+GlideScore(   -7.61)+Epik State Penalty(    0.00) =    -7.61 kcal/mol
+DOCKING RESULTS FOR LIGAND      347 (347)
+Best Emodel=   -75.95 E=   -55.33 Eint=     7.71 GlideScore=    -7.61
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.99)+Epik State Penalty(    0.00) =    -5.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      348 (348)
+Best Emodel=   -60.55 E=   -47.40 Eint=     6.43 GlideScore=    -5.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      349 (349)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -8.07)+Epik State Penalty(    0.00) =    -8.07 kcal/mol
+DOCKING RESULTS FOR LIGAND      350 (350)
+Best Emodel=   -73.80 E=   -52.90 Eint=     7.12 GlideScore=    -8.07
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.76)+Epik State Penalty(    0.00) =    -5.76 kcal/mol
+DOCKING RESULTS FOR LIGAND      351 (351)
+Best Emodel=   -59.40 E=   -45.45 Eint=     3.47 GlideScore=    -5.76
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -6.76)+Epik State Penalty(    0.00) =    -6.76 kcal/mol
+DOCKING RESULTS FOR LIGAND      352 (352)
+Best Emodel=   -54.79 E=   -45.13 Eint=     6.11 GlideScore=    -6.76
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.71)+Epik State Penalty(    0.00) =    -7.71 kcal/mol
+DOCKING RESULTS FOR LIGAND      353 (353)
+Best Emodel=   -71.99 E=   -57.94 Eint=    14.68 GlideScore=    -7.71
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      354 (354)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      355 (355)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -9.26)+Epik State Penalty(    0.00) =    -9.26 kcal/mol
+DOCKING RESULTS FOR LIGAND      356 (356)
+Best Emodel=   -60.45 E=   -45.19 Eint=    12.31 GlideScore=    -9.26
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.72)+Epik State Penalty(    0.00) =    -6.72 kcal/mol
+DOCKING RESULTS FOR LIGAND      357 (357)
+Best Emodel=   -62.11 E=   -50.07 Eint=    12.65 GlideScore=    -6.72
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.58)+Epik State Penalty(    0.00) =    -7.58 kcal/mol
+DOCKING RESULTS FOR LIGAND      358 (358)
+Best Emodel=   -85.77 E=   -59.53 Eint=     2.61 GlideScore=    -7.58
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.83)+Epik State Penalty(    0.00) =    -6.83 kcal/mol
+DOCKING RESULTS FOR LIGAND      359 (359)
+Best Emodel=   -59.34 E=   -44.63 Eint=     9.35 GlideScore=    -6.83
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      360 (360)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      361 (361)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.11)+Epik State Penalty(    0.00) =    -6.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      362 (362)
+Best Emodel=   -61.43 E=   -48.63 Eint=     5.68 GlideScore=    -6.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.84)+Epik State Penalty(    0.00) =    -5.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      363 (363)
+Best Emodel=   -66.72 E=   -49.96 Eint=     8.57 GlideScore=    -5.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.54)+Epik State Penalty(    0.00) =    -4.54 kcal/mol
+DOCKING RESULTS FOR LIGAND      364 (364)
+Best Emodel=   -56.27 E=   -48.28 Eint=     6.49 GlideScore=    -4.54
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.89)+Epik State Penalty(    0.00) =    -5.89 kcal/mol
+DOCKING RESULTS FOR LIGAND      365 (365)
+Best Emodel=   -65.04 E=   -50.47 Eint=     2.96 GlideScore=    -5.89
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.98)+Epik State Penalty(    0.00) =    -4.98 kcal/mol
+DOCKING RESULTS FOR LIGAND      366 (366)
+Best Emodel=   -57.96 E=   -49.94 Eint=    12.44 GlideScore=    -4.98
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.69)+Epik State Penalty(    0.00) =    -7.69 kcal/mol
+DOCKING RESULTS FOR LIGAND      367 (367)
+Best Emodel=   -68.30 E=   -53.47 Eint=     8.84 GlideScore=    -7.69
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.33)+Epik State Penalty(    0.00) =    -7.33 kcal/mol
+DOCKING RESULTS FOR LIGAND      368 (368)
+Best Emodel=   -45.63 E=   -46.49 Eint=     8.62 GlideScore=    -7.33
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.16)+Epik State Penalty(    0.00) =    -5.16 kcal/mol
+DOCKING RESULTS FOR LIGAND      369 (369)
+Best Emodel=   -63.61 E=   -51.03 Eint=     4.79 GlideScore=    -5.16
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.63)+Epik State Penalty(    0.00) =    -6.63 kcal/mol
+DOCKING RESULTS FOR LIGAND      370 (370)
+Best Emodel=   -60.44 E=   -48.79 Eint=     5.29 GlideScore=    -6.63
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.38)+Epik State Penalty(    0.00) =    -7.38 kcal/mol
+DOCKING RESULTS FOR LIGAND      371 (371)
+Best Emodel=   -73.42 E=   -55.32 Eint=    11.72 GlideScore=    -7.38
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -7.66)+Epik State Penalty(    0.00) =    -7.66 kcal/mol
+DOCKING RESULTS FOR LIGAND      372 (372)
+Best Emodel=   -63.84 E=   -44.23 Eint=     4.05 GlideScore=    -7.66
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      373 (373)
+Best Emodel=   -64.26 E=   -50.10 Eint=     4.49 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -8.48)+Epik State Penalty(    0.00) =    -8.48 kcal/mol
+DOCKING RESULTS FOR LIGAND      374 (374)
+Best Emodel=   -77.53 E=   -56.11 Eint=    14.37 GlideScore=    -8.48
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -4.48)+Epik State Penalty(    0.00) =    -4.48 kcal/mol
+DOCKING RESULTS FOR LIGAND      375 (375)
+Best Emodel=   -57.80 E=   -50.11 Eint=     8.38 GlideScore=    -4.48
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.32)+Epik State Penalty(    0.00) =    -7.32 kcal/mol
+DOCKING RESULTS FOR LIGAND      376 (376)
+Best Emodel=   -70.91 E=   -50.36 Eint=     3.90 GlideScore=    -7.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.87)+Epik State Penalty(    0.00) =    -7.87 kcal/mol
+DOCKING RESULTS FOR LIGAND      377 (377)
+Best Emodel=   -73.79 E=   -55.01 Eint=    11.18 GlideScore=    -7.87
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.29)+Epik State Penalty(    0.00) =    -4.29 kcal/mol
+DOCKING RESULTS FOR LIGAND      378 (378)
+Best Emodel=   -57.27 E=   -48.47 Eint=     6.36 GlideScore=    -4.29
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+GlideScore(   -8.13)+Epik State Penalty(    0.00) =    -8.13 kcal/mol
+DOCKING RESULTS FOR LIGAND      379 (379)
+Best Emodel=   -97.18 E=   -70.32 Eint=    13.03 GlideScore=    -8.13
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.75)+Epik State Penalty(    0.00) =    -6.75 kcal/mol
+DOCKING RESULTS FOR LIGAND      380 (380)
+Best Emodel=   -69.05 E=   -51.83 Eint=     7.51 GlideScore=    -6.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.29)+Epik State Penalty(    0.00) =    -4.29 kcal/mol
+DOCKING RESULTS FOR LIGAND      381 (381)
+Best Emodel=   -57.27 E=   -48.47 Eint=     6.36 GlideScore=    -4.29
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.19)+Epik State Penalty(    0.00) =    -7.19 kcal/mol
+DOCKING RESULTS FOR LIGAND      382 (382)
+Best Emodel=   -85.83 E=   -62.69 Eint=     6.23 GlideScore=    -7.19
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -5.86)+Epik State Penalty(    0.00) =    -5.86 kcal/mol
+DOCKING RESULTS FOR LIGAND      383 (383)
+Best Emodel=   -56.43 E=   -42.06 Eint=     1.13 GlideScore=    -5.86
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -8.28)+Epik State Penalty(    0.00) =    -8.28 kcal/mol
+DOCKING RESULTS FOR LIGAND      384 (384)
+Best Emodel=   -93.49 E=   -59.60 Eint=     4.67 GlideScore=    -8.28
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           22
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    385(385)
+SKIP LIG      385 (385): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -4.05)+Epik State Penalty(    0.00) =    -4.05 kcal/mol
+DOCKING RESULTS FOR LIGAND      386 (386)
+Best Emodel=   -53.05 E=   -45.71 Eint=     8.33 GlideScore=    -4.05
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      387 (387)
+Best Emodel=   -78.44 E=   -55.14 Eint=     4.89 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.54)+Epik State Penalty(    0.00) =    -7.54 kcal/mol
+DOCKING RESULTS FOR LIGAND      388 (388)
+Best Emodel=   -79.54 E=   -59.82 Eint=    11.73 GlideScore=    -7.54
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.97)+Epik State Penalty(    0.00) =    -5.97 kcal/mol
+DOCKING RESULTS FOR LIGAND      389 (389)
+Best Emodel=   -64.58 E=   -51.22 Eint=     9.94 GlideScore=    -5.97
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.62)+Epik State Penalty(    0.00) =    -8.62 kcal/mol
+DOCKING RESULTS FOR LIGAND      390 (390)
+Best Emodel=   -94.60 E=   -68.66 Eint=    13.46 GlideScore=    -8.62
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.91)+Epik State Penalty(    0.00) =    -8.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      391 (391)
+Best Emodel=  -104.30 E=   -69.75 Eint=     6.42 GlideScore=    -8.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.51)+Epik State Penalty(    0.00) =    -7.51 kcal/mol
+DOCKING RESULTS FOR LIGAND      392 (392)
+Best Emodel=   -81.92 E=   -58.03 Eint=     4.52 GlideScore=    -7.51
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.99)+Epik State Penalty(    0.00) =    -5.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      393 (393)
+Best Emodel=   -60.55 E=   -47.40 Eint=     6.43 GlideScore=    -5.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            6
+ Using templates for ring conformations.
+GlideScore(   -6.75)+Epik State Penalty(    0.00) =    -6.75 kcal/mol
+DOCKING RESULTS FOR LIGAND      394 (394)
+Best Emodel=   -58.14 E=   -40.77 Eint=     1.68 GlideScore=    -6.75
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.47)+Epik State Penalty(    0.00) =    -7.47 kcal/mol
+DOCKING RESULTS FOR LIGAND      395 (395)
+Best Emodel=   -63.22 E=   -45.77 Eint=     4.03 GlideScore=    -7.47
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -3.84)+Epik State Penalty(    0.00) =    -3.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      396 (396)
+Best Emodel=   -51.06 E=   -44.73 Eint=     4.77 GlideScore=    -3.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.11)+Epik State Penalty(    0.00) =    -6.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      397 (397)
+Best Emodel=   -61.43 E=   -48.63 Eint=     5.68 GlideScore=    -6.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.60)+Epik State Penalty(    0.00) =    -7.60 kcal/mol
+DOCKING RESULTS FOR LIGAND      398 (398)
+Best Emodel=   -80.43 E=   -58.20 Eint=     7.91 GlideScore=    -7.60
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           16
+ Using templates for ring conformations.
+GlideScore(   -7.42)+Epik State Penalty(    0.00) =    -7.42 kcal/mol
+DOCKING RESULTS FOR LIGAND      399 (399)
+Best Emodel=   -64.44 E=   -45.44 Eint=    21.64 GlideScore=    -7.42
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.68)+Epik State Penalty(    0.00) =    -6.68 kcal/mol
+DOCKING RESULTS FOR LIGAND      400 (400)
+Best Emodel=   -67.47 E=   -49.66 Eint=     3.82 GlideScore=    -6.68
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+GlideScore(   -8.83)+Epik State Penalty(    0.00) =    -8.83 kcal/mol
+DOCKING RESULTS FOR LIGAND      401 (401)
+Best Emodel=  -105.63 E=   -70.85 Eint=     5.78 GlideScore=    -8.83
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+7 out of 136154 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.22)+Epik State Penalty(    0.00) =    -7.22 kcal/mol
+DOCKING RESULTS FOR LIGAND      402 (402)
+Best Emodel=   -70.18 E=   -53.70 Eint=    12.46 GlideScore=    -7.22
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.43)+Epik State Penalty(    0.00) =    -8.43 kcal/mol
+DOCKING RESULTS FOR LIGAND      403 (403)
+Best Emodel=   -96.38 E=   -69.33 Eint=    14.05 GlideScore=    -8.43
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.94)+Epik State Penalty(    0.00) =    -5.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      404 (404)
+Best Emodel=   -62.23 E=   -47.69 Eint=     4.31 GlideScore=    -5.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           16
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    405(405)
+SKIP LIG      405 (405): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.82)+Epik State Penalty(    0.00) =    -6.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      406 (406)
+Best Emodel=   -56.27 E=   -47.17 Eint=     7.43 GlideScore=    -6.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -4.96)+Epik State Penalty(    0.00) =    -4.96 kcal/mol
+DOCKING RESULTS FOR LIGAND      407 (407)
+Best Emodel=   -64.66 E=   -53.75 Eint=     9.20 GlideScore=    -4.96
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.58)+Epik State Penalty(    0.00) =    -5.58 kcal/mol
+DOCKING RESULTS FOR LIGAND      408 (408)
+Best Emodel=   -59.28 E=   -46.84 Eint=     9.05 GlideScore=    -5.58
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.82)+Epik State Penalty(    0.00) =    -5.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      409 (409)
+Best Emodel=   -60.49 E=   -45.72 Eint=     2.53 GlideScore=    -5.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+GlideScore(   -8.53)+Epik State Penalty(    0.00) =    -8.53 kcal/mol
+DOCKING RESULTS FOR LIGAND      410 (410)
+Best Emodel=   -94.54 E=   -70.06 Eint=    17.12 GlideScore=    -8.53
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -8.30)+Epik State Penalty(    0.00) =    -8.30 kcal/mol
+DOCKING RESULTS FOR LIGAND      411 (411)
+Best Emodel=   -95.66 E=   -65.08 Eint=     6.61 GlideScore=    -8.30
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.89)+Epik State Penalty(    0.00) =    -7.89 kcal/mol
+DOCKING RESULTS FOR LIGAND      412 (412)
+Best Emodel=   -91.92 E=   -65.58 Eint=     7.71 GlideScore=    -7.89
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+GlideScore(   -7.87)+Epik State Penalty(    0.00) =    -7.87 kcal/mol
+DOCKING RESULTS FOR LIGAND      413 (413)
+Best Emodel=   -79.12 E=   -57.66 Eint=    12.57 GlideScore=    -7.87
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.54)+Epik State Penalty(    0.00) =    -7.54 kcal/mol
+DOCKING RESULTS FOR LIGAND      414 (414)
+Best Emodel=   -74.75 E=   -52.38 Eint=     3.89 GlideScore=    -7.54
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.10)+Epik State Penalty(    0.00) =    -6.10 kcal/mol
+DOCKING RESULTS FOR LIGAND      415 (415)
+Best Emodel=   -59.99 E=   -49.01 Eint=     5.01 GlideScore=    -6.10
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      416 (416)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.76)+Epik State Penalty(    0.00) =    -7.76 kcal/mol
+DOCKING RESULTS FOR LIGAND      417 (417)
+Best Emodel=   -79.50 E=   -55.07 Eint=     3.97 GlideScore=    -7.76
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.63)+Epik State Penalty(    0.00) =    -5.63 kcal/mol
+DOCKING RESULTS FOR LIGAND      418 (418)
+Best Emodel=   -70.25 E=   -52.13 Eint=     3.57 GlideScore=    -5.63
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.14)+Epik State Penalty(    0.00) =    -7.14 kcal/mol
+DOCKING RESULTS FOR LIGAND      419 (419)
+Best Emodel=   -65.20 E=   -53.20 Eint=    14.07 GlideScore=    -7.14
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.85)+Epik State Penalty(    0.00) =    -6.85 kcal/mol
+DOCKING RESULTS FOR LIGAND      420 (420)
+Best Emodel=   -63.14 E=   -45.05 Eint=     2.12 GlideScore=    -6.85
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -4.91)+Epik State Penalty(    0.00) =    -4.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      421 (421)
+Best Emodel=   -49.48 E=   -47.95 Eint=     4.89 GlideScore=    -4.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      422 (422)
+Best Emodel=   -64.26 E=   -50.10 Eint=     4.49 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.83)+Epik State Penalty(    0.00) =    -6.83 kcal/mol
+DOCKING RESULTS FOR LIGAND      423 (423)
+Best Emodel=   -59.34 E=   -44.63 Eint=     9.35 GlideScore=    -6.83
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.29)+Epik State Penalty(    0.00) =    -4.29 kcal/mol
+DOCKING RESULTS FOR LIGAND      424 (424)
+Best Emodel=   -57.27 E=   -48.47 Eint=     6.36 GlideScore=    -4.29
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.77)+Epik State Penalty(    0.00) =    -7.77 kcal/mol
+DOCKING RESULTS FOR LIGAND      425 (425)
+Best Emodel=   -84.48 E=   -58.79 Eint=     5.03 GlideScore=    -7.77
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.61)+Epik State Penalty(    0.00) =    -6.61 kcal/mol
+DOCKING RESULTS FOR LIGAND      426 (426)
+Best Emodel=   -60.94 E=   -48.65 Eint=     4.75 GlideScore=    -6.61
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.21)+Epik State Penalty(    0.00) =    -7.21 kcal/mol
+DOCKING RESULTS FOR LIGAND      427 (427)
+Best Emodel=   -73.11 E=   -58.48 Eint=     7.80 GlideScore=    -7.21
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -8.19)+Epik State Penalty(    0.00) =    -8.19 kcal/mol
+DOCKING RESULTS FOR LIGAND      428 (428)
+Best Emodel=   -79.99 E=   -56.92 Eint=     7.86 GlideScore=    -8.19
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      429 (429)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           17
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    430(430)
+SKIP LIG      430 (430): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      431 (431)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.32)+Epik State Penalty(    0.00) =    -7.32 kcal/mol
+DOCKING RESULTS FOR LIGAND      432 (432)
+Best Emodel=   -70.91 E=   -50.36 Eint=     3.90 GlideScore=    -7.32
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.91)+Epik State Penalty(    0.00) =    -7.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      433 (433)
+Best Emodel=   -79.70 E=   -57.13 Eint=     7.83 GlideScore=    -7.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -7.94)+Epik State Penalty(    0.00) =    -7.94 kcal/mol
+DOCKING RESULTS FOR LIGAND      434 (434)
+Best Emodel=   -86.31 E=   -60.07 Eint=     6.39 GlideScore=    -7.94
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.82)+Epik State Penalty(    0.00) =    -5.82 kcal/mol
+DOCKING RESULTS FOR LIGAND      435 (435)
+Best Emodel=   -62.74 E=   -47.43 Eint=     2.17 GlideScore=    -5.82
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -8.04)+Epik State Penalty(    0.00) =    -8.04 kcal/mol
+DOCKING RESULTS FOR LIGAND      436 (436)
+Best Emodel=   -80.33 E=   -57.31 Eint=     7.56 GlideScore=    -8.04
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -6.93)+Epik State Penalty(    0.00) =    -6.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      437 (437)
+Best Emodel=   -67.90 E=   -50.29 Eint=     3.67 GlideScore=    -6.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           18
+ Using templates for ring conformations.
+GlideScore(   -8.05)+Epik State Penalty(    0.00) =    -8.05 kcal/mol
+DOCKING RESULTS FOR LIGAND      438 (438)
+Best Emodel=   -92.07 E=   -69.69 Eint=    16.58 GlideScore=    -8.05
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           15
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    439(439)
+SKIP LIG      439 (439): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.58)+Epik State Penalty(    0.00) =    -7.58 kcal/mol
+DOCKING RESULTS FOR LIGAND      440 (440)
+Best Emodel=   -70.02 E=   -49.41 Eint=     4.80 GlideScore=    -7.58
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.91)+Epik State Penalty(    0.00) =    -5.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      441 (441)
+Best Emodel=   -61.93 E=   -47.47 Eint=     5.56 GlideScore=    -5.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.24)+Epik State Penalty(    0.00) =    -7.24 kcal/mol
+DOCKING RESULTS FOR LIGAND      442 (442)
+Best Emodel=   -66.18 E=   -49.59 Eint=     7.93 GlideScore=    -7.24
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      443 (443)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            7
+ Using templates for ring conformations.
+GlideScore(   -7.79)+Epik State Penalty(    0.00) =    -7.79 kcal/mol
+DOCKING RESULTS FOR LIGAND      444 (444)
+Best Emodel=   -76.24 E=   -54.06 Eint=     5.84 GlideScore=    -7.79
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -4.92)+Epik State Penalty(    0.00) =    -4.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      445 (445)
+Best Emodel=   -51.92 E=   -47.03 Eint=     4.73 GlideScore=    -4.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.65)+Epik State Penalty(    0.00) =    -6.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      446 (446)
+Best Emodel=   -64.26 E=   -50.10 Eint=     4.49 GlideScore=    -6.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.09)+Epik State Penalty(    0.00) =    -5.09 kcal/mol
+DOCKING RESULTS FOR LIGAND      447 (447)
+Best Emodel=   -54.41 E=   -45.17 Eint=     6.46 GlideScore=    -5.09
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -9.09)+Epik State Penalty(    0.00) =    -9.09 kcal/mol
+DOCKING RESULTS FOR LIGAND      448 (448)
+Best Emodel=   -75.08 E=   -50.33 Eint=     8.55 GlideScore=    -9.09
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.13)+Epik State Penalty(    0.00) =    -5.13 kcal/mol
+DOCKING RESULTS FOR LIGAND      449 (449)
+Best Emodel=   -55.06 E=   -42.87 Eint=     3.13 GlideScore=    -5.13
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.80)+Epik State Penalty(    0.00) =    -5.80 kcal/mol
+DOCKING RESULTS FOR LIGAND      450 (450)
+Best Emodel=   -62.32 E=   -46.68 Eint=     3.36 GlideScore=    -5.80
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.06)+Epik State Penalty(    0.00) =    -6.06 kcal/mol
+DOCKING RESULTS FOR LIGAND      451 (451)
+Best Emodel=   -58.59 E=   -45.74 Eint=     4.62 GlideScore=    -6.06
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.87)+Epik State Penalty(    0.00) =    -6.87 kcal/mol
+DOCKING RESULTS FOR LIGAND      452 (452)
+Best Emodel=   -66.98 E=   -48.27 Eint=     2.49 GlideScore=    -6.87
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           12
+ Using templates for ring conformations.
+GlideScore(   -7.09)+Epik State Penalty(    0.00) =    -7.09 kcal/mol
+DOCKING RESULTS FOR LIGAND      453 (453)
+Best Emodel=   -80.02 E=   -59.71 Eint=     7.88 GlideScore=    -7.09
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+4 out of 148595 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.44)+Epik State Penalty(    0.00) =    -7.44 kcal/mol
+DOCKING RESULTS FOR LIGAND      454 (454)
+Best Emodel=   -73.57 E=   -52.52 Eint=     2.85 GlideScore=    -7.44
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -8.74)+Epik State Penalty(    0.00) =    -8.74 kcal/mol
+DOCKING RESULTS FOR LIGAND      455 (455)
+Best Emodel=   -74.49 E=   -52.49 Eint=    10.40 GlideScore=    -8.74
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    456(456)
+SKIP LIG      456 (456): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           16
+ Using templates for ring conformations.
+GlideScore(   -5.24)+Epik State Penalty(    0.00) =    -5.24 kcal/mol
+DOCKING RESULTS FOR LIGAND      457 (457)
+Best Emodel=   -59.40 E=   -46.91 Eint=     6.86 GlideScore=    -5.24
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.99)+Epik State Penalty(    0.00) =    -5.99 kcal/mol
+DOCKING RESULTS FOR LIGAND      458 (458)
+Best Emodel=   -60.63 E=   -53.85 Eint=    21.86 GlideScore=    -5.99
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -5.68)+Epik State Penalty(    0.00) =    -5.68 kcal/mol
+DOCKING RESULTS FOR LIGAND      459 (459)
+Best Emodel=   -61.86 E=   -47.94 Eint=     5.41 GlideScore=    -5.68
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.92)+Epik State Penalty(    0.00) =    -7.92 kcal/mol
+DOCKING RESULTS FOR LIGAND      460 (460)
+Best Emodel=   -78.12 E=   -54.42 Eint=     3.89 GlideScore=    -7.92
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -7.07)+Epik State Penalty(    0.00) =    -7.07 kcal/mol
+DOCKING RESULTS FOR LIGAND      461 (461)
+Best Emodel=   -87.74 E=   -66.37 Eint=     9.55 GlideScore=    -7.07
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.10)+Epik State Penalty(    0.00) =    -6.10 kcal/mol
+DOCKING RESULTS FOR LIGAND      462 (462)
+Best Emodel=   -56.82 E=   -42.52 Eint=     3.71 GlideScore=    -6.10
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -6.62)+Epik State Penalty(    0.00) =    -6.62 kcal/mol
+DOCKING RESULTS FOR LIGAND      463 (463)
+Best Emodel=   -54.42 E=   -45.48 Eint=     9.99 GlideScore=    -6.62
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.77)+Epik State Penalty(    0.00) =    -5.77 kcal/mol
+DOCKING RESULTS FOR LIGAND      464 (464)
+Best Emodel=   -60.12 E=   -45.94 Eint=     2.62 GlideScore=    -5.77
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+GlideScore(   -7.84)+Epik State Penalty(    0.00) =    -7.84 kcal/mol
+DOCKING RESULTS FOR LIGAND      465 (465)
+Best Emodel=   -83.98 E=   -63.36 Eint=    14.68 GlideScore=    -7.84
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -5.93)+Epik State Penalty(    0.00) =    -5.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      466 (466)
+Best Emodel=   -60.20 E=   -46.84 Eint=     5.73 GlideScore=    -5.93
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.88)+Epik State Penalty(    0.00) =    -6.88 kcal/mol
+DOCKING RESULTS FOR LIGAND      467 (467)
+Best Emodel=   -71.04 E=   -50.29 Eint=     3.32 GlideScore=    -6.88
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           14
+ Using templates for ring conformations.
+GlideScore(   -6.22)+Epik State Penalty(    0.00) =    -6.22 kcal/mol
+DOCKING RESULTS FOR LIGAND      468 (468)
+Best Emodel=   -79.54 E=   -62.23 Eint=    24.75 GlideScore=    -6.22
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.76)+Epik State Penalty(    0.00) =    -7.76 kcal/mol
+DOCKING RESULTS FOR LIGAND      469 (469)
+Best Emodel=   -79.50 E=   -55.07 Eint=     3.97 GlideScore=    -7.76
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -8.03)+Epik State Penalty(    0.00) =    -8.03 kcal/mol
+DOCKING RESULTS FOR LIGAND      470 (470)
+Best Emodel=   -85.36 E=   -64.78 Eint=     7.05 GlideScore=    -8.03
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+GlideScore(   -8.24)+Epik State Penalty(    0.00) =    -8.24 kcal/mol
+DOCKING RESULTS FOR LIGAND      471 (471)
+Best Emodel=   -76.54 E=   -56.46 Eint=     9.31 GlideScore=    -8.24
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+9 out of 182968 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -7.78)+Epik State Penalty(    0.00) =    -7.78 kcal/mol
+DOCKING RESULTS FOR LIGAND      472 (472)
+Best Emodel=   -83.73 E=   -61.57 Eint=    12.30 GlideScore=    -7.78
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -5.65)+Epik State Penalty(    0.00) =    -5.65 kcal/mol
+DOCKING RESULTS FOR LIGAND      473 (473)
+Best Emodel=   -57.53 E=   -46.20 Eint=     6.10 GlideScore=    -5.65
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           13
+ Using templates for ring conformations.
+NO VALID POSES AFTER MINIMIZATION: SKIPPING.
+Ligand #    474(474)
+SKIP LIG      474 (474): GRID-ENERGY MIN FAILED
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            9
+ Using templates for ring conformations.
+GlideScore(   -6.11)+Epik State Penalty(    0.00) =    -6.11 kcal/mol
+DOCKING RESULTS FOR LIGAND      475 (475)
+Best Emodel=   -61.43 E=   -48.63 Eint=     5.68 GlideScore=    -6.11
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.52)+Epik State Penalty(    0.00) =    -7.52 kcal/mol
+DOCKING RESULTS FOR LIGAND      476 (476)
+Best Emodel=   -82.47 E=   -57.66 Eint=     3.59 GlideScore=    -7.52
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -5.91)+Epik State Penalty(    0.00) =    -5.91 kcal/mol
+DOCKING RESULTS FOR LIGAND      477 (477)
+Best Emodel=   -61.93 E=   -47.47 Eint=     5.56 GlideScore=    -5.91
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -7.52)+Epik State Penalty(    0.00) =    -7.52 kcal/mol
+DOCKING RESULTS FOR LIGAND      478 (478)
+Best Emodel=   -79.43 E=   -55.63 Eint=     3.68 GlideScore=    -7.52
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -9.38)+Epik State Penalty(    0.00) =    -9.38 kcal/mol
+DOCKING RESULTS FOR LIGAND      479 (479)
+Best Emodel=   -78.28 E=   -53.31 Eint=    10.08 GlideScore=    -9.38
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds            8
+ Using templates for ring conformations.
+GlideScore(   -6.27)+Epik State Penalty(    0.00) =    -6.27 kcal/mol
+DOCKING RESULTS FOR LIGAND      480 (480)
+Best Emodel=   -68.69 E=   -49.22 Eint=     8.23 GlideScore=    -6.27
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -7.19)+Epik State Penalty(    0.00) =    -7.19 kcal/mol
+DOCKING RESULTS FOR LIGAND      481 (481)
+Best Emodel=   -59.82 E=   -45.24 Eint=    11.25 GlideScore=    -7.19
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           10
+ Using templates for ring conformations.
+GlideScore(   -8.36)+Epik State Penalty(    0.00) =    -8.36 kcal/mol
+DOCKING RESULTS FOR LIGAND      482 (482)
+Best Emodel=   -72.86 E=   -57.92 Eint=    13.45 GlideScore=    -8.36
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           17
+ Using templates for ring conformations.
+GlideScore(   -9.93)+Epik State Penalty(    0.00) =    -9.93 kcal/mol
+DOCKING RESULTS FOR LIGAND      483 (483)
+Best Emodel=  -120.50 E=   -80.19 Eint=    15.13 GlideScore=    -9.93
+GLIDE WARNING: The above ligand had one or more atoms outside the grid box during energy evaluation or minimization.
+62 out of 253614 energy evaluations were affected.
+Calling OPLS_2005 atomtyping ...
+Finished parameter assignment
+ Number of rotatable bonds           11
+ Using templates for ring conformations.
+GlideScore(   -4.61)+Epik State Penalty(    0.00) =    -4.61 kcal/mol
+DOCKING RESULTS FOR LIGAND      484 (484)
+Best Emodel=   -53.49 E=   -45.81 Eint=     2.76 GlideScore=    -4.61
+
+Glide is executing the glide_sort command.
+Command used is:
+  "/usr/local/schrodinger_2023/utilities/glide_sort" -n 484 -o "drd3_lib-DOCK_SP_1-001_pv.maegz"   -hbond_cut 0.00 -cvdw_cut 0.00 -metal_cut 10.00 -gscore_cut 100.00 -dscore_cut 100.00 "drd3_lib-DOCK_SP_1-001_raw.maegz"
+[running at reduced cpu priority]
+                                  Glide Sort                                  
+------------------------------------------------------------------------------
+REPORT OF BEST 473 POSES
+
+The receptor and sorted ligand structures were written to the Pose Viewer file:
+    drd3_lib-DOCK_SP_1-001_pv.maegz
+
+Final rankings based on original docking score.
+
+1 poses were rejected by the energy filters,
+    Coul+vdw Energy    <=     0.0
+    Hbond Interaction  <=     0.0
+    Metal Interaction  <=    10.0
+    GlideScore         <=   100.0
+    Docking Score      <=   100.0
+(If any of the above properties is not defined for a given pose,
+ the corresponding filter is not applied to that pose.)
+
+
+glide_sort command succeeded.  Pose file drd3_lib-DOCK_SP_1-001_pv.maegz was written.
+
+Exiting Glide
+Date: Friday, November 06 2026, at 02:10:56 CST
+CPU time (s): 4311.2 user, 2.4 system, 6284.8 real
+Total elapsed time = 6285 seconds (1 hours, 44 minutes, 45 seconds)
+[running at reduced cpu priority]

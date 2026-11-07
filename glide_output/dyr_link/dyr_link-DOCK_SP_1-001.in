@@ -1,0 +1,8 @@
+AMIDE_MODE   penal
+GRIDFILE   /home/public/dyr_grid/dyr_grid.zip
+LIGANDFILE   dyr_link-PRE_DOCK_SP_1-001-in.maegz
+MAXATOMS   300
+MAXROTBONDS   50
+NREPORT   992
+POSE_OUTTYPE   poseviewer
+PRECISION   SP

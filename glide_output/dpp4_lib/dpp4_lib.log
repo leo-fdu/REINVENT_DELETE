@@ -1,0 +1,90 @@
+
+===========================================
+     Virtual Screening Workflow (VSW)
+     Python version: 80128
+===========================================
+
+SCHRODINGER: /usr/local/schrodinger_2023
+PYTHONPATH: 
+Started at: Fri Nov  6 00:17:12 2026
+Driver JobId: aquilalinux-0-6aecac07
+Launch directory: /home/public/dpp4_lib
+Job directory: /home/public/dpp4_lib
+Running with -LOCAL: True
+Input File: dpp4_lib.inp
+
+To restart the job upon failure, run this command:
+   $SCHRODINGER/vsw dpp4_lib.inp -RESTART
+
+[running at reduced cpu priority]
+Setting njobs to: 1
+Setting adjust to: True
+Setting cleanup to: True
+
+Starting the pipeline...
+
+Will listen to "pipeline" messages from stages
+General subjob hosts: [('localhost', 1)]
+glide hosts: [('localhost', 1)]
+Number of subjobs: 1
+Adjust subjobs: True
+No force job: Will terminate upon first docking subjob failure instead of merging output from successful Glide subjobs.
+Maximum retries: 2
+Cleanup: True
+
+    Stage: dpp4_lib-PRE_DOCK_SP_1
+        NUMOUT: njobs
+        OUTFORMAT: maegz
+        MIN_SUBJOB_STS: 300
+        MAX_SUBJOB_STS: 3000
+        GENCODES: YES
+        OUTCOMPOUNDFIELD: s_vsw_compound_code
+        OUTVARIANTFIELD: s_vsw_variant
+        UNIQUEFIELD: NONE
+
+    Stage: dpp4_lib-DOCK_SP_1
+        RECOMBINE: NO
+        PRECISION: SP
+        UNIQUEFIELD: s_vsw_compound_code
+        PERCENT_TO_KEEP: 100.0
+        DOCKING_METHOD: confgen
+        POSES_PER_LIG: 1
+        WRITE_XP_DESC: NO
+        NENHANCED_SAMPLING: 1
+        BEST_BY_TITLE: YES
+        LIG_VSCALE: 0.8
+        LIG_CCUT: 0.15
+        MAXATOMS: 300
+        MAXROTBONDS: 50
+        AMIDE_MODE: penal
+        POSE_OUTTYPE: PV
+        POSTDOCK: YES
+        POSTDOCKSTRAIN: NO
+        COMPRESS_POSES: YES
+        EPIK_PENALTIES: YES
+        FORCEPLANAR: NO
+
+Status of stages:
+  Stage Name                     Status
+  ------------------------------ ---------
+  dpp4_lib-PRE_DOCK_SP_1         WAITING
+  dpp4_lib-DOCK_SP_1             WAITING
+
+Stage activity keys...
+  C: Number of completed stages
+  A: Number of active/running stages
+  W: Number of waiting/pending stages
+
+C A W | Stage name and activity
+- - - | -----------------------
+0 0 2 | dpp4_lib-PRE_DOCK_SP_1 (aquilalinux-0-6aecac09) launched.
+1 0 1 | dpp4_lib-PRE_DOCK_SP_1 (aquilalinux-0-6aecac09) completed.
+            Output: dpp4_lib-RECOMBINE_OUT_1 (985)
+1 0 1 | dpp4_lib-DOCK_SP_1 (aquilalinux-0-6aecac0d) launched.
+2 0 0 | dpp4_lib-DOCK_SP_1 (aquilalinux-0-6aecac0d) completed.
+            Output: dpp4_lib-SP_OUT_1 (979)
+Cleaning up intermediate files: dpp4_lib-RECOMBINE_OUT_1
+All stages have completed sucessfully.
+User outputs:
+  SP_OUT_1 (incorporatable) [structures(979)]:
+      dpp4_lib-SP_OUT_1_pv.maegz

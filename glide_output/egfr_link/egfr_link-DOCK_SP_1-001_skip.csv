@@ -1,0 +1,12 @@
+SMILES,title,"i_i_glide_lignum","docking_status","r_glide_cpu_time","r_i_docking_score","s_i_glide_gridfile","r_i_glide_gscore","r_i_glide_lipo","r_i_glide_hbond","r_i_glide_metal","r_i_glide_rewards","r_i_glide_evdw","r_i_glide_ecoul","r_i_glide_erotb","r_i_glide_esite","r_i_glide_emodel","r_i_glide_energy","r_i_glide_einternal"
+CC(C)(C)OC(=O)N1CCC(c2nc(-c3cccc(F)c3)cn2C[C@@H](C[NH+]2CCC(c3ccc(C#N)cc3)CC2)C2CCN(c3ncnc(N)c3CN[NH+]3CCCCC3)CC2)CC1,"626",626,"NO POSES STORED FOR LIGAND",35.58,,,,,,,,,,,,,,
+Nc1ncnc(N2CCN(C(=O)C3(Oc4cccc(CCC[NH+]5CCC(C(=O)N6CCC([NH+]7CCCCC7)CC6)CC5)c4)CCN(CCCc4cccc(F)c4)CC3)CC2)c1CN[NH+]1CCCCC1,"649",649,"NO POSES STORED FOR LIGAND",81.11,,,,,,,,,,,,,,
+CCC[NH+]1CCC(c2cc(C3CC[NH+]([C@@H]4C[C@@H]5C[C@H]4CN5c4ncnc(N)c4CN[NH+]4CCCCC4)CC3)cc(N3CCC([NH3+])CC3)c2-c2cccc(F)c2)CC1,"700",700,"GRID-ENERGY MIN FAILED",10.46,,,,,,,,,,,,,,
+CNC(=O)N1CCc2c(nc(C[NH+]3CCC(c4ncnc(N)c4CN[NH+]4CCCCC4)CC3)c(N3CCC([NH+]4CCC(C(C)(C)C)CC4)CC3)c2-c2cccc(F)c2)C1,"728",728,"NO POSES STORED FOR LIGAND",36.88,,,,,,,,,,,,,,
+Nc1ncnc(N2CCC3(CC2)C[C@@H](n2cnc(-c4ccnc(C(F)(F)F)c4)c2)CC[N@@H+]3CCCc2cccc(F)c2)c1CN[NH+]1CCCCC1,"752",752,"NO POSES STORED FOR LIGAND",16.02,,,,,,,,,,,,,,
+COC(=O)N1CCC(C[NH+]2CCC(c3[nH+]c(-c4cccc(F)c4)cn3C3CC[NH+](CCCC4CCN(c5ncnc(N)c5CN[NH+]5CCCCC5)CC4)CC3)CC2)CC1,"757",757,"NO POSES STORED FOR LIGAND",18.79,,,,,,,,,,,,,,
+Cc1[nH]c([C@@H]2C[C@H]3CC[C@@H](C2)[N@@H+]3CC[C@H](F)CCC[C@H](C(=O)[O-])[NH+]2CCC(c3cc(Cl)ccc3N3CCC([NH+]4CCN(c5ncnc(N)c5CN[NH+]5CCCCC5)CC4)CC3)CC2)c(-c2cccc(F)c2)c1C,"764",764,"GRID-ENERGY MIN FAILED",51.53,,,,,,,,,,,,,,
+CC(C)OC(=O)N1CCC(c2c(-c3cccc(F)c3)c(-c3cnc(OC[C@@H]4CCC[NH2+]4)c(F)c3)c(C3CC[NH+](CC4CN(c5ncnc(N)c5CN[NH+]5CCCCC5)C4)CC3)n2CC[NH+]2CCC2)CC1,"784",784,"NO POSES STORED FOR LIGAND",55.35,,,,,,,,,,,,,,
+C[C@@H]1C[C@H]([NH+]2CCC([NH+]3CCC(CCc4cc(Cl)cc(C5CC[NH+](C6CCN(c7ncnc(N)c7CN[NH+]7CCCCC7)CC6)CC5)c4-c4cccc(F)c4)CC3)CC2)CC[N@@H+]1C,"805",805,"NO POSES STORED FOR LIGAND",18.71,,,,,,,,,,,,,,
+CC[NH+]1CCC(c2[nH]c(C3CC[NH+](C[C@H]4CCN(c5ncnc(N)c5CN[NH+]5CCCCC5)C[C@@H]4C)CC3)c(-c3cccc(F)c3)c2C2CCN(C(=O)OC(C)(C)C)CC2)CC1,"826",826,"GRID-ENERGY MIN FAILED",10.86,,,,,,,,,,,,,,
+C[C@@H]1CCN(C2CCN(c3ncnc(N)c3CN[NH+]3CCCCC3)CC2)C(=O)C12CC[NH+](C[C@@H]1CCN(c3cccc(F)c3)C1)CC2,"876",876,"NO POSES STORED FOR LIGAND",8.12,,,,,,,,,,,,,,

@@ -1,0 +1,8 @@
+AMIDE_MODE   penal
+GRIDFILE   /home/public/cp3a4_grid/cp3a4_grid.zip
+LIGANDFILE   cp3a4_lib-PRE_DOCK_SP_1-001-in.maegz
+MAXATOMS   300
+MAXROTBONDS   50
+NREPORT   999
+POSE_OUTTYPE   poseviewer
+PRECISION   SP

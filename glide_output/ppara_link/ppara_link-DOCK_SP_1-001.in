@@ -1,0 +1,8 @@
+AMIDE_MODE   penal
+GRIDFILE   /home/public/ppara_grid/ppara_grid.zip
+LIGANDFILE   ppara_link-PRE_DOCK_SP_1-001-in.maegz
+MAXATOMS   300
+MAXROTBONDS   50
+NREPORT   995
+POSE_OUTTYPE   poseviewer
+PRECISION   SP

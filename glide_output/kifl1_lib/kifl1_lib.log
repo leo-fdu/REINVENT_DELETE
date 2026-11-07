@@ -1,0 +1,90 @@
+
+===========================================
+     Virtual Screening Workflow (VSW)
+     Python version: 80128
+===========================================
+
+SCHRODINGER: /usr/local/schrodinger_2023
+PYTHONPATH: 
+Started at: Fri Nov  6 00:35:42 2026
+Driver JobId: aquilalinux-0-6aecb05c
+Launch directory: /home/public/kifl1_lib
+Job directory: /home/public/kifl1_lib
+Running with -LOCAL: True
+Input File: kifl1_lib.inp
+
+To restart the job upon failure, run this command:
+   $SCHRODINGER/vsw kifl1_lib.inp -RESTART
+
+[running at reduced cpu priority]
+Setting njobs to: 1
+Setting adjust to: True
+Setting cleanup to: True
+
+Starting the pipeline...
+
+Will listen to "pipeline" messages from stages
+General subjob hosts: [('localhost', 1)]
+glide hosts: [('localhost', 1)]
+Number of subjobs: 1
+Adjust subjobs: True
+No force job: Will terminate upon first docking subjob failure instead of merging output from successful Glide subjobs.
+Maximum retries: 2
+Cleanup: True
+
+    Stage: kifl1_lib-PRE_DOCK_SP_1
+        NUMOUT: njobs
+        OUTFORMAT: maegz
+        MIN_SUBJOB_STS: 300
+        MAX_SUBJOB_STS: 3000
+        GENCODES: YES
+        OUTCOMPOUNDFIELD: s_vsw_compound_code
+        OUTVARIANTFIELD: s_vsw_variant
+        UNIQUEFIELD: NONE
+
+    Stage: kifl1_lib-DOCK_SP_1
+        RECOMBINE: NO
+        PRECISION: SP
+        UNIQUEFIELD: s_vsw_compound_code
+        PERCENT_TO_KEEP: 100.0
+        DOCKING_METHOD: confgen
+        POSES_PER_LIG: 1
+        WRITE_XP_DESC: NO
+        NENHANCED_SAMPLING: 1
+        BEST_BY_TITLE: YES
+        LIG_VSCALE: 0.8
+        LIG_CCUT: 0.15
+        MAXATOMS: 300
+        MAXROTBONDS: 50
+        AMIDE_MODE: penal
+        POSE_OUTTYPE: PV
+        POSTDOCK: YES
+        POSTDOCKSTRAIN: NO
+        COMPRESS_POSES: YES
+        EPIK_PENALTIES: YES
+        FORCEPLANAR: NO
+
+Status of stages:
+  Stage Name                     Status
+  ------------------------------ ---------
+  kifl1_lib-PRE_DOCK_SP_1        WAITING
+  kifl1_lib-DOCK_SP_1            WAITING
+
+Stage activity keys...
+  C: Number of completed stages
+  A: Number of active/running stages
+  W: Number of waiting/pending stages
+
+C A W | Stage name and activity
+- - - | -----------------------
+0 0 2 | kifl1_lib-PRE_DOCK_SP_1 (aquilalinux-0-6aecb061) launched.
+1 0 1 | kifl1_lib-PRE_DOCK_SP_1 (aquilalinux-0-6aecb061) completed.
+            Output: kifl1_lib-RECOMBINE_OUT_1 (994)
+1 0 1 | kifl1_lib-DOCK_SP_1 (aquilalinux-0-6aecb06b) launched.
+2 0 0 | kifl1_lib-DOCK_SP_1 (aquilalinux-0-6aecb06b) completed.
+            Output: kifl1_lib-SP_OUT_1 (985)
+Cleaning up intermediate files: kifl1_lib-RECOMBINE_OUT_1
+All stages have completed sucessfully.
+User outputs:
+  SP_OUT_1 (incorporatable) [structures(985)]:
+      kifl1_lib-SP_OUT_1_pv.maegz
