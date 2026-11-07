@@ -1,0 +1,11 @@
+SMILES,title,"i_i_glide_lignum","docking_status","r_glide_cpu_time","r_i_docking_score","s_i_glide_gridfile","r_i_glide_gscore","r_i_glide_lipo","r_i_glide_hbond","r_i_glide_metal","r_i_glide_rewards","r_i_glide_evdw","r_i_glide_ecoul","r_i_glide_erotb","r_i_glide_esite","r_i_glide_emodel","r_i_glide_energy","r_i_glide_einternal"
+CCc1cc(C)c(OC)c(C(=O)NS(=O)(=O)c2ccc(C)cc2C(=O)N(C2CCCCC2)C2CCCCC2)c1O,"154",154,"NO POSES STORED FOR LIGAND",8.49,,,,,,,,,,,,,,
+CCc1cc(C)c(OC)c(C(=O)NC(=O)C/C=[S+]/SNCCc2ccc(NC(=O)c3c(OC)c(C)cc(CC(=O)c4c(OC)cc(C)cc4OC)c3OC)cc2)c1O,"223",223,"GRID-ENERGY MIN FAILED",17.92,,,,,,,,,,,,,,
+CCc1cc(C)c(OC)c(C(=O)NC(=O)N(C)c2c(OCCN3CCN(C(=O)Oc4c(F)c(CC)cc(C)c4OC)CC3)ccc3ccccc23)c1O,"239",239,"GRID-ENERGY MIN FAILED",10.52,,,,,,,,,,,,,,
+CCCCCCCCOc1cc(C)c(CC)c(OC)c1C(=O)NC(=O)c1c(O)c(CC)cc(C)c1OC,"259",259,"NO POSES STORED FOR LIGAND",14.89,,,,,,,,,,,,,,
+CCOC(=O)C[C@@H](NC(=O)NC(=O)c1c(O)c(CC)cc(C)c1OC)c1ccc(OCc2ccc(OC)cc2OC)cc1OCc1ccc(OC)cc1,"385",385,"GRID-ENERGY MIN FAILED",17.68,,,,,,,,,,,,,,
+CCc1cc(C)c(OC)c(C(=O)NC(=O)OC[C@@]2(CC)C[C@H](NC(=O)c3c(OC)c(C)cc(CC)c3OC)CC(C)(C)C2)c1O,"405",405,"GRID-ENERGY MIN FAILED",10.21,,,,,,,,,,,,,,
+CCc1cc(C)c(OC)c(C(=O)NC(=O)Nc2ccc(S(=O)(=O)c3ccc(NC(=O)c4c(OC)cc(CC)c(OC)c4OC)cc3)cc2)c1O,"430",430,"GRID-ENERGY MIN FAILED",6.1,,,,,,,,,,,,,,
+CCc1cc(C)c(OC)c(C(=O)NC(=O)N(c2ccccc2C)[C@@H](Cc2ccc(OC(F)(F)F)cc2)c2ccc(F)c(OC)c2)c1O,"439",439,"GRID-ENERGY MIN FAILED",8.98,,,,,,,,,,,,,,
+CCc1cc(C)c(OC)c(C(=O)NS(=O)(=O)c2ccc(C#N)cc2[C@H](Oc2cc(-c3nc(C4CCCC4)no3)n(C(C)(C)C)n2)Oc2c(C)cccc2C)c1[O-],"456",456,"GRID-ENERGY MIN FAILED",11.54,,,,,,,,,,,,,,
+CCc1cc(C)c(OC)c(C(=O)NC(=O)Nc2ccc(OC(=O)c3c(C)c[n+](C)cc3Oc3c(C)cc(C)cc3C)cc2C)c1O,"474",474,"GRID-ENERGY MIN FAILED",4.34,,,,,,,,,,,,,,

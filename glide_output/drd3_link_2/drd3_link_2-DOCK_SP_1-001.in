@@ -1,0 +1,8 @@
+AMIDE_MODE   penal
+GRIDFILE   /home/public/drd3_grid/drd3_grid.zip
+LIGANDFILE   drd3_link_2-PRE_DOCK_SP_1-001-in.maegz
+MAXATOMS   300
+MAXROTBONDS   50
+NREPORT   199
+POSE_OUTTYPE   poseviewer
+PRECISION   SP
