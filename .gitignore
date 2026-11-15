@@ -67,3 +67,6 @@ results/server-evidence/
 
 # Local task-design snapshot (explicitly excluded by user on 2026-10-27)
 /shallowbench-7targets/task_design/records/2026-10-26T11-48-22-226395+0800/
+
+# Local files copied from remote runs
+/from_remote/
