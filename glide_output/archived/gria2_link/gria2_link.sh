@@ -1,1 +1,0 @@
-"${SCHRODINGER}/vsw" gria2_link.inp -OVERWRITE -host_glide localhost:1 -adjust -NJOBS 1 -TMPLAUNCHDIR

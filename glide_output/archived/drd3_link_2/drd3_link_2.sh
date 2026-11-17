@@ -1,1 +1,0 @@
-"${SCHRODINGER}/vsw" drd3_link_2.inp -OVERWRITE -host_glide localhost:1 -adjust -NJOBS 1 -TMPLAUNCHDIR
